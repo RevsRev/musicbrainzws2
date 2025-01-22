@@ -12,14 +12,14 @@ public class CollectionResultWs2 extends SearchResultWs2 {
      * @return the artist
      */
     public CollectionWs2 getCollection() {
-            return (CollectionWs2)super.getEntity();
+        return (CollectionWs2) super.getEntity();
     }
 
     /**
      * @param artist the artist to set
      */
     public void setCollection(CollectionWs2 artist) {
-            super.setEntity(artist);
+        super.setEntity(artist);
     }
-	
+
 }

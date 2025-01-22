@@ -2,19 +2,17 @@ package github.com.rev.musicbrainz.filter.browsefilter;
 
 import java.util.Map;
 
-public class PlaceBrowseFilterWs2 extends BrowseFilterWs2 
-{
-  
+public class PlaceBrowseFilterWs2 extends BrowseFilterWs2 {
+
     public PlaceBrowseFilterWs2() {
-            super();
+        super();
     }
 
     @Override
-    public Map<String, String> createParameters() 
-    {
-            Map<String, String> map = super.createParameters();
+    public Map<String, String> createParameters() {
+        Map<String, String> map = super.createParameters();
 
-            return map;
+        return map;
     }
 
 }

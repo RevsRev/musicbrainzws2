@@ -1,38 +1,38 @@
 package github.com.rev.musicbrainz.model.entity;
 
 
-import java.util.logging.Logger;
-import org.apache.commons.lang3.StringUtils;
 import github.com.rev.musicbrainz.utils.MbUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.logging.Logger;
 
 
 /**
  * <p>A Instrument definition.
- *      A series is a sequence of separate release groups, releases, recordings
- *      or works with a common theme. The theme is usually prominent in the 
- *      branding of the entities in the series and the individual entities will 
- *      often have been given a number indicating the position in the series.
- * 
- *      Examples
- * 
- *        Now That's What I Call Music (UK edition)
- *        Blue Note Commemorative 75th Anniversary Series
- *        Bach-Werke-Verzeichnis
- * 
+ * A series is a sequence of separate release groups, releases, recordings
+ * or works with a common theme. The theme is usually prominent in the
+ * branding of the entities in the series and the individual entities will
+ * often have been given a number indicating the position in the series.
+ * <p>
+ * Examples
+ * <p>
+ * Now That's What I Call Music (UK edition)
+ * Blue Note Commemorative 75th Anniversary Series
+ * Bach-Werke-Verzeichnis
+ *
  * </p>
  */
-public class SeriesWs2 extends EntityWs2 
-{
-    private static Logger log = Logger.getLogger(SeriesWs2.class.getName());
+public class SeriesWs2 extends EntityWs2 {
+    private static final Logger log = Logger.getLogger(SeriesWs2.class.getName());
 
     //Actualy valid values for Type:
-    
-    public static final String TYPE_RELEASEGROUP ="Release group";
-    public static final String TYPE_RELEASE ="Release";
-    public static final String TYPE_RECORDING ="Recording";
-    public static final String TYPE_WORK ="Work";
-    public static final String TYPE_CATALOGUE ="Catalogue";
-    
+
+    public static final String TYPE_RELEASEGROUP = "Release group";
+    public static final String TYPE_RELEASE = "Release";
+    public static final String TYPE_RECORDING = "Recording";
+    public static final String TYPE_WORK = "Work";
+    public static final String TYPE_CATALOGUE = "Catalogue";
+
     private String typeUri;
     private String name;
     private String disambiguation;
@@ -44,12 +44,18 @@ public class SeriesWs2 extends EntityWs2
     public String getTypeUri() {
         return typeUri;
     }
+
     public String getType() {
 
-         if (getTypeUri()== null) return "";
-         if (getTypeUri().isEmpty()) return "";
-         return MbUtils.extractTypeFromURI(getTypeUri());
+        if (getTypeUri() == null) {
+            return "";
+        }
+        if (getTypeUri().isEmpty()) {
+            return "";
+        }
+        return MbUtils.extractTypeFromURI(getTypeUri());
     }
+
     /**
      * @return the name
      */
@@ -84,38 +90,38 @@ public class SeriesWs2 extends EntityWs2
     public void setName(String name) {
         this.name = name;
     }
+
     /**
      * @param disambiguation the disambiguation to set
      */
     public void setDisambiguation(String disambiguation) {
         this.disambiguation = disambiguation;
     }
+
     /**
      * @param orderingAttribute the orderingAttribute to set
      */
     public void setOrderingAttribute(String orderingAttribute) {
         this.orderingAttribute = orderingAttribute;
     }
-    public String getUniqueName(){
+
+    public String getUniqueName() {
         if (StringUtils.isNotBlank(disambiguation)) {
-                return name + " (" + disambiguation + ")";
+            return name + " (" + disambiguation + ")";
         }
         return name;
     }
+
     @Override
-        public String toString() {
-            return getUniqueName();
+    public String toString() {
+        return getUniqueName();
     }
+
     @Override
     public boolean equals(Object object) {
-        if (!(object instanceof SeriesWs2)) {
+        if (!(object instanceof SeriesWs2 other)) {
             return false;
         }
-        SeriesWs2 other = (SeriesWs2) object;
-        if (this.getIdUri().equals(other.getIdUri()))
-        {
-            return true;
-        }
-        return false;
+        return this.getIdUri().equals(other.getIdUri());
     }
 }

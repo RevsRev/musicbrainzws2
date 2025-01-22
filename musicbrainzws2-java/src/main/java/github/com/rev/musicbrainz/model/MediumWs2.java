@@ -1,43 +1,40 @@
 package github.com.rev.musicbrainz.model;
 
-import java.util.logging.Logger;
 import github.com.rev.musicbrainz.model.entity.listelement.DiscListWs2;
+
+import java.util.logging.Logger;
 
 /**
  * <p>A single Medium and relative TrackList.
-
  */
-public class MediumWs2 
-{
-    private static Logger log = Logger.getLogger(MediumWs2.class.getName());
+public class MediumWs2 {
+    private static final Logger log = Logger.getLogger(MediumWs2.class.getName());
 
     private int position;
     private String title;
     private String format;
     private int tracksCount;
     private int discCount;
-    
+
     private DiscListWs2 discList;
     private TrackListWs2 trackList;
-           
-    
+
+
     /**
-   * Default Constructor
-   */
-    public MediumWs2()
-    {
+     * Default Constructor
+     */
+    public MediumWs2() {
 
     }
 
     @Override
     public String toString() {
-        
-        if (getFormat()!=null)
-        {
-            return getFormat() +" "+getPosition()+" - "+getTitle();
+
+        if (getFormat() != null) {
+            return getFormat() + " " + getPosition() + " - " + getTitle();
         }
-        
-        return getPosition()+" - "+getTitle();
+
+        return getPosition() + " - " + getTitle();
     }
 
     /**
@@ -121,7 +118,7 @@ public class MediumWs2
      * @param tracksCount the tracksCount to set
      */
     public void setTracksCount(int tracksCount) {
-        this.tracksCount=tracksCount;
+        this.tracksCount = tracksCount;
     }
 
     /**
@@ -137,23 +134,24 @@ public class MediumWs2
     public void setDiscCount(int discCount) {
         this.discCount = discCount;
     }
-    
-    public Long getDurationInMillis(){
-        
-        if (getTrackList()==null ||
-             getTrackList().getDurationInMillis()==null)
-            
+
+    public Long getDurationInMillis() {
+
+        if (getTrackList() == null ||
+                getTrackList().getDurationInMillis() == null) {
             return 0L;
-        
+        }
+
         return getTrackList().getDurationInMillis();
     }
-    public String getDuration(){
-    
-        if (getTrackList()==null ||
-             getTrackList().getDurationInMillis()==null)
-            
+
+    public String getDuration() {
+
+        if (getTrackList() == null ||
+                getTrackList().getDurationInMillis() == null) {
             return "";
-        
+        }
+
         return getTrackList().getDuration();
     }
 }

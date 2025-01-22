@@ -4,27 +4,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class DiscTocFilterWs2 implements FilterWs2 
-{
+public class DiscTocFilterWs2 implements FilterWs2 {
 
     private String toc;
-    private Boolean cdStub=true;
+    private Boolean cdStub = true;
 
     public DiscTocFilterWs2() {
-        
+
     }
 
     @Override
-    public Map<String, String> createParameters() 
-    {
+    public Map<String, String> createParameters() {
         Map<String, String> map = new HashMap<String, String>();
 
         // construct the track filter's map			
 
-        if (toc != null && !toc.isEmpty())
-            map.put("toc",toc);
-        if (!isCdStub())
-            map.put("cdstubs","no");
+        if (toc != null && !toc.isEmpty()) {
+            map.put("toc", toc);
+        }
+        if (!isCdStub()) {
+            map.put("cdstubs", "no");
+        }
 
         return map;
     }

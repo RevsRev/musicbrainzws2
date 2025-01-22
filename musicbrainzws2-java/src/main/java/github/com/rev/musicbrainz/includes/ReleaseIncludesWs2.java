@@ -5,30 +5,27 @@ import java.util.List;
 /**
  * A specification on how much data to return with a release.
  */
-public class ReleaseIncludesWs2 extends IncludesWs2
-    {
+public class ReleaseIncludesWs2 extends IncludesWs2 {
 
-   private boolean label = false;
-    
+    private boolean label = false;
+
     // The following Includes are allowed ONLY for LookUps
     // and NOT for Browse, but they are currently working.
-    
+
     private boolean discids = false;
     private boolean media = false;
-    
+
     // The following Includes are allowed ONLY for LookUps
     // and NOT for Browse.
 
     private boolean releaseGroups = false;
     private boolean recordings = false;
-    
-  
+
 
     /**
      * Default constructor
      */
-    public ReleaseIncludesWs2()
-    {
+    public ReleaseIncludesWs2() {
         super();
     }
 
@@ -37,22 +34,31 @@ public class ReleaseIncludesWs2 extends IncludesWs2
      * @see github.com.rev.musicbrainz.webservice.Includes#createIncludeTags()
      */
     @Override
-    public List<String> createIncludeTags() 
-    {
-            List<String> includeTags = super.createIncludeTags();
+    public List<String> createIncludeTags() {
+        List<String> includeTags = super.createIncludeTags();
 
 
-            // not that elegant but straight forward :)
-             
-             if (isLabel()) includeTags.add(LABELS_INC);
-                          
-             if (isDiscids()) includeTags.add(DISCIDS_INC);
-             if (isMedia()) includeTags.add(MEDIA_INC);
-             
-             if (isReleaseGroups()) includeTags.add(RELEASEGROUPS_INC);
-             if (isRecordings()) includeTags.add(RECORDINGS_INC);
+        // not that elegant but straight forward :)
 
-            return includeTags;
+        if (isLabel()) {
+            includeTags.add(LABELS_INC);
+        }
+
+        if (isDiscids()) {
+            includeTags.add(DISCIDS_INC);
+        }
+        if (isMedia()) {
+            includeTags.add(MEDIA_INC);
+        }
+
+        if (isReleaseGroups()) {
+            includeTags.add(RELEASEGROUPS_INC);
+        }
+        if (isRecordings()) {
+            includeTags.add(RECORDINGS_INC);
+        }
+
+        return includeTags;
     }
 
     /**
@@ -127,39 +133,42 @@ public class ReleaseIncludesWs2 extends IncludesWs2
     public void setRecordings(boolean recordings) {
         this.recordings = recordings;
     }
+
     /**
-   * set all the parameters to false.
-   */
+     * set all the parameters to false.
+     */
     @Override
-    public void excludeAll(){
-        
+    public void excludeAll() {
+
         super.excludeAll();
         setLabel(false);
         setReleaseGroups(false);
         setRecordings(false);
         setMedia(false);
         setDiscids(false);
-        
+
     }
+
     /**
-   * set all the parameters to true.
-   */
+     * set all the parameters to true.
+     */
     @Override
-    public void includeAll(){
-        
-       super.includeAll();
+    public void includeAll() {
+
+        super.includeAll();
         setLabel(true);
         setReleaseGroups(true);
         setRecordings(true);
         setMedia(true);
         setDiscids(true);
     }
+
     /**
-   *  clone the current status of IncludesWs2 to a new one.
-   */
+     * clone the current status of IncludesWs2 to a new one.
+     */
     @Override
-    public ReleaseIncludesWs2 clone(){
-        
+    public ReleaseIncludesWs2 clone() {
+
         ReleaseIncludesWs2 target = new ReleaseIncludesWs2();
         copyTo(target);
         target.setLabel(isLabel());

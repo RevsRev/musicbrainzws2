@@ -1,53 +1,53 @@
 package github.com.rev.musicbrainz;
 
-import java.util.regex.Pattern;
-import org.jdom2.Namespace;
 import github.com.rev.musicbrainz.model.RelationWs2;
 import github.com.rev.musicbrainz.model.entity.EntityWs2;
+import org.jdom2.Namespace;
+
+import java.util.regex.Pattern;
 
 
 /**
  * <p>The domains for MusicBrainz XML Web Service/Version 2 .</p>
- * 
  */
 public abstract class DomainsWs2 {
 
-   // Connection parameters, used by DefaultWebServiceWS2.
-    
+    // Connection parameters, used by DefaultWebServiceWS2.
+
     /**
-    * A string containing the web service version to use
-    */
-    public static final String WS_VERSION = "2"; 
+     * A string containing the web service version to use
+     */
+    public static final String WS_VERSION = "2";
 
     public static final String MAINHOST = "musicbrainz.org";
     public static final String ANNOTATIONHOST = "search.musicbrainz.org";
-   	
+
     public static final String AUTHREALM = "musicbrainz.org";
 
     /**
-    * Default namespace prefix for all MusicBrainz metadata.
-    */ 
+     * Default namespace prefix for all MusicBrainz metadata.
+     */
     public static final String NS_MMD_2_PREFIX = "http://musicbrainz.org/ns/mmd-2.0#";
     /**
-    * Namespace prefix for relations.
-    */
-    public static final String NS_REL_2_PREFIX= "http://musicbrainz.org/ns/rel-2.0#";
+     * Namespace prefix for relations.
+     */
+    public static final String NS_REL_2_PREFIX = "http://musicbrainz.org/ns/rel-2.0#";
     /**
-    * Namespace prefix for MusicBrainz extensions.
-    */
+     * Namespace prefix for MusicBrainz extensions.
+     */
     public static final String NS_EXT_2_PREFIX = "http://musicbrainz.org/ns/ext#-2.0";
-   
+
     public static final Namespace NS_MMD_2 = Namespace.getNamespace(NS_MMD_2_PREFIX);
     public static final Namespace NS_EXT_2 = Namespace.getNamespace(EntityWs2.NS_EXT_2_PREFIX);
 
-    
+
     // Strings in the XML, used in parse and write.
     public static final String METADATA = "metadata";
-    
+
     public static final String SCORE = "score";
     public static final String COUNT = "count";
     public static final String OFFSET = "offset";
-    
+
     public static final String ENTITY = "entity";
     public static final String TARGETTYPE = "target-type";
 
@@ -58,7 +58,7 @@ public abstract class DomainsWs2 {
     public static final String WORK = "work";
     public static final String RECORDING = "recording";
     public static final String COLLECTION = "collection";
-    
+
     public static final String DISC = "disc";
     public static final String ANNOTATION = "annotation";
     public static final String RELATION = "relation";
@@ -75,13 +75,13 @@ public abstract class DomainsWs2 {
     public static final String TRACK = "track";
     public static final String TEXTREPRESENTATION = "text-representation";
     public static final String LIFESPAN = "life-span";
-    public static final String RELEASEEVENT= "release-event";
-    
+    public static final String RELEASEEVENT = "release-event";
+
     public static final String TAG = "tag";
     public static final String RATING = "rating";
     public static final String USERRATING = "user-rating";
     public static final String USERTAG = "user-tag";
-    
+
     public static final String LABELLIST = "label-list";
     public static final String ARTISTLIST = "artist-list";
     public static final String RELEASEGROUPLIST = "release-group-list";
@@ -91,7 +91,7 @@ public abstract class DomainsWs2 {
     public static final String ANNOTATIONLIST = "annotation-list";
     public static final String COLLECTIONLIST = "collection-list";
     public static final String RELATIONLIST = "relation-list";
-    
+
     public static final String ALIASLIST = "alias-list";
     public static final String LABELINFOLIST = "label-info-list";
     public static final String ISRCLIST = "isrc-list";
@@ -99,9 +99,9 @@ public abstract class DomainsWs2 {
     public static final String DISCLIST = "disc-list";
     public static final String TRACKLIST = "track-list";
     public static final String MEDIUMLIST = "medium-list";
-    public static final String RELEASEEVENTLIST= "release-event-list";
-    public static final String SECONDARYTYPELIST =  "secondary-type-list";
-    
+    public static final String RELEASEEVENTLIST = "release-event-list";
+    public static final String SECONDARYTYPELIST = "secondary-type-list";
+
     public static final String WORKATTRIBUTELIST = "attribute-list";
     public static final String ATTRIBUTE = "attribute";
     public static final String TAGLIST = "tag-list";
@@ -113,7 +113,7 @@ public abstract class DomainsWs2 {
     public static final String TITLE = "title";
     public static final String TYPE = "type";
     public static final String DISAMBIGUATION = "disambiguation";
-    
+
     public static final String ASIN = "asin";
     public static final String BARCODE = "barcode";
     public static final String CATALOGNUMBER = "catalog-number";
@@ -130,15 +130,15 @@ public abstract class DomainsWs2 {
     public static final String POSITION = "position";
     public static final String NUMBER = "number";
     public static final String QUALITY = "quality";
-    public static final String PRIMARYTYPE =  "primary-type";
-    public static final String SECONDARYTYPE =  "secondary-type";
+    public static final String PRIMARYTYPE = "primary-type";
+    public static final String SECONDARYTYPE = "secondary-type";
     public static final String STATUS = "status";
     public static final String SECTORS = "sectors";
     public static final String TRACKCOUNT = "track-count";
-    
+
     public static final String COVERARTARCHIVE = "cover-art-archive";
-    public static final String ARTWORK ="artwork";
-    public static final String FRONT ="front";
+    public static final String ARTWORK = "artwork";
+    public static final String FRONT = "front";
     public static final String BACK = "back";
 
     public static final String ISO31661CODELIST = "iso-3166-1-code-list";
@@ -147,8 +147,8 @@ public abstract class DomainsWs2 {
 
     public static final String IPILIST = "ipi-list";
     public static final String ISWCLIST = "iswc-list";
-    
-    public static final String TYPEID="type-id";
+
+    public static final String TYPEID = "type-id";
     public static final String TARGET = "target";
     public static final String DIRECTION = "direction";
     public static final String BEGINDATE = "begin-date";
@@ -156,14 +156,14 @@ public abstract class DomainsWs2 {
     public static final String BEGIN = "begin";
     public static final String END = "end";
     public static final String ENDED = "ended";
-    public static final String BEGINAREA ="begin-area";
-    public static final String ENDAREA ="end-area";
-    
+    public static final String BEGINAREA = "begin-area";
+    public static final String ENDAREA = "end-area";
+
     public static final String LANGUAGE = "language";
     public static final String SCRIPT = "script";
     public static final String LOCALE = "locale";
     public static final String PRIMARY = "primary";
-    
+
     public static final String TEXT = "text";
     public static final String VOTESCOUNT = "votes-count";
 
@@ -172,24 +172,26 @@ public abstract class DomainsWs2 {
     protected static final Pattern languagePattern = Pattern.compile("^[A-Z]{3}$");
     protected static final Pattern countryPattern = Pattern.compile("^[A-Z]{2}$");
     protected static final Pattern ipiPattern = Pattern.compile("^[0-9]{11}$");
-    protected static final Pattern directionPattern = Pattern.compile("^\\s*(" + RelationWs2.DIR_BOTH + "|" + RelationWs2.DIR_FORWARD + "|" + RelationWs2.DIR_BACKWARD + ")\\s*$");
-    
+    protected static final Pattern directionPattern = Pattern.compile(
+            "^\\s*(" + RelationWs2.DIR_BOTH + "|" + RelationWs2.DIR_FORWARD + "|" + RelationWs2.DIR_BACKWARD +
+                    ")\\s*$");
+
     // Valid Filter strings for queries:
-    
+
     public static final String LIMIT_FILTER = "limit";
     public static final String OFFSET_FILTER = "offset";
     public static final String QUERY_FILTER = "query";
-    
+
     // Valid Inc parameters strings for queries:
-    
+
     public static final String ARTISTCREDITS_INC = "artist-credits";
     public static final String ARTISTRELS_INC = "artist-rels";
     public static final String LABELRELS_INC = "label-rels";
-    public static final String RATINGS_INC= "ratings";
+    public static final String RATINGS_INC = "ratings";
     public static final String RECORDINGLEVELRELS_INC = "recording-level-rels";
     public static final String RECORDINGRELS_INC = "recording-rels";
     public static final String RELEASEGROUPRELS_INC = "release-group-rels";
-    public static final String RELEASERELS_INC= "release-rels";
+    public static final String RELEASERELS_INC = "release-rels";
     public static final String TAGS_INC = "tags";
     public static final String URLRELS_INC = "url-rels";
     public static final String USERRATINGS_INC = "user-ratings";
@@ -203,14 +205,14 @@ public abstract class DomainsWs2 {
     public static final String SERIESRELS_INC = "series-rels";
 
     public static final String ALIASES_INC = "aliases";
-    public static final String DISCIDS_INC= "discids";
+    public static final String DISCIDS_INC = "discids";
     public static final String ISRCS_INC = "isrcs";
     public static final String ARTISTS_INC = "artists";
     public static final String LABELS_INC = "labels";
-    public static final String MEDIA_INC= "media";
+    public static final String MEDIA_INC = "media";
     public static final String PUIDS_INC = "puids";
-    public static final String RECORDINGS_INC= "recordings";
-    public static final String RELEASEGROUPS_INC= "release-groups";
+    public static final String RECORDINGS_INC = "recordings";
+    public static final String RELEASEGROUPS_INC = "release-groups";
     public static final String RELEASES_INC = "releases";
     public static final String VARIOUSARTISTS_INC = "various-artists";
     public static final String WORKS_INC = "works";
@@ -219,11 +221,11 @@ public abstract class DomainsWs2 {
     public static final String PLACES_INC = "places";
     public static final String INSTRUMENTS_INC = "instruments";
     public static final String SERIES_INC = "series";
-   
+
     public static final String TRACKARTIST = "track_artist";
-    
+
     // Valid POST request entities
-    
+
     public static final String TAG_POST = "tag";
     public static final String RATING_POST = "rating";
 
@@ -234,22 +236,22 @@ public abstract class DomainsWs2 {
     public static final String PLACE = "place";
     public static final String INSTRUMENT = "instrument";
     public static final String SERIES = "series";
-    
-    public static final String URLLIST= "url-list";
+
+    public static final String URLLIST = "url-list";
     public static final String EDITORLIST = "editor-list";
     public static final String AREALIST = "area-list";
     public static final String PLACELIST = "place-list";
     public static final String INSTRUMENTLIST = "instrument-list";
     public static final String SERIESLIST = "series-list";
-    
+
     public static final String ENTITYLIST = "entity-list";
-    
+
     public static final String VIDEO = "video";
     public static final String ADDRESS = "address";
-    public static final String COORDINATES ="coordinates";
-    public static final String LATITUDE ="latitude";
-    public static final String LONGITUDE ="longitude";
-    public static final String DESCRIPTION ="description";
+    public static final String COORDINATES = "coordinates";
+    public static final String LATITUDE = "latitude";
+    public static final String LONGITUDE = "longitude";
+    public static final String DESCRIPTION = "description";
     public static final String ORDERINGATTRIBUTE = "ordering-attribute";
     public static final String ORDERINGKEY = "ordering-key";
     public static final String RELATIONATTRIBUTELIST = "attribute-list";
@@ -257,7 +259,7 @@ public abstract class DomainsWs2 {
     public static final String RELATIONATTRIBUTECREDITEDAS = "credited-as";
     // not listed anymore in mmd but still returned by ws2 for artists.
     public static final String ISNILIST = "isni-list";
-    
+
     //
-    
+
 }

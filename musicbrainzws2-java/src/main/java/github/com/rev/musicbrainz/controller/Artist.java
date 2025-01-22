@@ -1,11 +1,9 @@
 /*
  * A controller for the Artist Entity.
- * 
+ *
  */
 package github.com.rev.musicbrainz.controller;
 
-import java.util.ArrayList;
-import java.util.List;
 import github.com.rev.musicbrainz.exception.MBWS2Exception;
 import github.com.rev.musicbrainz.filter.browsefilter.RecordingBrowseFilterWs2;
 import github.com.rev.musicbrainz.filter.browsefilter.ReleaseBrowseFilterWs2;
@@ -23,100 +21,107 @@ import github.com.rev.musicbrainz.model.entity.ReleaseGroupWs2;
 import github.com.rev.musicbrainz.model.entity.ReleaseWs2;
 import github.com.rev.musicbrainz.model.entity.WorkWs2;
 import github.com.rev.musicbrainz.model.searchresult.ArtistResultWs2;
-import github.com.rev.musicbrainz.query.search.ArtistSearchWs2;
 import github.com.rev.musicbrainz.query.browse.RecordingBrowseWs2;
 import github.com.rev.musicbrainz.query.browse.ReleaseBrowseWs2;
 import github.com.rev.musicbrainz.query.browse.ReleaseGroupBrowseWs2;
 import github.com.rev.musicbrainz.query.browse.WorkBrowseWs2;
 import github.com.rev.musicbrainz.query.lookUp.LookUpWs2;
+import github.com.rev.musicbrainz.query.search.ArtistSearchWs2;
 
-public class Artist extends Controller{
+import java.util.ArrayList;
+import java.util.List;
+
+public class Artist extends Controller {
 
     private ReleaseGroupBrowseWs2 releaseGroupBrowse;
     private ReleaseGroupIncludesWs2 releaseGroupIncludes;
     private ReleaseGroupBrowseFilterWs2 releaseGroupBrowseFilter;
-    
+
     private ReleaseBrowseWs2 releaseBrowse;
     private ReleaseIncludesWs2 releaseIncludes;
     private ReleaseBrowseFilterWs2 releaseBrowseFilter;
-    
+
     private ReleaseBrowseWs2 releaseVABrowse;
     private ReleaseIncludesWs2 releaseVAIncludes;
     private ReleaseBrowseFilterWs2 releaseVABrowseFilter;
-    
+
     private RecordingBrowseWs2 recordingBrowse;
     private RecordingIncludesWs2 recordingIncludes;
     private RecordingBrowseFilterWs2 recordingBrowseFilter;
-    
+
     private WorkBrowseWs2 workBrowse;
     private WorkIncludesWs2 workIncludes;
     private WorkBrowseFilterWs2 workBrowseFilter;
-    
-    public Artist(){
-    
+
+    public Artist() {
+
         super();
         setIncluded(new ArtistIncludesWs2());
     }
-   
-    
+
+
     // -------------- Search  -------------------------------------------------//
-    
+
     @Override
-    public ArtistSearchFilterWs2 getSearchFilter(){
-        
-        return (ArtistSearchFilterWs2)super.getSearchFilter();
+    public ArtistSearchFilterWs2 getSearchFilter() {
+
+        return (ArtistSearchFilterWs2) super.getSearchFilter();
     }
-        
+
     @Override
-    protected ArtistSearchWs2 getSearch(){
-        
-        return (ArtistSearchWs2)super.getSearch();
+    protected ArtistSearchWs2 getSearch() {
+
+        return (ArtistSearchWs2) super.getSearch();
     }
-    
+
     @Override
-    protected ArtistSearchFilterWs2 getDefaultSearchFilter(){
-        
+    protected ArtistSearchFilterWs2 getDefaultSearchFilter() {
+
         ArtistSearchFilterWs2 f = new ArtistSearchFilterWs2();
-        f.setLimit((long)100);
-        f.setOffset((long)0);
-        f.setMinScore((long)20);
-        
+        f.setLimit((long) 100);
+        f.setOffset((long) 0);
+        f.setMinScore((long) 20);
+
         return f;
 
     }
+
     @Override
-    public void search(String searchText){
+    public void search(String searchText) {
 
         initSearch(searchText);
-        setSearch(new ArtistSearchWs2(getQueryWs(),getSearchFilter()));
+        setSearch(new ArtistSearchWs2(getQueryWs(), getSearchFilter()));
     }
 
-    public List <ArtistResultWs2> getFullSearchResultList() {
+    public List<ArtistResultWs2> getFullSearchResultList() {
 
         return getSearch().getFullList();
     }
-    public List <ArtistResultWs2> getFirstSearchResultPage() {
+
+    public List<ArtistResultWs2> getFirstSearchResultPage() {
 
         return getSearch().getFirstPage();
     }
-    public List <ArtistResultWs2> getNextSearchResultPage() {
+
+    public List<ArtistResultWs2> getNextSearchResultPage() {
 
         return getSearch().getNextPage();
     }
-    
+
     // -------------- LookUp -------------------------------------------------//
 
-   @Override
-    public  ArtistIncludesWs2 getIncludes(){
-        
-        return (ArtistIncludesWs2)super.getIncludes();
-    
+    @Override
+    public ArtistIncludesWs2 getIncludes() {
+
+        return (ArtistIncludesWs2) super.getIncludes();
+
     }
-   @Override
-    protected  ArtistIncludesWs2 getDefaultIncludes(){
-        
-        ArtistIncludesWs2 inc =new ArtistIncludesWs2();
-        
+
+    @Override
+    protected ArtistIncludesWs2 getDefaultIncludes() {
+
+        ArtistIncludesWs2 inc = new ArtistIncludesWs2();
+
         inc.setUrlRelations(true);
         inc.setLabelRelations(false);
         inc.setArtistRelations(true);
@@ -128,131 +133,159 @@ public class Artist extends Controller{
         inc.setPlaceRelations(true);
         inc.setInstrumentRelations(true);
         inc.setSeriesRelations(true);
-        
+
         inc.setAnnotation(true);
         inc.setTags(false);
         inc.setRatings(true);
         inc.setUserTags(false);
         inc.setUserRatings(true);
         inc.setAliases(false);
-        
+
         inc.setReleaseGroups(false);
         inc.setReleases(false);
         inc.setVariousArtists(false);
         inc.setRecordings(false);
         inc.setWorks(false);
-        
+
         inc.setArtistCredits(false);
         inc.setDiscids(false);
         inc.setIsrcs(false);
         inc.setMedia(false);
         inc.setPuids(false);
-        
+
         return inc;
     }
-       /**
+
+    /**
      * @return the artistIncluded
      */
     @Override
     protected ArtistIncludesWs2 getIncluded() {
-        return (ArtistIncludesWs2)super.getIncluded();
+        return (ArtistIncludesWs2) super.getIncluded();
     }
-      
+
     private ArtistWs2 getArtist() {
-        return (ArtistWs2)getEntity();
+        return (ArtistWs2) getEntity();
     }
-   
+
     public ArtistWs2 getComplete(ArtistWs2 artist) throws MBWS2Exception {
-        if (artist == null) return null;
-        if (artist.getId() == null) return artist;
-                
+        if (artist == null) {
+            return null;
+        }
+        if (artist.getId() == null) {
+            return artist;
+        }
+
         // save some field that come from search, but is missing in
         // lookUp http://tickets.musicbrainz.org/browse/MBS-3982
         setIncoming(artist);
-        
+
         return getComplete(artist.getId());
     }
-    public ArtistWs2 getComplete(String id) throws MBWS2Exception{
-        
+
+    public ArtistWs2 getComplete(String id) throws MBWS2Exception {
+
         setEntity(lookUp(id));
-        
-        if (getIncludes().isReleaseGroups()) getFullReleaseGroupList();
-        if (getIncludes().isReleases()) getFullReleaseList();
-        if (getIncludes().isVariousArtists()) getFullReleaseVAList();
-        if (getIncludes().isRecordings()) getFullRecordingList();
-        if (getIncludes().isWorks()) getFullWorkList();
-        
+
+        if (getIncludes().isReleaseGroups()) {
+            getFullReleaseGroupList();
+        }
+        if (getIncludes().isReleases()) {
+            getFullReleaseList();
+        }
+        if (getIncludes().isVariousArtists()) {
+            getFullReleaseVAList();
+        }
+        if (getIncludes().isRecordings()) {
+            getFullRecordingList();
+        }
+        if (getIncludes().isWorks()) {
+            getFullWorkList();
+        }
+
         return getArtist();
     }
-    
-    public final ArtistWs2 lookUp(ArtistWs2 artist) throws MBWS2Exception{
 
-        if (artist == null) return null;
-        if (artist.getId() == null) return artist;
-        
+    public final ArtistWs2 lookUp(ArtistWs2 artist) throws MBWS2Exception {
+
+        if (artist == null) {
+            return null;
+        }
+        if (artist.getId() == null) {
+            return artist;
+        }
+
         // save some field that come from search, but is missing in
         // lookUp http://tickets.musicbrainz.org/browse/MBS-3982
         setIncoming(artist);
-        
+
         return lookUp(artist.getId());
     }
-    protected ArtistIncludesWs2 getIncrementalInc(ArtistIncludesWs2 inc){
 
-        inc = (ArtistIncludesWs2)super.getIncrementalInc(inc);
-        if (getIncludes().isAliases() && !getIncluded().isAliases()) inc.setAliases(true);
+    protected ArtistIncludesWs2 getIncrementalInc(ArtistIncludesWs2 inc) {
+
+        inc = (ArtistIncludesWs2) super.getIncrementalInc(inc);
+        if (getIncludes().isAliases() && !getIncluded().isAliases()) {
+            inc.setAliases(true);
+        }
         //if (getIncludes().isReleaseGroups() && !getIncluded().isReleaseGroups()) inc.setReleaseGroups(true);
         //if (getIncludes().isReleases() && !getIncluded().isReleases()) inc.setReleases(true);
-       // if (getIncludes().isVariousArtists() && !getIncluded().isVariousArtists()) inc.setVariousArtists(true);
-       // if (getIncludes().isVariousArtists() && !getIncluded().isVariousArtists()) inc.setVariousArtists(true);
-       // if (getIncludes().isWorks() && !getIncluded().isWorks()) inc.setWorks(true);
-        
+        // if (getIncludes().isVariousArtists() && !getIncluded().isVariousArtists()) inc.setVariousArtists(true);
+        // if (getIncludes().isVariousArtists() && !getIncluded().isVariousArtists()) inc.setVariousArtists(true);
+        // if (getIncludes().isWorks() && !getIncluded().isWorks()) inc.setWorks(true);
+
         return inc;
     }
-    private boolean needsLookUp(ArtistIncludesWs2 inc){
-        
-        return (  getArtist() == null ||
-                     super.needsLookUp(inc) ||
-                     inc.isAliases());
+
+    private boolean needsLookUp(ArtistIncludesWs2 inc) {
+
+        return (getArtist() == null ||
+                super.needsLookUp(inc) ||
+                inc.isAliases());
     }
-    public final ArtistWs2 lookUp(String id) throws MBWS2Exception{
+
+    public final ArtistWs2 lookUp(String id) throws MBWS2Exception {
 
         ArtistIncludesWs2 inc = getIncrementalInc(new ArtistIncludesWs2());
-        
+
         // LookUp is limited by 25 linked entities, to be sure
         // is better perform a Browse (you could also get first 25
         // at lookUp time just hiitting artistInclude.setReleases(true), 
         // check if there could be  more releases left and in case perform 
         // the Browse).
-        
+
         inc.setReleaseGroups(false); // handled via a browse.
         inc.setReleases(false); // handled via a browse.
         inc.setVariousArtists(false); // handled via a browse.
         inc.setRecordings(false); // handled via a browse.
         inc.setWorks(false); // handled via a browse.
-        
+
         // the following inc params are meaningless if not inc.isRelease() or
         // inc.isRecordings().
-        
+
         inc.setMedia(false);
         inc.setDiscids(false);
         inc.setIsrcs(false);
         inc.setPuids(false);
-        
+
         // Sanity check.
-        if(inc.isArtistCredits()) inc.setReleases(true); // to avoid the artist credits exceptions.
-        
+        if (inc.isArtistCredits()) {
+            inc.setReleases(true); // to avoid the artist credits exceptions.
+        }
+
         inc.setRecordingLevelRelations(false);// invalid request
         inc.setWorkLevelRelations(false);// invalid request
-        
-        if (needsLookUp(inc))
-        {    
+
+        if (needsLookUp(inc)) {
             setLookUp(new LookUpWs2(getQueryWs()));
 
             ArtistWs2 transit = null;
             transit = getLookUp().getArtistById(id, inc);
-             
 
-            if (transit ==null) return null;
+
+            if (transit == null) {
+                return null;
+            }
             if (getArtist() == null || !getArtist().equals(transit)) // artist is changed.
             {
                 setEntity(transit);
@@ -260,43 +293,41 @@ public class Artist extends Controller{
                 releaseGroupBrowse = null;
                 releaseBrowse = null;
                 releaseVABrowse = null;
-                recordingBrowse= null;
-                workBrowse= null;
-            }
-            else 
-            {
-                updateEntity(getArtist(),transit, inc);
-                
-                if (inc.isAliases()) 
-                {
+                recordingBrowse = null;
+                workBrowse = null;
+            } else {
+                updateEntity(getArtist(), transit, inc);
+
+                if (inc.isAliases()) {
                     getArtist().setAliases(transit.getAliases());
                     getIncluded().setAliases(true);
                 }
             }
         }
-        if (inc.isAnnotation()) loadAnnotation(getArtist());
-        
+        if (inc.isAnnotation()) {
+            loadAnnotation(getArtist());
+        }
+
         initBrowses();
-        
+
         return getArtist();
     }
     // ------------- Browse -------------------------------------------------//
-    
-    private void initBrowses(){
-        
-        if (getIncludes().isReleaseGroups() && releaseGroupBrowse == null){
-            
+
+    private void initBrowses() {
+
+        if (getIncludes().isReleaseGroups() && releaseGroupBrowse == null) {
+
             ReleaseGroupIncludesWs2 relInc = getReleaseGroupIncludes();
             ReleaseGroupBrowseFilterWs2 f = getReleaseGroupBrowseFilter();
             f.setRelatedEntity(ARTIST);
             f.setRelatedId(getArtist().getId());
 
-            releaseGroupBrowse = new ReleaseGroupBrowseWs2(getQueryWs(),f,relInc);
+            releaseGroupBrowse = new ReleaseGroupBrowseWs2(getQueryWs(), f, relInc);
 
             getIncluded().setReleaseGroups(true);
         }
-        if (getIncludes().isReleases() && releaseBrowse == null)
-        {
+        if (getIncludes().isReleases() && releaseBrowse == null) {
             ReleaseIncludesWs2 relInc = getReleaseIncludes();
             relInc.setRecordingLevelRelations(false);// invalid request
             relInc.setWorkLevelRelations(false);// invalid request
@@ -306,12 +337,11 @@ public class Artist extends Controller{
             f.setRelatedEntity(ARTIST);
             f.setRelatedId(getArtist().getId());
 
-            releaseBrowse = new ReleaseBrowseWs2(getQueryWs(),f,relInc);
+            releaseBrowse = new ReleaseBrowseWs2(getQueryWs(), f, relInc);
 
             getIncluded().setReleases(true);
         }
-        if (getIncludes().isVariousArtists() && releaseVABrowse == null)
-        {
+        if (getIncludes().isVariousArtists() && releaseVABrowse == null) {
             ReleaseIncludesWs2 relInc = getReleaseVAIncludes();
             relInc.setRecordingLevelRelations(false);// invalid request
             relInc.setWorkLevelRelations(false);// invalid request
@@ -321,12 +351,11 @@ public class Artist extends Controller{
             f.setRelatedEntity(TRACKARTIST);
             f.setRelatedId(getArtist().getId());
 
-            releaseVABrowse = new ReleaseBrowseWs2(getQueryWs(),f,relInc);
+            releaseVABrowse = new ReleaseBrowseWs2(getQueryWs(), f, relInc);
 
             getIncluded().setVariousArtists(true);
         }
-        if (getIncludes().isRecordings() && recordingBrowse == null)
-        {
+        if (getIncludes().isRecordings() && recordingBrowse == null) {
             RecordingIncludesWs2 relInc = getRecordingIncludes();
             relInc.setRecordingLevelRelations(false);// invalid request
             relInc.setWorkLevelRelations(false);// invalid request
@@ -336,12 +365,11 @@ public class Artist extends Controller{
             f.setRelatedEntity(ARTIST);
             f.setRelatedId(getArtist().getId());
 
-            recordingBrowse = new RecordingBrowseWs2(getQueryWs(),f,relInc);
+            recordingBrowse = new RecordingBrowseWs2(getQueryWs(), f, relInc);
 
             getIncluded().setRecordings(true);
         }
-        if (getIncludes().isWorks() && workBrowse == null)
-        {
+        if (getIncludes().isWorks() && workBrowse == null) {
             WorkIncludesWs2 relInc = getWorkIncludes();
             relInc.setRecordingLevelRelations(false);// invalid request
             relInc.setWorkLevelRelations(false);// invalid request
@@ -351,296 +379,429 @@ public class Artist extends Controller{
             f.setRelatedEntity(ARTIST);
             f.setRelatedId(getArtist().getId());
 
-            workBrowse = new WorkBrowseWs2(getQueryWs(),f,relInc);
+            workBrowse = new WorkBrowseWs2(getQueryWs(), f, relInc);
 
             getIncluded().setWorks(true);
-         }
+        }
     }
 
-     public List <ReleaseGroupWs2> getFullReleaseGroupList() {
-        
-         if (getArtist() == null) return null;
-         getIncludes().setReleaseGroups(true);
-         if (releaseGroupBrowse == null ) initBrowses();
-         if (releaseGroupBrowse == null ) return null;
-         if (!hasMoreReleaseGroups()) return getArtist().getReleaseGroups();
-         
-         List <ReleaseGroupWs2> list = releaseGroupBrowse.getFullList();
-        
-        for (ReleaseGroupWs2 rel : list)
-         {
-             getArtist().addReleaseGroup(rel);
-         }
-        
-        return list;
-    }
-    public List <ReleaseGroupWs2> getFirstReleaseGroupListPage() {
-        
-        if (getArtist() == null) return null;
-        getIncludes().setReleaseGroups(true);
-        if (releaseGroupBrowse == null ) initBrowses();
-        if (releaseGroupBrowse == null ) return null;
-         
-         List <ReleaseGroupWs2> list = releaseGroupBrowse.getFirstPage();
-        
-        for (ReleaseGroupWs2 rel : list)
-         {
-             getArtist().addReleaseGroup(rel);
-         }
-        
-        return list;
-    }
-    public List <ReleaseGroupWs2> getNextReleaseGroupListPage() {
+    public List<ReleaseGroupWs2> getFullReleaseGroupList() {
 
-        if (getArtist() == null) return null;
+        if (getArtist() == null) {
+            return null;
+        }
         getIncludes().setReleaseGroups(true);
-        if (releaseGroupBrowse == null ) initBrowses();
-        if (releaseGroupBrowse == null ) return null;
-        if (!hasMoreReleaseGroups()) return new ArrayList<ReleaseGroupWs2> ();
-         
-        List <ReleaseGroupWs2> list = releaseGroupBrowse.getNextPage();
-        
-        for (ReleaseGroupWs2 rel : list)
-         {
-             getArtist().addReleaseGroup(rel);
-         }
-        
+        if (releaseGroupBrowse == null) {
+            initBrowses();
+        }
+        if (releaseGroupBrowse == null) {
+            return null;
+        }
+        if (!hasMoreReleaseGroups()) {
+            return getArtist().getReleaseGroups();
+        }
+
+        List<ReleaseGroupWs2> list = releaseGroupBrowse.getFullList();
+
+        for (ReleaseGroupWs2 rel : list) {
+            getArtist().addReleaseGroup(rel);
+        }
+
         return list;
     }
-    public boolean hasMoreReleaseGroups(){
-        if (getArtist() == null) return true;
-        if (releaseGroupBrowse == null ) return true;
+
+    public List<ReleaseGroupWs2> getFirstReleaseGroupListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setReleaseGroups(true);
+        if (releaseGroupBrowse == null) {
+            initBrowses();
+        }
+        if (releaseGroupBrowse == null) {
+            return null;
+        }
+
+        List<ReleaseGroupWs2> list = releaseGroupBrowse.getFirstPage();
+
+        for (ReleaseGroupWs2 rel : list) {
+            getArtist().addReleaseGroup(rel);
+        }
+
+        return list;
+    }
+
+    public List<ReleaseGroupWs2> getNextReleaseGroupListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setReleaseGroups(true);
+        if (releaseGroupBrowse == null) {
+            initBrowses();
+        }
+        if (releaseGroupBrowse == null) {
+            return null;
+        }
+        if (!hasMoreReleaseGroups()) {
+            return new ArrayList<ReleaseGroupWs2>();
+        }
+
+        List<ReleaseGroupWs2> list = releaseGroupBrowse.getNextPage();
+
+        for (ReleaseGroupWs2 rel : list) {
+            getArtist().addReleaseGroup(rel);
+        }
+
+        return list;
+    }
+
+    public boolean hasMoreReleaseGroups() {
+        if (getArtist() == null) {
+            return true;
+        }
+        if (releaseGroupBrowse == null) {
+            return true;
+        }
         return releaseGroupBrowse.hasMore();
     }
 
-    public List <ReleaseWs2> getFullReleaseList() {
-        
-         if (getArtist() == null) return null;
-         getIncludes().setReleases(true);
-         if (releaseBrowse == null ) initBrowses();
-         if (releaseBrowse == null ) return null;
-         if (!hasMoreReleases()) return getArtist().getReleases();
-         
-         List <ReleaseWs2> list = releaseBrowse.getFullList();
-        
-        for (ReleaseWs2 rel : list)
-         {
-             getArtist().addRelease(rel);
-         }
-        
-        return list;
-    }
-    public List <ReleaseWs2> getFirstReleaseListPage() {
-        
-        if (getArtist() == null) return null;
-        getIncludes().setReleases(true);
-        if (releaseBrowse == null ) initBrowses();
-        if (releaseBrowse == null ) return null;
-         
-         List <ReleaseWs2> list = releaseBrowse.getFirstPage();
-        
-        for (ReleaseWs2 rel : list)
-         {
-             getArtist().addRelease(rel);
-         }
-        
-        return list;
-    }
-    public List <ReleaseWs2> getNextReleaseListPage() {
+    public List<ReleaseWs2> getFullReleaseList() {
 
-        if (getArtist() == null) return null;
+        if (getArtist() == null) {
+            return null;
+        }
         getIncludes().setReleases(true);
-        if (releaseBrowse == null ) initBrowses();
-        if (releaseBrowse == null ) return null;
-        if (!hasMoreReleases()) return new ArrayList<ReleaseWs2> ();
-         
-        List <ReleaseWs2> list = releaseBrowse.getNextPage();
-        
-        for (ReleaseWs2 rel : list)
-         {
-             getArtist().addRelease(rel);
-         }
-        
+        if (releaseBrowse == null) {
+            initBrowses();
+        }
+        if (releaseBrowse == null) {
+            return null;
+        }
+        if (!hasMoreReleases()) {
+            return getArtist().getReleases();
+        }
+
+        List<ReleaseWs2> list = releaseBrowse.getFullList();
+
+        for (ReleaseWs2 rel : list) {
+            getArtist().addRelease(rel);
+        }
+
         return list;
     }
-    public boolean hasMoreReleases(){
-        if (getArtist() == null) return true;
-        if (releaseBrowse == null ) return true;
+
+    public List<ReleaseWs2> getFirstReleaseListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setReleases(true);
+        if (releaseBrowse == null) {
+            initBrowses();
+        }
+        if (releaseBrowse == null) {
+            return null;
+        }
+
+        List<ReleaseWs2> list = releaseBrowse.getFirstPage();
+
+        for (ReleaseWs2 rel : list) {
+            getArtist().addRelease(rel);
+        }
+
+        return list;
+    }
+
+    public List<ReleaseWs2> getNextReleaseListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setReleases(true);
+        if (releaseBrowse == null) {
+            initBrowses();
+        }
+        if (releaseBrowse == null) {
+            return null;
+        }
+        if (!hasMoreReleases()) {
+            return new ArrayList<ReleaseWs2>();
+        }
+
+        List<ReleaseWs2> list = releaseBrowse.getNextPage();
+
+        for (ReleaseWs2 rel : list) {
+            getArtist().addRelease(rel);
+        }
+
+        return list;
+    }
+
+    public boolean hasMoreReleases() {
+        if (getArtist() == null) {
+            return true;
+        }
+        if (releaseBrowse == null) {
+            return true;
+        }
         return releaseBrowse.hasMore();
     }
-    public List <ReleaseWs2> getFullReleaseVAList() {
-        
-         if (getArtist() == null) return null;
-         getIncludes().setVariousArtists(true);
-         if (releaseVABrowse == null ) initBrowses();
-         if (releaseVABrowse == null ) return null;
-         if (!hasMoreVAReleases()) return getArtist().getReleasesVA();
-         
-         List <ReleaseWs2> list = releaseVABrowse.getFullList();
-        
-        for (ReleaseWs2 rel : list)
-         {
-             getArtist().addReleaseVA(rel);
-         }
-        
-        return list;
-    }
-    public List <ReleaseWs2> getFirstReleaseVAListPage() {
-        
-        if (getArtist() == null) return null;
-        getIncludes().setVariousArtists(true);
-        if (releaseVABrowse == null ) initBrowses();
-        if (releaseVABrowse == null ) return null;
-         
-         List <ReleaseWs2> list = releaseVABrowse.getFirstPage();
-        
-        for (ReleaseWs2 rel : list)
-         {
-             getArtist().addReleaseVA(rel);
-         }
-        
-        return list;
-    }
-    public List <ReleaseWs2> getNextReleaseVAListPage() {
 
-        if (getArtist() == null) return null;
+    public List<ReleaseWs2> getFullReleaseVAList() {
+
+        if (getArtist() == null) {
+            return null;
+        }
         getIncludes().setVariousArtists(true);
-        if (releaseVABrowse == null ) initBrowses();
-        if (releaseVABrowse == null ) return null;
-        if (!hasMoreVAReleases()) return new ArrayList<ReleaseWs2> ();
-         
-        List <ReleaseWs2> list = releaseVABrowse.getNextPage();
-        
-        for (ReleaseWs2 rel : list)
-         {
-             getArtist().addReleaseVA(rel);
-         }
-        
+        if (releaseVABrowse == null) {
+            initBrowses();
+        }
+        if (releaseVABrowse == null) {
+            return null;
+        }
+        if (!hasMoreVAReleases()) {
+            return getArtist().getReleasesVA();
+        }
+
+        List<ReleaseWs2> list = releaseVABrowse.getFullList();
+
+        for (ReleaseWs2 rel : list) {
+            getArtist().addReleaseVA(rel);
+        }
+
         return list;
     }
-    public boolean hasMoreVAReleases(){
-        if (getArtist() == null) return true;
-        if (releaseVABrowse == null ) return true;
+
+    public List<ReleaseWs2> getFirstReleaseVAListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setVariousArtists(true);
+        if (releaseVABrowse == null) {
+            initBrowses();
+        }
+        if (releaseVABrowse == null) {
+            return null;
+        }
+
+        List<ReleaseWs2> list = releaseVABrowse.getFirstPage();
+
+        for (ReleaseWs2 rel : list) {
+            getArtist().addReleaseVA(rel);
+        }
+
+        return list;
+    }
+
+    public List<ReleaseWs2> getNextReleaseVAListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setVariousArtists(true);
+        if (releaseVABrowse == null) {
+            initBrowses();
+        }
+        if (releaseVABrowse == null) {
+            return null;
+        }
+        if (!hasMoreVAReleases()) {
+            return new ArrayList<ReleaseWs2>();
+        }
+
+        List<ReleaseWs2> list = releaseVABrowse.getNextPage();
+
+        for (ReleaseWs2 rel : list) {
+            getArtist().addReleaseVA(rel);
+        }
+
+        return list;
+    }
+
+    public boolean hasMoreVAReleases() {
+        if (getArtist() == null) {
+            return true;
+        }
+        if (releaseVABrowse == null) {
+            return true;
+        }
         return releaseVABrowse.hasMore();
     }
-    public List <RecordingWs2> getFullRecordingList() {
-        
-         if (getArtist() == null) return null;
-         getIncludes().setRecordings(true);
-         if (recordingBrowse == null ) initBrowses();
-         if (recordingBrowse == null ) return null;
-         if (!hasMoreRecordings()) return getArtist().getRecordings();
-         
-         List <RecordingWs2> list = recordingBrowse.getFullList();
-        
-        for (RecordingWs2 rel : list)
-         {
-             getArtist().addRecording(rel);
-         }
-        
-        return list;
-    }
-    public List <RecordingWs2> getFirstRecordingListPage() {
-        
-        if (getArtist() == null) return null;
-        getIncludes().setRecordings(true);
-        if (recordingBrowse == null ) initBrowses();
-        if (recordingBrowse == null ) return null;
-         
-         List <RecordingWs2> list = recordingBrowse.getFirstPage();
-        
-        for (RecordingWs2 rel : list)
-         {
-             getArtist().addRecording(rel);
-         }
-        
-        return list;
-    }
-    public List <RecordingWs2> getNextRecordingListPage() {
 
-        if (getArtist() == null) return null;
+    public List<RecordingWs2> getFullRecordingList() {
+
+        if (getArtist() == null) {
+            return null;
+        }
         getIncludes().setRecordings(true);
-        if (recordingBrowse == null ) initBrowses();
-        if (recordingBrowse == null ) return null;
-        if (!hasMoreRecordings()) return new ArrayList<RecordingWs2> ();
-         
-        List <RecordingWs2> list = recordingBrowse.getNextPage();
-        
-        for (RecordingWs2 rel : list)
-         {
-             getArtist().addRecording(rel);
-         }
-        
+        if (recordingBrowse == null) {
+            initBrowses();
+        }
+        if (recordingBrowse == null) {
+            return null;
+        }
+        if (!hasMoreRecordings()) {
+            return getArtist().getRecordings();
+        }
+
+        List<RecordingWs2> list = recordingBrowse.getFullList();
+
+        for (RecordingWs2 rel : list) {
+            getArtist().addRecording(rel);
+        }
+
         return list;
     }
-    public boolean hasMoreRecordings(){
-        if (getArtist() == null) return true;
-        if (recordingBrowse == null ) return true;
+
+    public List<RecordingWs2> getFirstRecordingListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setRecordings(true);
+        if (recordingBrowse == null) {
+            initBrowses();
+        }
+        if (recordingBrowse == null) {
+            return null;
+        }
+
+        List<RecordingWs2> list = recordingBrowse.getFirstPage();
+
+        for (RecordingWs2 rel : list) {
+            getArtist().addRecording(rel);
+        }
+
+        return list;
+    }
+
+    public List<RecordingWs2> getNextRecordingListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setRecordings(true);
+        if (recordingBrowse == null) {
+            initBrowses();
+        }
+        if (recordingBrowse == null) {
+            return null;
+        }
+        if (!hasMoreRecordings()) {
+            return new ArrayList<RecordingWs2>();
+        }
+
+        List<RecordingWs2> list = recordingBrowse.getNextPage();
+
+        for (RecordingWs2 rel : list) {
+            getArtist().addRecording(rel);
+        }
+
+        return list;
+    }
+
+    public boolean hasMoreRecordings() {
+        if (getArtist() == null) {
+            return true;
+        }
+        if (recordingBrowse == null) {
+            return true;
+        }
         return recordingBrowse.hasMore();
     }
-    public List <WorkWs2> getFullWorkList() {
-        
-         if (getArtist() == null) return null;
-         getIncludes().setWorks(true);
-         if (workBrowse == null ) initBrowses();
-         if (workBrowse == null ) return null;
-         if (!hasMoreWorks()) return getArtist().getWorks();
-         
-         List <WorkWs2> list = workBrowse.getFullList();
-        
-        for (WorkWs2 rel : list)
-         {
-             getArtist().addWork(rel);
-         }
-        
-        return list;
-    }
-    public List <WorkWs2> getFirstWorkListPage() {
-        
-        if (getArtist() == null) return null;
-        getIncludes().setWorks(true);
-        if (workBrowse == null ) initBrowses();
-        if (workBrowse == null ) return null;
-         
-        List <WorkWs2> list = workBrowse.getFirstPage();
-        
-        for (WorkWs2 rel : list)
-         {
-             getArtist().addWork(rel);
-         }
-        
-        return list;
-    }
-    public List <WorkWs2> getNextWorkListPage() {
 
-        if (getArtist() == null) return null;
+    public List<WorkWs2> getFullWorkList() {
+
+        if (getArtist() == null) {
+            return null;
+        }
         getIncludes().setWorks(true);
-        if (workBrowse == null ) initBrowses();
-        if (workBrowse == null ) return null;
-        if (!hasMoreWorks()) return new ArrayList<WorkWs2> ();
-         
-        List <WorkWs2> list = workBrowse.getNextPage();
-        
-        for (WorkWs2 rel : list)
-         {
-             getArtist().addWork(rel);
-         }
-        
+        if (workBrowse == null) {
+            initBrowses();
+        }
+        if (workBrowse == null) {
+            return null;
+        }
+        if (!hasMoreWorks()) {
+            return getArtist().getWorks();
+        }
+
+        List<WorkWs2> list = workBrowse.getFullList();
+
+        for (WorkWs2 rel : list) {
+            getArtist().addWork(rel);
+        }
+
         return list;
     }
-    public boolean hasMoreWorks(){
-        if (getArtist() == null) return true;
-        if (workBrowse == null ) return true;
+
+    public List<WorkWs2> getFirstWorkListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setWorks(true);
+        if (workBrowse == null) {
+            initBrowses();
+        }
+        if (workBrowse == null) {
+            return null;
+        }
+
+        List<WorkWs2> list = workBrowse.getFirstPage();
+
+        for (WorkWs2 rel : list) {
+            getArtist().addWork(rel);
+        }
+
+        return list;
+    }
+
+    public List<WorkWs2> getNextWorkListPage() {
+
+        if (getArtist() == null) {
+            return null;
+        }
+        getIncludes().setWorks(true);
+        if (workBrowse == null) {
+            initBrowses();
+        }
+        if (workBrowse == null) {
+            return null;
+        }
+        if (!hasMoreWorks()) {
+            return new ArrayList<WorkWs2>();
+        }
+
+        List<WorkWs2> list = workBrowse.getNextPage();
+
+        for (WorkWs2 rel : list) {
+            getArtist().addWork(rel);
+        }
+
+        return list;
+    }
+
+    public boolean hasMoreWorks() {
+        if (getArtist() == null) {
+            return true;
+        }
+        if (workBrowse == null) {
+            return true;
+        }
         return workBrowse.hasMore();
     }
 
-    private ReleaseGroupIncludesWs2 getDefaultReleaseGroupInclude(ArtistIncludesWs2 artistinc){
-        
-        ReleaseGroupIncludesWs2 inc =new ReleaseGroupIncludesWs2();
-        
+    private ReleaseGroupIncludesWs2 getDefaultReleaseGroupInclude(ArtistIncludesWs2 artistinc) {
+
+        ReleaseGroupIncludesWs2 inc = new ReleaseGroupIncludesWs2();
+
         inc.setArtistCredits(true);
         inc.setReleases(false);
-        
+
         inc.setUrlRelations(false);
         inc.setLabelRelations(false);
         inc.setArtistRelations(false);
@@ -648,30 +809,33 @@ public class Artist extends Controller{
         inc.setReleaseRelations(false);
         inc.setRecordingRelations(false);
         inc.setWorkRelations(false);
-        
+
         inc.setAreaRelations(false);
         inc.setPlaceRelations(false);
         inc.setInstrumentRelations(false);
         inc.setSeriesRelations(false);
 
-        if (artistinc == null) return inc;
-        
+        if (artistinc == null) {
+            return inc;
+        }
+
         //if (artistinc.isRecordingLevelRelations()) inc.setRecordingLevelRelations(true);
         //if (artistinc.isWorkLevelRelations()) inc.setWorkLevelRelations(true);
 
         return inc;
     }
-        private ReleaseIncludesWs2 getDefaultReleaseInclude(ArtistIncludesWs2 artistinc){
-        
-        ReleaseIncludesWs2 inc =new ReleaseIncludesWs2();
-        
+
+    private ReleaseIncludesWs2 getDefaultReleaseInclude(ArtistIncludesWs2 artistinc) {
+
+        ReleaseIncludesWs2 inc = new ReleaseIncludesWs2();
+
         inc.setArtistCredits(true);
         inc.setLabel(true);
         inc.setMedia(true);
         inc.setReleaseGroups(true);
 
         inc.setRecordings(false);
-        
+
         inc.setUrlRelations(false);
         inc.setLabelRelations(false);
         inc.setArtistRelations(false);
@@ -679,31 +843,36 @@ public class Artist extends Controller{
         inc.setReleaseRelations(false);
         inc.setRecordingRelations(false);
         inc.setWorkRelations(false);
-        
+
         inc.setAreaRelations(false);
         inc.setPlaceRelations(false);
         inc.setInstrumentRelations(false);
         inc.setSeriesRelations(false);
-        
-        if (artistinc == null) return inc;
-        
-        if (artistinc.isDiscids()) inc.setDiscids(true);
+
+        if (artistinc == null) {
+            return inc;
+        }
+
+        if (artistinc.isDiscids()) {
+            inc.setDiscids(true);
+        }
         //if (artistinc.isRecordingLevelRelations()) inc.setRecordingLevelRelations(true);
         //if (artistinc.isWorkLevelRelations()) inc.setWorkLevelRelations(true);
 
         return inc;
     }
-    private ReleaseIncludesWs2 getDefaultReleaseVAInclude(ArtistIncludesWs2 artistinc){
-        
-        ReleaseIncludesWs2 inc =new ReleaseIncludesWs2();
-        
+
+    private ReleaseIncludesWs2 getDefaultReleaseVAInclude(ArtistIncludesWs2 artistinc) {
+
+        ReleaseIncludesWs2 inc = new ReleaseIncludesWs2();
+
         inc.setArtistCredits(true);
         inc.setLabel(true);
         inc.setMedia(true);
         inc.setReleaseGroups(true);
 
         inc.setRecordings(false);
-        
+
         inc.setUrlRelations(false);
         inc.setLabelRelations(false);
         inc.setArtistRelations(false);
@@ -711,31 +880,36 @@ public class Artist extends Controller{
         inc.setReleaseRelations(false);
         inc.setRecordingRelations(false);
         inc.setWorkRelations(false);
-        
+
         inc.setAreaRelations(false);
         inc.setPlaceRelations(false);
         inc.setInstrumentRelations(false);
         inc.setSeriesRelations(false);
-        
-        if (artistinc == null) return inc;
-        
-        if (artistinc.isDiscids()) inc.setDiscids(true);
+
+        if (artistinc == null) {
+            return inc;
+        }
+
+        if (artistinc.isDiscids()) {
+            inc.setDiscids(true);
+        }
         //if (artistinc.isRecordingLevelRelations()) inc.setRecordingLevelRelations(true);
         //if (artistinc.isWorkLevelRelations()) inc.setWorkLevelRelations(true);
 
         return inc;
     }
-    private RecordingIncludesWs2 getDefaultRecordingInclude(ArtistIncludesWs2 artistinc){
-        
-        RecordingIncludesWs2 inc =new RecordingIncludesWs2();
-        
+
+    private RecordingIncludesWs2 getDefaultRecordingInclude(ArtistIncludesWs2 artistinc) {
+
+        RecordingIncludesWs2 inc = new RecordingIncludesWs2();
+
         inc.setArtistCredits(true);
         inc.setIsrcs(true);
-        
+
         inc.setPuids(false);
 
         inc.setReleases(false);
-        
+
         inc.setUrlRelations(false);
         inc.setLabelRelations(false);
         inc.setArtistRelations(false);
@@ -743,201 +917,228 @@ public class Artist extends Controller{
         inc.setReleaseRelations(false);
         inc.setRecordingRelations(false);
         inc.setWorkRelations(false);
-        
+
         inc.setAreaRelations(false);
         inc.setPlaceRelations(false);
         inc.setInstrumentRelations(false);
         inc.setSeriesRelations(false);
-        
-        if (artistinc == null) return inc;
-      
+
+        if (artistinc == null) {
+            return inc;
+        }
+
         //if (artistinc.isRecordingLevelRelations()) inc.setRecordingLevelRelations(true);
         //if (artistinc.isWorkLevelRelations()) inc.setWorkLevelRelations(true);
 
 
         return inc;
     }
-     private WorkIncludesWs2 getDefaultWorkInclude(ArtistIncludesWs2 artistinc){
-        
-        WorkIncludesWs2 inc =new WorkIncludesWs2();
-        
+
+    private WorkIncludesWs2 getDefaultWorkInclude(ArtistIncludesWs2 artistinc) {
+
+        WorkIncludesWs2 inc = new WorkIncludesWs2();
+
         inc.setArtistRelations(true);
-        
+
         inc.setUrlRelations(false);
         inc.setLabelRelations(false);
         inc.setReleaseGroupRelations(false);
         inc.setReleaseRelations(false);
         inc.setRecordingRelations(false);
         inc.setWorkRelations(false);
-        
+
         inc.setAreaRelations(false);
         inc.setPlaceRelations(false);
         inc.setInstrumentRelations(false);
         inc.setSeriesRelations(false);
-        
-        if (artistinc == null) return inc;
-       
+
+        if (artistinc == null) {
+            return inc;
+        }
+
         //if (artistinc.isRecordingLevelRelations()) inc.setRecordingLevelRelations(true);
         //if (artistinc.isWorkLevelRelations()) inc.setWorkLevelRelations(true);
 
         return inc;
     }
-      private ReleaseGroupBrowseFilterWs2 getDefaultReleaseGroupBrowseFilter(){
-        
+
+    private ReleaseGroupBrowseFilterWs2 getDefaultReleaseGroupBrowseFilter() {
+
         ReleaseGroupBrowseFilterWs2 f = new ReleaseGroupBrowseFilterWs2();
-        
+
         f.getReleaseTypeFilter().setTypeAll(true);
 
-        f.setLimit((long)getBrowseLimit());
-        f.setOffset((long)0);
-        
+        f.setLimit((long) getBrowseLimit());
+        f.setOffset((long) 0);
+
         return f;
 
     }
-    private ReleaseBrowseFilterWs2 getDefaultReleaseBrowseFilter(){
-        
+
+    private ReleaseBrowseFilterWs2 getDefaultReleaseBrowseFilter() {
+
         ReleaseBrowseFilterWs2 f = new ReleaseBrowseFilterWs2();
-        
+
         f.getReleaseTypeFilter().setTypeAll(true);
         f.getReleaseStatusFilter().setStatusAll(true);
 
-        f.setLimit((long)getBrowseLimit());
-        f.setOffset((long)0);
-        
+        f.setLimit((long) getBrowseLimit());
+        f.setOffset((long) 0);
+
         return f;
 
     }
-    private ReleaseBrowseFilterWs2 getDefaultReleaseVABrowseFilter(){
-        
+
+    private ReleaseBrowseFilterWs2 getDefaultReleaseVABrowseFilter() {
+
         ReleaseBrowseFilterWs2 f = new ReleaseBrowseFilterWs2();
-        
+
         f.getReleaseTypeFilter().setTypeAll(true);
         f.getReleaseStatusFilter().setStatusAll(true);
 
-        f.setLimit((long)getBrowseLimit());
-        f.setOffset((long)0);
-        
+        f.setLimit((long) getBrowseLimit());
+        f.setOffset((long) 0);
+
         return f;
 
     }
-    private RecordingBrowseFilterWs2 getDefaultRecordingBrowseFilter(){
-        
+
+    private RecordingBrowseFilterWs2 getDefaultRecordingBrowseFilter() {
+
         RecordingBrowseFilterWs2 f = new RecordingBrowseFilterWs2();
-        
-        f.setLimit((long)getBrowseLimit());
-        f.setOffset((long)0);
-        
+
+        f.setLimit((long) getBrowseLimit());
+        f.setOffset((long) 0);
+
         return f;
 
     }
-    private WorkBrowseFilterWs2 getDefaultWorkBrowseFilter(){
-        
+
+    private WorkBrowseFilterWs2 getDefaultWorkBrowseFilter() {
+
         WorkBrowseFilterWs2 f = new WorkBrowseFilterWs2();
-        
-        f.setLimit((long)getBrowseLimit());
-        f.setOffset((long)0);
-        
+
+        f.setLimit((long) getBrowseLimit());
+        f.setOffset((long) 0);
+
         return f;
 
     }
- 
+
 
     /**
      * @return the releaseGroupIncludes
      */
     public ReleaseGroupIncludesWs2 getReleaseGroupIncludes() {
-        if (releaseGroupIncludes == null)
+        if (releaseGroupIncludes == null) {
             releaseGroupIncludes = getDefaultReleaseGroupInclude(getIncludes());
+        }
         return releaseGroupIncludes;
     }
+
     /**
      * @return the releaseIncludes
      */
     public ReleaseIncludesWs2 getReleaseIncludes() {
-        if (releaseIncludes == null)
+        if (releaseIncludes == null) {
             releaseIncludes = getDefaultReleaseInclude(getIncludes());
+        }
         return releaseIncludes;
     }
+
     /**
      * @return the releaseVAIncludes
      */
     public ReleaseIncludesWs2 getReleaseVAIncludes() {
-        if (releaseVAIncludes == null)
+        if (releaseVAIncludes == null) {
             releaseVAIncludes = getDefaultReleaseVAInclude(getIncludes());
+        }
         return releaseVAIncludes;
     }
+
     /**
      * @return the recordingIncludes
      */
     public RecordingIncludesWs2 getRecordingIncludes() {
-        if (recordingIncludes == null)
+        if (recordingIncludes == null) {
             recordingIncludes = getDefaultRecordingInclude(getIncludes());
+        }
         return recordingIncludes;
     }
+
     /**
      * @return the workIncludes
      */
     public WorkIncludesWs2 getWorkIncludes() {
-        if (workIncludes == null)
+        if (workIncludes == null) {
             workIncludes = getDefaultWorkInclude(getIncludes());
+        }
         return workIncludes;
     }
-     /**
+
+    /**
      * @param releaseGroupIncludes the releaseGroupIncludes to set
      */
     public void setReleaseGroupIncludes(ReleaseGroupIncludesWs2 releaseGroupIncludes) {
         this.releaseGroupIncludes = releaseGroupIncludes;
     }
+
     /**
      * @param releaseIncludes the releaseIncludes to set
      */
     public void setReleaseIncludes(ReleaseIncludesWs2 releaseIncludes) {
         this.releaseIncludes = releaseIncludes;
     }
+
     /**
      * @param releaseIncludes the releaseIncludes to set
      */
     public void setReleaseVAIncludes(ReleaseIncludesWs2 releaseVAIncludes) {
         this.releaseVAIncludes = releaseVAIncludes;
     }
+
     /**
      * @param recordingIncludes the recordingIncludes to set
      */
     public void setRecordingIncludes(RecordingIncludesWs2 recordingIncludes) {
         this.recordingIncludes = recordingIncludes;
     }
+
     /**
      * @param workIncludes the workIncludes to set
      */
     public void setWorkIncludes(WorkIncludesWs2 workIncludes) {
         this.workIncludes = workIncludes;
     }
-    
+
     /**
      * @return the releaseGroupBrowseFilter
      */
     public ReleaseGroupBrowseFilterWs2 getReleaseGroupBrowseFilter() {
-        if (releaseGroupBrowseFilter == null)
+        if (releaseGroupBrowseFilter == null) {
             releaseGroupBrowseFilter = getDefaultReleaseGroupBrowseFilter();
+        }
         return releaseGroupBrowseFilter;
     }
 
-    
+
     /**
      * @return the releaseBrowseFilter
      */
     public ReleaseBrowseFilterWs2 getReleaseBrowseFilter() {
-         if (releaseBrowseFilter == null)
+        if (releaseBrowseFilter == null) {
             releaseBrowseFilter = getDefaultReleaseBrowseFilter();
-         return releaseBrowseFilter;
+        }
+        return releaseBrowseFilter;
     }
 
     /**
      * @return the releaseVABrowseFilter
      */
     public ReleaseBrowseFilterWs2 getReleaseVABrowseFilter() {
-        if (releaseVABrowseFilter == null)
+        if (releaseVABrowseFilter == null) {
             releaseVABrowseFilter = getDefaultReleaseVABrowseFilter();
+        }
         return releaseVABrowseFilter;
     }
 
@@ -945,8 +1146,9 @@ public class Artist extends Controller{
      * @return the recordingBrowseFilter
      */
     public RecordingBrowseFilterWs2 getRecordingBrowseFilter() {
-         if (recordingBrowseFilter == null)
+        if (recordingBrowseFilter == null) {
             recordingBrowseFilter = getDefaultRecordingBrowseFilter();
+        }
         return recordingBrowseFilter;
     }
 
@@ -954,10 +1156,12 @@ public class Artist extends Controller{
      * @return the workBrowseFilter
      */
     public WorkBrowseFilterWs2 getWorkBrowseFilter() {
-        if (workBrowseFilter == null)
+        if (workBrowseFilter == null) {
             workBrowseFilter = getDefaultWorkBrowseFilter();
+        }
         return workBrowseFilter;
     }
+
     /**
      * @param releaseBrowseFilter the releaseBrowseFilter to set
      */

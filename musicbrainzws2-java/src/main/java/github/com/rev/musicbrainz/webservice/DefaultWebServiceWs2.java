@@ -1,15 +1,5 @@
 package github.com.rev.musicbrainz.webservice;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
-import java.util.logging.Logger;
-import org.apache.commons.lang3.StringUtils;
 import github.com.rev.musicbrainz.DomainsWs2;
 import github.com.rev.musicbrainz.query.submission.SubmissionException;
 import github.com.rev.musicbrainz.wsxml.MbXMLException;
@@ -18,39 +8,50 @@ import github.com.rev.musicbrainz.wsxml.MbXmlWriter;
 import github.com.rev.musicbrainz.wsxml.element.Metadata;
 import github.com.rev.musicbrainz.wsxml.impl.JDOMParserWs2;
 import github.com.rev.musicbrainz.wsxml.impl.JDOMWriterWs2;
+import org.apache.commons.lang3.StringUtils;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.logging.Logger;
 
 /**
  * A default abstract web service implementation that provides common
  * properties of a web service client that can be extended.
  */
 public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebService {
-	
+
     static Logger log = Logger.getLogger(DefaultWebServiceWs2.class.getName());
 
     /**
      * Encoding used to encode url parameters
      */
     protected static final String URL_ENCODING = "UTF-8";
-    
-    /* Starting on May 16th, 2011 the MusicBrainz Web Service requires all 
-     * requests to have a proper User-Agent header that identifies the 
-     * application and the version of the application making the request. 
-     * Please do no use generic User-Agent strings like 
-     * “Java/1.6.0_24″ or “PHP/5.3.4″ -- they do not allow us to identify 
-     * the application making the request. On November 16, 2011 we're going 
-     * to start blocking requests with generic User-Agent strings 
-     * 
+
+    /* Starting on May 16th, 2011 the MusicBrainz Web Service requires all
+     * requests to have a proper User-Agent header that identifies the
+     * application and the version of the application making the request.
+     * Please do no use generic User-Agent strings like
+     * “Java/1.6.0_24″ or “PHP/5.3.4″ -- they do not allow us to identify
+     * the application making the request. On November 16, 2011 we're going
+     * to start blocking requests with generic User-Agent strings
+     *
      */
     protected static final String USERAGENT
-       = "MusicBrainz-Java/2.01beta http://code.google.com/p/musicbrainzws2-java/";
+            = "MusicBrainz-Java/2.01beta http://code.google.com/p/musicbrainzws2-java/";
 
-     /**
+    /**
      * The authentication scheme, could only be DIGEST.
      */
     protected static final String SCHEME = "digest";
-    
+
     /**
-     * A string that is used in the web service url 
+     * A string that is used in the web service url
+     *
      * @see DefaultWebServiceWs1#makeUrl(String, String, Map, Map, String, String)
      */
     protected static final String PATHPREFIX = "/ws";
@@ -60,7 +61,7 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
      */
     private String host = MAINHOST;
 
-       /**
+    /**
      * The realm for authentication, defaults to AUTHREALM
      */
     private String realm = AUTHREALM;
@@ -68,12 +69,12 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
     /**
      * The protocol, defaults to http
      */
-    private String protocol = "http";
+    private final String protocol = "http";
 
     /**
      * The port, defaults to null
      */
-    private Integer port = null; 
+    private final Integer port = null;
 
     /**
      * XML parser used to consume the response stream
@@ -95,42 +96,43 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
      * The recommended format is "application-version", where version does not contain 
      * a - character.
      */
-        /**
+    /**
      * The client credential of your application
      * example.app-0.4.7
      */
-   private String client="";
+    private String client = "";
 
     /**
- * The username for your Musicbrainz account
- */
-   private String username;
+     * The username for your Musicbrainz account
+     */
+    private String username;
     /**
- * The password for your Musicbrainz account
- */
-   private String password;
+     * The password for your Musicbrainz account
+     */
+    private String password;
 
- /**
-  * Default Constructor that uses {@link JDOMParserWs2}
-  */
+    /**
+     * Default Constructor that uses {@link JDOMParserWs2}
+     */
     public DefaultWebServiceWs2() {
-            this.parser = new JDOMParserWs2();
-            this.writer = new JDOMWriterWs2();
+        this.parser = new JDOMParserWs2();
+        this.writer = new JDOMWriterWs2();
     }
 
     /**
      * Constructor to inject a custom parser and writer
+     *
      * @param parser XML parser used to consume the response stream
      * @param writer XML used to produce the body of POST requests
      */
-    public DefaultWebServiceWs2(MbXmlParser  parser, MbXmlWriter  writer) {
-            this.parser = parser;
-            this.writer = writer;
+    public DefaultWebServiceWs2(MbXmlParser parser, MbXmlWriter writer) {
+        this.parser = parser;
+        this.writer = writer;
     }
 
     /**
      * Sends a GET request to the specified url
-     * 
+     *
      * @param url The URL
      * @return A populated {@link Metadata} object
      * @throws WebServiceException
@@ -139,191 +141,198 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
 
     /**
      * Sends a POST request to the specified url.
-     * 
+     *
      * @param url
      * @param data Input stream of the data to post
      * @throws WebServiceException
      */
     protected abstract Metadata doPost(String url, Metadata md) throws WebServiceException, MbXMLException;
 
-       /**
+    /**
      * Sends a PUT request to the specified url.
-     * 
+     *
      * @param url
      * @throws WebServiceException
      */
-        protected abstract Metadata doPut (String url) throws WebServiceException, MbXMLException;
+    protected abstract Metadata doPut(String url) throws WebServiceException, MbXMLException;
 
-        /**
+    /**
      * Sends a DELETE request to the specified url.
-     * 
+     *
      * @param url
      * @throws WebServiceException
      */
-        protected abstract Metadata doDelete (String url) throws WebServiceException, MbXMLException;
+    protected abstract Metadata doDelete(String url) throws WebServiceException, MbXMLException;
 
 
-        /* (non-Javadoc)
+    /* (non-Javadoc)
      * @see github.com.rev.musicbrainz.webservice.WebService#get(java.lang.String, java.lang.String, java.util.List, java.util.Map)
      */
-    public Metadata get(String entity, String id, List<String> includeParams, Map<String, String> filterParams) throws WebServiceException, MbXMLException
-    {
-            String url = this.makeURL(entity, id, includeParams, filterParams);
+    public Metadata get(String entity, String id, List<String> includeParams, Map<String, String> filterParams)
+            throws WebServiceException, MbXMLException {
+        String url = this.makeURL(entity, id, includeParams, filterParams);
 
-            //log.debug("GET " + url);
+        //log.debug("GET " + url);
 
-            return doGet(url);
+        return doGet(url);
     }
 
     /* (non-Javadoc)
      * @see github.com.rev.musicbrainz.webservice.WebService#post(java.lang.String, java.lang.String, java.io.InputStream)
      */
-    public Metadata post(Metadata metadata) throws WebServiceException, MbXMLException 
-    {
-            if (metadata == null || metadata.getSubmissionWs2() == null) 
-                throw new SubmissionException ("Empty Submission not allowed");
-            
-            String url = this.makeURLforPost(metadata.getSubmissionWs2().getSubmissionType(),getClient());
+    public Metadata post(Metadata metadata) throws WebServiceException, MbXMLException {
+        if (metadata == null || metadata.getSubmissionWs2() == null) {
+            throw new SubmissionException("Empty Submission not allowed");
+        }
 
-            //log.debug("POST " + url);
+        String url = this.makeURLforPost(metadata.getSubmissionWs2().getSubmissionType(), getClient());
 
-            return doPost(url, metadata);
-    }
-    /* (non-Javadoc)
- * @see github.com.rev.musicbrainz.webservice.WebService#put(java.lang.String, java.lang.String, List<String>)
- */
-    public Metadata put (String entity, String id, List<String> data) throws WebServiceException, MbXMLException{
+        //log.debug("POST " + url);
 
-            return doPut(buildRequest(entity,id,data));
-    };
-    /* (non-Javadoc)
- * @see github.com.rev.musicbrainz.webservice.WebService#delete(java.lang.String, java.lang.String, List<String>)
- */
-    public Metadata delete (String entity, String id, List<String> data) throws WebServiceException, MbXMLException{
-
-            return doDelete(buildRequest(entity,id,data));
+        return doPost(url, metadata);
     }
 
-protected String makeURLforPost(String submissionType,String client)
-{
+    /* (non-Javadoc)
+     * @see github.com.rev.musicbrainz.webservice.WebService#put(java.lang.String, java.lang.String, List<String>)
+     */
+    public Metadata put(String entity, String id, List<String> data) throws WebServiceException, MbXMLException {
+
+        return doPut(buildRequest(entity, id, data));
+    }
+
+    /* (non-Javadoc)
+     * @see github.com.rev.musicbrainz.webservice.WebService#delete(java.lang.String, java.lang.String, List<String>)
+     */
+    public Metadata delete(String entity, String id, List<String> data) throws WebServiceException, MbXMLException {
+
+        return doDelete(buildRequest(entity, id, data));
+    }
+
+    protected String makeURLforPost(String submissionType, String client) {
         StringBuffer url = new StringBuffer();
 
         // append protocol, host and port
         url.append(this.protocol).append("://").append(this.getHost());
-        if (this.port != null) url.append(":").append(this.port);
+        if (this.port != null) {
+            url.append(":").append(this.port);
+        }
 
         // append path
         url.append(PATHPREFIX).append("/")
                 .append(WS_VERSION).append("/")
-                         .append(submissionType).append("?client=")
-                         .append(client);
+                .append(submissionType).append("?client=")
+                .append(client);
 
         return url.toString();
     }
-    private String  buildRequest(String entity, String id, List<String> data){
 
-            String url = this.makeURL(entity, id, null, null);
-            StringBuilder buf=new StringBuilder();
+    private String buildRequest(String entity, String id, List<String> data) {
 
-            buf.append(url);
-            buf.append("/");
-            boolean begin=true;
-            for (String s : data)
-            {
-               if (!begin) buf.append(";");
-               begin = false;
-               buf.append(s);
+        String url = this.makeURL(entity, id, null, null);
+        StringBuilder buf = new StringBuilder();
+
+        buf.append(url);
+        buf.append("/");
+        boolean begin = true;
+        for (String s : data) {
+            if (!begin) {
+                buf.append(";");
             }
-            buf.append("?client=").append(getClient());
-            return buf.toString(); 
+            begin = false;
+            buf.append(s);
         }
+        buf.append("?client=").append(getClient());
+        return buf.toString();
+    }
+
     /**
      * Constructs a URL that can be used to query the web service. The url is made
      * up of the protocol, host, port, version, type, path and parameters.
-     * 
-     * @param entity The entity (i.e. type, e.g. 'artist') the request is targeting
-     * @param id The id of the entity 
+     *
+     * @param entity        The entity (i.e. type, e.g. 'artist') the request is targeting
+     * @param id            The id of the entity
      * @param includeParams A list containing values for the 'inc' parameter (can be null)
-     * @param filterParams Additional parameters depending on the entity (can be null)
-     * 
+     * @param filterParams  Additional parameters depending on the entity (can be null)
      * @return An URL as String
      */
-    protected String makeURL(String entity, String id, List<String> includeParams, Map<String, String> filterParams)
-    {
-            StringBuilder url = new StringBuilder();
-            Map<String, String> urlParams = new HashMap<String, String>();
+    protected String makeURL(String entity, String id, List<String> includeParams, Map<String, String> filterParams) {
+        StringBuilder url = new StringBuilder();
+        Map<String, String> urlParams = new HashMap<String, String>();
 
-            // Type is not requested/allowed anymore in ws2.
-            //urlParams.put("type", this.type);
+        // Type is not requested/allowed anymore in ws2.
+        //urlParams.put("type", this.type);
 
-                 // append filter params
+        // append filter params
 
-            if (filterParams != null) urlParams.putAll(filterParams);		
+        if (filterParams != null) {
+            urlParams.putAll(filterParams);
+        }
 
-            // append protocol, host and port
-            url.append(this.protocol).append("://").append(this.getHost());
-            if (this.port != null) url.append(":").append(this.port);
+        // append protocol, host and port
+        url.append(this.protocol).append("://").append(this.getHost());
+        if (this.port != null) {
+            url.append(":").append(this.port);
+        }
 
-            // append path
-            url.append(PATHPREFIX).append("/")
-                    .append(WS_VERSION).append("/")
-                    .append(entity).append("/")
-                    .append(id);
+        // append path
+        url.append(PATHPREFIX).append("/")
+                .append(WS_VERSION).append("/")
+                .append(entity).append("/")
+                .append(id);
 
-                  // Handle COLLECTION sintax exception.
+        // Handle COLLECTION sintax exception.
 
-                  if (entity.equals(COLLECTION) && !id.isEmpty())
-                  {
-                      url.append("/"+RELEASES_INC);
-                  }
+        if (entity.equals(COLLECTION) && !id.isEmpty()) {
+            url.append("/" + RELEASES_INC);
+        }
 
-            // build space separated include param
-            if (includeParams != null) {
-                    urlParams.put("inc", StringUtils.join(includeParams, "+"));
+        // build space separated include param
+        if (includeParams != null) {
+            urlParams.put("inc", StringUtils.join(includeParams, "+"));
+        }
+
+        // append params
+        url.append("?");
+        Iterator<Entry<String, String>> it = urlParams.entrySet().iterator();
+        while (it.hasNext()) {
+            Entry<String, String> e = it.next();
+            try {
+                url.append(e.getKey()).append("=").append(URLEncoder.encode(e.getValue(), URL_ENCODING)).append("&");
+            } catch (UnsupportedEncodingException ex) {
+                log.severe("Internal Error: Could not encode url parameter " + e.getKey());
             }
+        }
 
-            // append params
-            url.append("?");
-            Iterator<Entry<String, String>> it = urlParams.entrySet().iterator();
-            while (it.hasNext()) {
-                    Entry<String, String> e = it.next();
-                    try {
-                            url.append(e.getKey()).append("=").append(URLEncoder.encode(e.getValue(), URL_ENCODING)).append("&");
-                    } catch (UnsupportedEncodingException ex) {
-                            log.severe("Internal Error: Could not encode url parameter " + e.getKey());
-                    }
-            }
-
-            return url.substring(0, url.length()-1);
+        return url.substring(0, url.length() - 1);
     }
 
     /**
      * @return the parser
      */
     public MbXmlParser getParser() {
-            return parser;
+        return parser;
     }
 
     /**
      * @param parser the parser to set
      */
     public void setParser(MbXmlParser parser) {
-            this.parser = parser;
+        this.parser = parser;
     }
 
-        /**
-         * @return the host
-         */
-        public String getHost() {
-            return host;
-        }
+    /**
+     * @return the host
+     */
+    public String getHost() {
+        return host;
+    }
 
-        /**
-         * @param host the host to set
-         */
-        public void setHost(String host) {
-            this.host = host;
-        }
+    /**
+     * @param host the host to set
+     */
+    public void setHost(String host) {
+        this.host = host;
+    }
 
     /**
      * @return the username
@@ -366,6 +375,7 @@ protected String makeURLforPost(String submissionType,String client)
     public void setRealm(String realm) {
         this.realm = realm;
     }
+
     /**
      * @return the client
      */
@@ -393,5 +403,5 @@ protected String makeURLforPost(String submissionType,String client)
     public void setWriter(MbXmlWriter writer) {
         this.writer = writer;
     }
-        
+
 }

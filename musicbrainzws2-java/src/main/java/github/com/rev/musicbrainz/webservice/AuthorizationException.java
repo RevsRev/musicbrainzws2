@@ -6,32 +6,32 @@ package github.com.rev.musicbrainz.webservice;
  */
 public class AuthorizationException extends WebServiceException {
 
-	/**
-	 * Default constructor
-	 */
-	public AuthorizationException() {
-	}
+    /**
+     * Default constructor
+     */
+    public AuthorizationException() {
+    }
 
-	/**
-	 * @param message
-	 * @param cause
-	 */
-	public AuthorizationException(String message, Throwable cause) {
-		super(message, cause);
-	}
+    /**
+     * @param message
+     * @param cause
+     */
+    public AuthorizationException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
-	/**
-	 * @param message
-	 */
-	public AuthorizationException(String message) {
-		super(message);
-	}
+    /**
+     * @param message
+     */
+    public AuthorizationException(String message) {
+        super(message);
+    }
 
-	/**
-	 * @param cause
-	 */
-	public AuthorizationException(Throwable cause) {
-		super(cause);
-	}
+    /**
+     * @param cause
+     */
+    public AuthorizationException(Throwable cause) {
+        super(cause);
+    }
 
 }

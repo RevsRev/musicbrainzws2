@@ -1,39 +1,37 @@
 package github.com.rev.musicbrainz.filter.browsefilter;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import github.com.rev.musicbrainz.filter.ReleaseStatusFilterWs2;
 import github.com.rev.musicbrainz.filter.ReleaseTypeFilterWs2;
 
-public class ReleaseBrowseFilterWs2 extends BrowseFilterWs2 
-{
-    private ReleaseTypeFilterWs2 releaseTypeFilter =new ReleaseTypeFilterWs2();
-    private ReleaseStatusFilterWs2 releaseStatusFilter =new ReleaseStatusFilterWs2();
-    
-    private Boolean variousArtists= false;
-           
-        
+import java.util.HashMap;
+import java.util.Map;
+
+public class ReleaseBrowseFilterWs2 extends BrowseFilterWs2 {
+    private ReleaseTypeFilterWs2 releaseTypeFilter = new ReleaseTypeFilterWs2();
+    private ReleaseStatusFilterWs2 releaseStatusFilter = new ReleaseStatusFilterWs2();
+
+    private Boolean variousArtists = false;
+
+
     public ReleaseBrowseFilterWs2() {
-            super();
+        super();
     }
 
     @Override
-    public Map<String, String> createParameters() 
-    {
-            Map<String, String> map = super.createParameters();
-            
-            Map<String, String> localmap = new HashMap<String, String>();
-            //if (isVariousArtists()) 
-            //    map.put("track-artists", "");
-            // set related entity to "track_artists" instead. 
-            
-            //Combine default filter's parameters with release filter's
-            map.putAll(getReleaseTypeFilter().createParameters());
-            map.putAll(getReleaseStatusFilter().createParameters());
-            map.putAll(localmap);
+    public Map<String, String> createParameters() {
+        Map<String, String> map = super.createParameters();
 
-            return map;
+        Map<String, String> localmap = new HashMap<String, String>();
+        //if (isVariousArtists())
+        //    map.put("track-artists", "");
+        // set related entity to "track_artists" instead.
+
+        //Combine default filter's parameters with release filter's
+        map.putAll(getReleaseTypeFilter().createParameters());
+        map.putAll(getReleaseStatusFilter().createParameters());
+        map.putAll(localmap);
+
+        return map;
     }
 
     /**

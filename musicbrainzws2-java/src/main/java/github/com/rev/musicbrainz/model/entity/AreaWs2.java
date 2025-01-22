@@ -1,15 +1,8 @@
 package github.com.rev.musicbrainz.model.entity;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.apache.commons.lang3.StringUtils;
-import github.com.rev.musicbrainz.exception.MBWS2Exception;
 import github.com.rev.musicbrainz.controller.Area;
+import github.com.rev.musicbrainz.exception.MBWS2Exception;
 import github.com.rev.musicbrainz.model.LifeSpanWs2;
 import github.com.rev.musicbrainz.model.RelationWs2;
 import github.com.rev.musicbrainz.model.entity.listelement.ArtistListWs2;
@@ -17,52 +10,67 @@ import github.com.rev.musicbrainz.model.entity.listelement.LabelListWs2;
 import github.com.rev.musicbrainz.model.entity.listelement.PlaceListWs2;
 import github.com.rev.musicbrainz.model.entity.listelement.ReleaseListWs2;
 import github.com.rev.musicbrainz.utils.MbUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * <p>A Area definition.
- *      Areas are geographic regions or settlements.
- *      See Wikidata for details on how areas are added and updated. 
-	 
+ * Areas are geographic regions or settlements.
+ * See Wikidata for details on how areas are added and updated.
+ *
  * </p>
  */
-public class AreaWs2 extends EntityWs2 
-{
-    private static Logger log = Logger.getLogger(AreaWs2.class.getName());
+public class AreaWs2 extends EntityWs2 {
+    private static final Logger log = Logger.getLogger(AreaWs2.class.getName());
 
     private String typeUri;
     private String name;
     private String sortName;
     private String disambiguation;
     private LifeSpanWs2 lifespan;
-    
-    private List<String> iso_3166_1_codes= new ArrayList<String>();
-    private List<String> iso_3166_2_codes= new ArrayList<String>();
-    private List<String> iso_3166_3_codes= new ArrayList<String>();
+
+    private List<String> iso_3166_1_codes = new ArrayList<String>();
+    private List<String> iso_3166_2_codes = new ArrayList<String>();
+    private List<String> iso_3166_3_codes = new ArrayList<String>();
 
     private ArtistListWs2 artistList = new ArtistListWs2();
     private LabelListWs2 labelList = new LabelListWs2();
     private ReleaseListWs2 releaseList = new ReleaseListWs2();
     private PlaceListWs2 placeList = new PlaceListWs2();
-        
+
     private AreaWs2 superarea;
- /**
+
+    /**
      * @return the typeUri
      */
     public String getTypeUri() {
         return typeUri;
     }
+
     public String getType() {
 
-       if (getTypeUri()== null) return "";
-       if (getTypeUri().isEmpty()) return "";
-       return MbUtils.extractTypeFromURI(getTypeUri());
+        if (getTypeUri() == null) {
+            return "";
+        }
+        if (getTypeUri().isEmpty()) {
+            return "";
+        }
+        return MbUtils.extractTypeFromURI(getTypeUri());
     }
+
     /**
      * @param type the typeUri to set
      */
     public void setTypeUri(String typeUri) {
         this.typeUri = typeUri;
     }
+
     /**
      * @return the name
      */
@@ -108,7 +116,7 @@ public class AreaWs2 extends EntityWs2
     /**
      * @return the iso_3166_1_codes
      */
-    public  List<String> getIso_3166_1_codes() {
+    public List<String> getIso_3166_1_codes() {
         return iso_3166_1_codes;
     }
 
@@ -132,6 +140,7 @@ public class AreaWs2 extends EntityWs2
     public void setIso_3166_2_codes(List<String> iso_3166_2_codes) {
         this.iso_3166_2_codes = iso_3166_2_codes;
     }
+
     /**
      * @return the iso_3166_3_codes
      */
@@ -145,68 +154,84 @@ public class AreaWs2 extends EntityWs2
     public void setIso_3166_3_codes(List<String> iso_3166_3_codes) {
         this.iso_3166_3_codes = iso_3166_3_codes;
     }
-    
+
     public String getIso_3166_codes_Display() {
-        
+
         List<String> codes = new ArrayList<String>(0);
-        
-        if (getIso_3166_1_codes()!= null) codes.addAll(getIso_3166_1_codes());
-        if (getIso_3166_2_codes()!= null) codes.addAll(getIso_3166_2_codes());
-        if (getIso_3166_3_codes()!= null) codes.addAll(getIso_3166_3_codes());
+
+        if (getIso_3166_1_codes() != null) {
+            codes.addAll(getIso_3166_1_codes());
+        }
+        if (getIso_3166_2_codes() != null) {
+            codes.addAll(getIso_3166_2_codes());
+        }
+        if (getIso_3166_3_codes() != null) {
+            codes.addAll(getIso_3166_3_codes());
+        }
 
         String out = Arrays.toString(codes.toArray()).trim();
         out = out.substring(1);
-        out = out.substring(0, out.length()-1).trim();
+        out = out.substring(0, out.length() - 1).trim();
 
         return out;
     }
+
     /**
      * @return the lifespan
      */
     public LifeSpanWs2 getLifeSpan() {
         return lifespan;
     }
+
     /**
      * @param lifespan the lifespan to set
      */
     public void setLifeSpan(LifeSpanWs2 lifespan) {
         this.lifespan = lifespan;
     }
+
     /**
-    * Gets the underlying <code>List</clode> of releases.
-    * 
-    * @return the releases
-    */
+     * Gets the underlying <code>List</clode> of releases.
+     *
+     * @return the releases
+     */
 
     public String getCompleteString() {
-       
-        if (this.superarea != null) return  buildCompleteString(superarea, name);
- 
-        if (this.getRelationList()== null ||
-             this.getRelationList().getRelations() == null ||
-             this.getRelationList().getRelations().isEmpty()){
-            
-                AreaWs2 area =  loadArea(this);
-                this.setRelationList(area.getRelationList());
+
+        if (this.superarea != null) {
+            return buildCompleteString(superarea, name);
         }
-        this.superarea=getSuperArea(this);
-        if (superarea != null) return  buildCompleteString(superarea, name);
+
+        if (this.getRelationList() == null ||
+                this.getRelationList().getRelations() == null ||
+                this.getRelationList().getRelations().isEmpty()) {
+
+            AreaWs2 area = loadArea(this);
+            this.setRelationList(area.getRelationList());
+        }
+        this.superarea = getSuperArea(this);
+        if (superarea != null) {
+            return buildCompleteString(superarea, name);
+        }
         return name;
     }
-    private String buildCompleteString(AreaWs2 superarea, String name){
-        
+
+    private String buildCompleteString(AreaWs2 superarea, String name) {
+
         String out = name;
-        String sup="";
+        String sup = "";
         sup = superarea.getCompleteString();
-        if (sup != null && !sup.isEmpty()) out = name+", "+sup;
+        if (sup != null && !sup.isEmpty()) {
+            out = name + ", " + sup;
+        }
         return out;
     }
 
-    protected AreaWs2 loadArea(AreaWs2 area){
+    protected AreaWs2 loadArea(AreaWs2 area) {
 
-        if (area.getRelationList()== null ||
-             area.getRelationList().getRelations() == null ||
-             area.getRelationList().getRelations().isEmpty()){
+        if (area.getRelationList() == null ||
+                area.getRelationList().getRelations() == null ||
+                area.getRelationList().getRelations().isEmpty()) {
 
             Area a = new Area();
             a.setQueryWs(a.getQueryWs());
@@ -218,54 +243,67 @@ public class AreaWs2 extends EntityWs2
             } catch (MBWS2Exception ex) {
                 Logger.getLogger(RecordingWs2.class.getName()).log(Level.SEVERE, null, ex);
             }
-         }
-         return area;
+        }
+        return area;
     }
-    private AreaWs2 getSuperArea(AreaWs2 area){
 
-         if (area.getRelationList()== null) return null;
-         if (area.getRelationList().getRelations() == null) return null;
-         if (area.getRelationList().getRelations().isEmpty()) return null;
-         
-         AreaWs2 sup = null;
+    private AreaWs2 getSuperArea(AreaWs2 area) {
 
-         for (Iterator <RelationWs2> i = getRelationList().getRelations().iterator(); i.hasNext();) {
-           
+        if (area.getRelationList() == null) {
+            return null;
+        }
+        if (area.getRelationList().getRelations() == null) {
+            return null;
+        }
+        if (area.getRelationList().getRelations().isEmpty()) {
+            return null;
+        }
+
+        AreaWs2 sup = null;
+
+        for (Iterator<RelationWs2> i = getRelationList().getRelations().iterator(); i.hasNext(); ) {
+
             RelationWs2 r = i.next();
-            if (!r.getTargetType().equals(RelationWs2.TO_AREA)) continue;
-            if (!r.getType().equals(RelationWs2.PARTOFAREA)) continue;
-            if (r.getDirection() == null) continue;
+            if (!r.getTargetType().equals(RelationWs2.TO_AREA)) {
+                continue;
+            }
+            if (!r.getType().equals(RelationWs2.PARTOFAREA)) {
+                continue;
+            }
+            if (r.getDirection() == null) {
+                continue;
+            }
             if (!r.getDirection().equals(RelationWs2.DIR_BACKWARD) &&
-                 !r.getDirection().equals(RelationWs2.DIR_BACKWARD_PREF)) continue;
-            
-            sup = (AreaWs2)r.getTarget();
+                    !r.getDirection().equals(RelationWs2.DIR_BACKWARD_PREF)) {
+                continue;
+            }
+
+            sup = (AreaWs2) r.getTarget();
             return sup;
         }
-        return  sup;
+        return sup;
     }
-    public String getUniqueName(){
+
+    public String getUniqueName() {
         if (StringUtils.isNotBlank(disambiguation)) {
-                return name + " (" + disambiguation + ")";
+            return name + " (" + disambiguation + ")";
         }
         return name;
     }
+
     @Override
-        public String toString() {
-            return getUniqueName();
+    public String toString() {
+        return getUniqueName();
     }
+
     @Override
     public boolean equals(Object object) {
-        if (!(object instanceof AreaWs2)) {
+        if (!(object instanceof AreaWs2 other)) {
             return false;
         }
-        AreaWs2 other = (AreaWs2) object;
-        if (this.getIdUri().equals(other.getIdUri()))
-        {
-            return true;
-        }
-
-        return false;
+        return this.getIdUri().equals(other.getIdUri());
     }
+
     @Override
     public int hashCode() {
         int hash = 5;
@@ -273,200 +311,208 @@ public class AreaWs2 extends EntityWs2
         hash = 61 * hash + (this.disambiguation != null ? this.disambiguation.hashCode() : 0);
         return hash;
     }
+
     // Artists -----------------------------------------------------------------//
     public List<ArtistWs2> getArtists() {
-           return ( artistList == null ? null : artistList.getArtists());
+        return (artistList == null ? null : artistList.getArtists());
     }
-    /**
-    * Sets the underlying <code>List</clode> of artists.
-    * 
-    * Note: This will implicitly create a new {@link #artistList}
-    * if it is null.
-    * 
-    * @param artists the artists to set
-    */
-    public void setArtists(List<ArtistWs2> artists) 
-    {
-           if (artistList == null) {
-                   artistList = new ArtistListWs2();
-           }
 
-           this.artistList.setArtists(artists);
+    /**
+     * Sets the underlying <code>List</clode> of artists.
+     * <p>
+     * Note: This will implicitly create a new {@link #artistList}
+     * if it is null.
+     *
+     * @param artists the artists to set
+     */
+    public void setArtists(List<ArtistWs2> artists) {
+        if (artistList == null) {
+            artistList = new ArtistListWs2();
+        }
+
+        this.artistList.setArtists(artists);
     }
-       /**
-    * @return the artistList
-    */
+
+    /**
+     * @return the artistList
+     */
     public ArtistListWs2 getArtistList() {
-           return artistList;
+        return artistList;
     }
 
     /**
-    * @param artistList the artistList to set
-    */
+     * @param artistList the artistList to set
+     */
     public void setArtistList(ArtistListWs2 artistList) {
-           this.artistList = artistList;
+        this.artistList = artistList;
     }
-       /**
-    * <p>Adds a artist to the underlying <code>List</clode>
-    * of artists.</p>
-    * 
-    * <p><em>Note: This will implicitly create a new {@link #artistList}
-    * if it is null.</em></p>
-    * 
-    * @param artist The {@link ArtistWs1} to add.
-    */
-    public void addArtist(ArtistWs2 artist) 
-    {
-           if (artistList == null) {
-                   artistList = new ArtistListWs2();
-           } 
-           artistList.addArtist(artist);
+
+    /**
+     * <p>Adds a artist to the underlying <code>List</clode>
+     * of artists.</p>
+     *
+     * <p><em>Note: This will implicitly create a new {@link #artistList}
+     * if it is null.</em></p>
+     *
+     * @param artist The {@link ArtistWs1} to add.
+     */
+    public void addArtist(ArtistWs2 artist) {
+        if (artistList == null) {
+            artistList = new ArtistListWs2();
+        }
+        artistList.addArtist(artist);
     }
+
     // Labels -------------------------------------------------------------------/
-     public List<LabelWs2> getLabels() {
-           return ( labelList == null ? null : labelList.getLabels());
+    public List<LabelWs2> getLabels() {
+        return (labelList == null ? null : labelList.getLabels());
     }
-    /**
-    * Sets the underlying <code>List</clode> of labels.
-    * 
-    * Note: This will implicitly create a new {@link #labelList}
-    * if it is null.
-    * 
-    * @param labels the labels to set
-    */
-    public void setLabels(List<LabelWs2> labels) 
-    {
-           if (labelList == null) {
-                   labelList = new LabelListWs2();
-           }
 
-           this.labelList.setLabels(labels);
+    /**
+     * Sets the underlying <code>List</clode> of labels.
+     * <p>
+     * Note: This will implicitly create a new {@link #labelList}
+     * if it is null.
+     *
+     * @param labels the labels to set
+     */
+    public void setLabels(List<LabelWs2> labels) {
+        if (labelList == null) {
+            labelList = new LabelListWs2();
+        }
+
+        this.labelList.setLabels(labels);
     }
-       /**
-    * @return the labelList
-    */
+
+    /**
+     * @return the labelList
+     */
     public LabelListWs2 getLabelList() {
-           return labelList;
+        return labelList;
     }
 
     /**
-    * @param labelList the labelList to set
-    */
+     * @param labelList the labelList to set
+     */
     public void setLabelList(LabelListWs2 labelList) {
-           this.labelList = labelList;
+        this.labelList = labelList;
     }
-       /**
-    * <p>Adds a label to the underlying <code>List</clode>
-    * of labels.</p>
-    * 
-    * <p><em>Note: This will implicitly create a new {@link #labelList}
-    * if it is null.</em></p>
-    * 
-    * @param label The {@link LabelWs1} to add.
-    */
-    public void addLabel(LabelWs2 label) 
-    {
-           if (labelList == null) {
-                   labelList = new LabelListWs2();
-           } 
-           labelList.addLabel(label);
+
+    /**
+     * <p>Adds a label to the underlying <code>List</clode>
+     * of labels.</p>
+     *
+     * <p><em>Note: This will implicitly create a new {@link #labelList}
+     * if it is null.</em></p>
+     *
+     * @param label The {@link LabelWs1} to add.
+     */
+    public void addLabel(LabelWs2 label) {
+        if (labelList == null) {
+            labelList = new LabelListWs2();
+        }
+        labelList.addLabel(label);
     }
+
     // Releases ------------------------------------------------------------------//
     public List<ReleaseWs2> getReleases() {
-           return ( releaseList == null ? null : releaseList.getReleases());
+        return (releaseList == null ? null : releaseList.getReleases());
     }
-    /**
-    * Sets the underlying <code>List</clode> of releases.
-    * 
-    * Note: This will implicitly create a new {@link #releaseList}
-    * if it is null.
-    * 
-    * @param releases the releases to set
-    */
-    public void setReleases(List<ReleaseWs2> releases) 
-    {
-           if (releaseList == null) {
-                   releaseList = new ReleaseListWs2();
-           }
 
-           this.releaseList.setReleases(releases);
+    /**
+     * Sets the underlying <code>List</clode> of releases.
+     * <p>
+     * Note: This will implicitly create a new {@link #releaseList}
+     * if it is null.
+     *
+     * @param releases the releases to set
+     */
+    public void setReleases(List<ReleaseWs2> releases) {
+        if (releaseList == null) {
+            releaseList = new ReleaseListWs2();
+        }
+
+        this.releaseList.setReleases(releases);
     }
-       /**
-    * @return the releaseList
-    */
+
+    /**
+     * @return the releaseList
+     */
     public ReleaseListWs2 getReleaseList() {
-           return releaseList;
+        return releaseList;
     }
 
     /**
-    * @param releaseList the releaseList to set
-    */
+     * @param releaseList the releaseList to set
+     */
     public void setReleaseList(ReleaseListWs2 releaseList) {
-           this.releaseList = releaseList;
+        this.releaseList = releaseList;
     }
-       /**
-    * <p>Adds a release to the underlying <code>List</clode>
-    * of releases.</p>
-    * 
-    * <p><em>Note: This will implicitly create a new {@link #releaseList}
-    * if it is null.</em></p>
-    * 
-    * @param release The {@link ReleaseWs1} to add.
-    */
-    public void addRelease(ReleaseWs2 release) 
-    {
-           if (releaseList == null) {
-                   releaseList = new ReleaseListWs2();
-           } 
-           releaseList.addRelease(release);
+
+    /**
+     * <p>Adds a release to the underlying <code>List</clode>
+     * of releases.</p>
+     *
+     * <p><em>Note: This will implicitly create a new {@link #releaseList}
+     * if it is null.</em></p>
+     *
+     * @param release The {@link ReleaseWs1} to add.
+     */
+    public void addRelease(ReleaseWs2 release) {
+        if (releaseList == null) {
+            releaseList = new ReleaseListWs2();
+        }
+        releaseList.addRelease(release);
     }
+
     // Places ------------------------------------------------------------------//
     public List<PlaceWs2> getPlaces() {
-           return ( placeList == null ? null : placeList.getPlaces());
+        return (placeList == null ? null : placeList.getPlaces());
     }
-    /**
-    * Sets the underlying <code>List</clode> of places.
-    * 
-    * Note: This will implicitly create a new {@link #placeList}
-    * if it is null.
-    * 
-    * @param places the places to set
-    */
-    public void setPlaces(List<PlaceWs2> places) 
-    {
-           if (placeList == null) {
-                   placeList = new PlaceListWs2();
-           }
 
-           this.placeList.setPlaces(places);
+    /**
+     * Sets the underlying <code>List</clode> of places.
+     * <p>
+     * Note: This will implicitly create a new {@link #placeList}
+     * if it is null.
+     *
+     * @param places the places to set
+     */
+    public void setPlaces(List<PlaceWs2> places) {
+        if (placeList == null) {
+            placeList = new PlaceListWs2();
+        }
+
+        this.placeList.setPlaces(places);
     }
-       /**
-    * @return the placeList
-    */
+
+    /**
+     * @return the placeList
+     */
     public PlaceListWs2 getPlaceList() {
-           return placeList;
+        return placeList;
     }
 
     /**
-    * @param placeList the placeList to set
-    */
+     * @param placeList the placeList to set
+     */
     public void setPlaceList(PlaceListWs2 placeList) {
-           this.placeList = placeList;
+        this.placeList = placeList;
     }
-       /**
-    * <p>Adds a place to the underlying <code>List</clode>
-    * of places.</p>
-    * 
-    * <p><em>Note: This will implicitly create a new {@link #placeList}
-    * if it is null.</em></p>
-    * 
-    * @param place The {@link PlaceWs1} to add.
-    */
-    public void addPlace(PlaceWs2 place) 
-    {
-           if (placeList == null) {
-                   placeList = new PlaceListWs2();
-           } 
-           placeList.addPlace(place);
+
+    /**
+     * <p>Adds a place to the underlying <code>List</clode>
+     * of places.</p>
+     *
+     * <p><em>Note: This will implicitly create a new {@link #placeList}
+     * if it is null.</em></p>
+     *
+     * @param place The {@link PlaceWs1} to add.
+     */
+    public void addPlace(PlaceWs2 place) {
+        if (placeList == null) {
+            placeList = new PlaceListWs2();
+        }
+        placeList.addPlace(place);
     }
 }

@@ -1,22 +1,22 @@
 package github.com.rev.musicbrainz.model.entity;
 
 
-import java.util.logging.Logger;
-import org.apache.commons.lang3.StringUtils;
 import github.com.rev.musicbrainz.model.LifeSpanWs2;
 import github.com.rev.musicbrainz.utils.MbUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.logging.Logger;
 
 /**
  * <p>A Place definition.
- *      A place is a building or outdoor area used for performing or 
- *      producing music.  
-	 
+ * A place is a building or outdoor area used for performing or
+ * producing music.
+ *
  * </p>
  */
-public class PlaceWs2 extends EntityWs2 
-{
-    private static Logger log = Logger.getLogger(PlaceWs2.class.getName());
-    
+public class PlaceWs2 extends EntityWs2 {
+    private static final Logger log = Logger.getLogger(PlaceWs2.class.getName());
+
     private String typeUri;
     private String name;
     private String disambiguation;
@@ -32,12 +32,18 @@ public class PlaceWs2 extends EntityWs2
     public String getTypeUri() {
         return typeUri;
     }
+
     public String getType() {
 
-         if (getTypeUri()== null) return "";
-         if (getTypeUri().isEmpty()) return "";
-         return MbUtils.extractTypeFromURI(getTypeUri());
+        if (getTypeUri() == null) {
+            return "";
+        }
+        if (getTypeUri().isEmpty()) {
+            return "";
+        }
+        return MbUtils.extractTypeFromURI(getTypeUri());
     }
+
     /**
      * @return the name
      */
@@ -145,38 +151,41 @@ public class PlaceWs2 extends EntityWs2
 
     public String getFullAddress() {
         String out = name;
-        if (getAddress() != null && !getAddress().isEmpty()) 
-            out = out+" ("+getAddress();
+        if (getAddress() != null && !getAddress().isEmpty()) {
+            out = out + " (" + getAddress();
+        }
 
-        if (getArea() == null) return out+")";
+        if (getArea() == null) {
+            return out + ")";
+        }
 
         String complete = getArea().getCompleteString();
-        
-        if (complete.isEmpty()) return out+")";
-        out = out+", "+complete+")";
-        
+
+        if (complete.isEmpty()) {
+            return out + ")";
+        }
+        out = out + ", " + complete + ")";
+
         return out;
-    } 
-     public String getUniqueName(){
+    }
+
+    public String getUniqueName() {
         if (StringUtils.isNotBlank(disambiguation)) {
-                return name + " (" + disambiguation + ")";
+            return name + " (" + disambiguation + ")";
         }
         return name;
     }
+
     @Override
     public String toString() {
         return getFullAddress();
     }
+
     @Override
     public boolean equals(Object object) {
-        if (!(object instanceof PlaceWs2)) {
+        if (!(object instanceof PlaceWs2 other)) {
             return false;
         }
-        PlaceWs2 other = (PlaceWs2) object;
-        if (this.getIdUri().equals(other.getIdUri()))
-        {
-            return true;
-        }
-        return false;
+        return this.getIdUri().equals(other.getIdUri());
     }
 }

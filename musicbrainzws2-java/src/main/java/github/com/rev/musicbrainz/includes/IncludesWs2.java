@@ -1,59 +1,59 @@
 package github.com.rev.musicbrainz.includes;
 
+import github.com.rev.musicbrainz.DomainsWs2;
+
 import java.util.ArrayList;
 import java.util.List;
-import github.com.rev.musicbrainz.DomainsWs2;
 
 
 /**
  * <p>A specification on how much data to return with an entity.</p>
- * 
  */
 public class IncludesWs2 extends DomainsWs2 {
 
-     //public static final String ANNOTATION_INC ="annotation";
-      // Misc inc= arguments 
+    //public static final String ANNOTATION_INC ="annotation";
+    // Misc inc= arguments
 
-      //private boolean aliases = false;
+    //private boolean aliases = false;
 
-     /* Subqueries
-    * The inc= is parameter allows you to request more information to be 
-    * included about the entity. Any of the entities directly linked to 
-    * the entity can be included. 
-   */
-       //private boolean labels = false; 
-       //private boolean artists = false;
-       //private boolean releaseGroups = false;
-       //private boolean releases = false;
-       //private boolean works = false;
-       //private boolean recordings = false;
+    /* Subqueries
+     * The inc= is parameter allows you to request more information to be
+     * included about the entity. Any of the entities directly linked to
+     * the entity can be included.
+     */
+    //private boolean labels = false;
+    //private boolean artists = false;
+    //private boolean releaseGroups = false;
+    //private boolean releases = false;
+    //private boolean works = false;
+    //private boolean recordings = false;
 
-       /* inc= arguments which affect subqueries
-     * Some additional inc= parameters are supported to specify how 
-     * much of the data about the linked entities should be included: 
-    */
-      //private boolean discids = false;
-      //private boolean media = false;
-      //private boolean puids = false;
-      //private boolean isrcs = false;
-      //private boolean artistCredits = false;
-      //private boolean variousArtists = false;
+    /* inc= arguments which affect subqueries
+     * Some additional inc= parameters are supported to specify how
+     * much of the data about the linked entities should be included:
+     */
+    //private boolean discids = false;
+    //private boolean media = false;
+    //private boolean puids = false;
+    //private boolean isrcs = false;
+    //private boolean artistCredits = false;
+    //private boolean variousArtists = false;
 
-          /*include only those releases where the artist appears on one 
-       * of the tracks, but not in the artist credit for the release
-       * itself (this is only valid on a /ws/2/artist?inc=releases 
-       * request)
+    /*include only those releases where the artist appears on one
+ * of the tracks, but not in the artist credit for the release
+ * itself (this is only valid on a /ws/2/artist?inc=releases
+ * request)
 
-   /*Relationships
-     * inc= arguments to include relationships work exactly like 
-     * they do in /ws/1: 
-    */
+/*Relationships
+* inc= arguments to include relationships work exactly like
+* they do in /ws/1:
+*/
     private boolean annotation = false;
     private boolean tags = false;
     private boolean ratings = false;
     private boolean userTags = false;
     private boolean userRatings = false;
-    
+
     private boolean artistRelations = false;
     private boolean labelRelations = false;
     private boolean recordingRelations = false;
@@ -66,57 +66,86 @@ public class IncludesWs2 extends DomainsWs2 {
     private boolean placeRelations = false;
     private boolean instrumentRelations = false;
     private boolean seriesRelations = false;
-    
+
     private boolean recordingLevelRelations = false;
     private boolean workLevelRelations = false;
-    
+
     private boolean artistCredits = false;
 
     /**
      * Default constructor
      */
-    public IncludesWs2(){
+    public IncludesWs2() {
 
     }
 
-    public List<String> createIncludeTags() 
-    {
-            List<String> includeTags = new ArrayList<String>();
+    public List<String> createIncludeTags() {
+        List<String> includeTags = new ArrayList<String>();
 
-            // not that elegant but straight forward :)
+        // not that elegant but straight forward :)
 
-            if (artistRelations) includeTags.add(ARTISTRELS_INC);
-            if (labelRelations) includeTags.add(LABELRELS_INC);
-            if (recordingRelations)
-            {
-                includeTags.add(RECORDINGRELS_INC);
-                if (isRecordingLevelRelations())includeTags.add(RECORDINGLEVELRELS_INC);
+        if (artistRelations) {
+            includeTags.add(ARTISTRELS_INC);
+        }
+        if (labelRelations) {
+            includeTags.add(LABELRELS_INC);
+        }
+        if (recordingRelations) {
+            includeTags.add(RECORDINGRELS_INC);
+            if (isRecordingLevelRelations()) {
+                includeTags.add(RECORDINGLEVELRELS_INC);
             }
-            if (releaseRelations) includeTags.add(RELEASERELS_INC);
-            if (releaseGroupRelations) includeTags.add(RELEASEGROUPRELS_INC);
-            if (urlRelations) includeTags.add(URLRELS_INC);
-            if (workRelations) 
-            {
-                includeTags.add(WORKRELS_INC);
-                if (isWorkLevelRelations())includeTags.add(WORKLEVELRELS_INC);
+        }
+        if (releaseRelations) {
+            includeTags.add(RELEASERELS_INC);
+        }
+        if (releaseGroupRelations) {
+            includeTags.add(RELEASEGROUPRELS_INC);
+        }
+        if (urlRelations) {
+            includeTags.add(URLRELS_INC);
+        }
+        if (workRelations) {
+            includeTags.add(WORKRELS_INC);
+            if (isWorkLevelRelations()) {
+                includeTags.add(WORKLEVELRELS_INC);
             }
-            //2014-09-14
-            if (areaRelations) includeTags.add(AREARELS_INC);
-            if (placeRelations) includeTags.add(PLACERELS_INC);
-            if (instrumentRelations) includeTags.add(INSTRUMENTRELS_INC);
-            if (seriesRelations) includeTags.add(SERIESRELS_INC);
-            //
-            
-            if (artistCredits) includeTags.add(ARTISTCREDITS_INC);
-            
-            if (isTags()) includeTags.add(TAGS_INC);
-            if (isRatings()) includeTags.add(RATINGS_INC);
-            if (isUserTags()) includeTags.add(USERTAGS_INC);
-            if (isUserRatings()) includeTags.add(USERRATINGS_INC);
-            
-            //if (annotation) includeTags.add(ANNOTATION_INC) // To be handled with a search.
-             
-            return includeTags;
+        }
+        //2014-09-14
+        if (areaRelations) {
+            includeTags.add(AREARELS_INC);
+        }
+        if (placeRelations) {
+            includeTags.add(PLACERELS_INC);
+        }
+        if (instrumentRelations) {
+            includeTags.add(INSTRUMENTRELS_INC);
+        }
+        if (seriesRelations) {
+            includeTags.add(SERIESRELS_INC);
+        }
+        //
+
+        if (artistCredits) {
+            includeTags.add(ARTISTCREDITS_INC);
+        }
+
+        if (isTags()) {
+            includeTags.add(TAGS_INC);
+        }
+        if (isRatings()) {
+            includeTags.add(RATINGS_INC);
+        }
+        if (isUserTags()) {
+            includeTags.add(USERTAGS_INC);
+        }
+        if (isUserRatings()) {
+            includeTags.add(USERRATINGS_INC);
+        }
+
+        //if (annotation) includeTags.add(ANNOTATION_INC) // To be handled with a search.
+
+        return includeTags;
     }
 
 
@@ -124,87 +153,98 @@ public class IncludesWs2 extends DomainsWs2 {
      * @return the artistRelations
      */
     public boolean isArtistRelations() {
-            return artistRelations;
+        return artistRelations;
     }
 
     /**
      * @param artistRelations the artistRelations to set
      */
     public void setArtistRelations(boolean artistRelations) {
-            this.artistRelations = artistRelations;
+        this.artistRelations = artistRelations;
     }
+
     /**
      * @return the labelRelations
      */
     public boolean isLabelRelations() {
-            return labelRelations;
+        return labelRelations;
     }
 
     /**
      * @param labelRelations the labelRelations to set
      */
     public void setLabelRelations(boolean labelRelations) {
-            this.labelRelations = labelRelations;
+        this.labelRelations = labelRelations;
     }
-       /**
+
+    /**
      * @return the recordingRelations
      */
     public boolean isRecordingRelations() {
-            return recordingRelations;
+        return recordingRelations;
     }
+
     /**
      * @param recordingRelations the recordingRelations to set
      */
     public void setRecordingRelations(boolean recordingRelations) {
-            this.recordingRelations = recordingRelations;
+        this.recordingRelations = recordingRelations;
     }
+
     /**
      * @return the releaseRelations
      */
     public boolean isReleaseRelations() {
-            return releaseRelations;
+        return releaseRelations;
     }
+
     /**
      * @param releaseRelations the releaseRelations to set
      */
     public void setReleaseRelations(boolean releaseRelations) {
-            this.releaseRelations = releaseRelations;
+        this.releaseRelations = releaseRelations;
     }
-            /**
+
+    /**
      * @return the releaseGroupRelations
      */
     public boolean isReleaseGroupRelations() {
-            return releaseGroupRelations;
+        return releaseGroupRelations;
     }
+
     /**
      * @param releaseGroupRelations the releaseGroupRelations to set
      */
     public void setReleaseGroupRelations(boolean releaseGroupRelations) {
-            this.releaseGroupRelations = releaseGroupRelations;
+        this.releaseGroupRelations = releaseGroupRelations;
     }
+
     /**
      * @return the urlRelations
      */
     public boolean isUrlRelations() {
-            return urlRelations;
+        return urlRelations;
     }
+
     /**
      * @param urlRelations the urlRelations to set
      */
     public void setUrlRelations(boolean urlRelations) {
-            this.urlRelations = urlRelations;
+        this.urlRelations = urlRelations;
     }
-       /**
+
+    /**
      * @return the workRelations
      */
     public boolean isWorkRelations() {
-            return workRelations;
+        return workRelations;
     }
+
     /**
      * @param workRelations the workRelations to set
      */
     public void setWorkRelations(boolean workRelations) {
-            this.workRelations = workRelations;
+        this.workRelations = workRelations;
     }
 
     /**
@@ -234,7 +274,7 @@ public class IncludesWs2 extends DomainsWs2 {
     public void setWorkLevelRelations(boolean workLevelRelations) {
         this.workLevelRelations = workLevelRelations;
     }
-    
+
     /**
      * @return the areaRelations
      */
@@ -290,6 +330,7 @@ public class IncludesWs2 extends DomainsWs2 {
     public void setSeriesRelations(boolean seriesRelations) {
         this.seriesRelations = seriesRelations;
     }
+
     /**
      * @return the artistCredits
      */
@@ -303,19 +344,21 @@ public class IncludesWs2 extends DomainsWs2 {
     public void setArtistCredits(boolean artistCredits) {
         this.artistCredits = artistCredits;
     }
+
     /**
      * @return the annotation
      */
     public boolean isAnnotation() {
         return annotation;
     }
+
     /**
      * @param annotation the annotation to set
      */
     public void setAnnotation(boolean annotation) {
         this.annotation = annotation;
     }
-    
+
     /**
      * @return the tags
      */
@@ -343,6 +386,7 @@ public class IncludesWs2 extends DomainsWs2 {
     public void setRatings(boolean ratings) {
         this.ratings = ratings;
     }
+
     /**
      * @return the userTags
      */
@@ -370,11 +414,12 @@ public class IncludesWs2 extends DomainsWs2 {
     public void setUserRatings(boolean userRatings) {
         this.userRatings = userRatings;
     }
+
     /**
-   * set all the parameters to false.
-   */
-    protected void excludeAll(){
-        
+     * set all the parameters to false.
+     */
+    protected void excludeAll() {
+
         setArtistRelations(false);
         setLabelRelations(false);
         setReleaseGroupRelations(false);
@@ -385,25 +430,26 @@ public class IncludesWs2 extends DomainsWs2 {
         setPlaceRelations(false);
         setInstrumentRelations(false);
         setSeriesRelations(false);
-        
+
         setUrlRelations(false);
-        
+
         setRecordingLevelRelations(false);
         setWorkLevelRelations(false);
-        
+
         setArtistCredits(false);
         setAnnotation(false);
         setTags(false);
         setRatings(false);
         setUserTags(false);
         setUserRatings(false);
-        
+
     }
+
     /**
-   * set all the parameters to true.
-   */
-    public void includeAll(){
-        
+     * set all the parameters to true.
+     */
+    public void includeAll() {
+
         setArtistRelations(true);
         setLabelRelations(true);
         setReleaseGroupRelations(true);
@@ -414,12 +460,12 @@ public class IncludesWs2 extends DomainsWs2 {
         setPlaceRelations(true);
         setInstrumentRelations(true);
         setSeriesRelations(true);
-        
+
         setUrlRelations(true);
-        
+
         setRecordingLevelRelations(true);
         setWorkLevelRelations(true);
-        
+
         setArtistCredits(true);
         setAnnotation(true);
         setTags(true);
@@ -427,11 +473,12 @@ public class IncludesWs2 extends DomainsWs2 {
         setUserTags(true);
         setUserRatings(true);
     }
+
     /**
-   *  @param target the target IncludesWs2
-   */
-    protected IncludesWs2 copyTo(IncludesWs2 target){
-        
+     * @param target the target IncludesWs2
+     */
+    protected IncludesWs2 copyTo(IncludesWs2 target) {
+
         target.setArtistRelations(isArtistRelations());
         target.setLabelRelations(isLabelRelations());
         target.setReleaseGroupRelations(isReleaseGroupRelations());
@@ -442,19 +489,19 @@ public class IncludesWs2 extends DomainsWs2 {
         target.setPlaceRelations(isPlaceRelations());
         target.setInstrumentRelations(isInstrumentRelations());
         target.setSeriesRelations(isSeriesRelations());
-        
+
         target.setUrlRelations(isUrlRelations());
-        
+
         target.setRecordingLevelRelations(isRecordingLevelRelations());
         target.setWorkLevelRelations(isWorkLevelRelations());
-        
+
         target.setArtistCredits(isArtistCredits());
         target.setAnnotation(isAnnotation());
         target.setTags(isTags());
         target.setRatings(isRatings());
         target.setUserTags(isUserTags());
         target.setUserRatings(isUserRatings());
-        
+
         return target;
     }
 }

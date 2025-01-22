@@ -1,24 +1,24 @@
 package github.com.rev.musicbrainz.query.submission;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Each Submission could contain requests for 
+ * Each Submission could contain requests for
  * many entities.
  * An EntityElement is the specific entity
  * request description.
- * 
  **/
 public class EntityElement {
 
     /*
-     * The entity type. Must be one of 
-     * LABEL 
+     * The entity type. Must be one of
+     * LABEL
      * ARTIST
      * RELEASEGROUP
      * WORK
      * RECORDING
-     * 
+     *
      */
     private String entityType;
     /*
@@ -32,7 +32,7 @@ public class EntityElement {
      * entity.
      */
     private List<String> tagList = new ArrayList<String>();
-        /*
+    /*
      * The new rating for the entity.
      * Notes that the rating to be submitted range from 0 to 100.
      */
@@ -79,8 +79,9 @@ public class EntityElement {
     public void setTagList(List<String> tagList) {
         this.tagList = tagList;
     }
-    public void addTag(String tag){
-        
+
+    public void addTag(String tag) {
+
         this.tagList.add(tag);
     }
 
@@ -90,6 +91,7 @@ public class EntityElement {
     public int getUserRating() {
         return userRating;
     }
+
     /**
      * @param userRating the userRating to set
      */

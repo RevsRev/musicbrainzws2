@@ -1,63 +1,70 @@
 package github.com.rev.musicbrainz.filter;
 
+import github.com.rev.musicbrainz.model.entity.ReleaseWs2;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import github.com.rev.musicbrainz.model.entity.ReleaseWs2;
-
-public class ReleaseStatusFilterWs2 implements FilterWs2 
-{
+public class ReleaseStatusFilterWs2 implements FilterWs2 {
 
     private boolean statusAll = true;
-    
+
     private boolean statusOfficial = false;
     private boolean statusPromotion = false;
     private boolean statusBootleg = false;
     private boolean statusPseudoRelease = false;
 
     public ReleaseStatusFilterWs2() {
-        
+
     }
-    
-    private String createFilterString(){
-        
-        if (isStatusAll()) return "";
-        
-        List<String> Status = new ArrayList<String>();
-        
-        if (isStatusOfficial()) Status.add(ReleaseWs2.STATUS_OFFICIAL);
-        if (isStatusPromotion()) Status.add(ReleaseWs2.STATUS_PROMOTION);
-        if (isStatusBootleg()) Status.add(ReleaseWs2.STATUS_BOOTLEG);
-        if (isStatusPseudoRelease()) Status.add(ReleaseWs2.STATUS_PSEUDO_RELEASE);
-        
-        String filterString="";
-        
-        for (String status : Status)
-        {
-            if (!filterString.equals(""))
-            {
-                filterString= filterString+"|";
-            }
-            filterString= filterString+status;
+
+    private String createFilterString() {
+
+        if (isStatusAll()) {
+            return "";
         }
-        
+
+        List<String> Status = new ArrayList<String>();
+
+        if (isStatusOfficial()) {
+            Status.add(ReleaseWs2.STATUS_OFFICIAL);
+        }
+        if (isStatusPromotion()) {
+            Status.add(ReleaseWs2.STATUS_PROMOTION);
+        }
+        if (isStatusBootleg()) {
+            Status.add(ReleaseWs2.STATUS_BOOTLEG);
+        }
+        if (isStatusPseudoRelease()) {
+            Status.add(ReleaseWs2.STATUS_PSEUDO_RELEASE);
+        }
+
+        String filterString = "";
+
+        for (String status : Status) {
+            if (!filterString.equals("")) {
+                filterString = filterString + "|";
+            }
+            filterString = filterString + status;
+        }
+
         return filterString;
     }
 
-    public Map<String, String> createParameters() 
-    {
-            Map<String, String> map = new HashMap<String, String>();
-            
-            String filterString=createFilterString();
-            
-            // construct the track filter's map			
+    public Map<String, String> createParameters() {
+        Map<String, String> map = new HashMap<String, String>();
 
-            if (!filterString.equals(""))
-                map.put("status",filterString);
+        String filterString = createFilterString();
 
-            return map;
+        // construct the track filter's map
+
+        if (!filterString.equals("")) {
+            map.put("status", filterString);
+        }
+
+        return map;
     }
 
     /**

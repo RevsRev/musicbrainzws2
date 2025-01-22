@@ -3,21 +3,20 @@ package github.com.rev.musicbrainz.model;
 import java.util.logging.Logger;
 
 /**
-
+ *
  */
-public class RatingsWs2 
-{
-    
-   private static Logger log = Logger.getLogger(RatingsWs2.class.getName());
+public class RatingsWs2 {
+
+    private static final Logger log = Logger.getLogger(RatingsWs2.class.getName());
 
     /**
      * the numebr of people who votes
      */
-    private Long votesCount=0L;
+    private Long votesCount = 0L;
     /**
      * the average rating
      */
-    private Float averageRating=0F;
+    private Float averageRating = 0F;
 
     /**
      * @return the votesCount
@@ -46,5 +45,5 @@ public class RatingsWs2
     public void setAverageRating(Float averageRating) {
         this.averageRating = averageRating;
     }
-    
+
 }

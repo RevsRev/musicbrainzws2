@@ -5,56 +5,51 @@ import java.util.Map;
 
 /**
  * <p>A filter for the recording collection.</p>
- * 
+ *
  * <p><em>Note that these filter properties properties and <code>query</code>
  * may not be used together.</em></p>
- * 
  */
-public class RecordingSearchFilterWs2 extends SearchFilterWs2 
-{
-	/**
-	 * A String containing the release's title
-	 */
-	private String title;
-	
-	public RecordingSearchFilterWs2() {
-		super();
-	}
+public class RecordingSearchFilterWs2 extends SearchFilterWs2 {
+    /**
+     * A String containing the release's title
+     */
+    private String title;
 
-	@Override
-	public Map<String, String> createParameters() 
-	{
-                Map<String, String> map = super.createParameters();
-               
-                if (this.title != null) 
-                {
-                    if (map.containsKey(QUERY)) {
-                            throw new IllegalArgumentException("The title and query properties may not be used together!");
-                    }
+    public RecordingSearchFilterWs2() {
+        super();
+    }
 
-                    map.put(QUERY, this.title);
-                } 
-                else {
-                    if (!map.containsKey(QUERY)) {
-                            throw new IllegalArgumentException("This filter must specify a query or a recording Title!");
-                    }
-                }
-                
-                return map;
-	}
+    @Override
+    public Map<String, String> createParameters() {
+        Map<String, String> map = super.createParameters();
 
-	/**
-	 * @return the title
-	 */
-	public String getTitle() {
-		return title;
-	}
+        if (this.title != null) {
+            if (map.containsKey(QUERY)) {
+                throw new IllegalArgumentException("The title and query properties may not be used together!");
+            }
 
-	/**
-	 * @param title the title to set
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
+            map.put(QUERY, this.title);
+        } else {
+            if (!map.containsKey(QUERY)) {
+                throw new IllegalArgumentException("This filter must specify a query or a recording Title!");
+            }
+        }
+
+        return map;
+    }
+
+    /**
+     * @return the title
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * @param title the title to set
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
 }

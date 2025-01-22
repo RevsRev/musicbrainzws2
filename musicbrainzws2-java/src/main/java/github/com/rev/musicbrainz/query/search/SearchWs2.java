@@ -1,72 +1,70 @@
 package github.com.rev.musicbrainz.query.search;
 
 import github.com.rev.musicbrainz.exception.MBWS2Exception;
-import github.com.rev.musicbrainz.webservice.WebService;
-
 import github.com.rev.musicbrainz.filter.searchfilter.SearchFilterWs2;
 import github.com.rev.musicbrainz.query.QueryWs2;
-import github.com.rev.musicbrainz.wsxml.element.Metadata;
+import github.com.rev.musicbrainz.webservice.WebService;
 import github.com.rev.musicbrainz.wsxml.element.ListElement;
+import github.com.rev.musicbrainz.wsxml.element.Metadata;
 
 /*
- * 
+ *
  * Lucerne Search Implementation.
- * 
- * Searches are implemented by the search server and are documented at 
- * Next_Generation_Schema/SearchServerXML. 
+ *
+ * Searches are implemented by the search server and are documented at
+ * Next_Generation_Schema/SearchServerXML.
  * see: http://musicbrainz.org/doc/Next_Generation_Schema/SearchServerXML
  *
  * Use a filter subclass to set the search parameters.
  * Return a SearchResult subtype.
- * 
+ *
  */
 
 public class SearchWs2 extends QueryWs2 {
 
     private SearchFilterWs2 filter;
     private ListElement listElement;
-    private int lastScore=100;
+    private int lastScore = 100;
 
 
-    protected SearchWs2(SearchFilterWs2 filter)
-    {
-            super();
-            this.filter=filter;
+    protected SearchWs2(SearchFilterWs2 filter) {
+        super();
+        this.filter = filter;
     }
 
     /**
      * Custom WebService Constructor
-     *  
+     *
      * @param ws An implementation of {@link WebService}
-    */
-    protected SearchWs2(WebService ws, SearchFilterWs2 filter)
-    {
-            super(ws);
-            this.filter=filter;
+     */
+    protected SearchWs2(WebService ws, SearchFilterWs2 filter) {
+        super(ws);
+        this.filter = filter;
     }
 
-    public boolean hasMore()
-    {
-        if (getListElement()== null) return false;
-        if (getFilter() == null) return false;
-        
-        int count  = getListElement().getCount() == null ? 0 : getListElement().getCount().intValue();
-        int offset =getListElement().getOffset() == null ? 0 : getListElement().getOffset().intValue();
-        int limit =getFilter().getLimit()  == null ? 0 : getFilter().getLimit().intValue();
+    public boolean hasMore() {
+        if (getListElement() == null) {
+            return false;
+        }
+        if (getFilter() == null) {
+            return false;
+        }
+
+        int count = getListElement().getCount() == null ? 0 : getListElement().getCount().intValue();
+        int offset = getListElement().getOffset() == null ? 0 : getListElement().getOffset().intValue();
+        int limit = getFilter().getLimit() == null ? 0 : getFilter().getLimit().intValue();
 
         // maybe the real one is lower, if we reached the end
         // but it does'nt matter in this context.
-        
-        int newOffset = offset+limit; 
-        
-        int minScore  = getFilter().getMinScore()== null ? 0 : getFilter().getMinScore().intValue();
-        
-        if (count >= newOffset && getLastScore()>=minScore) return true;
-        return false;
+
+        int newOffset = offset + limit;
+
+        int minScore = getFilter().getMinScore() == null ? 0 : getFilter().getMinScore().intValue();
+
+        return count >= newOffset && getLastScore() >= minScore;
     }
-     
-    protected Metadata getMetadata(String entity) throws MBWS2Exception
-    {
+
+    protected Metadata getMetadata(String entity) throws MBWS2Exception {
         return getFromWebService(entity, "", null, getFilter());
     }
 

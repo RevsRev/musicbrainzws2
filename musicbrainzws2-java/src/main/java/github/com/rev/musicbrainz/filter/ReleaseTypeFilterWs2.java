@@ -1,15 +1,14 @@
 package github.com.rev.musicbrainz.filter;
 
+import github.com.rev.musicbrainz.model.entity.ReleaseWs2;
+import github.com.rev.musicbrainz.utils.MbUtils;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import github.com.rev.musicbrainz.model.entity.ReleaseWs2;
-import github.com.rev.musicbrainz.utils.MbUtils;
-
-public class ReleaseTypeFilterWs2 implements FilterWs2 
-{
+public class ReleaseTypeFilterWs2 implements FilterWs2 {
     private boolean typeAll = true;
     private boolean typeNat = false;
     private boolean typeAlbum = false;
@@ -25,57 +24,78 @@ public class ReleaseTypeFilterWs2 implements FilterWs2
     private boolean typeOther = false;
 
     public ReleaseTypeFilterWs2() {
-        
+
     }
-    
-    private String createFilterString(){
-        
-        if (isTypeAll())
-        {
+
+    private String createFilterString() {
+
+        if (isTypeAll()) {
             return "";
         }
-        
+
         List<String> Types = new ArrayList<String>();
-        
-        if (isTypeNat()) Types.add(ReleaseWs2.TYPE_NAT);
-        if (isTypeAlbum()) Types.add(ReleaseWs2.TYPE_ALBUM);
-        if (isTypeSingle()) Types.add(ReleaseWs2.TYPE_SINGLE);
-        if (isTypeEp()) Types.add(ReleaseWs2.TYPE_EP);
-        if (isTypeCompilation()) Types.add(ReleaseWs2.TYPE_COMPILATION);
-        if (isTypeSoundTrack()) Types.add(ReleaseWs2.TYPE_SOUNDTRACK);
-        if (isTypeSpokenword()) Types.add(ReleaseWs2.TYPE_SPOKENWORD);
-        if (isTypeInterview()) Types.add(ReleaseWs2.TYPE_INTERVIEW);
-        if (isTypeAuodioBook()) Types.add(ReleaseWs2.TYPE_AUDIOBOOK);
-        if (isTypeLive()) Types.add(ReleaseWs2.TYPE_LIVE);
-        if (isTypeRemix()) Types.add(ReleaseWs2.TYPE_REMIX);
-        if (isTypeOther()) Types.add(ReleaseWs2.TYPE_OTHER);
-        
-        String filterString="";
-        
-        for (String type : Types)
-        {
-            if (!filterString.equals(""))
-            {
-                filterString= filterString+"|";
-            }
-            filterString= filterString+MbUtils.extractTypeFromURI(type);
+
+        if (isTypeNat()) {
+            Types.add(ReleaseWs2.TYPE_NAT);
         }
-        
+        if (isTypeAlbum()) {
+            Types.add(ReleaseWs2.TYPE_ALBUM);
+        }
+        if (isTypeSingle()) {
+            Types.add(ReleaseWs2.TYPE_SINGLE);
+        }
+        if (isTypeEp()) {
+            Types.add(ReleaseWs2.TYPE_EP);
+        }
+        if (isTypeCompilation()) {
+            Types.add(ReleaseWs2.TYPE_COMPILATION);
+        }
+        if (isTypeSoundTrack()) {
+            Types.add(ReleaseWs2.TYPE_SOUNDTRACK);
+        }
+        if (isTypeSpokenword()) {
+            Types.add(ReleaseWs2.TYPE_SPOKENWORD);
+        }
+        if (isTypeInterview()) {
+            Types.add(ReleaseWs2.TYPE_INTERVIEW);
+        }
+        if (isTypeAuodioBook()) {
+            Types.add(ReleaseWs2.TYPE_AUDIOBOOK);
+        }
+        if (isTypeLive()) {
+            Types.add(ReleaseWs2.TYPE_LIVE);
+        }
+        if (isTypeRemix()) {
+            Types.add(ReleaseWs2.TYPE_REMIX);
+        }
+        if (isTypeOther()) {
+            Types.add(ReleaseWs2.TYPE_OTHER);
+        }
+
+        String filterString = "";
+
+        for (String type : Types) {
+            if (!filterString.equals("")) {
+                filterString = filterString + "|";
+            }
+            filterString = filterString + MbUtils.extractTypeFromURI(type);
+        }
+
         return filterString;
     }
 
-    public Map<String, String> createParameters() 
-    {
-            Map<String, String> map = new HashMap<String, String>();
-            
-            String filterString=createFilterString();
-            
-            // construct the track filter's map			
+    public Map<String, String> createParameters() {
+        Map<String, String> map = new HashMap<String, String>();
 
-            if (!filterString.equals(""))
-                map.put("type",filterString);
+        String filterString = createFilterString();
 
-            return map;
+        // construct the track filter's map
+
+        if (!filterString.equals("")) {
+            map.put("type", filterString);
+        }
+
+        return map;
     }
 
     /**

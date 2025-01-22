@@ -31,7 +31,6 @@ import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.io.entity.StringEntity;
 import org.apache.hc.core5.http.message.BasicClassicHttpRequest;
 import org.apache.hc.core5.http.protocol.HttpContext;
-import org.apache.hc.core5.net.Host;
 import org.apache.hc.core5.util.TimeValue;
 
 import javax.net.ssl.SSLHandshakeException;
@@ -40,47 +39,44 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  * A simple http client using Apache Commons HttpClient.
- * 
  */
-public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2 
-{
+public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2 {
     /**
-    * A logger
-    */
+     * A logger
+     */
     static Logger log = Logger.getLogger(HttpClientWebServiceWs2.class.getName());
 
     /**
      * A {@link HttpClient} instance
      */
-    private HttpClient httpClient;
-	
+    private final HttpClient httpClient;
+
     /**
-     * Default constructor creates a httpClient with default properties. 
+     * Default constructor creates a httpClient with default properties.
      */
-    public HttpClientWebServiceWs2() 
-    {
-            this.httpClient = HttpClientBuilder.create()
-                    .setRetryStrategy(getRetryStrategy())
-                    .setDefaultCredentialsProvider(getCredentialsProvider())
-                    .setUserAgent(USERAGENT)
-                    .setConnectionManager(getConnectionManager())
-                    .build();
+    public HttpClientWebServiceWs2() {
+        this.httpClient = HttpClientBuilder.create()
+                .setRetryStrategy(getRetryStrategy())
+                .setDefaultCredentialsProvider(getCredentialsProvider())
+                .setUserAgent(USERAGENT)
+                .setConnectionManager(getConnectionManager())
+                .build();
     }
 
     /**
      * Use this constructor to inject a configured {@link HttpClient}.
-     * 
+     *
      * @param httpClient A configured {@link HttpClient}.
      */
-    public HttpClientWebServiceWs2(HttpClient httpClient)
-    {
-            this.httpClient = httpClient;
+    public HttpClientWebServiceWs2(HttpClient httpClient) {
+        this.httpClient = httpClient;
     }
 
     private CredentialsProvider getCredentialsProvider() {
@@ -99,7 +95,8 @@ public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2
     }
 
     private HttpClientConnectionManager getConnectionManager() {
-        return PoolingHttpClientConnectionManagerBuilder.create().setDefaultConnectionConfig(getConnectionConfig()).build();
+        return PoolingHttpClientConnectionManagerBuilder.create().setDefaultConnectionConfig(getConnectionConfig())
+                .build();
     }
 
     private ConnectionConfig getConnectionConfig() {
@@ -110,7 +107,7 @@ public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2
     }
 
 
-    private void setConnectionParam(){
+    private void setConnectionParam() {
         // TODO - Do we need to port this over as well?
 //        connectionParams.setParameter("http.protocol.content-charset", "UTF-8");
     }
@@ -133,11 +130,8 @@ public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2
                     return false;
                 }
                 boolean idempotent = !(request instanceof HttpUriRequestBase);
-                if (idempotent) {
-                    // Retry if the request is considered idempotent
-                    return true;
-                }
-                return false;
+                // Retry if the request is considered idempotent
+                return idempotent;
             }
 
             @Override
@@ -158,12 +152,10 @@ public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2
     }
 
     @Override
-    protected Metadata doGet(String url) throws WebServiceException, MbXMLException
-    {
+    protected Metadata doGet(String url) throws WebServiceException, MbXMLException {
         HttpGet method = new HttpGet(url);
         Metadata md = executeMethod(method);
-        if (md == null)
-        {
+        if (md == null) {
             String em = "ABORTED: web service returned an error";
             log.severe(em);
             throw new WebServiceException(em);
@@ -184,6 +176,7 @@ public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2
         return executeMethod(method);
 
     }
+
     @Override
     protected Metadata doPut(String url) {
         HttpPut method = new HttpPut(url);
@@ -248,79 +241,77 @@ public class HttpClientWebServiceWs2 extends DefaultWebServiceWs2
         };
     }
 
-    private String buildMessage(ClassicHttpResponse response, String status){
-        String msg="";
+    private String buildMessage(ClassicHttpResponse response, String status) {
+        String msg = "";
         InputStream instream;
         int statusCode = response.getCode();
         String reasonPhrase = response.getReasonPhrase();
-        
-        if (reasonPhrase==null || reasonPhrase.isEmpty())
-            reasonPhrase=status;
 
-        msg = "Server response was: "+statusCode+" "+reasonPhrase;
+        if (reasonPhrase == null || reasonPhrase.isEmpty()) {
+            reasonPhrase = status;
+        }
 
-        try {instream = response.getEntity().getContent();
-              Metadata mtd;
+        msg = "Server response was: " + statusCode + " " + reasonPhrase;
+
+        try {
+            instream = response.getEntity().getContent();
+            Metadata mtd;
             try {
                 mtd = getParser().parse(instream);
-                msg = msg+" MESSAGE: "+mtd.getMessage();
+                msg = msg + " MESSAGE: " + mtd.getMessage();
                 instream.close();
             } catch (MbXMLException ex) {
                 Logger.getLogger(HttpClientWebServiceWs2.class.getName()).log(
                         Level.SEVERE, convertInputStreamToString(instream), ex);
             }
-        } 
-            catch (IOException ignore) {}
-            catch (IllegalStateException ignore) {}
-            
-        finally {
+        } catch (IOException ignore) {
+        } catch (IllegalStateException ignore) {
+        } finally {
             try {
-                EntityUtils.consume(response.getEntity());} catch (IOException ex) {}
+                EntityUtils.consume(response.getEntity());
+            } catch (IOException ex) {
+            }
         }
         return msg;
     }
-    
-    private static long lastHitTime=0;
-    private static void wait (int seconds){
+
+    private static final long lastHitTime = 0;
+
+    private static void wait(int seconds) {
         long t1;
-        if (lastHitTime >0)
-        {
-            do{ t1=System.currentTimeMillis();
-            } while (t1-lastHitTime<seconds*1000);
+        if (lastHitTime > 0) {
+            do {
+                t1 = System.currentTimeMillis();
+            } while (t1 - lastHitTime < seconds * 1000L);
         }
     }
-    /** 
-      * method to convert an InputStream to a string using the BufferedReader.readLine() method 
-      * this methods reads the InputStream line by line until the null line is encountered 
-      * it appends each line to a StringBuilder object for optimal performance 
-      * @param is 
-      * @return 
-      * @throws IOException 
-      */  
-     public static String convertInputStreamToString(InputStream inputStream) throws IOException  
-     {  
-         if (inputStream != null)  
-         {  
-             StringBuilder stringBuilder = new StringBuilder();  
-             String line;  
-   
-             try {  
-                 BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));  
-                 while ((line = reader.readLine()) != null)  
-                 {  
-                    stringBuilder.append(line).append("\n");  
-                }  
-             }  
-             finally  
-             {  
-                 inputStream.close();  
-             }  
-   
-             return stringBuilder.toString();  
-         }  
-         else  
-         {  
-            return null;  
-         }  
-     }  
+
+    /**
+     * method to convert an InputStream to a string using the BufferedReader.readLine() method
+     * this methods reads the InputStream line by line until the null line is encountered
+     * it appends each line to a StringBuilder object for optimal performance
+     *
+     * @param is
+     * @return
+     * @throws IOException
+     */
+    public static String convertInputStreamToString(InputStream inputStream) throws IOException {
+        if (inputStream != null) {
+            StringBuilder stringBuilder = new StringBuilder();
+            String line;
+
+            try {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+                while ((line = reader.readLine()) != null) {
+                    stringBuilder.append(line).append("\n");
+                }
+            } finally {
+                inputStream.close();
+            }
+
+            return stringBuilder.toString();
+        } else {
+            return null;
+        }
+    }
 }

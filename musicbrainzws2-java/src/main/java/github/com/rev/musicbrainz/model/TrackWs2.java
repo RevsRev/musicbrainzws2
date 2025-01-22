@@ -1,18 +1,18 @@
 package github.com.rev.musicbrainz.model;
 
 
-import java.util.logging.Logger;
 import github.com.rev.mc2.util.miscellaneous.CalendarUtils;
 import github.com.rev.musicbrainz.model.entity.RecordingWs2;
 
+import java.util.logging.Logger;
+
 
 /**
- * <p>A single recordings in a Medium by a specific release. 
+ * <p>A single recordings in a Medium by a specific release.
  * .
  */
-public class TrackWs2 
-{
-    private static Logger log = Logger.getLogger(TrackWs2.class.getName());
+public class TrackWs2 {
+    private static final Logger log = Logger.getLogger(TrackWs2.class.getName());
 
     private String id;
     private MediumWs2 medium;
@@ -22,19 +22,22 @@ public class TrackWs2
     private ArtistCreditWs2 artistCredit;
     private RecordingWs2 recording;
     private Long durationInMillis;
-           
-    
+
+
     /**
-   * Default Constructor
-   */
-    public TrackWs2(){}
+     * Default Constructor
+     */
+    public TrackWs2() {
+    }
 
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
+
     /**
      * @return the position
      */
@@ -62,6 +65,7 @@ public class TrackWs2
     public void setNumber(int number) {
         this.number = number;
     }
+
     /**
      * @return the title
      */
@@ -89,17 +93,18 @@ public class TrackWs2
     public void setArtistCredit(ArtistCreditWs2 artistCredit) {
         this.artistCredit = artistCredit;
     }
+
     /**
      * @return the recording
      */
     public RecordingWs2 getRecording() {
         return recording;
     }
-        
+
     /**
      * @param recording the recording to set
      */
-    
+
     public void setRecording(RecordingWs2 recording) {
         this.recording = recording;
     }
@@ -108,43 +113,52 @@ public class TrackWs2
         this.durationInMillis = durationInMillis;
     }
 
-    public String getDuration(){
-       
-      return CalendarUtils.calcDurationString(this.getDurationInMillis());      
+    public String getDuration() {
+
+        return CalendarUtils.calcDurationString(this.getDurationInMillis());
     }
-    public Long getDurationInMillis(){
-        
-        if (durationInMillis != null 
-                && durationInMillis !=0) return durationInMillis;
-        
-        if (getRecording()==null) return 0L;
+
+    public Long getDurationInMillis() {
+
+        if (durationInMillis != null
+                && durationInMillis != 0) {
+            return durationInMillis;
+        }
+
+        if (getRecording() == null) {
+            return 0L;
+        }
         return getRecording().getDurationInMillis();
     }
 
-     /**
+    /**
      * @return the medium
      */
     public MediumWs2 getMedium() {
         return medium;
     }
-    public String getMediumStr(){
-        
-        if (getMedium()==null) return "";
-        
-        String out =  getMedium().getFormat()+" "
-                +String.valueOf(getMedium().getPosition());
-        
+
+    public String getMediumStr() {
+
+        if (getMedium() == null) {
+            return "";
+        }
+
+        String out = getMedium().getFormat() + " "
+                + getMedium().getPosition();
+
         return out;
     }
-    
+
     /**
      * @param medium the medium to set
      */
     public void setMedium(MediumWs2 medium) {
         this.medium = medium;
     }
+
     @Override
     public String toString() {
-        return getPosition()+" - "+getTitle();
+        return getPosition() + " - " + getTitle();
     }
 }

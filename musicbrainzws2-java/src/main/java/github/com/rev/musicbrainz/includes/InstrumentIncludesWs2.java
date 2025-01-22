@@ -6,70 +6,76 @@ import java.util.List;
  * A specification on how much data to return with a work.
  */
 
-public class InstrumentIncludesWs2 extends IncludesWs2
-{
+public class InstrumentIncludesWs2 extends IncludesWs2 {
 
-      // Misc inc= arguments 
+    // Misc inc= arguments
 
-      private boolean aliases = false;
-     
+    private boolean aliases = false;
+
     /**
      * Default constructor
      */
-    public InstrumentIncludesWs2(){
+    public InstrumentIncludesWs2() {
 
     }
+
     /**
      * @return the aliases
      */
     public boolean isAliases() {
         return aliases;
     }
+
     /**
      * @param aliases the aliases to set
      */
     public void setAliases(boolean aliases) {
         this.aliases = aliases;
     }
+
     /* (non-Javadoc)
      * @see github.com.rev.musicbrainz.webservice.Includes#createIncludeTags()
      */
     @Override
-    public List<String> createIncludeTags() 
-    {
-            List<String> includeTags = super.createIncludeTags();
+    public List<String> createIncludeTags() {
+        List<String> includeTags = super.createIncludeTags();
 
-            // not that elegant but straight forward :)
-            if (isAliases()) includeTags.add(ALIASES_INC);
-            
-            return includeTags;
+        // not that elegant but straight forward :)
+        if (isAliases()) {
+            includeTags.add(ALIASES_INC);
+        }
+
+        return includeTags;
     }
- /**
-   * set all the parameters to false.
-   */
+
+    /**
+     * set all the parameters to false.
+     */
     @Override
-    public void excludeAll(){
-        
+    public void excludeAll() {
+
         super.excludeAll();
         setAliases(false);
-        
+
     }
+
     /**
-   * set all the parameters to true.
-   */
+     * set all the parameters to true.
+     */
     @Override
-    public void includeAll(){
-        
-       super.includeAll();
+    public void includeAll() {
+
+        super.includeAll();
         setAliases(true);
 
     }
+
     /**
-   *  clone the current status of IncludesWs2 to a new one.
-   */
+     * clone the current status of IncludesWs2 to a new one.
+     */
     @Override
-    public InstrumentIncludesWs2 clone(){
-        
+    public InstrumentIncludesWs2 clone() {
+
         InstrumentIncludesWs2 target = new InstrumentIncludesWs2();
         copyTo(target);
         target.setAliases(isAliases());

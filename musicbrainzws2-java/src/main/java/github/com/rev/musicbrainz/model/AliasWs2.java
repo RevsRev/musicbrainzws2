@@ -8,10 +8,9 @@ import java.util.logging.Logger;
  * which locale is used for the alias value. To represent the locale,
  * iso-3166-2 codes like 'ja', 'en', or 'it' are used.</p>
  */
-public class AliasWs2 
-{
-    
-     private static Logger log = Logger.getLogger(AliasWs2.class.getName());
+public class AliasWs2 {
+
+    private static final Logger log = Logger.getLogger(AliasWs2.class.getName());
     /**
      * The alias
      */
@@ -28,20 +27,29 @@ public class AliasWs2
      */
     private String locale;
 
-    public String getDisplayValue(){
-        
-        String out="";
-        
-        if (!(primary== null) && !(primary.isEmpty())) out = out+primary;
-        if (!(type== null) && !(type.isEmpty())) {
-            
-            if (!out.isEmpty())out= out+" ";
-            out = out+type;
+    public String getDisplayValue() {
+
+        String out = "";
+
+        if (!(primary == null) && !(primary.isEmpty())) {
+            out = out + primary;
         }
-         if (!out.isEmpty())out= out+": "; out = out+value;
-         
-         if (!(getLocale()== null) && (getLocale().isEmpty())) out = out+" ("+getLocale()+")";
-         
+        if (!(type == null) && !(type.isEmpty())) {
+
+            if (!out.isEmpty()) {
+                out = out + " ";
+            }
+            out = out + type;
+        }
+        if (!out.isEmpty()) {
+            out = out + ": ";
+        }
+        out = out + value;
+
+        if (!(getLocale() == null) && (getLocale().isEmpty())) {
+            out = out + " (" + getLocale() + ")";
+        }
+
         return out;
     }
 
@@ -49,28 +57,28 @@ public class AliasWs2
      * @return the getScript
      */
     public String getLocale() {
-            return locale;
+        return locale;
     }
 
     /**
      * @param getScript the getScript to set
      */
     public void setLocale(String locale) {
-            this.locale = locale;
+        this.locale = locale;
     }
 
     /**
      * @return the value
      */
     public String getValue() {
-            return value;
+        return value;
     }
 
     /**
      * @param value the value to set
      */
     public void setValue(String value) {
-            this.value = value;
+        this.value = value;
     }
 
     /**
@@ -114,32 +122,35 @@ public class AliasWs2
     public void setPrimary(String primary) {
         this.primary = primary;
     }
-  /**
+
+    /**
      * @return the beginDate
      */
     public String getBeginDate() {
-            return beginDate;
+        return beginDate;
     }
 
     /**
      * @param beginDate the beginDate to set
      */
     public void setBeginDate(String beginDate) {
-            this.beginDate = beginDate;
+        this.beginDate = beginDate;
     }
+
     /**
      * @return the endDate
      */
     public String getEndDate() {
-            return endDate;
+        return endDate;
     }
 
     /**
      * @param endDate the endDate to set
      */
     public void setEndDate(String endDate) {
-            this.endDate = endDate;
+        this.endDate = endDate;
     }
+
     /**
      * @return the ended
      */

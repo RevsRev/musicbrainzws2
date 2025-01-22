@@ -1,5 +1,14 @@
 package github.com.rev.musicbrainz.model.entity;
 
+import github.com.rev.musicbrainz.coverart.Image;
+import github.com.rev.musicbrainz.model.ArtistCreditWs2;
+import github.com.rev.musicbrainz.model.CoverArtArchiveWs2;
+import github.com.rev.musicbrainz.model.LabelInfoListWs2;
+import github.com.rev.musicbrainz.model.MediumListWs2;
+import github.com.rev.musicbrainz.model.RelationWs2;
+import github.com.rev.musicbrainz.model.ReleaseEventListWs2;
+import org.apache.commons.lang3.StringUtils;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -8,23 +17,14 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
-import org.apache.commons.lang3.StringUtils;
 
-import github.com.rev.musicbrainz.coverart.Image;
-import github.com.rev.musicbrainz.model.ArtistCreditWs2;
-import github.com.rev.musicbrainz.model.CoverArtArchiveWs2;
-import github.com.rev.musicbrainz.model.LabelInfoListWs2;
-import github.com.rev.musicbrainz.model.MediumListWs2;
-import github.com.rev.musicbrainz.model.RelationWs2;
-import github.com.rev.musicbrainz.model.ReleaseEventListWs2;
 /**
  * <p>Represents a release.</p>
- 
  */
 public class ReleaseWs2 extends EntityWs2 {
 
-    private static Logger log = Logger.getLogger(ReleaseWs2.class.getName());
-    
+    private static final Logger log = Logger.getLogger(ReleaseWs2.class.getName());
+
     public static final String TYPE_NONE = ReleaseGroupWs2.TYPE_NONE;
 
     public static final String TYPE_NAT = ReleaseGroupWs2.TYPE_NAT;
@@ -57,14 +57,14 @@ public class ReleaseWs2 extends EntityWs2 {
     private String countryId;
     private String barcode;
     private String asin;
-    
+
     private ArtistCreditWs2 artistCredit;
     private ReleaseGroupWs2 releaseGroup;
     private LabelInfoListWs2 labelInfoList;
     private MediumListWs2 mediumList;
     private ReleaseEventListWs2 eventList;
     private CoverArtArchiveWs2 coverArtArchive;
-    
+
     // Recording is via Medium.
 
     public String getTitle() {
@@ -74,36 +74,43 @@ public class ReleaseWs2 extends EntityWs2 {
     public void setTitle(String title) {
         this.title = title;
     }
-    
+
     public String getDisambiguation() {
         return disambiguation;
     }
+
     public void setDisambiguation(String disambiguation) {
         this.disambiguation = disambiguation;
     }
-    
+
     public String getPackaging() {
         return packaging;
     }
+
     public void setPackaging(String packaging) {
         this.packaging = packaging;
     }
-    
+
     public String getStatus() {
         return status;
     }
+
     public void setStatus(String status) {
         this.status = status;
     }
+
     public String getQualityStr() {
         return qualityStr;
     }
-     public void setQualityStr(String qualityStr) {
+
+    public void setQualityStr(String qualityStr) {
         this.qualityStr = qualityStr;
     }
+
     public String getQuality() {
         return quality;
     }
+
     public void setQuality(String quality) {
         this.quality = quality;
     }
@@ -111,6 +118,7 @@ public class ReleaseWs2 extends EntityWs2 {
     public String getTextLanguage() {
         return textLanguage;
     }
+
     public void setTextLanguage(String textLanguage) {
         this.textLanguage = textLanguage;
     }
@@ -118,20 +126,23 @@ public class ReleaseWs2 extends EntityWs2 {
     public String getTextScript() {
         return textScript;
     }
+
     public void setTextScript(String textScript) {
         this.textScript = textScript;
     }
-    
+
     public String getAsin() {
         return asin;
     }
+
     public void setAsin(String asin) {
         this.asin = asin;
     }
-    
+
     public String getCountryId() {
         return countryId;
     }
+
     public void setCountryId(String countryId) {
         this.countryId = countryId;
     }
@@ -143,44 +154,53 @@ public class ReleaseWs2 extends EntityWs2 {
     public void setDateStr(String dateStr) {
         this.dateStr = dateStr;
     }
-    
+
     public String getBarcode() {
         return barcode;
     }
+
     public void setBarcode(String barcode) {
         this.barcode = barcode;
     }
+
     public String getArtistCreditString() {
-            if (getArtistCredit()==null) return "";
-            return artistCredit.getArtistCreditString();
-    }
-    public ArtistCreditWs2 getArtistCredit() {
-            return artistCredit;
-    }
-    public void setArtistCredit(ArtistCreditWs2 artistCredit) {
-            this.artistCredit = artistCredit;
+        if (getArtistCredit() == null) {
+            return "";
+        }
+        return artistCredit.getArtistCreditString();
     }
 
-     public ReleaseGroupWs2 getReleaseGroup() {
-            return releaseGroup;
+    public ArtistCreditWs2 getArtistCredit() {
+        return artistCredit;
     }
+
+    public void setArtistCredit(ArtistCreditWs2 artistCredit) {
+        this.artistCredit = artistCredit;
+    }
+
+    public ReleaseGroupWs2 getReleaseGroup() {
+        return releaseGroup;
+    }
+
     public void setReleaseGroup(ReleaseGroupWs2 releaseGroupWs2) {
-            this.releaseGroup = releaseGroupWs2;
+        this.releaseGroup = releaseGroupWs2;
     }
+
     public String getLabelInfoString() {
-        if (labelInfoList!=null)
-        {
+        if (labelInfoList != null) {
             return labelInfoList.getLabelInfoString();
         }
         return "";
     }
+
     public LabelInfoListWs2 getLabelInfoList() {
-            return labelInfoList;
+        return labelInfoList;
     }
+
     public void setLabelInfoList(LabelInfoListWs2 labelInfoList) {
-            this.labelInfoList = labelInfoList;
+        this.labelInfoList = labelInfoList;
     }
-    
+
     public MediumListWs2 getMediumList() {
         return mediumList;
     }
@@ -188,29 +208,38 @@ public class ReleaseWs2 extends EntityWs2 {
     public void setMediumList(MediumListWs2 mediumList) {
         this.mediumList = mediumList;
     }
+
     public ReleaseEventListWs2 getEventList() {
         return eventList;
     }
+
     public void setEventList(ReleaseEventListWs2 eventList) {
         this.eventList = eventList;
     }
-    public String getFormat() {
-       
-       if  (getMediumList() == null) return "";
-       
-       return getMediumList().getFormat();
-   } 
-   public int getTracksCount(){
 
-       if  (getMediumList() == null) return 0;
-       
-       return getMediumList().getTracksCount();
-   }
-   
+    public String getFormat() {
+
+        if (getMediumList() == null) {
+            return "";
+        }
+
+        return getMediumList().getFormat();
+    }
+
+    public int getTracksCount() {
+
+        if (getMediumList() == null) {
+            return 0;
+        }
+
+        return getMediumList().getTracksCount();
+    }
+
     /**
-    * Parses the date string and returns a Date
-    * @return A Date object
-    */
+     * Parses the date string and returns a Date
+     *
+     * @return A Date object
+     */
     public Date getDate() {
         return dateFromdateString();
     }
@@ -218,75 +247,87 @@ public class ReleaseWs2 extends EntityWs2 {
     private Date dateFromdateString() {
         SimpleDateFormat f = new SimpleDateFormat("yyyy");
 
-        if (dateStr == null) 
-                return null;
+        if (dateStr == null) {
+            return null;
+        }
 
-        if (dateStr.length() == 10) 
-                f = new SimpleDateFormat("yyyy-MM-dd");
+        if (dateStr.length() == 10) {
+            f = new SimpleDateFormat("yyyy-MM-dd");
+        }
 
-        if (dateStr.length() == 7) 
-                f = new SimpleDateFormat("yyyy-MM");
+        if (dateStr.length() == 7) {
+            f = new SimpleDateFormat("yyyy-MM");
+        }
 
         try {
-                return f.parse(dateStr);
+            return f.parse(dateStr);
         } catch (ParseException e) {
-                log.warning("Could not parse date string - returning null");
-                return null;
+            log.warning("Could not parse date string - returning null");
+            return null;
         }
     }
-    public String getYear(){
-       
-        if (getDate() == null)
 
-        {return "";}
+    public String getYear() {
+
+        if (getDate() == null) {
+            return "";
+        }
 
         Date d = getDate();
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy");
         return dateFormat.format(d.getTime());
     }
-   public String getDisplayEvents(){
-       
-       if (getEventList()== null || 
-            getEventList().getReleaseEvents() == null || 
-            getEventList().getReleaseEvents().isEmpty()) return getDateStr();
-       
-       if (getEventList().getReleaseEvents().size()==1)return getDateStr();
 
-       return getEventList().toString();
-   }
-    public Long getDurationInMillis(){
-        
-        if (getMediumList()==null ||
-             getMediumList().getDurationInMillis()==null)
-            
+    public String getDisplayEvents() {
+
+        if (getEventList() == null ||
+                getEventList().getReleaseEvents() == null ||
+                getEventList().getReleaseEvents().isEmpty()) {
+            return getDateStr();
+        }
+
+        if (getEventList().getReleaseEvents().size() == 1) {
+            return getDateStr();
+        }
+
+        return getEventList().toString();
+    }
+
+    public Long getDurationInMillis() {
+
+        if (getMediumList() == null ||
+                getMediumList().getDurationInMillis() == null) {
             return 0L;
-        
+        }
+
         return getMediumList().getDurationInMillis();
     }
-    public String getDuration(){
-    
-        if (getMediumList()==null ||
-             getMediumList().getDurationInMillis()==null)
-            
+
+    public String getDuration() {
+
+        if (getMediumList() == null ||
+                getMediumList().getDurationInMillis() == null) {
             return "";
-        
+        }
+
         return getMediumList().getDuration();
     }
 
-    public String getUniqueTitle()
-    {
+    public String getUniqueTitle() {
         if (StringUtils.isNotBlank(disambiguation)) {
-                return title + " (" + disambiguation + ")";
+            return title + " (" + disambiguation + ")";
         }
         return title;
     }
+
     /**
      * @param coverArtArchive the coverArtArchive to set
      */
     public void setCoverArtArchive(CoverArtArchiveWs2 coverArtArchive) {
         this.coverArtArchive = coverArtArchive;
     }
+
     /**
      * @return the coverArtArchive
      */
@@ -294,8 +335,10 @@ public class ReleaseWs2 extends EntityWs2 {
         return coverArtArchive;
     }
 
-     public boolean hasArtwork() {
-        if (getCoverArtArchive()==null) return false;
+    public boolean hasArtwork() {
+        if (getCoverArtArchive() == null) {
+            return false;
+        }
         return getCoverArtArchive().hasArtwork();
     }
 
@@ -303,7 +346,9 @@ public class ReleaseWs2 extends EntityWs2 {
      * @return the front
      */
     public boolean hasFront() {
-        if (getCoverArtArchive()==null) return false;
+        if (getCoverArtArchive() == null) {
+            return false;
+        }
         return getCoverArtArchive().hasFront();
     }
 
@@ -311,58 +356,69 @@ public class ReleaseWs2 extends EntityWs2 {
      * @return the back
      */
     public boolean hasBack() {
-        if (getCoverArtArchive()==null) return false;
+        if (getCoverArtArchive() == null) {
+            return false;
+        }
         return getCoverArtArchive().hasBack();
     }
+
     /**
      * @return the count
      */
     public int getCoverArtCount() {
-        if (getCoverArtArchive()==null) return 0;
+        if (getCoverArtArchive() == null) {
+            return 0;
+        }
         return getCoverArtArchive().getCount();
-    } 
-    public List<Image> getImageList(){
+    }
+
+    public List<Image> getImageList() {
         return getCoverArtArchive().getImageList();
     }
+
     public String getSeriesDisplay() {
-        
-        if (getRelationList() == null ) return "";
-        if (getRelationList().getRelations().isEmpty()) return "";
+
+        if (getRelationList() == null) {
+            return "";
+        }
+        if (getRelationList().getRelations().isEmpty()) {
+            return "";
+        }
 
         List<String> names = new ArrayList<String>();
-        for (Iterator <RelationWs2> i = getRelationList().getRelations().iterator(); i.hasNext();)
-        {
+        for (Iterator<RelationWs2> i = getRelationList().getRelations().iterator(); i.hasNext(); ) {
             RelationWs2 r = i.next();
-            if (!r.getTargetType().equals(RelationWs2.TO_SERIES)) continue;
-            if (!r.getType().equals(RelationWs2.PARTOFSERIES)) continue;
-            
-            SeriesWs2 series = (SeriesWs2)r.getTarget();
+            if (!r.getTargetType().equals(RelationWs2.TO_SERIES)) {
+                continue;
+            }
+            if (!r.getType().equals(RelationWs2.PARTOFSERIES)) {
+                continue;
+            }
+
+            SeriesWs2 series = (SeriesWs2) r.getTarget();
             String name = series.getName();
 
             names.add(name);
         }
         String out = Arrays.toString(names.toArray()).trim();
         out = out.substring(1);
-        out = out.substring(0, out.length()-1).trim();
+        out = out.substring(0, out.length() - 1).trim();
 
         return out;
-        
+
     }
+
     @Override
     public String toString() {
         return getUniqueTitle();
     }
+
     @Override
     public boolean equals(Object object) {
-        if (!(object instanceof ReleaseWs2)) {
+        if (!(object instanceof ReleaseWs2 other)) {
             return false;
         }
-        ReleaseWs2 other = (ReleaseWs2) object;
-        if (this.getIdUri().equals(other.getIdUri()))
-        {
-            return true;
-        }
-        return false;
+        return this.getIdUri().equals(other.getIdUri());
     }
 
 }
