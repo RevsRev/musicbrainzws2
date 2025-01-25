@@ -27,6 +27,20 @@ public class MbQueryTest {
     }
 
     private static List<MbQuery<?>> getMbQueries() {
-        return List.of(new MbAnnotationQuery());
+        return List.of(
+                new MbAnnotationQuery(),
+                new MbAreaQuery(),
+                new MbArtistQuery(),
+                new MbEventQuery(),
+                new MbGenreQuery(),
+                new MbInstrumentQuery(),
+                new MbLabelQuery(),
+                new MbPlaceQuery(),
+                new MbReleaseGroupQuery(),
+                new MbReleaseQuery(),
+                new MbSeriesQuery(),
+                new MbUrlQuery(),
+                new MbWorkQuery()
+        );
     }
 }
