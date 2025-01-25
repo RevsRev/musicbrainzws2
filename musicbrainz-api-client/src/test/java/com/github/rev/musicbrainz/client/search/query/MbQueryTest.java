@@ -37,6 +37,7 @@ public class MbQueryTest {
                 new MbInstrumentQuery(),
                 new MbLabelQuery(),
                 new MbPlaceQuery(),
+                new MbRecordingQuery(),
                 new MbReleaseGroupQuery(),
                 new MbReleaseQuery(),
                 new MbSeriesQuery(),
