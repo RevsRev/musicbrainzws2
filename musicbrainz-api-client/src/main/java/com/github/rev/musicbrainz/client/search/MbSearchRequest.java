@@ -3,6 +3,7 @@ package com.github.rev.musicbrainz.client.search;
 import com.github.rev.musicbrainz.client.MbBuilder;
 import com.github.rev.musicbrainz.client.MbEntity;
 import com.github.rev.musicbrainz.client.MbResultFormat;
+import com.github.rev.musicbrainz.client.search.query.MbQuery;
 import lombok.Getter;
 import lombok.Setter;
 

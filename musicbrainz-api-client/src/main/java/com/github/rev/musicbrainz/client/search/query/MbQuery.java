@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.search;
+package com.github.rev.musicbrainz.client.search.query;
 
 import com.github.rev.musicbrainz.client.MbEntity;
 
