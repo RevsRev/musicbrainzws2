@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * MbQuery for CDStubs.
  */
-public class MbCdStubQuery extends MbQuery<MbEntity.CdStub> {
+public final class MbCdStubQuery extends MbQuery<MbEntity.CdStub> {
 
     /**
      * The date the CD stub was added (e.g. "2020-01-22").
@@ -39,7 +39,15 @@ public class MbCdStubQuery extends MbQuery<MbEntity.CdStub> {
     public static final String TRACKS = "tracks";
 
     @Override
-    public final Set<String> getQueryFields() {
-        return Set.of();
+    public Set<String> getQueryFields() {
+        return Set.of(
+                ADDED,
+                ARTIST,
+                BARCODE,
+                COMMENT,
+                DISCID,
+                TITLE,
+                TRACKS
+        );
     }
 }
