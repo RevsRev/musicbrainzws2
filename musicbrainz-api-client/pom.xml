@@ -19,6 +19,8 @@
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
         <checkstyle.version>10.21.1</checkstyle.version>
         <lombok.version>1.18.36</lombok.version>
+        <junit-jupiter.version>5.11.4</junit-jupiter.version>
+        <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
     </properties>
 
     <dependencies>
@@ -28,10 +30,33 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
