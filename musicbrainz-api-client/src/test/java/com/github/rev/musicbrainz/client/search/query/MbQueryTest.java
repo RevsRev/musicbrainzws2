@@ -41,6 +41,7 @@ public class MbQueryTest {
                 new MbReleaseGroupQuery(),
                 new MbReleaseQuery(),
                 new MbSeriesQuery(),
+                new MbTagQuery(),
                 new MbUrlQuery(),
                 new MbWorkQuery()
         );
