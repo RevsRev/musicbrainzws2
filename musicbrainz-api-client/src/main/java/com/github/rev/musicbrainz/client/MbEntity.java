@@ -3,69 +3,89 @@ package com.github.rev.musicbrainz.client;
 /**
  * Represents an entity served by the MusicBrainz API.
  */
-public enum MbEntity {
+public class MbEntity {
+
+    /**
+     * Annotation.
+     */
+    public static final class MbAnnotation extends MbEntity {
+    }
+
     /**
      * Area.
      */
-    AREA,
+    public static final class MbArea extends MbEntity {
+    }
 
     /**
      * Artist.
      */
-    ARTIST,
+    public static final class MbArtist extends MbEntity {
+    }
 
     /**
      * Event.
      */
-    EVENT,
+    public static final class MbEvent extends MbEntity {
+    }
 
     /**
      * Genre.
      */
-    GENRE,
+    public static final class MbGenre extends MbEntity {
+    }
 
     /**
      * Instrument.
      */
-    INSTRUMENT,
+    public static final class MbInstrument extends MbEntity {
+    }
 
     /**
      * Label.
      */
-    LABEL,
+    public static final class MbLabel extends MbEntity {
+    }
 
     /**
      * Place.
      */
-    PLACE,
+    public static final class MbPlace extends MbEntity {
+    }
 
     /**
      * Recording.
      */
-    RECORDING,
+    public static final class MbRecording extends MbEntity {
+    }
 
     /**
      * Release.
      */
-    RELEASE,
+    public static final class MbRelease extends MbEntity {
+    }
 
     /**
      * Release Group.
      */
-    RELEASE_GROUP,
+    public static final class MbReleaseGroup extends MbEntity {
+    }
 
     /**
      * Series.
      */
-    SERIES,
+    public static final class MbSeries extends MbEntity {
+    }
 
     /**
      * Work.
      */
-    WORK,
+    public static final class MbWork extends MbEntity {
+    }
 
     /**
      * Url.
      */
-    URL
+    public static final class MbUrl extends MbEntity {
+    }
 }
