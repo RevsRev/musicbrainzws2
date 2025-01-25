@@ -24,6 +24,12 @@ public class MbEntity {
     }
 
     /**
+     * CDStub.
+     */
+    public static final class CdStub extends MbEntity {
+    }
+
+    /**
      * Event.
      */
     public static final class MbEvent extends MbEntity {

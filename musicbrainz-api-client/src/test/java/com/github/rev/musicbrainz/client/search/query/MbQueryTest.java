@@ -31,6 +31,7 @@ public class MbQueryTest {
                 new MbAnnotationQuery(),
                 new MbAreaQuery(),
                 new MbArtistQuery(),
+                new MbCdStubQuery(),
                 new MbEventQuery(),
                 new MbGenreQuery(),
                 new MbInstrumentQuery(),
