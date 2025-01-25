@@ -84,6 +84,12 @@ public class MbEntity {
     }
 
     /**
+     * Tag.
+     */
+    public static final class Tag extends MbEntity {
+    }
+
+    /**
      * Work.
      */
     public static final class MbWork extends MbEntity {
