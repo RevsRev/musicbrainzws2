@@ -43,7 +43,15 @@ public abstract class MbQuery<T extends MbEntity> {
      */
     public final String asQueryString() {
         StringBuilder sb = new StringBuilder();
+        boolean first = true;
         for (Map.Entry<String, String> keyValue : queryParams.entrySet()) {
+
+            if (!first) {
+                sb.append(" AND ");
+            } else {
+                first = false;
+            }
+
             sb.append(keyValue.getKey());
             sb.append(':');
             sb.append(keyValue.getValue());

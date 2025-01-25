@@ -1,6 +1,7 @@
 package com.github.rev.musicbrainz.client.search.query;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -24,6 +25,21 @@ public class MbQueryTest {
         for (String queryField : queryFields) {
             Assertions.assertDoesNotThrow(() -> query.add(queryField, ""));
         }
+    }
+
+    @Test
+    public void testCorrectQueryStringSingleField() throws MbQuery.InvalidQueryFieldException {
+        MbArtistQuery artistQuery = new MbArtistQuery();
+        artistQuery.add(MbArtistQuery.ARTIST, "Fleetwood Mac");
+        Assertions.assertEquals("artist:Fleetwood Mac", artistQuery.asQueryString());
+    }
+
+    @Test
+    public void testCorrectQueryStringMultipleFields() throws MbQuery.InvalidQueryFieldException {
+        MbArtistQuery artistQuery = new MbArtistQuery();
+        artistQuery.add(MbArtistQuery.ARTIST, "Fleetwood Mac");
+        artistQuery.add(MbArtistQuery.TYPE, "group");
+        Assertions.assertEquals("artist:Fleetwood Mac AND type:group", artistQuery.asQueryString());
     }
 
     private static List<MbQuery<?>> getMbQueries() {
