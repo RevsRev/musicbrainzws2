@@ -5,6 +5,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
+import java.util.Set;
 
 public class MbQueryTest {
 
@@ -14,6 +15,15 @@ public class MbQueryTest {
     @MethodSource("getMbQueries")
     public void testInvalidFieldName(MbQuery<?> query) {
         Assertions.assertThrows(MbQuery.InvalidQueryFieldException.class, () -> query.add(INVALID_FIELD_NAME, ""));
+    }
+
+    @ParameterizedTest
+    @MethodSource("getMbQueries")
+    public void testValidFieldName(MbQuery<?> query) {
+        Set<String> queryFields = query.getQueryFields();
+        for (String queryField : queryFields) {
+            Assertions.assertDoesNotThrow(() -> query.add(queryField, ""));
+        }
     }
 
     private static List<MbQuery<?>> getMbQueries() {

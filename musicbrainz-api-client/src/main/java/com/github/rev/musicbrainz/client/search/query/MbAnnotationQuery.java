@@ -31,7 +31,7 @@ public final class MbAnnotationQuery extends MbQuery<MbEntity.MbAnnotation> {
     public static final String TYPE = "type";
 
     @Override
-    protected Set<String> getQueryFields() {
+    public Set<String> getQueryFields() {
         return Set.of(
                 ENTITY,
                 ID,

@@ -23,7 +23,7 @@ public abstract class MbQuery<T extends MbEntity> {
      * Instances should return a non-null map containing the permissible fields.
      * @return Set of Field names that are permissible for this query.
      */
-    protected abstract Set<String> getQueryFields();
+    public abstract Set<String> getQueryFields();
 
     /**
      * Add a Field and Value to the query.
