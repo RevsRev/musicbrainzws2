@@ -106,6 +106,26 @@ public final class MbArtistQuery extends MbQuery<MbEntity.MbArtist> {
 
     @Override
     public Set<String> getQueryFields() {
-        return Set.of();
+        return Set.of(
+                ALIAS,
+                PRIMARY_ALIAS,
+                AREA,
+                ARID,
+                ARTIST,
+                ARTISTACCENT,
+                BEGIN,
+                BEGINAREA,
+                COMMENT,
+                COUNTRY,
+                END,
+                ENDAREA,
+                ENDED,
+                GENDER,
+                IPI,
+                ISNI,
+                SORTNAME,
+                TAG,
+                TYPE
+        );
     }
 }
