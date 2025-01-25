@@ -1,6 +1,7 @@
 package com.github.rev.musicbrainz.client.search.query;
 
 import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.http.MbParam;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +12,7 @@ import java.util.Set;
  *
  * @param <T> The entity type being browsed.
  */
-public abstract class MbQuery<T extends MbEntity> {
+public abstract class MbQuery<T extends MbEntity> implements MbParam {
 
     /**
      * Map of Field to be queried to the value being queried.
@@ -57,6 +58,17 @@ public abstract class MbQuery<T extends MbEntity> {
             sb.append(keyValue.getValue());
         }
         return sb.toString();
+    }
+
+    @Override
+    public final String getName() {
+        return "query";
+    }
+
+    @Override
+    public final String getValue() {
+        //TODO - Replace with some sort of "url formatter"...
+        return asQueryString().replaceAll(" ", "%20");
     }
 
     /**
