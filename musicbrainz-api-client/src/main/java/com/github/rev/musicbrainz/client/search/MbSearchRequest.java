@@ -50,11 +50,11 @@ public final class MbSearchRequest<T extends MbEntity> implements MbParams {
     @Override
     public Collection<MbParam> getParams() {
         return List.of(
-                new MbDefaultParam("type", entity.toString()),
-                new MbDefaultParam("fmt", format.toString()),
+                new MbDefaultParam(TYPE, entity.toString()),
+                new MbDefaultParam(FMT, format.toString()),
                 query,
-                new MbDefaultParam("limit", "" + limit),
-                new MbDefaultParam("offset", "" + offset)
+                new MbDefaultParam(LIMIT, "" + limit),
+                new MbDefaultParam(OFFSET, "" + offset)
         );
     }
 
