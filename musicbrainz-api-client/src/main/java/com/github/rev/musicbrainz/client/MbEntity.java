@@ -86,7 +86,7 @@ public class MbEntity {
     /**
      * Tag.
      */
-    public static final class Tag extends MbEntity {
+    public static final class MbTag extends MbEntity {
     }
 
     /**

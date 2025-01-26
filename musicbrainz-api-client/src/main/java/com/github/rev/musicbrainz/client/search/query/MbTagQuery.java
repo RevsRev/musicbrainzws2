@@ -4,7 +4,7 @@ import com.github.rev.musicbrainz.client.MbEntity;
 
 import java.util.Set;
 
-public final class MbTagQuery extends MbQuery<MbEntity.Tag> {
+public final class MbTagQuery extends MbQuery<MbEntity.MbTag> {
 
     /**
      * (part of) the tag's name.
