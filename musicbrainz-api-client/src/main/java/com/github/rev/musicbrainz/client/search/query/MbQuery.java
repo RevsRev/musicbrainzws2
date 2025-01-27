@@ -34,6 +34,7 @@ public abstract class MbQuery<T extends MbEntity> implements MbParam {
      */
     public final void add(final String field, final String value) throws InvalidQueryFieldException {
         if (!queryFields.contains(field)) {
+            //TODO - Move validation to the point of building a query?
             throw new InvalidQueryFieldException(field);
         }
         queryParams.put(field, value);

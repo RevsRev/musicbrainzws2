@@ -39,6 +39,6 @@ public final class MbEntityController<T extends MbEntity> implements MbBrowse<T>
 
     @Override
     public MbSearchResult<T> doSearch(final MbSearchRequest<T> request) {
-        return null;
+        return client.doSearch(request);
     }
 }
