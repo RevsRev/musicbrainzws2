@@ -1,5 +1,7 @@
 package com.github.rev.musicbrainz.client;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.github.rev.musicbrainz.client.http.MbParam;
 import com.github.rev.musicbrainz.client.http.MbRequest;
 import com.github.rev.musicbrainz.client.search.MbSearchResult;
@@ -11,6 +13,7 @@ import org.apache.hc.core5.http.ClassicHttpRequest;
 import org.apache.hc.core5.http.io.HttpClientResponseHandler;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Collection;
 
 /**
@@ -71,10 +74,12 @@ public final class MbClient {
         return response -> {
             StringBuilder sb = new StringBuilder();
             sb.append("CODE: ").append(response.getCode()).append('\n');
-            sb.append("BODY: ").append(response.getEntity());
+            sb.append("BODY: ").append(response.getEntity().getClass().getName());
 
-            System.out.println(sb);
-
+            InputStream is = response.getEntity().getContent();
+            XmlMapper xmlMapper = new XmlMapper();
+            JsonNode jsonNode = xmlMapper.readTree(is);
+            System.out.println(jsonNode.toPrettyString());
             return null;
         };
     }
