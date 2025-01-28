@@ -1,13 +1,15 @@
 package com.github.rev.musicbrainz.client.lookup;
 
-import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
+import com.github.rev.musicbrainz.client.MbResult;
 
 /**
  * Interface implemented by controllers looking up a particular entity.
  *
  * @param <T> The entity type being looked up.
+ * @param <R> The lookup result return type.
  */
-public interface MbLookup<T extends MbEntity> {
+public interface MbLookup<T extends MbEntity, R extends MbResult<T>> {
 
     /**
      * Submit a lookup request to the MusicBrainz API.
@@ -15,5 +17,5 @@ public interface MbLookup<T extends MbEntity> {
      * @param request The LookupRequest
      * @return The LookupResult.
      */
-    MbLookupResult<T> doLookup(MbLookupRequest<T> request);
+    R doLookup(MbLookupRequest<T> request);
 }

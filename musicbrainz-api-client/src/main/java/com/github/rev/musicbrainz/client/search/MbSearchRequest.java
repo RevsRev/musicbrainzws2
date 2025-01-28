@@ -1,7 +1,7 @@
 package com.github.rev.musicbrainz.client.search;
 
 import com.github.rev.musicbrainz.client.MbBuilder;
-import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.MbResultFormat;
 import com.github.rev.musicbrainz.client.http.MbDefaultParam;
 import com.github.rev.musicbrainz.client.http.MbParam;

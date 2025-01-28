@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client;
+package com.github.rev.musicbrainz.client.entity;
 
 /**
  * Represents an entity served by the MusicBrainz API.

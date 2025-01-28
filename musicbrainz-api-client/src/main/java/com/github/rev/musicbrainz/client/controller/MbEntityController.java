@@ -1,44 +1,49 @@
 package com.github.rev.musicbrainz.client.controller;
 
 import com.github.rev.musicbrainz.client.MbClient;
-import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.MbResult;
 import com.github.rev.musicbrainz.client.browse.MbBrowse;
 import com.github.rev.musicbrainz.client.browse.MbBrowseRequest;
-import com.github.rev.musicbrainz.client.browse.MbBrowseResult;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.lookup.MbLookup;
 import com.github.rev.musicbrainz.client.lookup.MbLookupRequest;
-import com.github.rev.musicbrainz.client.lookup.MbLookupResult;
+import com.github.rev.musicbrainz.client.parse.MbJsonParser;
 import com.github.rev.musicbrainz.client.search.MbSearch;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
-import com.github.rev.musicbrainz.client.search.MbSearchResult;
 
 /**
  * A Controller for the MusicBrainz API that handles a single entity.
  * @param <T> The Entity handled by this particular controller.
+ * @param <R> The Return type of the controller's actions.
  */
-public final class MbEntityController<T extends MbEntity> implements MbBrowse<T>, MbLookup<T>, MbSearch<T> {
+public final class MbEntityController<T extends MbEntity, R extends MbResult<T>> implements MbBrowse<T, R>,
+                                                                                            MbLookup<T, R>,
+                                                                                            MbSearch<T, R> {
 
     private final MbClient client;
+    private final MbJsonParser<R> parser;
 
     /**
      * @param client The MbClient used by this controller.
+     * @param parser The MbParser responsible for turning JsonNodes into the result.
      */
-    public MbEntityController(final MbClient client) {
+    public MbEntityController(final MbClient client, final MbJsonParser<R> parser) {
         this.client = client;
+        this.parser = parser;
     }
 
     @Override
-    public MbBrowseResult<T> doBrowse(final MbBrowseRequest<T> request) {
+    public R doBrowse(final MbBrowseRequest<T> request) {
         return null;
     }
 
     @Override
-    public MbLookupResult<T> doLookup(final MbLookupRequest<T> request) {
+    public R doLookup(final MbLookupRequest<T> request) {
         return null;
     }
 
     @Override
-    public MbSearchResult<T> doSearch(final MbSearchRequest<T> request) {
-        return client.doSearch(request);
+    public R doSearch(final MbSearchRequest<T> request) {
+        return parser.parse(client.doSearch(request));
     }
 }

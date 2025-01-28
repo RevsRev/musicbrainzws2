@@ -1,6 +1,6 @@
 package com.github.rev.musicbrainz.client.http;
 
-import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 
 /**
  * Request to the MusicBrainz API.

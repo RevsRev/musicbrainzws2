@@ -1,6 +1,6 @@
 package com.github.rev.musicbrainz.client.search.query;
 
-import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.http.MbParam;
 
 import java.util.HashMap;

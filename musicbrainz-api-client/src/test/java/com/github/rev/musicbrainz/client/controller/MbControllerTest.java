@@ -2,7 +2,7 @@ package com.github.rev.musicbrainz.client.controller;
 
 import com.github.rev.musicbrainz.client.MbBuilder;
 import com.github.rev.musicbrainz.client.MbClient;
-import com.github.rev.musicbrainz.client.MbEntity;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
 import com.github.rev.musicbrainz.client.search.query.MbArtistQuery;
 import com.github.rev.musicbrainz.client.search.query.MbQuery;

@@ -2,9 +2,9 @@ package com.github.rev.musicbrainz.client;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.http.MbParam;
 import com.github.rev.musicbrainz.client.http.MbRequest;
-import com.github.rev.musicbrainz.client.search.MbSearchResult;
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
@@ -32,8 +32,8 @@ public final class MbClient {
             + DEFAULT_VERSION;
 
     private final String endpoint;
-
     private final HttpClient httpClient = buildHttpClient();
+    private final XmlMapper xmlMapper = new XmlMapper();
 
     /**
      * Construct a client for the default MusicBrainz endpoint.
@@ -60,27 +60,20 @@ public final class MbClient {
      * @return The MbSearchResult for the given entity type.
      * @param <T> The type of entity being searched.
      */
-    public <T extends MbEntity> MbSearchResult<T> doSearch(final MbRequest<T> request) {
+    public <T extends MbEntity> JsonNode doSearch(final MbRequest<T> request) {
         ClassicHttpRequest httpRequest = createHttpRequest(request);
         try {
-            return httpClient.execute(httpRequest, testResponseHandler());
+            return httpClient.execute(httpRequest, jsonResponseHandler());
         } catch (IOException e) {
             //TODO - Error handling / retries etc...
             throw new RuntimeException(e);
         }
     }
 
-    private <T extends MbEntity> HttpClientResponseHandler<MbSearchResult<T>> testResponseHandler() {
+    private HttpClientResponseHandler<JsonNode> jsonResponseHandler() {
         return response -> {
-            StringBuilder sb = new StringBuilder();
-            sb.append("CODE: ").append(response.getCode()).append('\n');
-            sb.append("BODY: ").append(response.getEntity().getClass().getName());
-
             InputStream is = response.getEntity().getContent();
-            XmlMapper xmlMapper = new XmlMapper();
-            JsonNode jsonNode = xmlMapper.readTree(is);
-            System.out.println(jsonNode.toPrettyString());
-            return null;
+            return xmlMapper.readTree(is);
         };
     }
 
