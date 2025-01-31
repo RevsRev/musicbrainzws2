@@ -25,6 +25,7 @@
         <jackson.version>2.18.2</jackson.version>
         <jaxb2-maven-plugin.version>3.2.0</jaxb2-maven-plugin.version>
         <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
+        <jaxb-plugins.version>4.0.8</jaxb-plugins.version>
     </properties>
 
     <dependencies>
@@ -103,10 +104,20 @@
                     <sources>
                         <source>${project.basedir}/src/main/resources/schema/musicbrainz.xsd</source>
                     </sources>
-<!--                    <args>-->
-<!--                        <arg>-XautoNameResolution</arg>-->
-<!--                    </args>-->
+                    <extension>true</extension>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jvnet.jaxb</groupId>
+                        <artifactId>jaxb-plugins</artifactId>
+                        <version>${jaxb-plugins.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.jvnet.jaxb</groupId>
+                        <artifactId>jaxb-plugin-annotate</artifactId>
+                        <version>${jaxb-plugins.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

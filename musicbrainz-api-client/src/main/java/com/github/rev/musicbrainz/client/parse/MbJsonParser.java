@@ -1,5 +1,6 @@
 package com.github.rev.musicbrainz.client.parse;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
@@ -19,6 +20,7 @@ import com.github.rev.musicbrainz.client.entity.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.entity.result.MbTagResult;
 import com.github.rev.musicbrainz.client.entity.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
+import com.github.rev.musicbrainz.client.serdes.MbSerdesModule;
 
 /**
  * Parser for turning JSON into POJOs.
@@ -27,7 +29,10 @@ import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
 public final class MbJsonParser<R> implements MbParser<JsonNode, R> {
 
     private final Class<R> clazz;
-    private final ObjectMapper om = new ObjectMapper().setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE);
+    private final ObjectMapper om = new ObjectMapper()
+            .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
+            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+            .registerModule(new MbSerdesModule());
 
     private MbJsonParser(final Class<R> clazz) {
         this.clazz = clazz;
