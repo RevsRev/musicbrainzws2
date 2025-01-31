@@ -39,104 +39,102 @@ public final class MbJsonMapper<R> implements MbMapper<JsonNode, R> {
 
     @Override
     public R parse(final JsonNode input) {
-//        System.out.println(input.toPrettyString());
         return om.convertValue(input, clazz);
-//        return null;
     }
 
     /**
-     * The ANNOTATION_PARSER.
+     * The ANNOTATION_MAPPER.
      */
-    public static final MbJsonMapper<MbAnnotationResult> ANNOTATION_PARSER
+    public static final MbJsonMapper<MbAnnotationResult> ANNOTATION_MAPPER
             = new MbJsonMapper<>(MbAnnotationResult.class);
 
     /**
-     * The AREA_PARSER.
+     * The AREA_MAPPER.
      */
-    public static final MbJsonMapper<MbAreaResult> AREA_PARSER
+    public static final MbJsonMapper<MbAreaResult> AREA_MAPPER
             = new MbJsonMapper<>(MbAreaResult.class);
 
     /**
-     * The ARTIST_PARSER.
+     * The ARTIST_MAPPER.
      */
-    public static final MbJsonMapper<MbArtistResult> ARTIST_PARSER
+    public static final MbJsonMapper<MbArtistResult> ARTIST_MAPPER
             = new MbJsonMapper<>(MbArtistResult.class);
 
     /**
-     * The STUB_PARSER.
+     * The STUB_MAPPER.
      */
-    public static final MbJsonMapper<MbCdStubResult> STUB_PARSER
+    public static final MbJsonMapper<MbCdStubResult> STUB_MAPPER
             = new MbJsonMapper<>(MbCdStubResult.class);
 
     /**
-     * The EVENT_PARSER.
+     * The EVENT_MAPPER.
      */
-    public static final MbJsonMapper<MbEventResult> EVENT_PARSER
+    public static final MbJsonMapper<MbEventResult> EVENT_MAPPER
             = new MbJsonMapper<>(MbEventResult.class);
 
     /**
-     * The GENRE_PARSER.
+     * The GENRE_MAPPER.
      */
-    public static final MbJsonMapper<MbGenreResult> GENRE_PARSER
+    public static final MbJsonMapper<MbGenreResult> GENRE_MAPPER
             = new MbJsonMapper<>(MbGenreResult.class);
 
     /**
-     * The INSTRUMENT_PARSER.
+     * The INSTRUMENT_MAPPER.
      */
-    public static final MbJsonMapper<MbInstrumentResult> INSTRUMENT_PARSER
+    public static final MbJsonMapper<MbInstrumentResult> INSTRUMENT_MAPPER
             = new MbJsonMapper<>(MbInstrumentResult.class);
 
     /**
-     * The LABEL_PARSER.
+     * The LABEL_MAPPER.
      */
-    public static final MbJsonMapper<MbLabelResult> LABEL_PARSER
+    public static final MbJsonMapper<MbLabelResult> LABEL_MAPPER
             = new MbJsonMapper<>(MbLabelResult.class);
 
     /**
-     * The PLACE_PARSER.
+     * The PLACE_MAPPER.
      */
-    public static final MbJsonMapper<MbPlaceResult> PLACE_PARSER
+    public static final MbJsonMapper<MbPlaceResult> PLACE_MAPPER
             = new MbJsonMapper<>(MbPlaceResult.class);
 
     /**
-     * The RECORDING_PARSER.
+     * The RECORDING_MAPPER.
      */
-    public static final MbJsonMapper<MbRecordingResult> RECORDING_PARSER
+    public static final MbJsonMapper<MbRecordingResult> RECORDING_MAPPER
             = new MbJsonMapper<>(MbRecordingResult.class);
 
     /**
-     * The RELEASE_PARSER.
+     * The RELEASE_MAPPER.
      */
-    public static final MbJsonMapper<MbReleaseResult> RELEASE_PARSER
+    public static final MbJsonMapper<MbReleaseResult> RELEASE_MAPPER
             = new MbJsonMapper<>(MbReleaseResult.class);
 
     /**
-     * The RELEASEGROUP_PARSER.
+     * The RELEASEGROUP_MAPPER.
      */
-    public static final MbJsonMapper<MbReleaseGroupResult> RELEASEGROUP_PARSER
+    public static final MbJsonMapper<MbReleaseGroupResult> RELEASEGROUP_MAPPER
             = new MbJsonMapper<>(MbReleaseGroupResult.class);
 
     /**
-     * The SERIES_PARSER.
+     * The SERIES_MAPPER.
      */
-    public static final MbJsonMapper<MbSeriesResult> SERIES_PARSER
+    public static final MbJsonMapper<MbSeriesResult> SERIES_MAPPER
             = new MbJsonMapper<>(MbSeriesResult.class);
 
     /**
-     * The TAG_PARSER.
+     * The TAG_MAPPER.
      */
-    public static final MbJsonMapper<MbTagResult> TAG_PARSER
+    public static final MbJsonMapper<MbTagResult> TAG_MAPPER
             = new MbJsonMapper<>(MbTagResult.class);
 
     /**
-     * The WORK_PARSER.
+     * The WORK_MAPPER.
      */
-    public static final MbJsonMapper<MbWorkResult> WORK_PARSER
+    public static final MbJsonMapper<MbWorkResult> WORK_MAPPER
             = new MbJsonMapper<>(MbWorkResult.class);
 
     /**
-     * The URL_PARSER.
+     * The URL_MAPPER.
      */
-    public static final MbJsonMapper<MbUrlResult> URL_PARSER
+    public static final MbJsonMapper<MbUrlResult> URL_MAPPER
             = new MbJsonMapper<>(MbUrlResult.class);
 }

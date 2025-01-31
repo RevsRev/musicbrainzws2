@@ -87,22 +87,22 @@ public final class MbController {
      */
     public static MbController factory(final MbClient client) {
         return new MbController(
-                new MbEntityController<>(client, MbJsonMapper.ANNOTATION_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.AREA_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.ARTIST_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.STUB_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.EVENT_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.GENRE_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.INSTRUMENT_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.LABEL_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.PLACE_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.RECORDING_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.RELEASE_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.RELEASEGROUP_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.SERIES_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.TAG_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.URL_PARSER),
-                new MbEntityController<>(client, MbJsonMapper.WORK_PARSER)
+                new MbEntityController<>(client, MbJsonMapper.ANNOTATION_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.AREA_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.ARTIST_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.STUB_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.EVENT_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.GENRE_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.INSTRUMENT_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.LABEL_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.PLACE_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.RECORDING_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.RELEASE_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.RELEASEGROUP_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.SERIES_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.TAG_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.URL_MAPPER),
+                new MbEntityController<>(client, MbJsonMapper.WORK_MAPPER)
         );
     }
 }
