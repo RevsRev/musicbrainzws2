@@ -2,6 +2,7 @@ package com.github.rev.musicbrainz.client.parse;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.github.rev.musicbrainz.client.artist.MbArtistResult;
 import com.github.rev.musicbrainz.client.entity.result.MbAnnotationResult;
 import com.github.rev.musicbrainz.client.entity.result.MbAreaResult;
@@ -26,7 +27,7 @@ import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
 public final class MbJsonParser<R> implements MbParser<JsonNode, R> {
 
     private final Class<R> clazz;
-    private final ObjectMapper om = new ObjectMapper();
+    private final ObjectMapper om = new ObjectMapper().setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE);
 
     private MbJsonParser(final Class<R> clazz) {
         this.clazz = clazz;
@@ -34,9 +35,9 @@ public final class MbJsonParser<R> implements MbParser<JsonNode, R> {
 
     @Override
     public R parse(final JsonNode input) {
-        System.out.println(input.toPrettyString());
-//        return om.convertValue(input, clazz);
-        return null;
+//        System.out.println(input.toPrettyString());
+        return om.convertValue(input, clazz);
+//        return null;
     }
 
     /**
