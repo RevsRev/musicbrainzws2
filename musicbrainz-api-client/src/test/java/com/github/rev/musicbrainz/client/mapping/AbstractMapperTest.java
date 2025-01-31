@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.parser;
+package com.github.rev.musicbrainz.client.mapping;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class AbstractParserTest {
+public class AbstractMapperTest {
 
     private final JsonMapper jsonMapper = new JsonMapper();
 

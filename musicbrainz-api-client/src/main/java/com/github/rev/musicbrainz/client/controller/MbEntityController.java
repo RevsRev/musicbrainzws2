@@ -7,7 +7,7 @@ import com.github.rev.musicbrainz.client.browse.MbBrowseRequest;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.lookup.MbLookup;
 import com.github.rev.musicbrainz.client.lookup.MbLookupRequest;
-import com.github.rev.musicbrainz.client.parse.MbJsonParser;
+import com.github.rev.musicbrainz.client.mapping.MbJsonMapper;
 import com.github.rev.musicbrainz.client.search.MbSearch;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
 
@@ -21,13 +21,13 @@ public final class MbEntityController<T extends MbEntity, R extends MbResult<T>>
                                                                                             MbSearch<T, R> {
 
     private final MbClient client;
-    private final MbJsonParser<R> parser;
+    private final MbJsonMapper<R> parser;
 
     /**
      * @param client The MbClient used by this controller.
      * @param parser The MbParser responsible for turning JsonNodes into the result.
      */
-    public MbEntityController(final MbClient client, final MbJsonParser<R> parser) {
+    public MbEntityController(final MbClient client, final MbJsonMapper<R> parser) {
         this.client = client;
         this.parser = parser;
     }

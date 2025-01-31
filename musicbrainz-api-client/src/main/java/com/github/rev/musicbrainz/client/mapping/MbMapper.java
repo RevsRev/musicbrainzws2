@@ -1,11 +1,11 @@
-package com.github.rev.musicbrainz.client.parse;
+package com.github.rev.musicbrainz.client.mapping;
 
 /**
  * Interface for converting objects returned by the MusicBrainz API.
  * @param <T> The type to convert (source type).
  * @param <R> The type converted to (target type).
  */
-public interface MbParser<T, R> {
+public interface MbMapper<T, R> {
 
     /**
      * Do the conversion.

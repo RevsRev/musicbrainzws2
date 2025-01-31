@@ -18,7 +18,7 @@ import com.github.rev.musicbrainz.client.entity.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.entity.result.MbTagResult;
 import com.github.rev.musicbrainz.client.entity.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
-import com.github.rev.musicbrainz.client.parse.MbJsonParser;
+import com.github.rev.musicbrainz.client.mapping.MbJsonMapper;
 import lombok.Getter;
 
 /**
@@ -87,22 +87,22 @@ public final class MbController {
      */
     public static MbController factory(final MbClient client) {
         return new MbController(
-                new MbEntityController<>(client, MbJsonParser.ANNOTATION_PARSER),
-                new MbEntityController<>(client, MbJsonParser.AREA_PARSER),
-                new MbEntityController<>(client, MbJsonParser.ARTIST_PARSER),
-                new MbEntityController<>(client, MbJsonParser.STUB_PARSER),
-                new MbEntityController<>(client, MbJsonParser.EVENT_PARSER),
-                new MbEntityController<>(client, MbJsonParser.GENRE_PARSER),
-                new MbEntityController<>(client, MbJsonParser.INSTRUMENT_PARSER),
-                new MbEntityController<>(client, MbJsonParser.LABEL_PARSER),
-                new MbEntityController<>(client, MbJsonParser.PLACE_PARSER),
-                new MbEntityController<>(client, MbJsonParser.RECORDING_PARSER),
-                new MbEntityController<>(client, MbJsonParser.RELEASE_PARSER),
-                new MbEntityController<>(client, MbJsonParser.RELEASEGROUP_PARSER),
-                new MbEntityController<>(client, MbJsonParser.SERIES_PARSER),
-                new MbEntityController<>(client, MbJsonParser.TAG_PARSER),
-                new MbEntityController<>(client, MbJsonParser.URL_PARSER),
-                new MbEntityController<>(client, MbJsonParser.WORK_PARSER)
+                new MbEntityController<>(client, MbJsonMapper.ANNOTATION_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.AREA_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.ARTIST_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.STUB_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.EVENT_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.GENRE_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.INSTRUMENT_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.LABEL_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.PLACE_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.RECORDING_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.RELEASE_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.RELEASEGROUP_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.SERIES_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.TAG_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.URL_PARSER),
+                new MbEntityController<>(client, MbJsonMapper.WORK_PARSER)
         );
     }
 }

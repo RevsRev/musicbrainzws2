@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.serdes;
+package com.github.rev.musicbrainz.client.mapping.deserializers;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

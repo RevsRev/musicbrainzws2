@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.parse;
+package com.github.rev.musicbrainz.client.mapping;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -20,13 +20,12 @@ import com.github.rev.musicbrainz.client.entity.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.entity.result.MbTagResult;
 import com.github.rev.musicbrainz.client.entity.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
-import com.github.rev.musicbrainz.client.serdes.MbSerdesModule;
 
 /**
  * Parser for turning JSON into POJOs.
  * @param <R> The target POJO.
  */
-public final class MbJsonParser<R> implements MbParser<JsonNode, R> {
+public final class MbJsonMapper<R> implements MbMapper<JsonNode, R> {
 
     private final Class<R> clazz;
     private final ObjectMapper om = new ObjectMapper()
@@ -34,7 +33,7 @@ public final class MbJsonParser<R> implements MbParser<JsonNode, R> {
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
             .registerModule(new MbSerdesModule());
 
-    private MbJsonParser(final Class<R> clazz) {
+    private MbJsonMapper(final Class<R> clazz) {
         this.clazz = clazz;
     }
 
@@ -48,96 +47,96 @@ public final class MbJsonParser<R> implements MbParser<JsonNode, R> {
     /**
      * The ANNOTATION_PARSER.
      */
-    public static final MbJsonParser<MbAnnotationResult> ANNOTATION_PARSER
-            = new MbJsonParser<>(MbAnnotationResult.class);
+    public static final MbJsonMapper<MbAnnotationResult> ANNOTATION_PARSER
+            = new MbJsonMapper<>(MbAnnotationResult.class);
 
     /**
      * The AREA_PARSER.
      */
-    public static final MbJsonParser<MbAreaResult> AREA_PARSER
-            = new MbJsonParser<>(MbAreaResult.class);
+    public static final MbJsonMapper<MbAreaResult> AREA_PARSER
+            = new MbJsonMapper<>(MbAreaResult.class);
 
     /**
      * The ARTIST_PARSER.
      */
-    public static final MbJsonParser<MbArtistResult> ARTIST_PARSER
-            = new MbJsonParser<>(MbArtistResult.class);
+    public static final MbJsonMapper<MbArtistResult> ARTIST_PARSER
+            = new MbJsonMapper<>(MbArtistResult.class);
 
     /**
      * The STUB_PARSER.
      */
-    public static final MbJsonParser<MbCdStubResult> STUB_PARSER
-            = new MbJsonParser<>(MbCdStubResult.class);
+    public static final MbJsonMapper<MbCdStubResult> STUB_PARSER
+            = new MbJsonMapper<>(MbCdStubResult.class);
 
     /**
      * The EVENT_PARSER.
      */
-    public static final MbJsonParser<MbEventResult> EVENT_PARSER
-            = new MbJsonParser<>(MbEventResult.class);
+    public static final MbJsonMapper<MbEventResult> EVENT_PARSER
+            = new MbJsonMapper<>(MbEventResult.class);
 
     /**
      * The GENRE_PARSER.
      */
-    public static final MbJsonParser<MbGenreResult> GENRE_PARSER
-            = new MbJsonParser<>(MbGenreResult.class);
+    public static final MbJsonMapper<MbGenreResult> GENRE_PARSER
+            = new MbJsonMapper<>(MbGenreResult.class);
 
     /**
      * The INSTRUMENT_PARSER.
      */
-    public static final MbJsonParser<MbInstrumentResult> INSTRUMENT_PARSER
-            = new MbJsonParser<>(MbInstrumentResult.class);
+    public static final MbJsonMapper<MbInstrumentResult> INSTRUMENT_PARSER
+            = new MbJsonMapper<>(MbInstrumentResult.class);
 
     /**
      * The LABEL_PARSER.
      */
-    public static final MbJsonParser<MbLabelResult> LABEL_PARSER
-            = new MbJsonParser<>(MbLabelResult.class);
+    public static final MbJsonMapper<MbLabelResult> LABEL_PARSER
+            = new MbJsonMapper<>(MbLabelResult.class);
 
     /**
      * The PLACE_PARSER.
      */
-    public static final MbJsonParser<MbPlaceResult> PLACE_PARSER
-            = new MbJsonParser<>(MbPlaceResult.class);
+    public static final MbJsonMapper<MbPlaceResult> PLACE_PARSER
+            = new MbJsonMapper<>(MbPlaceResult.class);
 
     /**
      * The RECORDING_PARSER.
      */
-    public static final MbJsonParser<MbRecordingResult> RECORDING_PARSER
-            = new MbJsonParser<>(MbRecordingResult.class);
+    public static final MbJsonMapper<MbRecordingResult> RECORDING_PARSER
+            = new MbJsonMapper<>(MbRecordingResult.class);
 
     /**
      * The RELEASE_PARSER.
      */
-    public static final MbJsonParser<MbReleaseResult> RELEASE_PARSER
-            = new MbJsonParser<>(MbReleaseResult.class);
+    public static final MbJsonMapper<MbReleaseResult> RELEASE_PARSER
+            = new MbJsonMapper<>(MbReleaseResult.class);
 
     /**
      * The RELEASEGROUP_PARSER.
      */
-    public static final MbJsonParser<MbReleaseGroupResult> RELEASEGROUP_PARSER
-            = new MbJsonParser<>(MbReleaseGroupResult.class);
+    public static final MbJsonMapper<MbReleaseGroupResult> RELEASEGROUP_PARSER
+            = new MbJsonMapper<>(MbReleaseGroupResult.class);
 
     /**
      * The SERIES_PARSER.
      */
-    public static final MbJsonParser<MbSeriesResult> SERIES_PARSER
-            = new MbJsonParser<>(MbSeriesResult.class);
+    public static final MbJsonMapper<MbSeriesResult> SERIES_PARSER
+            = new MbJsonMapper<>(MbSeriesResult.class);
 
     /**
      * The TAG_PARSER.
      */
-    public static final MbJsonParser<MbTagResult> TAG_PARSER
-            = new MbJsonParser<>(MbTagResult.class);
+    public static final MbJsonMapper<MbTagResult> TAG_PARSER
+            = new MbJsonMapper<>(MbTagResult.class);
 
     /**
      * The WORK_PARSER.
      */
-    public static final MbJsonParser<MbWorkResult> WORK_PARSER
-            = new MbJsonParser<>(MbWorkResult.class);
+    public static final MbJsonMapper<MbWorkResult> WORK_PARSER
+            = new MbJsonMapper<>(MbWorkResult.class);
 
     /**
      * The URL_PARSER.
      */
-    public static final MbJsonParser<MbUrlResult> URL_PARSER
-            = new MbJsonParser<>(MbUrlResult.class);
+    public static final MbJsonMapper<MbUrlResult> URL_PARSER
+            = new MbJsonMapper<>(MbUrlResult.class);
 }

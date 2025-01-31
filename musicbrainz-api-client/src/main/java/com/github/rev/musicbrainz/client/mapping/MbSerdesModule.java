@@ -1,9 +1,13 @@
-package com.github.rev.musicbrainz.client.serdes;
+package com.github.rev.musicbrainz.client.mapping;
 
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.databind.Module;
 import com.fasterxml.jackson.databind.deser.Deserializers;
 import com.fasterxml.jackson.databind.module.SimpleDeserializers;
+import com.github.rev.musicbrainz.client.mapping.deserializers.AliasListDeserializer;
+import com.github.rev.musicbrainz.client.mapping.deserializers.IpiiListDeserializer;
+import com.github.rev.musicbrainz.client.mapping.deserializers.IsniListDeserializer;
+import com.github.rev.musicbrainz.client.mapping.deserializers.TagListDeserializer;
 import org.musicbrainz.ns.mmd_2.AliasList;
 import org.musicbrainz.ns.mmd_2.IpiList;
 import org.musicbrainz.ns.mmd_2.IsniList;

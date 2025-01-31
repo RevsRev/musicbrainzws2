@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.serdes;
+package com.github.rev.musicbrainz.client.mapping.deserializers;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
@@ -6,26 +6,25 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.musicbrainz.ns.mmd_2.Tag;
-import org.musicbrainz.ns.mmd_2.TagList;
+import org.musicbrainz.ns.mmd_2.IsniList;
 
 import java.io.IOException;
 
 /**
- * JsonDeserializer implementation for TagLists.
+ * JsonDeserializer implementation for IsniLists.
  */
-public final class TagListDeserializer extends JsonDeserializer<TagList> {
+public final class IsniListDeserializer extends JsonDeserializer<IsniList> {
     private final ObjectMapper om = new ObjectMapper()
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
     @Override
-    public TagList deserialize(final JsonParser p, final DeserializationContext ctxt) throws IOException {
+    public IsniList deserialize(final JsonParser p, final DeserializationContext ctxt) throws IOException {
         JsonNode node = p.getCodec().readTree(p);
         try {
-            return om.convertValue(node, TagList.class);
+            return om.convertValue(node, IsniList.class);
         } catch (Exception e) {
-            TagList list = new TagList();
-            list.getTag().add(om.convertValue(node.get("tag"), Tag.class));
+            IsniList list = new IsniList();
+            list.getIsni().add(node.get("isni").asText());
             return list;
         }
     }
