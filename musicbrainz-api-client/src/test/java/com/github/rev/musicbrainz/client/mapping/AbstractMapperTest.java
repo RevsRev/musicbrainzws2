@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.node.ContainerNode;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.artist.MbArtistResult;
-import com.github.rev.musicbrainz.client.mapping.xml.MbXmlSerdesModule;
+import com.github.rev.musicbrainz.client.mapping.serdes.MbSerdesModule;
 import org.assertj.core.api.Assertions;
 import org.assertj.core.api.recursive.comparison.ComparisonDifference;
 import org.assertj.core.api.recursive.comparison.RecursiveComparisonConfiguration;
@@ -42,13 +42,13 @@ public class AbstractMapperTest {
             .setSerializationInclusion(JsonInclude.Include.NON_NULL)
             .setDateFormat(createDateFormat())
             .configure(SerializationFeature.WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED, true)
-            .registerModule(new MbXmlSerdesModule());
+            .registerModule(new MbSerdesModule());
     private final ObjectMapper xmlMapper = new XmlMapper()
             .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
             .setSerializationInclusion(JsonInclude.Include.NON_NULL)
             .setDateFormat(createDateFormat())
             .configure(DeserializationFeature.USE_BIG_INTEGER_FOR_INTS, true)
-            .registerModule(new MbXmlSerdesModule());
+            .registerModule(new MbSerdesModule());
 
     protected JsonNode loadJson(final String resourcePath, boolean fromXml) {
         InputStream is = getClass().getClassLoader().getResourceAsStream(resourcePath);
@@ -215,6 +215,7 @@ public class AbstractMapperTest {
     public static List<MapperTestParams<?>> getMapperTestParams() {
         List<MapperTestParams<?>> testParams = new ArrayList<>();
         testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.XML, "artist_result.xml"));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON, "artist_result.json"));
         return testParams;
     }
 
@@ -234,7 +235,7 @@ public class AbstractMapperTest {
         private static <T> MapperTestParams<T> factory(final Class<T> clazz,
                                                        final MbFormat format,
                                                        final String resource) {
-            InputStreamMapper<T> mapper = InputStreamMapper.factory(clazz, MbFormat.XML);
+            InputStreamMapper<T> mapper = InputStreamMapper.factory(clazz, format);
             return new MapperTestParams<>(mapper, "example_data/" + resource, format);
         }
 

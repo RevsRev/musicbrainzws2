@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.xml.deserializers;
+package com.github.rev.musicbrainz.client.mapping.serdes.deserializers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonParser;

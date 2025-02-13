@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.xml.deserializers;
+package com.github.rev.musicbrainz.client.mapping.serdes.deserializers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonParser;
@@ -8,27 +8,28 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import org.musicbrainz.ns.mmd_2.IpiList;
+import org.musicbrainz.ns.mmd_2.Tag;
+import org.musicbrainz.ns.mmd_2.TagList;
 
 import java.io.IOException;
 
 /**
- * JsonDeserializer implementation for IpiLists.
+ * JsonDeserializer implementation for TagLists.
  */
-public final class IpiListDeserializer extends JsonDeserializer<IpiList> {
+public final class TagListDeserializer extends JsonDeserializer<TagList> {
     private final ObjectMapper om = new ObjectMapper()
             .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
             .setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
     @Override
-    public IpiList deserialize(final JsonParser p, final DeserializationContext ctxt) throws IOException {
+    public TagList deserialize(final JsonParser p, final DeserializationContext ctxt) throws IOException {
         JsonNode node = p.getCodec().readTree(p);
         try {
-            return om.convertValue(node, IpiList.class);
+            return om.convertValue(node, TagList.class);
         } catch (Exception e) {
-            IpiList list = new IpiList();
-            list.getIpi().add(node.get("ipi").asText());
+            TagList list = new TagList();
+            list.getTag().add(om.convertValue(node.get("tag"), Tag.class));
             return list;
         }
     }

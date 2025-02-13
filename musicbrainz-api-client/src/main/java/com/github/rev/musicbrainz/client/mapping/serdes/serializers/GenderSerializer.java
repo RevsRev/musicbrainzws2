@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.xml.serializers;
+package com.github.rev.musicbrainz.client.mapping.serdes.serializers;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;

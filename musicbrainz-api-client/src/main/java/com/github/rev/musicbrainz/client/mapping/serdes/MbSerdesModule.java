@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.xml;
+package com.github.rev.musicbrainz.client.mapping.serdes;
 
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.databind.Module;
@@ -6,15 +6,15 @@ import com.fasterxml.jackson.databind.deser.Deserializers;
 import com.fasterxml.jackson.databind.module.SimpleDeserializers;
 import com.fasterxml.jackson.databind.module.SimpleSerializers;
 import com.fasterxml.jackson.databind.ser.Serializers;
-import com.github.rev.musicbrainz.client.mapping.xml.deserializers.GenderDeserializer;
-import com.github.rev.musicbrainz.client.mapping.xml.serializers.GenderSerializer;
+import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.GenderDeserializer;
+import com.github.rev.musicbrainz.client.mapping.serdes.serializers.GenderSerializer;
 import org.musicbrainz.ns.mmd_2.Gender;
 
 /**
  * Jackson Module implementation for handling serialisastion and deserialisation of entities returned by the
  * MusicBrainz API. In particular, lists are often formatted "badly" and extra care must be taken to handle them.
  */
-public final class MbXmlSerdesModule extends Module {
+public final class MbSerdesModule extends Module {
 
     @Override
     public String getModuleName() {
