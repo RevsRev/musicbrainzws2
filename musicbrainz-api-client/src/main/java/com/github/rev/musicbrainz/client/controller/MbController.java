@@ -1,23 +1,23 @@
 package com.github.rev.musicbrainz.client.controller;
 
 import com.github.rev.musicbrainz.client.MbClient;
-import com.github.rev.musicbrainz.client.artist.MbArtistResult;
+import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
-import com.github.rev.musicbrainz.client.entity.result.MbAnnotationResult;
-import com.github.rev.musicbrainz.client.entity.result.MbAreaResult;
-import com.github.rev.musicbrainz.client.entity.result.MbCdStubResult;
-import com.github.rev.musicbrainz.client.entity.result.MbEventResult;
-import com.github.rev.musicbrainz.client.entity.result.MbGenreResult;
-import com.github.rev.musicbrainz.client.entity.result.MbInstrumentResult;
-import com.github.rev.musicbrainz.client.entity.result.MbLabelResult;
-import com.github.rev.musicbrainz.client.entity.result.MbPlaceResult;
-import com.github.rev.musicbrainz.client.entity.result.MbRecordingResult;
-import com.github.rev.musicbrainz.client.entity.result.MbReleaseGroupResult;
-import com.github.rev.musicbrainz.client.entity.result.MbReleaseResult;
-import com.github.rev.musicbrainz.client.entity.result.MbSeriesResult;
-import com.github.rev.musicbrainz.client.entity.result.MbTagResult;
-import com.github.rev.musicbrainz.client.entity.result.MbUrlResult;
-import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
+import com.github.rev.musicbrainz.client.search.result.MbAnnotationResult;
+import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
+import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
+import com.github.rev.musicbrainz.client.search.result.MbEventResult;
+import com.github.rev.musicbrainz.client.search.result.MbGenreResult;
+import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
+import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
+import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
+import com.github.rev.musicbrainz.client.search.result.MbRecordingResult;
+import com.github.rev.musicbrainz.client.search.result.MbReleaseGroupResult;
+import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
+import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
+import com.github.rev.musicbrainz.client.search.result.MbTagResult;
+import com.github.rev.musicbrainz.client.search.result.MbUrlResult;
+import com.github.rev.musicbrainz.client.search.result.MbWorkResult;
 import lombok.Getter;
 
 /**

@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ContainerNode;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.github.rev.musicbrainz.client.MbFormat;
-import com.github.rev.musicbrainz.client.artist.MbArtistResult;
+import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.mapping.serdes.MbSerdesModule;
 import org.assertj.core.api.Assertions;
 import org.assertj.core.api.recursive.comparison.ComparisonDifference;
