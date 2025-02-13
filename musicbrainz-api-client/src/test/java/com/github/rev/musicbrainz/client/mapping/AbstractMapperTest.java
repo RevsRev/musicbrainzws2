@@ -73,8 +73,7 @@ public class AbstractMapperTest {
 
         String[] ignoreFields = {
                 "score",
-                "alias-list",
-                "tag-list"
+                ""
         };
 
         Assertions.assertThat(actual)
