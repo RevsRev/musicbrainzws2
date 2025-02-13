@@ -13,4 +13,11 @@ public interface MbMapper<T, R> {
      * @return the result of type R.
      */
     R parse(T input);
+
+    /**
+     * Do the inverse of the conversion.
+     * @param input the input to be written.
+     * @return the result of type T.
+     */
+    T write(R input);
 }

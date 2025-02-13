@@ -21,6 +21,7 @@ public class MbControllerTest {
         MbSearchRequest.Builder<MbEntity.MbArtist> builder = new MbSearchRequest.Builder<>();
         builder.setEntity(new MbEntity.MbArtist());
         builder.setQuery(artistQuery);
+//        builder.setFormat(MbResultFormat.JSON);
         MbSearchRequest<MbEntity.MbArtist> searchRequest = builder.build();
 
         controller.getArtist().doSearch(searchRequest);

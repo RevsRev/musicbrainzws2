@@ -1,8 +1,8 @@
 package com.github.rev.musicbrainz.client.search;
 
 import com.github.rev.musicbrainz.client.MbBuilder;
+import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
-import com.github.rev.musicbrainz.client.MbResultFormat;
 import com.github.rev.musicbrainz.client.http.MbDefaultParam;
 import com.github.rev.musicbrainz.client.http.MbParam;
 import com.github.rev.musicbrainz.client.http.MbRequest;
@@ -28,7 +28,6 @@ public final class MbSearchRequest<T extends MbEntity> extends MbRequest<T> {
     private static final int DEFAULT_SEARCH_LIMIT = 100;
     private static final int DEFAULT_SEARCH_OFFSET = 0;
 
-    private final Optional<MbResultFormat> format;
     private final Optional<String> type;
     private final MbQuery<T> query;
     private final int limit;
@@ -36,14 +35,13 @@ public final class MbSearchRequest<T extends MbEntity> extends MbRequest<T> {
     private final boolean dismax;
 
     private MbSearchRequest(final T entity,
-                            final Optional<MbResultFormat> format,
+                            final MbFormat format,
                             final Optional<String> type,
                             final MbQuery<T> query,
                             final int limit,
                             final int offset,
                             final boolean dismax) {
-        super(entity);
-        this.format = format;
+        super(entity, format);
         this.type = type;
         this.query = query;
         this.limit = limit;
@@ -55,14 +53,8 @@ public final class MbSearchRequest<T extends MbEntity> extends MbRequest<T> {
     public Collection<MbParam> getParams() {
         List<MbParam> params = new ArrayList<>();
 
-        if (type.isPresent()) {
-            params.add(new MbDefaultParam(TYPE, getEntity().getApiName()));
-        }
-
-        if (format.isPresent()) {
-            params.add(new MbDefaultParam(FMT, format.toString()));
-        }
-
+        type.ifPresent(t -> params.add(new MbDefaultParam(TYPE, getEntity().getApiName())));
+        params.add(new MbDefaultParam(FMT, getFormat().getValue()));
         params.add(query);
         params.add(new MbDefaultParam(LIMIT, "" + limit));
         params.add(new MbDefaultParam(OFFSET, "" + offset));
@@ -74,7 +66,7 @@ public final class MbSearchRequest<T extends MbEntity> extends MbRequest<T> {
     public static final class Builder<T extends MbEntity> implements MbBuilder<MbSearchRequest<T>> {
         private T entity = null;
         private Optional<String> type = Optional.empty();
-        private Optional<MbResultFormat> format = Optional.empty();
+        private MbFormat format = MbFormat.XML;
         private MbQuery<T> query;
         private int limit = DEFAULT_SEARCH_LIMIT;
         private int offset = DEFAULT_SEARCH_OFFSET;

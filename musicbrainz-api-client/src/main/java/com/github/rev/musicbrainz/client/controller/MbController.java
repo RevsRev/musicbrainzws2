@@ -18,7 +18,6 @@ import com.github.rev.musicbrainz.client.entity.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.entity.result.MbTagResult;
 import com.github.rev.musicbrainz.client.entity.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.entity.result.MbWorkResult;
-import com.github.rev.musicbrainz.client.mapping.MbJsonMapper;
 import lombok.Getter;
 
 /**
@@ -87,22 +86,22 @@ public final class MbController {
      */
     public static MbController factory(final MbClient client) {
         return new MbController(
-                new MbEntityController<>(client, MbJsonMapper.ANNOTATION_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.AREA_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.ARTIST_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.STUB_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.EVENT_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.GENRE_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.INSTRUMENT_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.LABEL_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.PLACE_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.RECORDING_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.RELEASE_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.RELEASEGROUP_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.SERIES_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.TAG_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.URL_MAPPER),
-                new MbEntityController<>(client, MbJsonMapper.WORK_MAPPER)
+                MbEntityController.factory(client, MbAnnotationResult.class),
+                MbEntityController.factory(client, MbAreaResult.class),
+                MbEntityController.factory(client, MbArtistResult.class),
+                MbEntityController.factory(client, MbCdStubResult.class),
+                MbEntityController.factory(client, MbEventResult.class),
+                MbEntityController.factory(client, MbGenreResult.class),
+                MbEntityController.factory(client, MbInstrumentResult.class),
+                MbEntityController.factory(client, MbLabelResult.class),
+                MbEntityController.factory(client, MbPlaceResult.class),
+                MbEntityController.factory(client, MbRecordingResult.class),
+                MbEntityController.factory(client, MbReleaseResult.class),
+                MbEntityController.factory(client, MbReleaseGroupResult.class),
+                MbEntityController.factory(client, MbSeriesResult.class),
+                MbEntityController.factory(client, MbTagResult.class),
+                MbEntityController.factory(client, MbUrlResult.class),
+                MbEntityController.factory(client, MbWorkResult.class)
         );
     }
 }

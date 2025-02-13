@@ -1,7 +1,7 @@
 package com.github.rev.musicbrainz.client.browse;
 
-import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.MbResult;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 
 /**
  * Interface implemented by controllers browsing a particular entity.

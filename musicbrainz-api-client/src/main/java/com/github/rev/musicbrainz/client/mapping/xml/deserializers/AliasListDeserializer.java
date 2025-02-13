@@ -1,11 +1,13 @@
-package com.github.rev.musicbrainz.client.mapping.deserializers;
+package com.github.rev.musicbrainz.client.mapping.xml.deserializers;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
 
@@ -16,7 +18,9 @@ import java.io.IOException;
  */
 public final class AliasListDeserializer extends JsonDeserializer<AliasList> {
     private final ObjectMapper om = new ObjectMapper()
-            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
+            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+            .setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
     @Override
     public AliasList deserialize(final JsonParser p, final DeserializationContext ctxt) throws IOException {

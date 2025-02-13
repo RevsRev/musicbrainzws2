@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata created="2025-02-07T14:24:30.433Z"
+          xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="100">
+        <name>Fleetwood Mac</name>
+        <sort-name>Fleetwood Mac</sort-name>
+        <country>GB</country>
+        <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+            <name>United Kingdom</name>
+            <sort-name>United Kingdom</sort-name>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </area>
+        <begin-area id="f03d09b3-39dc-4083-afd6-159e3f0d462f" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+            <name>London</name>
+            <sort-name>London</sort-name>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </begin-area>
+        <isni-list>
+            <isni>0000000112090777</isni>
+        </isni-list>
+        <life-span>
+            <begin>1967-07</begin>
+            <ended>false</ended>
+        </life-span>
+        <alias-list>
+            <alias sort-name="Green's Fleetwood Mac, Peter">Peter Green's Fleetwood Mac</alias>
+            <alias sort-name="Mac Fleetwood">Mac Fleetwood</alias>
+            <alias sort-name="Flettwood Mac">Flettwood Mac</alias>
+            <alias sort-name="Fleetwood Mack">Fleetwood Mack</alias>
+            <alias sort-name="Fleedwood Mac">Fleedwood Mac</alias>
+            <alias sort-name="Vince, Earl and the Valiants">Earl Vince and the Valiants</alias>
+        </alias-list>
+        <tag-list>
+            <tag count="16">
+                <name>rock</name>
+            </tag>
+            <tag count="3">
+                <name>pop</name>
+            </tag>
+            <tag count="-1">
+                <name>american</name>
+            </tag>
+            <tag count="6">
+                <name>blues</name>
+            </tag>
+            <tag count="2">
+                <name>british</name>
+            </tag>
+            <tag count="-1">
+                <name>band</name>
+            </tag>
+            <tag count="0">
+                <name>folk rock</name>
+            </tag>
+            <tag count="1">
+                <name>psychedelic rock</name>
+            </tag>
+            <tag count="9">
+                <name>blues rock</name>
+            </tag>
+            <tag count="0">
+                <name>jam band</name>
+            </tag>
+            <tag count="0">
+                <name>classic rock</name>
+            </tag>
+            <tag count="11">
+                <name>soft rock</name>
+            </tag>
+            <tag count="0">
+                <name>acoustic rock</name>
+            </tag>
+            <tag count="8">
+                <name>pop rock</name>
+            </tag>
+            <tag count="0">
+                <name>electric blues</name>
+            </tag>
+            <tag count="6">
+                <name>british blues</name>
+            </tag>
+            <tag count="1">
+                <name>english</name>
+            </tag>
+            <tag count="0">
+                <name>classic pop and rock</name>
+            </tag>
+            <tag count="0">
+                <name>pop/rock</name>
+            </tag>
+            <tag count="0">
+                <name>fleetwood mac</name>
+            </tag>
+            <tag count="0">
+                <name>british-american</name>
+            </tag>
+        </tag-list>
+    </artist>
+</metadata>

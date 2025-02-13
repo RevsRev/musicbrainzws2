@@ -1,7 +1,5 @@
 package com.github.rev.musicbrainz.client;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.http.MbParam;
 import com.github.rev.musicbrainz.client.http.MbRequest;
@@ -13,7 +11,6 @@ import org.apache.hc.core5.http.ClassicHttpRequest;
 import org.apache.hc.core5.http.io.HttpClientResponseHandler;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Collection;
 
 /**
@@ -33,7 +30,6 @@ public final class MbClient {
 
     private final String endpoint;
     private final HttpClient httpClient = buildHttpClient();
-    private final XmlMapper xmlMapper = new XmlMapper();
 
     /**
      * Construct a client for the default MusicBrainz endpoint.
@@ -56,25 +52,21 @@ public final class MbClient {
 
     /**
      * Execute a search request.
-     * @param request The request to be made.
+     * @param request The request to be executed.
+     * @param responseHandler The handler for the result returned by MusicBrainz.
      * @return The MbSearchResult for the given entity type.
      * @param <T> The type of entity being searched.
+     * @param <R> The type being returned.
      */
-    public <T extends MbEntity> JsonNode doSearch(final MbRequest<T> request) {
+    public <T extends MbEntity, R> R doSearch(final MbRequest<T> request,
+                                              final HttpClientResponseHandler<R> responseHandler) {
         ClassicHttpRequest httpRequest = createHttpRequest(request);
         try {
-            return httpClient.execute(httpRequest, jsonResponseHandler());
+            return httpClient.execute(httpRequest, responseHandler);
         } catch (IOException e) {
             //TODO - Error handling / retries etc...
             throw new RuntimeException(e);
         }
-    }
-
-    private HttpClientResponseHandler<JsonNode> jsonResponseHandler() {
-        return response -> {
-            InputStream is = response.getEntity().getContent();
-            return xmlMapper.readTree(is);
-        };
     }
 
     private <T extends MbEntity> ClassicHttpRequest createHttpRequest(final MbRequest<T> request) {

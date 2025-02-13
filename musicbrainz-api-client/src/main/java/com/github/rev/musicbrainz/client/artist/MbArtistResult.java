@@ -14,5 +14,7 @@ import java.util.Date;
 @Getter @Setter
 public class MbArtistResult extends MbResult<MbEntity.MbArtist> {
     private Date created;
+
+//    @JacksonXmlElementWrapper(useWrapping = false)
     private ArtistList artistList;
 }

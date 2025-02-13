@@ -1,7 +1,7 @@
 package com.github.rev.musicbrainz.client.lookup;
 
-import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.MbResult;
+import com.github.rev.musicbrainz.client.entity.MbEntity;
 
 /**
  * Interface implemented by controllers looking up a particular entity.

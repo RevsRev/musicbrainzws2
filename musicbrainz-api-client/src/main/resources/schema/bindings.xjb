@@ -1,0 +1,4 @@
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" version="2.1">
+    <!-- Global binding to ensure all classes have no-argument constructors -->
+    <jaxb:globalBindings generateConstructor="true"/>
+</jaxb:bindings>
