@@ -2,6 +2,7 @@ package com.github.rev.musicbrainz.client.mapping;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.json.JsonMapper;
@@ -24,7 +25,9 @@ public final class JacksonMappers {
      * @return A JsonMapper instance used for parsing MusicBrainz entities in JSON format.
      */
     public static JsonMapper jsonMapper() {
-        JsonMapper mapper = new JsonMapper();
+        JsonMapper mapper = JsonMapper.builder()
+                .enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS)
+                .build();
 
         configureMapper(mapper);
 
@@ -39,6 +42,7 @@ public final class JacksonMappers {
     public static XmlMapper xmlMapper() {
         XmlMapper mapper = XmlMapper.builder()
                 .defaultUseWrapper(false)
+                .enable(MapperFeature.ACCEPT_CASE_INSENSITIVE_ENUMS)
                 .build();
         configureMapper(mapper);
 
@@ -57,7 +61,6 @@ public final class JacksonMappers {
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 //        mapper.configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true);
-
         mapper.registerModule(new MbSerdesModule());
     }
 

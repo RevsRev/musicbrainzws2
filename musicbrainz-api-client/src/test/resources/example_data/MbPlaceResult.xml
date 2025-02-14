@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata created="2025-02-14T16:52:08.842Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <place-list count="11" offset="0">
+        <place id="fecf9497-85bb-4389-b6af-4dfbc70940d2" type="Pressing plant"
+               type-id="ab750f51-cc41-47bb-8ba2-9bc34d7de514" ns2:score="100">
+            <name>Arvato USA</name>
+            <address>108 Monticello Road, Weaverville, NC 28787</address>
+            <coordinates>
+                <latitude>35.707704</latitude>
+                <longitude>-82.577233</longitude>
+            </coordinates>
+            <area id="68f0b09d-1657-4e70-af03-9e9f10fdb359" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Weaverville</name>
+                <sort-name>Weaverville</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1984-10</begin>
+                <end>2016-04-30</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Sonopress Arvato" type="Place name" type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5"
+                       begin-date="2004-06-30" end-date="2008-04">Sonopress Arvato
+                </alias>
+                <alias sort-name="QTI" type="Place name" type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5"
+                       begin-date="1985" end-date="1990-02">QTI
+                </alias>
+                <alias sort-name="RCA Tape Duplication Plant" type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="1984-10" end-date="1985">RCA Tape
+                    Duplication Plant
+                </alias>
+                <alias sort-name="Arvato USA" type="Place name" type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5"
+                       begin-date="2011" end-date="2016-04-30">Arvato USA
+                </alias>
+                <alias sort-name="Sonopress USA" type="Place name" type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5"
+                       begin-date="1990-02" end-date="2004-06-30">Sonopress USA
+                </alias>
+                <alias sort-name="Arvato Digital Services Bertelsmann USA" type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="2008-04" end-date="2011">Arvato
+                    Digital Services Bertelsmann USA
+                </alias>
+                <alias sort-name="Quality Tapes Incorporated" type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="1985" end-date="1990-02">Quality Tapes
+                    Incorporated
+                </alias>
+            </alias-list>
+        </place>
+        <place id="00de9ee9-b3f3-4b13-b94b-3bf4e2b2ea2e" type="Other" type-id="a0df5ead-0bd6-33d8-8444-855a9f3e9970"
+               ns2:score="100">
+            <name>Opryland USA</name>
+            <coordinates>
+                <latitude>36.208333</latitude>
+                <longitude>-86.695278</longitude>
+            </coordinates>
+            <area id="e68879f9-bd95-41ff-96ba-c082ff37cc74" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Nashville</name>
+                <sort-name>Nashville</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1972-05-27</begin>
+                <end>1997-12-31</end>
+                <ended>true</ended>
+            </life-span>
+        </place>
+        <place id="3787b84c-2539-40fe-83b9-ebdc81456a5c" type="Studio" type-id="05fa6a09-ff92-3d34-bdbb-5141d3c24f38"
+               ns2:score="100">
+            <name>USA Studios</name>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </place>
+        <place id="becf4367-0125-4ffe-aab1-ffb84fa7c843" type="Pressing plant"
+               type-id="ab750f51-cc41-47bb-8ba2-9bc34d7de514" ns2:score="100">
+            <name>EDC USA</name>
+            <address>700 South Battleground Avenue, Grover, NC 28073</address>
+            <coordinates>
+                <latitude>35.173269</latitude>
+                <longitude>-81.434551</longitude>
+            </coordinates>
+            <area id="d04e54e9-5df2-4508-a2ad-4f59d5373c8d" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Grover</name>
+                <sort-name>Grover</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1986-12</begin>
+                <end>2009-02-28</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="EDC, USA">EDC, USA</alias>
+                <alias locale="en" sort-name="PDO, USA" type="Place name" type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5"
+                       begin-date="1986-12" end-date="1992-06">PDO, USA
+                </alias>
+                <alias sort-name="PolyGram Manufacturing and Distribution Centers (PMDC), Inc." type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="1992-06-18" end-date="1999-09-30">
+                    PolyGram Manufacturing and Distribution Centers (PMDC), Inc.
+                </alias>
+                <alias sort-name="Universal Music Group Manufacturing &amp; Logistics Inc." type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="1999-10-01" end-date="2005-05-31">
+                    Universal Music Group Manufacturing &amp; Logistics Inc.
+                </alias>
+                <alias sort-name="EDC USA" type="Place name" type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5"
+                       begin-date="2005-06-01" end-date="2009-02-28">EDC USA
+                </alias>
+                <alias sort-name="Philips DuPont Optical US" type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="1986-12" end-date="1992-06-17">Philips
+                    DuPont Optical US
+                </alias>
+            </alias-list>
+        </place>
+        <place id="15be57a9-df98-4210-905f-21b7aee60543" type="Studio" type-id="05fa6a09-ff92-3d34-bdbb-5141d3c24f38"
+               ns2:score="85">
+            <name>Westwires Recording USA</name>
+            <address>1042 Club Ave, Allentown, PA 18109, USA</address>
+            <coordinates>
+                <latitude>40.628275</latitude>
+                <longitude>-75.421502</longitude>
+            </coordinates>
+            <area id="ec0c279e-382b-42f5-a75e-3767e33a5d7e" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Allentown</name>
+                <sort-name>Allentown</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1983</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Wayne Becker Studio">Wayne Becker Studio</alias>
+                <alias sort-name="WestWires Digital">WestWires Digital</alias>
+            </alias-list>
+        </place>
+        <place id="491b588e-dae0-4a4e-9aa5-d836fef2b345" type="Indoor arena"
+               type-id="a77c11f6-82fa-3cc0-9041-ac60e5f6e024" ns2:score="85">
+            <name>USA Hockey Arena</name>
+            <address>14900 Beck Rd, Plymouth, MI 48170</address>
+            <coordinates>
+                <latitude>42.389273</latitude>
+                <longitude>-83.506415</longitude>
+            </coordinates>
+            <area id="facc5bb6-db45-4288-99bb-d7bf63d09c3f" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Plymouth</name>
+                <sort-name>Plymouth</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1996</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Compuware Sports Arena" type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" end-date="2007-09-11">Compuware Sports Arena
+                </alias>
+                <alias locale="en" sort-name="Compuware Arena" type="Place name"
+                       type-id="fb68f9a2-622c-319b-83b0-bbff4127cdc5" begin-date="2007-09-11" end-date="2015">Compuware
+                    Arena
+                </alias>
+            </alias-list>
+        </place>
+        <place id="3382fd9e-bedb-4f82-86dd-87a39aeb0f54" type="Studio" type-id="05fa6a09-ff92-3d34-bdbb-5141d3c24f38"
+               ns2:score="74">
+            <name>Joombas Music Factory USA</name>
+            <area id="96bbe327-f9cd-42e0-a689-eb9febe1693f" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Hollywood</name>
+                <sort-name>Hollywood</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </place>
+        <place id="178b4d10-2150-48c1-bcc1-fa1f2d2ebc91" ns2:score="66">
+            <name>Ploger Hall, Manchester, Michigan, USA</name>
+            <life-span>
+                <begin>2008-08</begin>
+                <ended>false</ended>
+            </life-span>
+        </place>
+        <place id="fa61b944-d895-4265-bffe-45cd15574ce8" type="Venue" type-id="cd92781a-a73f-30e8-a430-55d7521338db"
+               ns2:score="59">
+            <name>Hard Rock Café Niagara Falls USA</name>
+            <address>333 Prospect St, Niagara Falls, NY 14303</address>
+            <coordinates>
+                <latitude>43.086833</latitude>
+                <longitude>-79.066744</longitude>
+            </coordinates>
+            <area id="2e522736-1ecd-41f3-b063-9455318ea7d9" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Niagara Falls</name>
+                <sort-name>Niagara Falls</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </place>
+        <place id="eab51673-b63f-42bb-9f4b-01c0643f69db" type="Venue" type-id="cd92781a-a73f-30e8-a430-55d7521338db"
+               ns2:score="59">
+            <name>Joe Rico’s Milestones, Buffalo, NY, USA</name>
+            <area id="7e5e7fd7-c1eb-4cb8-87e2-fb1c0eda9e48" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Buffalo</name>
+                <sort-name>Buffalo</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </place>
+        <place id="c10ea45a-6eaa-4040-867b-8f8d16f5da6d" type="Venue" type-id="cd92781a-a73f-30e8-a430-55d7521338db"
+               ns2:score="49">
+            <name>Town &amp; Country Club, Los Angeles, CA, USA</name>
+            <area id="1f40c6e1-47ba-4e35-996f-fe6ee5840e62" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+                <name>Los Angeles</name>
+                <sort-name>Los Angeles</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </place>
+    </place-list>
+</metadata>

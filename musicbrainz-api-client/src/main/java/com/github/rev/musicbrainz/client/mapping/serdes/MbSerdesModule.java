@@ -6,9 +6,15 @@ import com.fasterxml.jackson.databind.deser.Deserializers;
 import com.fasterxml.jackson.databind.module.SimpleDeserializers;
 import com.fasterxml.jackson.databind.module.SimpleSerializers;
 import com.fasterxml.jackson.databind.ser.Serializers;
+import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.FormatDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.GenderDeserializer;
+import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.LanguageDeserializer;
+import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.TargetDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.serializers.GenderSerializer;
+import org.musicbrainz.ns.mmd_2.Format;
 import org.musicbrainz.ns.mmd_2.Gender;
+import org.musicbrainz.ns.mmd_2.LanguageList;
+import org.musicbrainz.ns.mmd_2.Target;
 
 /**
  * Jackson Module implementation for handling serialisastion and deserialisation of entities returned by the
@@ -38,7 +44,10 @@ public final class MbSerdesModule extends Module {
 //        simpleDeserializers.addDeserializer(IpiList.class, new IpiListDeserializer());
 //        simpleDeserializers.addDeserializer(TagList.class, new TagListDeserializer());
 //        simpleDeserializers.addDeserializer(AliasList.class, new AliasListDeserializer());
+        simpleDeserializers.addDeserializer(Target.class, new TargetDeserializer());
         simpleDeserializers.addDeserializer(Gender.class, new GenderDeserializer());
+        simpleDeserializers.addDeserializer(LanguageList.Language.class, new LanguageDeserializer());
+        simpleDeserializers.addDeserializer(Format.class, new FormatDeserializer());
         return simpleDeserializers;
     }
 

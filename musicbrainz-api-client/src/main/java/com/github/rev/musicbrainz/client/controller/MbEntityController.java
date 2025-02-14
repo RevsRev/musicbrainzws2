@@ -8,7 +8,6 @@ import com.github.rev.musicbrainz.client.browse.MbBrowseRequest;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.lookup.MbLookup;
 import com.github.rev.musicbrainz.client.lookup.MbLookupRequest;
-import com.github.rev.musicbrainz.client.mapping.InputStreamMapper;
 import com.github.rev.musicbrainz.client.search.MbSearch;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
 import org.apache.hc.core5.http.io.HttpClientResponseHandler;
