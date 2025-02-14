@@ -2,6 +2,7 @@ package com.github.rev.musicbrainz.client.controller;
 
 import com.github.rev.musicbrainz.client.MbBuilder;
 import com.github.rev.musicbrainz.client.MbClient;
+import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.MbResult;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
@@ -16,19 +17,32 @@ import java.util.List;
 
 public class MbControllerTest {
 
-    private static final MbClient CLIENT = new MbClient();
-    private static final MbController CONTROLLER = MbController.factory(CLIENT);
+    private static final MbController CONTROLLER = getController();
 
     @ParameterizedTest
     @MethodSource("getEndpointParams")
-    public <T extends MbEntity, R extends MbResult<T>> void testWithLiveEndpoint(final EndpointParams<T,R> params)
+    public <T extends MbEntity, R extends MbResult<T>> void testXmlWithLiveEndpoint(final EndpointParams<T,R> params)
+            throws MbQuery.InvalidQueryFieldException, MbBuilder.MbBuildException {
+        testWithLiveEndpoint(params, MbFormat.XML);
+    }
+
+    @ParameterizedTest
+    @MethodSource("getEndpointParams")
+    public <T extends MbEntity, R extends MbResult<T>> void testJsonWithLiveEndpoint(final EndpointParams<T,R> params)
             throws MbQuery.InvalidQueryFieldException, MbBuilder.MbBuildException {
 
+        testWithLiveEndpoint(params, MbFormat.JSON);
+    }
+
+    private static <T extends MbEntity, R extends MbResult<T>> void testWithLiveEndpoint(final EndpointParams<T, R> params,
+                                                                                         final MbFormat format)
+            throws MbBuilder.MbBuildException {
         MbSearchRequest.Builder<T> builder = new MbSearchRequest.Builder<>();
         builder.setEntity(params.entity);
         builder.setQuery(params.query);
+        builder.setFormat(format);
         MbSearchRequest<T> searchRequest = builder.build();
-        params.controller.doSearch(searchRequest);
+        R r = params.controller.doSearch(searchRequest);
     }
 
     public static List<EndpointParams<?,?>> getEndpointParams() {
@@ -46,6 +60,23 @@ public class MbControllerTest {
         MbArtistQuery artistQuery = new MbArtistQuery();
         artistQuery.add(MbArtistQuery.ARTIST, "Fleetwood");
         return artistQuery;
+    }
+
+    private static MbController getController() {
+        MbClient client = new MbClient();
+
+//        Uncomment or set appropriate property to generate sources :)
+//        System.setProperty("source-location", "/home/eddie/Documents/Projects/musicbrainzws2-java-parent/musicbrainz-api-client/src/test/resources/example_data");
+
+        String sourceLocation = System.getProperty("source-location");
+        final HandlerFactory handlerFactory;
+        if (sourceLocation != null) {
+            handlerFactory = new GenerateSourcesHandlerFactory(sourceLocation);
+        } else {
+            handlerFactory = new HandlerFactory.DefaultHandlerFactory();
+        }
+
+        return MbController.factory(client, handlerFactory);
     }
 
     public static final class EndpointParams<T extends MbEntity, R extends MbResult<T>> {

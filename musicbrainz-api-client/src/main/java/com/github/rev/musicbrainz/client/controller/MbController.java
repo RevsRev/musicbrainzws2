@@ -84,24 +84,24 @@ public final class MbController {
      * @param client The MbClient instance shared by all entity controllers.
      * @return The constructed MbController instance.
      */
-    public static MbController factory(final MbClient client) {
+    public static MbController factory(final MbClient client, final HandlerFactory handlerFactory) {
         return new MbController(
-                MbEntityController.factory(client, MbAnnotationResult.class),
-                MbEntityController.factory(client, MbAreaResult.class),
-                MbEntityController.factory(client, MbArtistResult.class),
-                MbEntityController.factory(client, MbCdStubResult.class),
-                MbEntityController.factory(client, MbEventResult.class),
-                MbEntityController.factory(client, MbGenreResult.class),
-                MbEntityController.factory(client, MbInstrumentResult.class),
-                MbEntityController.factory(client, MbLabelResult.class),
-                MbEntityController.factory(client, MbPlaceResult.class),
-                MbEntityController.factory(client, MbRecordingResult.class),
-                MbEntityController.factory(client, MbReleaseResult.class),
-                MbEntityController.factory(client, MbReleaseGroupResult.class),
-                MbEntityController.factory(client, MbSeriesResult.class),
-                MbEntityController.factory(client, MbTagResult.class),
-                MbEntityController.factory(client, MbUrlResult.class),
-                MbEntityController.factory(client, MbWorkResult.class)
+                MbEntityController.factory(client, MbAnnotationResult.class, handlerFactory),
+                MbEntityController.factory(client, MbAreaResult.class, handlerFactory),
+                MbEntityController.factory(client, MbArtistResult.class, handlerFactory),
+                MbEntityController.factory(client, MbCdStubResult.class, handlerFactory),
+                MbEntityController.factory(client, MbEventResult.class, handlerFactory),
+                MbEntityController.factory(client, MbGenreResult.class, handlerFactory),
+                MbEntityController.factory(client, MbInstrumentResult.class, handlerFactory),
+                MbEntityController.factory(client, MbLabelResult.class, handlerFactory),
+                MbEntityController.factory(client, MbPlaceResult.class, handlerFactory),
+                MbEntityController.factory(client, MbRecordingResult.class, handlerFactory),
+                MbEntityController.factory(client, MbReleaseResult.class, handlerFactory),
+                MbEntityController.factory(client, MbReleaseGroupResult.class, handlerFactory),
+                MbEntityController.factory(client, MbSeriesResult.class, handlerFactory),
+                MbEntityController.factory(client, MbTagResult.class, handlerFactory),
+                MbEntityController.factory(client, MbUrlResult.class, handlerFactory),
+                MbEntityController.factory(client, MbWorkResult.class, handlerFactory)
         );
     }
 }

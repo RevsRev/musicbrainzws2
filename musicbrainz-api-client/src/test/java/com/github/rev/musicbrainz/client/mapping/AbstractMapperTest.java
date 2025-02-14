@@ -11,8 +11,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ContainerNode;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.github.rev.musicbrainz.client.MbFormat;
-import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.mapping.serdes.MbSerdesModule;
+import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import org.assertj.core.api.Assertions;
 import org.assertj.core.api.recursive.comparison.ComparisonDifference;
 import org.assertj.core.api.recursive.comparison.RecursiveComparisonConfiguration;
@@ -214,8 +214,8 @@ public class AbstractMapperTest {
 
     public static List<MapperTestParams<?>> getMapperTestParams() {
         List<MapperTestParams<?>> testParams = new ArrayList<>();
-        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.XML, "artist_result.xml"));
-        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON, "artist_result.json"));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));
         return testParams;
     }
 
@@ -233,10 +233,11 @@ public class AbstractMapperTest {
         }
 
         private static <T> MapperTestParams<T> factory(final Class<T> clazz,
-                                                       final MbFormat format,
-                                                       final String resource) {
+                                                       final MbFormat format) {
             InputStreamMapper<T> mapper = InputStreamMapper.factory(clazz, format);
-            return new MapperTestParams<>(mapper, "example_data/" + resource, format);
+            String extension = format == MbFormat.XML ? "xml" : "json";
+            String resourceLocation = String.format("example_data/%s.%s", clazz.getSimpleName(), extension);
+            return new MapperTestParams<>(mapper, resourceLocation, format);
         }
 
     }

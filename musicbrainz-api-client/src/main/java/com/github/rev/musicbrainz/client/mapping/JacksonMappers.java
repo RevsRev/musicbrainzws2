@@ -11,6 +11,8 @@ import com.github.rev.musicbrainz.client.mapping.serdes.MbSerdesModule;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TimeZone;
 
 public final class JacksonMappers {
@@ -26,6 +28,8 @@ public final class JacksonMappers {
 
         configureMapper(mapper);
 
+        mapper.setPropertyNamingStrategy(new JsonNameStrategy());
+
         return mapper;
     }
 
@@ -38,6 +42,8 @@ public final class JacksonMappers {
                 .build();
         configureMapper(mapper);
 
+        mapper.setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE);
+
         JacksonXmlModule jacksonXmlModule = new JacksonXmlModule();
         jacksonXmlModule.setDefaultUseWrapper(false);
         mapper.registerModule(jacksonXmlModule);
@@ -46,11 +52,11 @@ public final class JacksonMappers {
     }
 
     private static void configureMapper(final ObjectMapper mapper) {
-        mapper.setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE);
         mapper.setDateFormat(createDateFormat());
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+//        mapper.configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true);
 
         mapper.registerModule(new MbSerdesModule());
     }
@@ -59,5 +65,37 @@ public final class JacksonMappers {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
         df.setTimeZone(TimeZone.getTimeZone("UTC"));
         return df;
+    }
+
+    public static final class JsonNameStrategy extends PropertyNamingStrategies.KebabCaseStrategy {
+
+        private static final Map<String, String> PLURAL_NAMES_MAP = getPluralNamesMap();
+
+        @Override
+        public String translate(String propertyName) {
+            return super.translate(PLURAL_NAMES_MAP.getOrDefault(propertyName, propertyName));
+        }
+
+        private static Map<String, String> getPluralNamesMap() {
+            Map<String, String> pluralNamesMap = new HashMap<>();
+            pluralNamesMap.put("annotationList", "annotations");
+            pluralNamesMap.put("areaList", "areas");
+            pluralNamesMap.put("artistList", "artists");
+            pluralNamesMap.put("stubList", "stubs");
+            pluralNamesMap.put("eventList", "events");
+            pluralNamesMap.put("genreList", "genres");
+            pluralNamesMap.put("instrumentList", "instruments");
+            pluralNamesMap.put("labelList", "labels");
+            pluralNamesMap.put("placeList", "places");
+            pluralNamesMap.put("recordingList", "recordings");
+            pluralNamesMap.put("releaseList", "releases");
+            pluralNamesMap.put("release-groupList", "releaseGroups");
+            pluralNamesMap.put("seriesList", "series");
+            pluralNamesMap.put("tagList", "tags");
+            pluralNamesMap.put("workList", "works");
+            pluralNamesMap.put("urlList", "urls");
+            pluralNamesMap.put("aliasList", "aliases");
+            return pluralNamesMap;
+        }
     }
 }

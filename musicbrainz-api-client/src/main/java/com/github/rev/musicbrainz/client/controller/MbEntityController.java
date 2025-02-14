@@ -64,14 +64,11 @@ public final class MbEntityController<T extends MbEntity, R extends MbResult<T>>
      * @param <R> The Return type of the controller's actions.
      */
     public static <T extends MbEntity, R extends MbResult<T>> MbEntityController<T, R> factory(final MbClient client,
-                                                                                               final Class<R> clazz) {
-        final InputStreamMapper<R> xmlMapper = InputStreamMapper.factory(clazz, MbFormat.XML);
-        final InputStreamMapper<R> jsonMapper = InputStreamMapper.factory(clazz, MbFormat.JSON);
-
-        HttpClientResponseHandler<R> xmlHandler = response -> xmlMapper.parse(response.getEntity().getContent());
-        HttpClientResponseHandler<R> jsonHandler = response -> jsonMapper.parse(response.getEntity().getContent());
-
-        return new MbEntityController<>(client, xmlHandler, jsonHandler);
+                                                                                               final Class<R> clazz,
+                                                                                               HandlerFactory handlerFactory) {
+        return new MbEntityController<>(client,
+                handlerFactory.getXmlHandler(clazz),
+                handlerFactory.getJsonHandler(clazz));
 
     }
 
