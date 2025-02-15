@@ -58,13 +58,16 @@ public final class MbEntityController<T extends MbEntity, R extends MbResult<T>>
      * Factory method for constructing an EntityController.
      * @param client The client to be used by the Controller.
      * @param clazz The return type of the Controller's actions.
+     * @param handlerFactory Factory for new handlers used to parse responses from the MusicBrainz API.
      * @return A new MbEntityController instance
      * @param <T> The Entity handled by this particular controller.
      * @param <R> The Return type of the controller's actions.
      */
-    public static <T extends MbEntity, R extends MbResult<T>> MbEntityController<T, R> factory(final MbClient client,
-                                                                                               final Class<R> clazz,
-                                                                                               HandlerFactory handlerFactory) {
+    public static <T extends MbEntity, R extends MbResult<T>> MbEntityController<T, R> factory(
+            final MbClient client,
+            final Class<R> clazz,
+            final HandlerFactory handlerFactory) {
+
         return new MbEntityController<>(client,
                 handlerFactory.getXmlHandler(clazz),
                 handlerFactory.getJsonHandler(clazz));

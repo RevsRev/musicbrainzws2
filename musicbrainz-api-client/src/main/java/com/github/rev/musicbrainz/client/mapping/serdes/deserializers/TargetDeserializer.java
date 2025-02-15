@@ -8,8 +8,6 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.fasterxml.jackson.databind.node.TextNode;
-import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Target;
 
 import java.io.IOException;

@@ -82,6 +82,7 @@ public final class MbController {
     /**
      * Factory method for an MbController. Deals with constructing the composed entity controllers.
      * @param client The MbClient instance shared by all entity controllers.
+     * @param handlerFactory Factory for new handlers used to parse responses from the MusicBrainz API.
      * @return The constructed MbController instance.
      */
     public static MbController factory(final MbClient client, final HandlerFactory handlerFactory) {

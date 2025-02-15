@@ -9,7 +9,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import org.musicbrainz.ns.mmd_2.LanguageList;
-import org.musicbrainz.ns.mmd_2.Target;
 
 import java.io.IOException;
 

@@ -75,7 +75,7 @@ public final class JacksonMappers {
         private static final Map<String, String> PLURAL_NAMES_MAP = getPluralNamesMap();
 
         @Override
-        public String translate(String propertyName) {
+        public String translate(final String propertyName) {
             return super.translate(PLURAL_NAMES_MAP.getOrDefault(propertyName, propertyName));
         }
 
