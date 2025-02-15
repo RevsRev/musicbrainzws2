@@ -57,7 +57,7 @@ public final class JacksonMappers {
 
     private static void configureMapper(final ObjectMapper mapper) {
         mapper.setDateFormat(createDateFormat());
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 //        mapper.configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true);

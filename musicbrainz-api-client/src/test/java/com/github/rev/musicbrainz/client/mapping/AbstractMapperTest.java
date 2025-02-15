@@ -6,7 +6,6 @@ import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
 import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
 import com.github.rev.musicbrainz.client.search.result.MbEventResult;
-import com.github.rev.musicbrainz.client.search.result.MbGenreResult;
 import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
@@ -17,7 +16,6 @@ import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.search.result.MbTagResult;
 import com.github.rev.musicbrainz.client.search.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.search.result.MbWorkResult;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
