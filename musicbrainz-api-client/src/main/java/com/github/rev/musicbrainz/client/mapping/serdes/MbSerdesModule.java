@@ -6,14 +6,19 @@ import com.fasterxml.jackson.databind.deser.Deserializers;
 import com.fasterxml.jackson.databind.module.SimpleDeserializers;
 import com.fasterxml.jackson.databind.module.SimpleSerializers;
 import com.fasterxml.jackson.databind.ser.Serializers;
+import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.BadKeyDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.FormatDeserializer;
-import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.GenderDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.LanguageDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.TargetDeserializer;
+import com.github.rev.musicbrainz.client.mapping.serdes.handler.MbValueInstantiators;
 import com.github.rev.musicbrainz.client.mapping.serdes.serializers.GenderSerializer;
+import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.Format;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.LanguageList;
+import org.musicbrainz.ns.mmd_2.PrimaryType;
+import org.musicbrainz.ns.mmd_2.SecondaryType;
+import org.musicbrainz.ns.mmd_2.Status;
 import org.musicbrainz.ns.mmd_2.Target;
 
 /**
@@ -36,28 +41,50 @@ public final class MbSerdesModule extends Module {
     public void setupModule(final SetupContext context) {
         context.addDeserializers(getDeserializers());
         context.addSerializers(getSerializers());
+        context.addValueInstantiators(new MbValueInstantiators());
     }
 
     private Deserializers getDeserializers() {
         SimpleDeserializers simpleDeserializers = new SimpleDeserializers();
-//        simpleDeserializers.addDeserializer(IsniList.class, new IsniListDeserializer());
-//        simpleDeserializers.addDeserializer(IpiList.class, new IpiListDeserializer());
-//        simpleDeserializers.addDeserializer(TagList.class, new TagListDeserializer());
-//        simpleDeserializers.addDeserializer(AliasList.class, new AliasListDeserializer());
         simpleDeserializers.addDeserializer(Target.class, new TargetDeserializer());
-        simpleDeserializers.addDeserializer(Gender.class, new GenderDeserializer());
         simpleDeserializers.addDeserializer(LanguageList.Language.class, new LanguageDeserializer());
         simpleDeserializers.addDeserializer(Format.class, new FormatDeserializer());
+
+        simpleDeserializers.addDeserializer(Gender.class, BadKeyDeserializer.factory(
+                Gender.class,
+                "",
+                "setContent"
+        ));
+
+        simpleDeserializers.addDeserializer(Alias.class, BadKeyDeserializer.factory(
+                Alias.class,
+                "",
+                "setContent"));
+
+        simpleDeserializers.addDeserializer(Status.class, BadKeyDeserializer.factory(
+                Status.class,
+                "",
+                "setContent"
+        ));
+
+        simpleDeserializers.addDeserializer(PrimaryType.class, BadKeyDeserializer.factory(
+                PrimaryType.class,
+                "",
+                "setContent"
+        ));
+
+        simpleDeserializers.addDeserializer(SecondaryType.class, BadKeyDeserializer.factory(
+                SecondaryType.class,
+                "secondary-type",
+                "setContent"
+        ));
+
         return simpleDeserializers;
     }
 
     private Serializers getSerializers() {
         SimpleSerializers simpleSerializers = new SimpleSerializers();
-//        simpleSerializers.addSerializer(Number.class, new ToStringSerializer());
         simpleSerializers.addSerializer(Gender.class, new GenderSerializer());
-//        simpleSerializers.addSerializer(IsniList.class, new IsniListSerializer());
-//        simpleSerializers.addSerializer(IpiList.class, new IpiListSerializer());
-//        simpleSerializers.addSerializer(AliasList.class, new AliasListSerializer());
         return simpleSerializers;
     }
 }

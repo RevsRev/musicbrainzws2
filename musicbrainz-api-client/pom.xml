@@ -62,6 +62,11 @@
             <version>${jackson.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-jakarta-xmlbind-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>${jakarta.xml.bind-api.version}</version>
@@ -114,6 +119,10 @@
 <!--                        <binding>src/main/resources/schema/bindings.xjb</binding>-->
 <!--                    </bindings>-->
                     <extension>true</extension>
+                    <arguments>
+                        <argument>-XelementWrapper</argument>
+<!--                        <argument>-Xvalue-constructor</argument>-->
+                    </arguments>
                 </configuration>
                 <dependencies>
                     <dependency>

@@ -9,14 +9,22 @@ import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.github.rev.musicbrainz.client.mapping.serdes.MbSerdesModule;
+import com.github.rev.musicbrainz.client.mapping.serdes.handler.IgnoringProblemHandler;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TimeZone;
 
 public final class JacksonMappers {
+
+    private static final Set<String> FIELDS_TO_IGNORE_IN_PARSING = Set.of(
+            "score",
+            "text",
+            "track"
+    );
 
     private JacksonMappers() {
     }
@@ -46,28 +54,50 @@ public final class JacksonMappers {
                 .build();
         configureMapper(mapper);
 
-        mapper.setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE);
+        mapper.setPropertyNamingStrategy(new XmlNameStrategy());
 
         JacksonXmlModule jacksonXmlModule = new JacksonXmlModule();
         jacksonXmlModule.setDefaultUseWrapper(false);
         mapper.registerModule(jacksonXmlModule);
+
+        // I want to use this, but a bug mixing @Xml
+//        JakartaXmlBindAnnotationModule jakartaXmlModule = new JakartaXmlBindAnnotationModule();
+//        mapper.registerModule(jakartaXmlModule);
 
         return mapper;
     }
 
     private static void configureMapper(final ObjectMapper mapper) {
         mapper.setDateFormat(createDateFormat());
-//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
-//        mapper.configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true);
         mapper.registerModule(new MbSerdesModule());
+
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+        mapper.addHandler(new IgnoringProblemHandler(FIELDS_TO_IGNORE_IN_PARSING));
     }
 
     private static DateFormat createDateFormat() {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
         df.setTimeZone(TimeZone.getTimeZone("UTC"));
         return df;
+    }
+
+    public static final class XmlNameStrategy extends PropertyNamingStrategies.KebabCaseStrategy {
+
+        private static final Map<String, String> OVERRIDEN_NAMES_MAP = overridenNamesMap();
+
+        @Override
+        public String translate(final String propertyName) {
+            return super.translate(OVERRIDEN_NAMES_MAP.getOrDefault(propertyName, propertyName));
+        }
+
+        private static Map<String, String> overridenNamesMap() {
+            Map<String, String> overridenNamesMap = new HashMap<>();
+            overridenNamesMap.put("iso31661CodeList", "iso-3166-1-code-list");
+            overridenNamesMap.put("iso31661Code", "iso-3166-1-code");
+            return overridenNamesMap;
+        }
     }
 
     public static final class JsonNameStrategy extends PropertyNamingStrategies.KebabCaseStrategy {
