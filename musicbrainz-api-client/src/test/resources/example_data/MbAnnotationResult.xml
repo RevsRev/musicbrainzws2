@@ -1,653 +1,915 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<metadata created="2025-02-14T16:54:41.800Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+<metadata created="2025-02-28T15:22:13.924Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
           xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
-    <annotation-list count="2983" offset="0">
+    <annotation-list count="156" offset="0">
         <annotation type="release" ns2:score="100">
-            <entity>699e78d6-4e6c-4491-9869-1ae4710b1707</entity>
-            <name>Eurasia (A Musical Journey of the Mind)</name>
-            <text>Artists: Davide Compostella - clarinet and Alessandro Balsimini - guitar (known as Duo Musaikón - now
-                disbanded)
-                composers: Mark Houghton (born 1959), David W Solomons (born 1953), Paolo Fontana (born 1968), Jan
-                Freidlin (born 1944), Emanuel Vahl (born 1938), Laurent Boutros (born 1964)
+            <entity>f41281dc-f033-41cc-a401-b4c92d1cd169</entity>
+            <name>Artist Workshop</name>
+            <text>CLEAN</text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>c1882c1b-6027-4320-94d7-8dcd79a4a9ff</entity>
+            <name>Artist Collection</name>
+            <text></text>
+        </annotation>
+        <annotation type="artist" ns2:score="100">
+            <entity>eb9d8589-6659-4ccc-ae9c-36cd6f95d8a8</entity>
+            <name>Artist Unknown</name>
+            <text>This is '''NOT''' the same artist as
+                [http://musicbrainz.org/showartist.html?artistid=97546|[unknown]].
             </text>
         </annotation>
-        <annotation type="release" ns2:score="95">
-            <entity>839bf985-9665-47e6-ab39-ce9f9a984a27</entity>
-            <name>Man of War Remix EP</name>
-            <text>Copyright: © 2016 Born Electric
-                ℗ 2016 Born Electric
+        <annotation type="release" ns2:score="100">
+            <entity>36ecf4f7-eb41-4a28-aa88-208d630647ee</entity>
+            <name>Escape Artist</name>
+            <text>== Countries excluded (iTunes + Deezer + Spotify) ==
+                (As of 2020-09-25).
+
+                * '''South America''': 🇫🇰 Falkland Islands (Malvinas) (fk)
+                * '''Northern Europe''': 🇸🇯 Svalbard and Jan Mayen (sj)
+                * '''Eastern Africa''': 🇮🇴 British Indian Ocean Territory (io)
+                * '''South-Eastern Asia''': 🇹🇱 Timor-Leste (tl)
+                * '''Oceania''': 🇨🇨 Cocos (Keeling) Islands (cc) 🇨🇽 Christmas Island (cx) 🇳🇫 Norfolk Island (nf)
+                * '''Polynesia''': 🇨🇰 Cook Islands (ck) 🇳🇺 Niue (nu) 🇹🇰 Tokelau (tk)
+
+                == Countries where available (iTunes + Deezer + Spotify) ==
+                (As of 2020-09-25).
+
+                * '''Northern America''': 🇺🇸 United States (us) 🇧🇲 Bermuda (bm) 🇨🇦 Canada (ca) 🇲🇽 Mexico (mx)
+                * '''Central America''': 🇧🇿 Belize (bz) 🇨🇷 Costa Rica (cr) 🇬🇹 Guatemala (gt) 🇭🇳 Honduras (hn) 🇳🇮
+                Nicaragua (ni) 🇵🇦 Panama (pa) 🇸🇻 El Salvador (sv)
+                * '''Caribbean''': 🇦🇬 Antigua and Barbuda (ag) 🇦🇮 Anguilla (ai) 🇧🇧 Barbados (bb) 🇧🇸 Bahamas (bs) 🇩🇲
+                Dominica (dm) 🇩🇴 Dominican Republic (do) 🇬🇩 Grenada (gd) 🇯🇲 Jamaica (jm) 🇰🇳 Saint Kitts and Nevis
+                (kn) 🇰🇾 Cayman Islands (ky) 🇱🇨 Saint Lucia (lc) 🇲🇸 Montserrat (ms) 🇹🇨 Turks and Caicos Islands (tc) 🇹🇹
+                Trinidad and Tobago (tt) 🇻🇨 Saint Vincent and Grenadines (vc) 🇻🇬 Virgin Islands, British (vg) 🇧🇶 Bonaire
+                (bq) 🇨🇺 Cuba (cu) 🇨🇼 Curaçao (cw) 🇸🇽 Sint Maarten (sx)
+                * '''South America''': 🇦🇷 Argentina (ar) 🇧🇴 Bolivia (bo) 🇧🇷 Brazil (br) 🇨🇱 Chile (cl) 🇨🇴 Colombia
+                (co) 🇪🇨 Ecuador (ec) 🇵🇪 Peru (pe) 🇵🇾 Paraguay (py) 🇺🇾 Uruguay (uy) 🇻🇪 Venezuela (ve) 🇬🇾 Guyana (gy) 🇸🇷
+                Suriname (sr)
+                * '''Western Europe''': 🇦🇹 Austria (at) 🇧🇪 Belgium (be) 🇨🇭 Switzerland (ch) 🇩🇪 Germany (de) 🇫🇷 France
+                (fr) 🇱🇺 Luxembourg (lu) 🇳🇱 Netherlands (nl) 🇱🇮 Liechtenstein (li) 🇲🇨 Monaco (mc)
+                * '''Northern Europe''': 🇩🇰 Denmark (dk) 🇪🇪 Estonia (ee) 🇫🇮 Finland (fi) 🇬🇧 United Kingdom (gb) 🇮🇪
+                Ireland (ie) 🇮🇸 Iceland (is) 🇱🇹 Lithuania (lt) 🇱🇻 Latvia (lv) 🇳🇴 Norway (no) 🇸🇪 Sweden (se)
+                * '''Southern Europe''': 🇨🇾 Cyprus (cy) 🇪🇸 Spain (es) 🇬🇷 Greece (gr) 🇭🇷 Croatia (hr) 🇮🇹 Italy (it) 🇲🇰
+                Macedonia (mk) 🇲🇹 Malta (mt) 🇵🇹 Portugal (pt) 🇸🇮 Slovenia (si) 🇧🇦 Bosnia and Herzegovina (ba) 🇲🇪
+                Montenegro (me) 🇦🇱 Albania (al) 🇷🇸 Serbia (rs) 🇦🇩 Andorra (ad)
+                * '''Eastern Europe''': 🇧🇬 Bulgaria (bg) 🇧🇾 Belarus (by) 🇨🇿 Czech Republic (cz) 🇭🇺 Hungary (hu) 🇲🇩
+                Moldova (md) 🇵🇱 Poland (pl) 🇷🇴 Romania (ro) 🇷🇺 Russian Federation (ru) 🇸🇰 Slovakia (sk) 🇺🇦 Ukraine
+                (ua) 🇽🇰 Kosovo (xk)
+                * '''Northern Africa''': 🇩🇿 Algeria (dz) 🇪🇬 Egypt (eg) 🇹🇳 Tunisia (tn) 🇱🇾 Libyan Arab Jamahiriya
+                (ly) 🇲🇦 Morocco (ma) 🇪🇭 Western Sahara (eh) 🇸🇩 Sudan (sd)
+                * '''Western Africa''': 🇧🇫 Burkina Faso (bf) 🇧🇯 Benin (bj) 🇨🇻 Cape Verde (cv) 🇬🇭 Ghana (gh) 🇬🇲 Gambia
+                (gm) 🇬🇼 Guinea-Bissau (gw) 🇱🇷 Liberia (lr) 🇲🇱 Mali (ml) 🇲🇷 Mauritania (mr) 🇳🇪 Niger (ne) 🇳🇬 Nigeria
+                (ng) 🇸🇱 Sierra Leone (sl) 🇸🇳 Senegal (sn) 🇨🇮 Cote D’Ivoire (ci) 🇬🇳 Guinea (gn) 🇹🇬 Togo (tg)
+                * '''Eastern Africa''': 🇰🇪 Kenya (ke) 🇲🇬 Madagascar (mg) 🇲🇺 Mauritius (mu) 🇲🇼 Malawi (mw) 🇲🇿 Mozambique
+                (mz) 🇸🇨 Seychelles (sc) 🇹🇿 Tanzania (tz) 🇺🇬 Uganda (ug) 🇿🇼 Zimbabwe (zw) 🇷🇼 Rwanda (rw) 🇿🇲 Zambia
+                (zm) 🇧🇮 Burundi (bi) 🇩🇯 Djibouti (dj) 🇪🇷 Eritrea (er) 🇪🇹 Ethiopia (et) 🇰🇲 Comoros (km) 🇸🇴 Somalia (so)
+                * '''Middle Africa''': 🇦🇴 Angola (ao) 🇨🇬 Congo (cg) 🇹🇩 Chad (td) 🇨🇩 Congo, Democratic Republic (cd) 🇨🇲
+                Cameroon (cm) 🇬🇦 Gabon (ga) 🇨🇫 Central African Republic (cf) 🇬🇶 Equatorial Guinea (gq) 🇸🇸 South Sudan
+                (ss) 🇸🇹 Sao Tome and Principe (st)
+                * '''Southern Africa''': 🇧🇼 Botswana (bw) 🇳🇦 Namibia (na) 🇸🇿 Swaziland (sz) 🇿🇦 South Africa (za) 🇱🇸
+                Lesotho (ls)
+                * '''Western Asia''': 🇦🇪 United Arab Emirates (ae) 🇦🇲 Armenia (am) 🇦🇿 Azerbaijan (az) 🇧🇭 Bahrain
+                (bh) 🇮🇱 Israel (il) 🇯🇴 Jordan (jo) 🇰🇼 Kuwait (kw) 🇱🇧 Lebanon (lb) 🇴🇲 Oman (om) 🇶🇦 Qatar (qa) 🇸🇦 Saudi
+                Arabia (sa) 🇹🇷 Turkey (tr) 🇾🇪 Yemen (ye) 🇬🇪 Georgia (ge) 🇮🇶 Iraq (iq) 🇵🇸 Palestinian Territory, Occupied
+                (ps)
+                * '''Central Asia''': 🇰🇬 Kyrgyzstan (kg) 🇰🇿 Kazakhstan (kz) 🇹🇯 Tajikistan (tj) 🇹🇲 Turkmenistan (tm) 🇺🇿
+                Uzbekistan (uz)
+                * '''Southern Asia''': 🇧🇹 Bhutan (bt) 🇮🇳 India (in) 🇱🇰 Sri Lanka (lk) 🇳🇵 Nepal (np) 🇲🇻 Maldives
+                (mv) 🇦🇫 Afghanistan (af) 🇧🇩 Bangladesh (bd) 🇮🇷 Iran, Islamic Republic of (ir) 🇵🇰 Pakistan (pk)
+                * '''Eastern Asia''': 🇨🇳 China (cn) 🇭🇰 Hong Kong (hk) 🇯🇵 Japan (jp) 🇰🇷 Korea (kr) 🇲🇳 Mongolia (mn) 🇲🇴
+                Macao (mo) 🇹🇼 Taiwan (tw)
+                * '''South-Eastern Asia''': 🇧🇳 Brunei Darussalam (bn) 🇮🇩 Indonesia (id) 🇰🇭 Cambodia (kh) 🇱🇦 Lao People’s
+                Democratic Republic (la) 🇲🇾 Malaysia (my) 🇵🇭 Philippines (ph) 🇸🇬 Singapore (sg) 🇹🇭 Thailand (th) 🇻🇳
+                Viet‐Nam (vn) 🇲🇲 Myanmar (mm)
+                * '''Oceania''': 🇦🇺 Australia (au) 🇳🇿 New Zealand (nz)
+                * '''Polynesia''': 🇹🇴 Tonga (to) 🇵🇳 Pitcairn (pn) 🇹🇻 Tuvalu (tv) 🇼🇸 Samoa (ws)
+                * '''Melanesia''': 🇫🇯 Fiji (fj) 🇵🇬 Papua New Guinea (pg) 🇸🇧 Solomon Islands (sb) 🇻🇺 Vanuatu (vu)
+                * '''Micronesia''': 🇫🇲 Micronesia, Federated States of (fm) 🇰🇮 Kiribati (ki) 🇲🇭 Marshall Islands
+                (mh) 🇳🇷 Nauru (nr) 🇵🇼 Palau (pw)
             </text>
         </annotation>
-        <annotation type="release" ns2:score="94">
-            <entity>1007cc98-e2a8-4290-929d-b3bf8f132a7b</entity>
-            <name>E‐Motion</name>
-            <text>© «2020 Born Losers Records»
-                ℗ «2021 Born Losers Records»
+        <annotation type="release" ns2:score="100">
+            <entity>3af4d569-8174-4663-9064-7cf36f54812a</entity>
+            <name>Artist 2.0</name>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>b0f963d3-0423-48f2-8b58-0148bd110875</entity>
+            <name>Artist 2.0</name>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>9137385c-f27c-4de4-b305-ef577501fee6</entity>
+            <name>Artist 2.0</name>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>accc2b02-0fda-4938-9ae3-4130b7a56349</entity>
+            <name>Artist 2.0</name>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>117b70d5-8237-4eb3-9da4-e00bcdd979cc</entity>
+            <name>Favourite Artist</name>
+            <text>℗ &amp; © «2021 Stay High under exclusive license to Groove Attack»</text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>4aab5705-e764-4afb-8b50-b2bf693e745a</entity>
+            <name>Artist 2.0</name>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>819d7b4b-0ac6-4ac3-a869-c134ef5d3c3b</entity>
+            <name>Escape Artist</name>
+            <text>Credits
+
+                Artwork, Design – Costin Chioreanu
+                Bass – Șerban Ionuț Georgescu (tracks: CD-1 to CD-13, DVD-3 to DVD-6)
+                Cameraman [DVD Features Filmed By], Film Editor [DVD Features Edited By], Film Producer [DVD Features
+                Produced By] – Șerban Ionuț Georgescu (tracks: DVD-1, DVD-2, DVD-3 to DVD-6)
+                Drums – Marian Mihăilă (tracks: CD-1 to CD-13, DVD-3 to DVD-6)
+                Engineer [Recording Engineer], Mixed By [Mixing] – Marius Costache (tracks: CD-1 to CD-13, DVD-3 to
+                DVD-6)
+                Engineer [Vocal Recording Engineer] – Oliver Végh* (tracks: CD-1 to CD-13, DVD-3 to DVD-6)
+                Guitar – Eduard Alexandru Dascălu (tracks: CD-1 to CD-13, DVD-3 to DVD-6)
+                Management – Mihnea Ioan Grecu
+                Management [Booking] – Ștefan Zaharescu
+                Mastered By – Alan Douches
+                Songwriter [Songs Written By], Performer [Performed By], Producer [Produced By] – White Walls (4)
+                (tracks: CD-1 to CD-13, DVD-3 to DVD-6)
+                Vocals, Lyrics By – Eugen Brudaru (tracks: CD-1 to CD-13, DVD-3 to DVD-6)
+
+                Notes
+                Drums and guitars recorded at Next Dog Studio, bass guitar recorded at NoCity Studio, vocals recorded at
+                Luna Recording Studio.
+                Mastered at West West Side Music
+                Management @ X-Lab Solutions
+                Booking @ Mighty Owl Productions
+                © &amp; ℗ 2013 White Walls
+
+                Pacakging: 3 panel cardboard sleeve with clear plastic tray, including a foldout booklet
             </text>
         </annotation>
-        <annotation type="release" ns2:score="94">
-            <entity>2ffe05cf-0108-4463-b9d1-fec46465f307</entity>
-            <name>Las Vegas</name>
-            <text>© «2020 Born Losers Records»
-                ℗ «2021 Born Losers Records»
+        <annotation type="release-group" ns2:score="100">
+            <entity>10f4dd69-4065-362f-aaa3-78a2556fa27c</entity>
+            <name>Escape Artist</name>
+        </annotation>
+        <annotation type="artist" ns2:score="100">
+            <entity>387dd5fc-264d-4a26-8f11-bb7af5794049</entity>
+            <name>Akhil Artist</name>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>dbe6e80a-2380-4303-b812-9211ac683b90</entity>
+            <name>Escape Artist</name>
+            <text>Distribution Sony Music
+                price code: CB 741
+                label code: LC 0199
+                other: CDM
+                other: cat.# 14-471352-10
+                matrix / runout (mirrored): 14-471352-10 12 A2 DADC Austria
+                'Made in Austria' on the cd
             </text>
         </annotation>
-        <annotation type="release" ns2:score="94">
-            <entity>6508acaf-d4a6-40fb-a076-1efa78fee78f</entity>
-            <name>90 Days (single edit)</name>
-            <text>© «2020 Born Losers Records»
-                ℗ «2021 Born Losers Records»
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="94">
-            <entity>af2217c3-a6e2-4543-8df1-279663b088e3</entity>
-            <name>Stream Roller</name>
-            <text>Copyright: © 2024 Born Bad Records
-                ℗ 2024 Born Bad Records
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="94">
-            <entity>b979ff00-f67d-4644-88be-f1f425bdec74</entity>
-            <name>Black And Proud (Say It Loud)</name>
-            <text>Copyright: © 2020 Born Leaders Entertainment
-                ℗ 2020 Born Leaders Entertainment
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="93">
-            <entity>7a7fdfd8-fbb5-4ba4-9ddb-a527286d31cb</entity>
-            <name>Born Slippy .NUXX (Short)</name>
-            <text>Reissue.
-                Release title on the front cover: "Born Slippy"
-                Release title on the disc label: "Born Slippy"
-                Release title on the spine: "Born Slippy .NUXX (Short)"
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="92">
-            <entity>0a30a467-9a7b-4726-bdb5-21d16404183d</entity>
-            <name>The Love Language</name>
-            <text>℗ &amp; © «2021 Born Art / EMPIRE»
-                ℗ «2021 Born Art / EMPIRE»
-            </text>
-        </annotation>
-        <annotation type="recording" ns2:score="92">
-            <entity>55e70496-4b88-4907-bc13-012850ee5d2c</entity>
-            <name>Pikin</name>
-            <text>Johnny Webb
-                Hmm mm
-
-                Na who no wan born pikin o?
-                Who no wan born pikin o?
-                Na the blessings God dey give o
-                The blessings God dey give o
-                Me I go born boy o
-                Me I go born girl o
-                My woman go born twins oh
-                Anyi ga mu Ejima
-
-                Na who no wan born pikin o?
-                Who no wan born pikin o?
-                Na the blessings God dey give o
-                The blessings God dey give o
-                Me I go born boy o
-                Me I go born girl o
-                My woman go born twins oh
-                Taye and kehinde
-                Eh eh eh
-
-                I go love you today
-                My pikin I go love you tomorrow
-                God na him bring you my way
-                I'm so proud of you
-                I fit suffer today
-                Na make we for fit laugh tomorrow
-                So therefore I pray
-
-                Bad belle no go kill my pikin
-                Kidnappers no go see my pikin
-                Accident no go kill my pikin
-                You dey God hand
-
-                I go spend my money on pikin
-                My pikin go turn to big pikin
-                My pikin go take good care of me
-                when I grow old
-
-                Na who no wan born pikin o?
-                Who no wan born pikin o?
-                Na the blessing God dey give o
-                The blessing God dey give o
-                Me I go born boy oh
-                Me I go born girl o
-                My woman go born twins oh
-                Anyi ga mu Ejima
-
-                Na who no wan born pikin o?
-                Who no wan born pikin o?
-                Na the blessings God dey give o
-                The blessings God dey give o
-                Me I go born boy oh
-                Me I go born girl oh
-                My woman go born twins
-                Taye and Kehinde
-
-                Bad belle no go kill my pikin
-                Kidnappers no go see my pikin
-                Accident no go kill my pikin
-                You dey God hand
-
-                I go spend my money on pikin
-                My pikin go turn to big pikin
-                My pikin go take good care of me
-                when I grow old
-
-                Na who no wan born pikin o?
-                Who no wan born pikin o?
-                Na the blessing God dey give o
-                The blessing God dey give o
-                Me I go born boy oh
-                me I go born girl oh
-                My woman go born twins o
-                Anyi ga mu Ejima
-
-                Mmmm
-                Yea...
-                Ahn ah
-                Anyi ga mu ejima
-                Anyi ga mu ejima
-            </text>
-        </annotation>
-        <annotation type="artist" ns2:score="91">
-            <entity>36591e19-2aaf-44f9-9867-d57df5a087cb</entity>
-            <name>Sa‐Fire</name>
-            <text>Born: Wilma Cosme in San Juan, Puerto Rico
+        <annotation type="artist" ns2:score="100">
+            <entity>eec63d3c-3b81-4ad4-b1e4-7c147d4d2b61</entity>
+            <name>[no artist]</name>
+            <text>This [https://musicbrainz.org/doc/Style/Unknown_and_untitled/Special_purpose_artist|Special Purpose
+                Artist] should only be used if no artist of discographic relevance has been attributed to a piece of
+                work.
 
                 -------
 
-                Born: in San Juan, Puerto Rico
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="90">
-            <entity>172ff5c0-20ca-4233-b355-922b2a4dd508</entity>
-            <name>The Tale of Tommy Gunn</name>
-            <text>© «2023 Born Losers Records»
-                ℗ «2023 Johnny Dynamite Under Exclusive License To Born Losers Records»
-            </text>
-        </annotation>
-        <annotation type="artist" ns2:score="90">
-            <entity>fbd20a33-1e13-4685-a91a-2f02aacdd92b</entity>
-            <name>María Grever</name>
-            <text>According to Wikipedia, Grever was born in 1885
-                According to Wikidata, Grever was born in 1894
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="90">
-            <entity>9f194535-51f0-4583-aeda-b7df88f06fd6</entity>
-            <name>For You</name>
-            <text>© 2024 Born Losers Records
-                ℗ 2024 Jaguar Sun Under Exclusive License To Born Losers Records
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="90">
-            <entity>6dc10614-801f-44f9-aa00-db9716b69c50</entity>
-            <name>APESHIT</name>
-            <text>© «2022 Born Losers Records»
-                ℗ «2022 TSOAF Music Under Exclusive License To Born Losers Records»
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="90">
-            <entity>4ede502c-9224-4336-8707-b29d9465150e</entity>
-            <name>Live in Philadelphia</name>
-            <text>© «2024 Born Losers Records»
-                ℗ «2024 TSOAF Music Under Exclusive License To Born Losers Records»
-            </text>
-        </annotation>
-        <annotation type="work" ns2:score="90">
-            <entity>68155dd3-f70d-4cd9-b6dd-3424e04c5dc4</entity>
-            <name>Chrissie’s Song</name>
-            <text>[http://brucebase.wikidot.com/stats:born-to-run-studio-sessions#thunderroad|'''''Born To Run - Studio
-                Sessions''''']
-            </text>
-        </annotation>
-        <annotation type="release" ns2:score="89">
-            <entity>19f1baee-41c2-4a0c-8ffc-60c27008f7df</entity>
-            <name>Born This Way: The Collection</name>
-            <text>Born This Way CD Cat#: B0016310-00
-                Born This Way Case Cat#: B0016310-00 JK02
+                This is a [https://musicbrainz.org/doc/Style/Unknown_and_untitled/Special_purpose_artist|Special Purpose
+                Artist].
 
-                The Monster Ball Tour at Madison Square Garden CD Cat#: B0016286-09
-                The Monster Ball Tour at Madison Square Garden Case Cat#: B0016310-00 JK01
+                For some reason, a lot of releases are also listed under
+                [http://musicbrainz.org/artist/8b91414e-6f3f-416e-8f2b-138c74b92635|Dan Gibson].
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>78df158e-c80e-41a5-93c5-58f81a97ec1f</entity>
+            <name>False Artist</name>
+            <text>℗ &amp; © «2022 ALLB»</text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>fbac3714-8201-4992-819b-3e0959869a00</entity>
+            <name>Escape Artist</name>
+            <text>℗ «2023 Danielle Durack»</text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>082debff-6800-4565-8da2-8fb270123a9f</entity>
+            <name>The Artist</name>
+            <text>== Countries excluded (Spotify + Deezer) ==
+                (As of 2023-05-29).
 
-                Born This Way - The Remix CD Cat#: B0016287-02
-                Born This Way - The Remix Case Cat#: B0016310-00 JK03
+                * '''Eastern Asia''': 🇭🇰 Hong Kong (hk) 🇹🇼 Taiwan (tw)
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>2d2594ce-22c2-48c1-8ab3-7b2fe26dbe45</entity>
+            <name>Ron Artist</name>
+            <text>Copyright: ℗ 2024 Krekpek Records</text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>2d2594ce-22c2-48c1-8ab3-7b2fe26dbe45</entity>
+            <name>Ron Artist</name>
+            <text></text>
+        </annotation>
+        <annotation type="release" ns2:score="100">
+            <entity>e3fabaef-6250-49dd-8821-9b59dbed5300</entity>
+            <name>Artist. Artists.</name>
+            <text>First released on Bandcamp 2020-04-27, followed by other platforms 2020-05-01.</text>
+        </annotation>
+        <annotation type="label" ns2:score="100">
+            <entity>38814d39-32a1-4ac6-9280-9f0d62ffe9a9</entity>
+            <name>Artist Partner</name>
+            <text>imprint history:
+                As a joint venture with Atlantic Records and Warner Music Group
+                2012 —— 2020: Artist Partner
+
+                In Nov. 2020, APG ended their eight-year joint venture with Atlantic Records to go fully independent.
+                2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="100">
+            <entity>38814d39-32a1-4ac6-9280-9f0d62ffe9a9</entity>
+            <name>Artist Partner</name>
+            <text>imprint history:
+                As a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]
+                2012 —— 2020: Artist Partner
+
+                In Nov. 2020, APG ended their eight-year joint venture with
+                [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] to go fully independent.
+                2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="100">
+            <entity>38814d39-32a1-4ac6-9280-9f0d62ffe9a9</entity>
+            <name>Artist Partner</name>
+            <text>imprint history:
+                As a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]
+                2012 —— 2020: Artist Partner
+
+                In Nov. 2020, APG ended their eight-year joint venture with Atlantic Records to go fully independent.
+                2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="100">
+            <entity>38814d39-32a1-4ac6-9280-9f0d62ffe9a9</entity>
+            <name>Artist Partner</name>
+        </annotation>
+        <annotation type="label" ns2:score="100">
+            <entity>38814d39-32a1-4ac6-9280-9f0d62ffe9a9</entity>
+            <name>Artist Partner</name>
+            <text>'''APG''' ('''''Artist Partner Group''''' &amp; '''''Artist Publishing Group''''') is a modern,
+                independent record label and music publishing group for forward thinking and entrepreneurial artists and
+                songwriters. We are powered by partnership and creativity. Our three arms - Partner, Publishing, and
+                Parametric encompass APG's roster of artists, singles and producers/songwriters.
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="100">
+            <entity>38814d39-32a1-4ac6-9280-9f0d62ffe9a9</entity>
+            <name>Artist Partner</name>
+            <text>'''APG''' ('''''Artist Partner Group''''' &amp; '''''Artist Publishing Group''''') is a modern,
+                independent record label and music publishing group for forward thinking and entrepreneurial artists and
+                songwriters.
             </text>
         </annotation>
         <annotation type="release" ns2:score="87">
-            <entity>d77ce5d7-0863-4272-a46e-99168bf1292e</entity>
-            <name>Born in the U.S.A.: Live Vol 1. 21‐7‐1984 Montreol</name>
+            <entity>558e88d4-5fd9-485e-8439-65a1f27caf19</entity>
+            <name>The Artist LP</name>
+            <text>“L2B releases his debut album, ‘The Artist LP,’ featuring songs and stories about classic Hollywood,
+                aliens from outer-space, demon possession, falling out of love, traveling the world, and more.”
+            </text>
+        </annotation>
+        <annotation type="artist" ns2:score="87">
+            <entity>37735138-fc86-4d40-b943-5359410f0c14</entity>
+            <name>Владислав "Artist" Соколов</name>
+            <text>Usually credited as "Влад", so it's kind of unclear whether he is "Владислав" or "Владимир".
+
+                [http://www.paiste.com/e/endorser_det.php?page=image&amp;endorserid=5558|Endorser of Paiste 2002
+                Cymbals], as "Vladislav Sokolov".
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>be19759d-5cf9-4b4b-866b-ac4fe57f8486</entity>
+            <name>Amazon Artist Lounge</name>
+            <text>Live in Gothenburg, Sweden</text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>8b410f02-9b35-4129-bcb8-91ca707793c1</entity>
+            <name>The Cursed Artist</name>
+            <text>'''Label:''' Memento Mori - '''Cat#:''' MORI 08</text>
+        </annotation>
+        <annotation type="artist" ns2:score="87">
+            <entity>7e84f845-ac16-41fe-9ff8-df12eb32af55</entity>
+            <name>MusicBrainz Test Artist</name>
+            <text>This is a [Special Purpose Artist].</text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>06b3d1da-0afe-44b2-ab60-8357cda81c2e</entity>
+            <name>The Artist's Choice</name>
+            <text></text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>fa5bf027-7655-43fa-a7d6-bfad540ddfe1</entity>
+            <name>Best New Artist</name>
+            <text>℗ &amp; © «2019 Irma Alieva's label»
+                ℗ «2016 Irma Alieva's label»
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>af5f7833-6768-4c77-b2ab-75b85ecfee2f</entity>
+            <name>Best New Artist</name>
+            <text>℗ &amp; © «2016 mARS label»
+                ℗ «2014 mARS label»
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>d0125de0-3ea3-4243-aa38-bdd3f47bad5c</entity>
+            <name>Amazon Artist Lounge</name>
+            <text>Special three track live EP of recordings from Lewis Watson's Koko, London performance available
+                exclusively via Amazon MP3 UK.
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>eb3cde53-ad3d-4124-b255-3c0f63a8ae23</entity>
+            <name>Essential Artist Collection</name>
+            <text>2 x Vinyle, LP, Compilation, Green
+                Gatefold sleeve
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>59bfd6d2-09e8-4a12-a53f-8a71514d8ae0</entity>
+            <name>Essential Artist Collection</name>
+            <text>Trojan Essential Artist Collection
+                28 Classic Tracks By Jamaica’s Most Popular
+                Balladeer - Including His UK Top Ten Chartbuster
+                “Help Me Make It Through The Night”
+                Double Orange Transparent Vinyl
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>a645a31b-55b4-46f6-ac0b-f4a06a77ae4f</entity>
+            <name>The Artist Selects</name>
+            <text>℗ &amp; © «2005 Blue Note Records»
+
+                == Countries excluded (Spotify + Deezer) ==
+                (As of 2024-04-17).
+
+                * Eastern Africa: 🇮🇴 British Indian Ocean Territory (io)
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>870b717a-24bd-4d02-84a3-b00beb633967</entity>
+            <name>Essential Artist Collection</name>
+            <text>All tracks incorrectly credited as just Desmond Dekker on the case.</text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>ddcebd9b-54d5-4b50-86b0-9a551d2e29f7</entity>
+            <name>Artist Focus 66</name>
+            <text>© «Alter Ego Music 2016»
+                ℗ «2017 Alter Ego Music»
+                ℗ «Alter Ego Music Publishing»
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>45c3f74f-15b0-43eb-80a6-577815914e20</entity>
+            <name>Bump Artist EP</name>
+            <text>Copyright: © 2024 COCO
+                ℗ 2024 COCO
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>211073db-2407-4a62-981f-d61b64a75988</entity>
+            <name>Backdoor Con Artist</name>
+            <text>== Countries excluded (Deezer + Spotify) ==
+                (As of 2024-08-01).
+
+                * Eastern Europe: 🇧🇾 Belarus (by)
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="87">
+            <entity>12dff6be-7a2a-4d1d-aa6d-bc7dceea0a70</entity>
+            <name>Bump Artist EP</name>
+            <text>Extended versions of the tracks</text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>11d7ad73-9bc5-49a5-86b2-205978efc9e5</entity>
+            <name>Mobineko Artist Sampler 2013</name>
+            <text>Digipak type of holder in 3 part gatefold</text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>bfc8f177-cdaf-415d-b575-6283a3eb8f99</entity>
+            <name>Stories: Narada Artist Collection</name>
+            <text>''Extraordinary performers reveal their artistic inspirations in deeply personal instrumental
+                memoirs''.
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>8cdcfbff-c967-413a-b207-e7873dd68e42</entity>
+            <name>Honey, I'm an Artist</name>
+            <text></text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>3506f119-ea3a-42f0-856d-bb4169e121d5</entity>
+            <name>Artist's Choice: Diana Krall</name>
+            <text>Part of Hear Music's Artist's Choice series</text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>62ad4d77-8715-415f-8550-2d2f12569f74</entity>
+            <name>Artist's Choice: Norah Jones</name>
+            <text>'''Label:''' Hear Music - '''Catalog #:''' 74813</text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>72f958f1-ae7e-41dc-8f15-f2052096ca8d</entity>
+            <name>Original Artist, Original Songs</name>
+            <text>Compilation</text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>c0309401-1638-4cdb-a73c-e288aaf3a6ca</entity>
+            <name>An Artist Thinketh EP</name>
+            <text>== Countries excluded (Deezer + Spotify) ==
+                (As of 2021-11-27).
+
+                * '''Caribbean''': 🇨🇼 Curaçao (cw)
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>5729dd62-1ea9-47be-9cd2-0d535392f717</entity>
+            <name>The Hunger Artist Show</name>
+            <text>Engineered, recorded and mixed by Kostas Fragkopoulos at Shellac Recording studios, in Thessaloniki,
+                Greece
+                Assistant engineers: Sokratis Sokratous, Andronikos Troukis
+
+                Mastered by Role Wiegner at Die Tonmeisterei studios, in Oldenburg, Germany
+
+                Cover art, graphic design, layout by Fanouria Arvaniti
+
+                All music written and performed by Gynoid
+
+                Gynoid is
+                Guitars/vocals: Spyros Tsalouchidis
+                Bass: Panos Dedis
+                Drums/vocals: Nikos Dimitriou
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>0e4771a7-cbb6-4735-9f32-ad7e7f8227a7</entity>
+            <name>Jeremy Pelt The Artist</name>
+            <text></text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>51f95f46-487d-4f1b-b5b4-f78a5e0470fb</entity>
+            <name>BIG ARTIST best COLLECTION</name>
+            <text>Registered from the owned package.</text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>72ec81e7-ca94-4af9-aaff-f9b69587cdd6</entity>
+            <name>Artist of My Soul</name>
+            <text>℗ &amp; © «1997 Word Records, a division of Word Entertainment, Inc.»
+
+                == Countries excluded (Spotify + Deezer + iTunes) ==
+                (As of 2023-06-19).
+
+                * '''Eastern Asia''': 🇨🇳 China (cn)
+
+                == Countries where available (Spotify + Deezer + iTunes) ==
+                (As of 2023-06-19).
+
+                * '''Northern America''': 🇨🇦 Canada (ca) 🇲🇽 Mexico (mx) 🇺🇸 United States (us) 🇧🇲 Bermuda (bm)
+                * '''Central America''': 🇧🇿 Belize (bz) 🇨🇷 Costa Rica (cr) 🇬🇹 Guatemala (gt) 🇭🇳 Honduras (hn) 🇳🇮
+                Nicaragua (ni) 🇵🇦 Panama (pa) 🇸🇻 El Salvador (sv)
+                * '''Caribbean''': 🇦🇬 Antigua and Barbuda (ag) 🇧🇧 Barbados (bb) 🇧🇸 Bahamas (bs) 🇨🇼 Curaçao (cw) 🇩🇲
+                Dominica (dm) 🇩🇴 Dominican Republic (do) 🇬🇩 Grenada (gd) 🇭🇹 Haiti (ht) 🇯🇲 Jamaica (jm) 🇰🇳 Saint Kitts
+                and Nevis (kn) 🇱🇨 Saint Lucia (lc) 🇹🇹 Trinidad and Tobago (tt) 🇻🇨 Saint Vincent and Grenadines (vc) 🇦🇮
+                Anguilla (ai) 🇰🇾 Cayman Islands (ky) 🇲🇸 Montserrat (ms) 🇹🇨 Turks and Caicos Islands (tc) 🇻🇬 British
+                Virgin Islands (vg)
+                * '''South America''': 🇦🇷 Argentina (ar) 🇧🇴 Bolivia (bo) 🇧🇷 Brazil (br) 🇨🇱 Chile (cl) 🇨🇴 Colombia
+                (co) 🇪🇨 Ecuador (ec) 🇬🇾 Guyana (gy) 🇵🇪 Peru (pe) 🇵🇾 Paraguay (py) 🇸🇷 Suriname (sr) 🇺🇾 Uruguay (uy) 🇻🇪
+                Venezuela (ve) 🇫🇰 Falkland Islands (fk)
+                * '''Western Europe''': 🇦🇹 Austria (at) 🇧🇪 Belgium (be) 🇨🇭 Switzerland (ch) 🇩🇪 Germany (de) 🇫🇷 France
+                (fr) 🇱🇮 Liechtenstein (li) 🇱🇺 Luxembourg (lu) 🇲🇨 Monaco (mc) 🇳🇱 Netherlands (nl)
+                * '''Northern Europe''': 🇩🇰 Denmark (dk) 🇪🇪 Estonia (ee) 🇫🇮 Finland (fi) 🇬🇧 United Kingdom (gb) 🇮🇪
+                Ireland (ie) 🇮🇸 Iceland (is) 🇱🇹 Lithuania (lt) 🇱🇻 Latvia (lv) 🇳🇴 Norway (no) 🇸🇪 Sweden (se) 🇸🇯 Svalbard
+                and Jan Mayen (sj)
+                * '''Southern Europe''': 🇦🇩 Andorra (ad) 🇦🇱 Albania (al) 🇧🇦 Bosnia and Herzegovina (ba) 🇨🇾 Cyprus
+                (cy) 🇪🇸 Spain (es) 🇬🇷 Greece (gr) 🇭🇷 Croatia (hr) 🇮🇹 Italy (it) 🇲🇪 Montenegro (me) 🇲🇰 North Macedonia
+                (mk) 🇲🇹 Malta (mt) 🇵🇹 Portugal (pt) 🇷🇸 Serbia (rs) 🇸🇮 Slovenia (si) 🇸🇲 San Marino (sm)
+                * '''Eastern Europe''': 🇧🇬 Bulgaria (bg) 🇧🇾 Belarus (by) 🇨🇿 Czech Republic (cz) 🇭🇺 Hungary (hu) 🇲🇩
+                Moldova (md) 🇵🇱 Poland (pl) 🇷🇴 Romania (ro) 🇸🇰 Slovakia (sk) 🇺🇦 Ukraine (ua) 🇽🇰 Kosovo (xk) 🇷🇺 Russia
+                (ru)
+                * '''Northern Africa''': 🇩🇿 Algeria (dz) 🇪🇬 Egypt (eg) 🇱🇾 Libya (ly) 🇲🇦 Morocco (ma) 🇹🇳 Tunisia (tn)
+                * '''Western Africa''': 🇧🇫 Burkina Faso (bf) 🇧🇯 Benin (bj) 🇨🇮 Cote D’Ivoire (ci) 🇨🇻 Cape Verde (cv) 🇬🇭
+                Ghana (gh) 🇬🇲 Gambia (gm) 🇬🇳 Guinea (gn) 🇬🇼 Guinea-Bissau (gw) 🇱🇷 Liberia (lr) 🇲🇱 Mali (ml) 🇲🇷
+                Mauritania (mr) 🇳🇪 Niger (ne) 🇳🇬 Nigeria (ng) 🇸🇱 Sierra Leone (sl) 🇸🇳 Senegal (sn) 🇹🇬 Togo (tg)
+                * '''Eastern Africa''': 🇧🇮 Burundi (bi) 🇩🇯 Djibouti (dj) 🇪🇹 Ethiopia (et) 🇰🇪 Kenya (ke) 🇰🇲 Comoros
+                (km) 🇲🇬 Madagascar (mg) 🇲🇺 Mauritius (mu) 🇲🇼 Malawi (mw) 🇲🇿 Mozambique (mz) 🇷🇼 Rwanda (rw) 🇸🇨 Seychelles
+                (sc) 🇹🇿 Tanzania (tz) 🇺🇬 Uganda (ug) 🇿🇲 Zambia (zm) 🇿🇼 Zimbabwe (zw) 🇪🇷 Eritrea (er) 🇮🇴 British Indian
+                Ocean Territory (io) 🇸🇴 Somalia (so)
+                * '''Middle Africa''': 🇦🇴 Angola (ao) 🇨🇩 Democratic Republic of Congo (cd) 🇨🇬 Congo (cg) 🇨🇲 Cameroon
+                (cm) 🇬🇦 Gabon (ga) 🇬🇶 Equatorial Guinea (gq) 🇸🇹 Sao Tome and Principe (st) 🇹🇩 Chad (td) 🇨🇫 Central
+                African Republic (cf)
+                * '''Southern Africa''': 🇧🇼 Botswana (bw) 🇱🇸 Lesotho (ls) 🇳🇦 Namibia (na) 🇸🇿 Swaziland (sz) 🇿🇦 South
+                Africa (za)
+                * '''Western Asia''': 🇦🇪 United Arab Emirates (ae) 🇦🇲 Armenia (am) 🇦🇿 Azerbaijan (az) 🇧🇭 Bahrain
+                (bh) 🇬🇪 Georgia (ge) 🇮🇱 Israel (il) 🇮🇶 Iraq (iq) 🇯🇴 Jordan (jo) 🇰🇼 Kuwait (kw) 🇱🇧 Lebanon (lb) 🇴🇲 Oman
+                (om) 🇵🇸 Palestine (ps) 🇶🇦 Qatar (qa) 🇸🇦 Saudi Arabia (sa) 🇹🇷 Turkey (tr) 🇾🇪 Yemen (ye)
+                * '''Central Asia''': 🇰🇬 Kyrgyzstan (kg) 🇰🇿 Kazakhstan (kz) 🇹🇯 Tajikistan (tj) 🇺🇿 Uzbekistan (uz) 🇹🇲
+                Turkmenistan (tm)
+                * '''Southern Asia''': 🇧🇩 Bangladesh (bd) 🇧🇹 Bhutan (bt) 🇮🇳 India (in) 🇱🇰 Sri Lanka (lk) 🇲🇻 Maldives
+                (mv) 🇳🇵 Nepal (np) 🇵🇰 Pakistan (pk) 🇦🇫 Afghanistan (af)
+                * '''Eastern Asia''': 🇭🇰 Hong Kong (hk) 🇯🇵 Japan (jp) 🇰🇷 South Korea (kr) 🇲🇳 Mongolia (mn) 🇲🇴 Macao
+                (mo) 🇹🇼 Taiwan (tw)
+                * '''South-Eastern Asia''': 🇧🇳 Brunei (bn) 🇮🇩 Indonesia (id) 🇰🇭 Cambodia (kh) 🇱🇦 Laos (la) 🇲🇾 Malaysia
+                (my) 🇵🇭 Philippines (ph) 🇸🇬 Singapore (sg) 🇹🇭 Thailand (th) 🇹🇱 Timor-Leste (tl) 🇻🇳 Vietnam (vn) 🇲🇲
+                Myanmar (mm)
+                * '''Oceania''': 🇦🇺 Australia (au) 🇳🇿 New Zealand (nz) 🇨🇨 Cocos (Keeling) Islands (cc) 🇨🇽 Christmas
+                Island (cx) 🇳🇫 Norfolk Island (nf)
+                * '''Polynesia''': 🇹🇴 Tonga (to) 🇹🇻 Tuvalu (tv) 🇼🇸 Samoa (ws) 🇨🇰 Cook Islands (ck) 🇳🇺 Niue (nu) 🇵🇳
+                Pitcairn (pn) 🇹🇰 Tokelau (tk)
+                * '''Melanesia''': 🇫🇯 Fiji (fj) 🇵🇬 Papua New Guinea (pg) 🇸🇧 Solomon Islands (sb) 🇻🇺 Vanuatu (vu)
+                * '''Micronesia''': 🇫🇲 Federated States of Micronesia (fm) 🇰🇮 Kiribati (ki) 🇲🇭 Marshall Islands
+                (mh) 🇳🇷 Nauru (nr) 🇵🇼 Palau (pw)
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>a37ae252-3fda-47bf-af85-398d33ec7e6d</entity>
+            <name>The Great Escape Artist</name>
+            <text>== Countries excluded (Deezer + Spotify) ==
+                (As of 2023-06-10).
+
+                * '''Eastern Africa''': 🇮🇴 British Indian Ocean Territory (io)
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>960afba5-94a5-468f-ae24-bae4bce039be</entity>
+            <name>Amazon Artist Lounge EP</name>
+            <text>Amazon exclusive.</text>
+        </annotation>
+        <annotation type="label" ns2:score="77">
+            <entity>0fa26552-9ef1-4299-8952-6ef5ffb31934</entity>
+            <name>Artist Partner Group, Inc.</name>
+            <text>imprint history:
+                As a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]
+                2012 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]
+
+                In Nov. 2020, APG ended their eight-year joint venture with
+                [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] to go fully independent.
+                2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="77">
+            <entity>0fa26552-9ef1-4299-8952-6ef5ffb31934</entity>
+            <name>Artist Partner Group, Inc.</name>
+            <text>imprint history:
+
+                2012 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]
+                Artist Partner Group (APG) was initially established as a joint venture between
+                [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]. During this period, it used the
+                lowercase "'''apg'''" as its imprint. Throughout this phase, APG leveraged the resources and support of
+                both major music companies to focus on artist development and promotion.
+
+                2020.11 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group]
+                In November 2020, APG ended its eight-year joint venture with Atlantic Records to operate fully
+                independently. It continues to use the lowercase "'''apg'''" as its imprint. This transition marked
+                APG's path toward greater autonomy while retaining and strengthening its brand identity.
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="77">
+            <entity>0fa26552-9ef1-4299-8952-6ef5ffb31934</entity>
+            <name>Artist Partner Group, Inc.</name>
+            <text>imprint history:
+
+                2013 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]
+                Artist Partner Group (APG) was initially established as a joint venture between
+                [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]. During this period, it used the
+                lowercase "'''apg'''" as its imprint. Throughout this phase, APG leveraged the resources and support of
+                both major music companies to focus on artist development and promotion.
+
+                2020.11 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group]
+                In November 2020, APG ended its eight-year joint venture with Atlantic Records to operate fully
+                independently. It continues to use the lowercase "'''apg'''" as its imprint. This transition marked
+                APG's path toward greater autonomy while retaining and strengthening its brand identity.
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="77">
+            <entity>0fa26552-9ef1-4299-8952-6ef5ffb31934</entity>
+            <name>Artist Partner Group, Inc.</name>
+            <text>imprint history:
+                As a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]
+                2012 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]
+
+                In Nov. 2020, APG ended their eight-year joint venture with
+                [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] to go fully independent.
+                2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group]
+            </text>
+        </annotation>
+        <annotation type="label" ns2:score="77">
+            <entity>0fa26552-9ef1-4299-8952-6ef5ffb31934</entity>
+            <name>Artist Partner Group, Inc.</name>
+            <text>imprint history:
+
+                2013 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]
+                Artist Partner Group (APG) was initially established as a joint venture between
+                [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and
+                [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]. During this period, it used the
+                lowercase "'''apg'''" as its imprint. Throughout this phase, APG leveraged the resources and support of
+                both major music companies to focus on artist development and promotion.
+
+                2020.11 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group (apg)]
+                In November 2020, APG ended its eight-year joint venture with Atlantic Records to operate fully
+                independently. It continues to use the lowercase "'''apg'''" as its imprint. This transition marked
+                APG's path toward greater autonomy while retaining and strengthening its brand identity.
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>c1614c74-aa4c-457b-a93a-304bb3b01fc7</entity>
+            <name>House of the Artist</name>
+            <text>Copyright: ℗ 2024 Felix Hatfield
+
+                === Credits from Bandcamp ===
+
+                Musicians:
+
+                Felix Hatfield- Guitar, Piano, Keyboards, Vocals, Harmonica
+
+                Huck Notari- Vocal Harmonies
+
+                Joel Ricci - Trumpet, Harmonies
+
+                Nate Lumbard- Bass
+            </text>
+        </annotation>
+        <annotation type="release" ns2:score="77">
+            <entity>62ad4d77-8715-415f-8550-2d2f12569f74</entity>
+            <name>Artist's Choice: Norah Jones</name>
+            <text></text>
+        </annotation>
+        <annotation type="release" ns2:score="70">
+            <entity>4a48e3ba-3258-4ded-9d82-26c5d215a669</entity>
+            <name>The Great Artist Best Hits</name>
             <text>Notes
-                The rest of the concert is here: Bruce Springsteen - Back In The U.S.A./Live Vol 2, 21-7-1984 Montreol
-                Track C4 is misspelled as "Bad Land".
+                With insert and obi-strip.
+
+                Includes 8 tracks by Van Halen and 8 tracks by Bruce Springsteen.
                 Barcode and Other Identifiers
-                Matrix / Runout: BORN - 1A D1
-                Matrix / Runout: BORN - 1B D1
-                Matrix / Runout: BORN - 2A 5F
-                Matrix / Runout: BORN - 2B D1
+                Barcode (Scanned): T4958983003241
             </text>
         </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>82772e61-0e02-4b54-9ad2-457f9da735c8</entity>
-            <name>Māris Beļickis</name>
-            <text>Māris Beļickis is born in 1951, tragically deceased in 1981...
-                Until now he is the greatest electric guitar player ever born in Latvia.
+        <annotation type="recording" ns2:score="70">
+            <entity>bf562b48-df27-48a8-ba1d-bd1c55c03913</entity>
+            <name>You Will Become an Artist</name>
+            <text>Recording Location: Air Lyndhurst Studios, London, United Kingdom</text>
+        </annotation>
+        <annotation type="release" ns2:score="70">
+            <entity>fafad1e7-d01e-4479-ba3c-e7752da1445f</entity>
+            <name>Hot New Artist E-CD</name>
+            <text>Liquid Audio cd with tracks encoded in the Liquid Audio format.
+                CD says Windows 98 &amp; Adobe Flash required along with a Liquid Player.
             </text>
         </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>78d3068b-3ead-4c77-9674-2b65d5b7aaa2</entity>
-            <name>Kei</name>
-            <text>Born in Bamenda</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>f14435d4-429a-42c5-b6f9-ad9f6b9129de</entity>
-            <name>Wolfgang Küffer</name>
-            <text>born after 1520</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>6b1938eb-2d79-4b71-af91-c1f9844204ac</entity>
-            <name>Gina Burkēvice</name>
-            <text>Born in 1955?</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>cfb22b20-04b6-47a0-8210-b8d9a1a809e5</entity>
-            <name>Allauddin Khan Saheb</name>
-            <text>Born: ca. 1862</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>1b9da8c5-756f-4ced-8649-59325128495f</entity>
-            <name>DJ Smash</name>
-            <text>Born: Wayne Hunter</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>0d8f5afb-2a14-45bc-9ed8-b1f37e52c9c0</entity>
-            <name>Simone Angel</name>
-            <text>born '''Simone Englen'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>2f625459-d284-4e00-a3e8-3906b589a9b3</entity>
-            <name>Michael Praetorius</name>
-            <text>born '''Michael Schulteis'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>b8f52f8c-59a4-44ee-b532-c98bdf3dd7bf</entity>
-            <name>Ringo Larz</name>
-            <text>Born: Ryan Charles</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>9ef4b4f4-bcca-4830-82bd-4c346a731cf2</entity>
-            <name>Kliff McBurtney</name>
-            <text>Born: Lee Bruso</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>5a5d32e1-f3d2-4fde-8b41-24a78e696b83</entity>
-            <name>CeCe Winans</name>
-            <text>born '''Priscilla Winans'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>62b33675-abfd-4443-8ebd-5776fdfb895b</entity>
-            <name>Barny Murphy</name>
-            <text>born '''Gerhard Gmell'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>64187c34-82be-4b67-bde4-dc96ad8a87a1</entity>
-            <name>Cutlass Supreme</name>
-            <text>'''Born: '''Alan Fentiman</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>467c79f4-2a6f-413a-abbd-79669f285284</entity>
-            <name>Dee C. Lee</name>
-            <text>born '''Diane Sealey'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>d8c21599-89a5-4f62-b684-006e59c2d6b8</entity>
-            <name>Robert Marlow</name>
-            <text>born '''Robert Allen'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>758849ba-9a69-40b9-b621-6ae0906f0fde</entity>
-            <name>Kathy Kirby</name>
-            <text>born '''Kathleen O'Rourke'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>acc8185d-d9c2-4b52-9b04-81b869dbc55a</entity>
-            <name>Silvija Nora Kalniņš</name>
-            <text>Born in Canada</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>7be47800-9041-4607-ba49-29cac834acc1</entity>
-            <name>Jaymz Lennfield</name>
-            <text>Born: Michael Tierney</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>b7e444bf-d402-4f4e-866c-7640b7d84907</entity>
-            <name>Krk Hammettson</name>
-            <text>Born: Michael Brandenburg</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>656b39fb-979c-4c57-bb87-61d1a8eb38d1</entity>
-            <name>Henry Rollins</name>
-            <text>Born Henry Garfield</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>8796b0f2-0ff0-4cd6-873f-c69877a2432b</entity>
-            <name>Lydia Denker</name>
-            <text>'''Born:''' in Germany</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>1f694cef-cec9-471b-90d6-1d90282ebe4f</entity>
-            <name>Watty Burnett</name>
-            <text>Born: Derrick Burnett</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>551e5261-28f5-4992-81f0-795a1cde0031</entity>
-            <name>Frank McCourt</name>
-            <text>Born: Francis McCourt</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>0ef52d92-06fe-47ce-a58d-68dbed569f50</entity>
-            <name>Mihai Eminescu</name>
-            <text>Born: Mihail Eminovici</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>06108cab-0f81-4347-a06e-828aeed5405e</entity>
-            <name>Nan Merriman</name>
-            <text>born Katherine-Ann</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>eb8da5c0-347f-41d7-862d-b4c4cb1e0194</entity>
-            <name>Raimonds Bartaševičs</name>
-            <text>Born around 1954</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>9807a656-1e77-4a14-98cd-9116f93e21a3</entity>
-            <name>Ossy Pfeiffer</name>
-            <text>Born in Beirut.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>18d70123-8356-4ab8-a193-0ce0d58af90b</entity>
-            <name>Sugar Blue</name>
-            <text>Born: James Whiting</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>c42712b9-f00a-45f3-ade8-7f15b3e4c0d5</entity>
-            <name>Weirdo Beardo</name>
-            <text>Born: Ulf Gustavsson</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>33b67e53-e712-4ef1-9c39-c539c21f8686</entity>
-            <name>Freda Love</name>
-            <text>Born Freda Boner</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>635991aa-fe4d-439a-8f12-ff3d7471c370</entity>
-            <name>Lolly</name>
-            <text>born '''Anna Kumble'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>d1499fb2-2875-43ab-a14d-be5ae880f00b</entity>
-            <name>Manuel Stefano Carry</name>
-            <text>Born in Boston.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>b4b88e66-d379-44fc-abb3-da8280d3fc5e</entity>
-            <name>Raivis Vītiņš</name>
-            <text>Born on March</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>1387e590-7d3d-4381-98dc-1b6f2239be70</entity>
-            <name>Nicole Barclay</name>
-            <text>Born Nicole Vandenbusche</text>
-        </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>3bc19f50-d10b-465a-b4f2-7e0c96764ecc</entity>
-            <name>Malin Pettersson</name>
-            <text>According to [http://everything2.com/index.pl?node=Hel], born in 1981
-                According to [http://www.vikingarock.se/banden/hel.php], born in 1978
+        <annotation type="release" ns2:score="70">
+            <entity>a34b4d4c-a727-4631-a946-720976a2d53c</entity>
+            <name>The Great Artist Best Hit’s</name>
+            <text>Limited Edition
+                Matrix / Runout: 2305 ERF-053
+                Label Code: R-020014
             </text>
         </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>3389a904-e370-4093-87c2-e546ccd9b3d1</entity>
-            <name>Piere Göran Karlsson</name>
-            <text>According to [http://everything2.com/index.pl?node=Hel], born in 1971.
-                According to [http://www.vikingarock.se/banden/hel.php], born in 1968.
+        <annotation type="release" ns2:score="70">
+            <entity>ecfd29ae-2024-49f4-bedf-1778ed404d69</entity>
+            <name>The Artist in the Ambulance</name>
+            <text>reissue, limited editions
+                1. Green marbled vinyl, 1103 copies
+                2. Red vinyl, 1000 copies
             </text>
         </annotation>
-        <annotation type="artist" ns2:score="86">
-            <entity>4e32c12d-806e-4aa1-89a3-c3dbfd9a24ec</entity>
-            <name>Ulrica Pettersson</name>
-            <text>According to [http://everything2.com/index.pl?node=Hel], born in 1975.
-                According to [http://www.vikingarock.se/banden/hel.php], born in 1972.
+        <annotation type="release" ns2:score="70">
+            <entity>993971bb-c342-4aac-be07-3215dbd1f768</entity>
+            <name>Confessions of a Crap Artist</name>
+            <text>This is the [release:2a9d9cb6-114d-4c2e-9e14-6b23fd20c613|2012 Audible release] split into tracks at
+                the chapter points encoded in the AAX file.
             </text>
         </annotation>
-        <annotation type="release" ns2:score="86">
-            <entity>2e0a4afc-9f25-4c16-8238-67e3253d6a2b</entity>
-            <name>Born to Die (demos)</name>
-            <text>“Born to Die - demos” is a collection of 50 demos and remixes from the Born to Die era. This is an
-                unofficial release.
+        <annotation type="release" ns2:score="70">
+            <entity>92be7850-2ca0-4de6-8b83-676c39dd15c5</entity>
+            <name>Hymn of the Isolated Artist</name>
+            <text>© «2017 Rhyme &amp; Reason Records»</text>
+        </annotation>
+        <annotation type="release" ns2:score="70">
+            <entity>9db509a1-b739-4cad-a8b3-1007305714f5</entity>
+            <name>BOYS PLANET - ARTIST BATTLE</name>
+            <text>℗ &amp; © «2023 Stone Music Entertainment»</text>
+        </annotation>
+        <annotation type="release" ns2:score="70">
+            <entity>a6adb9c5-ecc1-40a5-be4c-34e2856f3824</entity>
+            <name>IA SUPER BEST -THE ARTIST-</name>
+            <text>Copyright: ℗ 2022 IA PROJECT</text>
+        </annotation>
+        <annotation type="release" ns2:score="70">
+            <entity>087139a9-7018-4b92-8c96-ef08e5cd5c93</entity>
+            <name>The Artist in the Ambulance</name>
+            <text>Tracks 13 and 14 are bonus tracks for Japan.
+
+                Recorded at Salad Days Studios, Beltsville, MD
+                Drums recorded at Bearsville Studios, Bearsville, NY
+                Mixed at Soundtrack Studios, NYC
+                Mastered at Masterdisk, NYC
+                Strings on tracks 1 &amp; 8 recorded at Phase Studios, College Park, MD
+
+                US/Japan Booking at Ellis Industries
+                European Booking at Helter Skelter
+                Legal at Davis, Shapiro, Lewitt, Montone &amp; Hayes
+
+                We will be donating a portion of the sales of "The Artist in the Ambulance" to the Syrentha J. Savio
+                Endowment.
+
+                All songs © 2003 Sceptor of Malice Music
+                Recording ℗© 2003 The Island Def Jam Music Group
+                Distributed by Victor Entertainment, Inc. Made in Japan STEREO JASRAC IP
+
+                '''Other Identifiers'''
+                Matrix / Runout: UICL-1038-2 X1A V
+                Mastering SID Code: IFPI L245
+                Mould SID Code: IFPI 4011
             </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>5b3fddda-f528-4715-a2a5-7b8a7b1868b3</entity>
-            <name>Dan Torelli</name>
-            <text>Born 1982 or 1983.</text>
+        <annotation type="release" ns2:score="70">
+            <entity>a34b4d4c-a727-4631-a946-720976a2d53c</entity>
+            <name>The Great Artist Best Hit’s</name>
+            <text>Limited edition.
+
+                Track 9 is misspelled as “Last in the Flood”.
+
+                == Barcode and Other Identifiers ==
+                Barcode: T496159003535
+                Matrix / Runout: 2305 ERF-053
+                Other (JASRAC Licensing Code): R-020014
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>7d42d8d6-53f0-4d3c-9270-f6496c9e16db</entity>
-            <name>Levi Xul</name>
-            <text>born in Bourbonnais, Illinois</text>
+        <annotation type="release" ns2:score="70">
+            <entity>7d4df262-768f-440c-b573-69987fdaf14d</entity>
+            <name>The Great Artist Best Hit’s</name>
+            <text>Limited edition.
+
+                Track 9 is misspelled as “Last in the Flood”.
+
+                == Barcode and Other Identifiers ==
+                Barcode: T496159003535
+                Matrix / Runout: 2305 ERF-053
+                Other (JASRAC Licensing Code): R-020014
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>5f241dd2-ed7a-4f11-944e-b7ffe37799c3</entity>
-            <name>Jayy Von Monroe</name>
-            <text>Born in Middleburg, Florida</text>
+        <annotation type="release" ns2:score="70">
+            <entity>4a48e3ba-3258-4ded-9d82-26c5d215a669</entity>
+            <name>The Great Artist Best Hits</name>
+            <text>With insert and obi‐strip.
+
+                Includes 8 tracks by Van Halen and 8 tracks by Bruce Springsteen.
+
+                == Barcode and Other Identifiers ==
+                Barcode (Scanned): T4958983003241
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>36645b49-07ef-4c24-8023-7cef7de136f1</entity>
-            <name>Artis Viklants</name>
-            <text>Born on July 6</text>
+        <annotation type="release" ns2:score="70">
+            <entity>4a48e3ba-3258-4ded-9d82-26c5d215a669</entity>
+            <name>The Great Artist Best Hits</name>
+            <text>With insert and OBI‐strip.
+
+                Includes 8 tracks by Van Halen and 8 tracks by Bruce Springsteen.
+
+                == Barcode and Other Identifiers ==
+                Barcode (Scanned): T4958983003241
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>ce4582b6-aee7-4da1-b841-3c619d4fb5a5</entity>
-            <name>Tammi Terrell</name>
-            <text>'''Born: '''Thomasina Winifred Montgomery</text>
+        <annotation type="release" ns2:score="63">
+            <entity>1ac939bf-741d-447f-b19d-4451ccc96c36</entity>
+            <name>Original Artist Original Hits: Glenn Miller</name>
+            <text></text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>c219f4e3-ab02-4526-a50b-4c4f7f0251b6</entity>
-            <name>Jurijs Griņevs</name>
-            <text>Probably born on 1947-04-11</text>
+        <annotation type="release" ns2:score="63">
+            <entity>1f3a0b96-3ecb-49b3-a275-d4b7dc729399</entity>
+            <name>A.R.C.: Artist Remix Collection</name>
+            <text></text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>0cb8032b-3b7a-4686-8e8f-940286c5607b</entity>
-            <name>Howie Dorough</name>
-            <text>Born: Howard Dwaine Dorough</text>
+        <annotation type="release" ns2:score="63">
+            <entity>7c2f1c1c-f13e-4162-8f6d-0ee5d10d00dd</entity>
+            <name>pop'n music Artist Collection * PARQUETS</name>
+            <text></text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>b735bd33-4ef8-4160-bff3-d413cf5ba3a1</entity>
-            <name>Charly McClain</name>
-            <text>born '''Charlotte Denise McClain'''</text>
+        <annotation type="release" ns2:score="63">
+            <entity>a54348ba-9e9f-4415-81e0-7db03b0fd2bf</entity>
+            <name>The Ever Popular Tortured Artist Effect</name>
+            <text></text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>130408ae-fa26-4475-aefb-6ebc6cfc4aff</entity>
-            <name>Julia Neigel</name>
-            <text>Born: Juliana Natascha Neigel</text>
+        <annotation type="release" ns2:score="63">
+            <entity>7cca0496-55f2-4906-9f13-a34da9fe76ab</entity>
+            <name>pop'n music Artist Collection Sanae Shintani</name>
+            <text></text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>96f8e885-b9d7-416d-a592-a48939912025</entity>
-            <name>Eddie Daye</name>
-            <text>born Edward Jasper Daye</text>
+        <annotation type="release" ns2:score="63">
+            <entity>a7b7bec6-e79f-43e7-844a-215c658755d7</entity>
+            <name>Artist’s Choice: The Best Tracks (1970-1980)</name>
+            <text>Note: All tracks "Earl Scruggs Revue" except Track 15 "I Still Miss Someone" caused by a record label
+                error in selection.
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>71348eeb-0c15-4718-b0ca-5775f78ad5f8</entity>
-            <name>Timo Maas</name>
-            <text>Born: in Hanover, Germany</text>
+        <annotation type="series" ns2:score="63">
+            <entity>fe393cb5-e6fd-4efa-b498-1f8fd0e2dd3a</entity>
+            <name>Juno Awards: Artist of the Year</name>
+            <text>1 Outstanding Performance (1972–1973)
+                2 Male and Female Vocalists of the Year (1970–1998)
+                3 Best Male Vocalist and Best Female Vocalist (1999)
+                4 Best Male and Female Artists (2000–2001)
+                5 Best Artist (2002)
+                6 Artist of the Year (2003–present)
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>d33e5b44-7e3c-4f76-93b2-100482d6bd1b</entity>
-            <name>Mārtiņš Elerts</name>
-            <text>Born on October 17</text>
+        <annotation type="release" ns2:score="63">
+            <entity>f19bfa3a-8474-4f7e-b6c0-1a4da30a3a30</entity>
+            <name>Artist Enabler Club - November 2022</name>
+            <text>Digital component of 11/2022 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>2615faaf-0609-482f-896a-a5aae8d67e02</entity>
-            <name>Nils Īle</name>
-            <text>Born on September 6</text>
+        <annotation type="release" ns2:score="63">
+            <entity>77297e71-ddc2-4ee2-9de8-77886e0824f1</entity>
+            <name>Artist Enabler Club - December 2022</name>
+            <text>Digital component of 12/2022 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>8c80be1c-94f2-4f23-af1d-ba9f62719a65</entity>
-            <name>Mārtiņš Linde</name>
-            <text>Born on May 10?</text>
+        <annotation type="release" ns2:score="63">
+            <entity>55cb1422-57eb-480a-8161-dda79ed66b59</entity>
+            <name>Artist Enabler Club - May 2023</name>
+            <text>Digital component of 5/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>225db99b-dbab-401c-85dd-2b638213b651</entity>
-            <name>Guntars Mucenieks</name>
-            <text>Born on March 23</text>
+        <annotation type="series" ns2:score="63">
+            <entity>2f4321a6-6539-42ea-8455-a18c3cace93a</entity>
+            <name>Juno Awards: Best Country Male Artist</name>
+            <text>Best Country Male Artist (1970 - 1974)
+                Country Male Vocalist of the Year (1975 - 1998)
+                Best Country Male Vocalist (1999 - 1999)
+                Best Country Male Artist (2000 - 2001)
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>8d5f3ccf-a8f8-4816-b116-c5d25c398a31</entity>
-            <name>Sebastian Harnack</name>
-            <text>Born in Hamburg, Germany.</text>
+        <annotation type="series" ns2:score="63">
+            <entity>b464dcff-64f6-4430-8e16-ba9d3b50f1d2</entity>
+            <name>Juno Awards: Best Country Female Artist</name>
+            <text>Best Country Female Artist (1970 - 1974)
+                Country Female Vocalist of the Year (1975 - 1998)
+                Best Country Female Vocalist (1999 - 1999)
+                Best Country Female Artist (2000 - 2001)
+            </text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>e2ed7531-51ec-4fb0-a02f-58ed462f96f4</entity>
-            <name>Tor Atle Andersen</name>
-            <text>Born in Kristiansand, Norway.</text>
+        <annotation type="release" ns2:score="63">
+            <entity>7672789c-69b6-498d-894a-41348a7cd70d</entity>
+            <name>Artist Enabler Club - September 2023</name>
+            <text>Digital component of 9/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>a242b122-3a53-49aa-9b84-b8a207c19b3d</entity>
-            <name>Gints Spole</name>
-            <text>Born on December 29</text>
+        <annotation type="release" ns2:score="63">
+            <entity>91c57675-9754-4ac7-86a4-3bf9c7330057</entity>
+            <name>Artist Enabler Club - November 2023</name>
+            <text>Digital component of 11/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>b5c392a5-b1c5-4a3e-a67e-ec882d52a330</entity>
-            <name>Ingus Kempaus</name>
-            <text>Born on May 29</text>
+        <annotation type="release" ns2:score="63">
+            <entity>1800df03-9ee4-4cff-8502-b501b2ed06bb</entity>
+            <name>Artist Enabler Club - October 2023</name>
+            <text>Digital component of 10/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>b2e6a22a-b7aa-42f6-ab66-464f1c9fa13b</entity>
-            <name>Oskars Stolse-Semerovs</name>
-            <text>Born on March 12</text>
+        <annotation type="release" ns2:score="63">
+            <entity>e37278c5-f0be-4caf-848c-b88da05b92c8</entity>
+            <name>Ennio Morricone: Original Artist Original Songs</name>
+            <text>"original artist" means a new original cover version...</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>9ecff62b-5dc1-4a38-a7a6-59cae4d3cc63</entity>
-            <name>家凱</name>
-            <text>Born: 劉家凱</text>
+        <annotation type="release" ns2:score="63">
+            <entity>88a416f6-b7b3-4672-a11f-6b7232371ef7</entity>
+            <name>Artist Enabler Club - December 2023</name>
+            <text>Digital component of 12/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>9fdbf611-166e-48b1-b5f9-be29ea7bca7b</entity>
-            <name>Edgars Naglis</name>
-            <text>Born on December 1st.</text>
+        <annotation type="release" ns2:score="63">
+            <entity>8663caa6-f148-45a9-8939-644c1d74bb0b</entity>
+            <name>Artist Enabler Club - January 2024</name>
+            <text>Digital component of 1/2024 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>2edd6974-660b-4e20-ab78-b7aad07ceefe</entity>
-            <name>Ainars Vilde</name>
-            <text>Born on April 1st.</text>
+        <annotation type="release" ns2:score="63">
+            <entity>8361b30f-fb64-4f30-9e24-592d636dd364</entity>
+            <name>Artist Enabler Club - February 2024</name>
+            <text>Digital component of 2/2024 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>8980b87c-2ed6-4395-a69a-ae2c9d91078f</entity>
-            <name>Peter D.</name>
-            <text>Born: Peter D. Rose</text>
+        <annotation type="release" ns2:score="63">
+            <entity>8ed87def-293d-4c80-ad99-257b8d262dd7</entity>
+            <name>Artist Enabler Club - August 2022</name>
+            <text>Digital component of 8/2022 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>6501e947-6616-4b58-8b96-dfa0228b495a</entity>
-            <name>Fato</name>
-            <text>Born: Enrique Guzmán Yáñez</text>
+        <annotation type="release" ns2:score="63">
+            <entity>fd073766-543c-489a-8090-bf5525eda2d3</entity>
+            <name>Artist Enabler Club - February 2023</name>
+            <text>Digital component of 2/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>9a5e74f9-55a4-41e2-a4d7-d1560b153e74</entity>
-            <name>Kym Marsh</name>
-            <text>born '''Kimberly Gail Marsh'''</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>3cce67e0-918a-4746-ad27-c5b520500baf</entity>
-            <name>Lucy Diakovska</name>
-            <text>Born in Pleven, Bulgaria.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>0b7561e4-454b-4e5c-ab59-5d7026af8d14</entity>
-            <name>Māris Reinbergs</name>
-            <text>Born on February 8?</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>a42303c3-fceb-4e55-aa9d-669fa5f7c73e</entity>
-            <name>Ana Voog</name>
-            <text>Born as Rachael Olson.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>63502833-290c-494f-aac0-204f1aa7513a</entity>
-            <name>Oddleif Stensland</name>
-            <text>Born in Mandal, Norway.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>f3cc16cf-4dcf-408e-ad81-bc02597efb49</entity>
-            <name>Dev Singh Pabla</name>
-            <text>'''Born:''' Chatham, Kent, England</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>9eb90dd1-e436-47f5-9a70-b9c951049c4e</entity>
-            <name>Armands Birkens</name>
-            <text>Born on January 9</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>0845819f-b964-4d6f-aa4e-8cc074b65be0</entity>
-            <name>Matthias Harder</name>
-            <text>Born in Hamburg, Germany.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>60db6a57-e5d1-42e0-ab3b-eb35e33f126f</entity>
-            <name>Marco Glühmann</name>
-            <text>Born in Hamburg, Germany.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>8044dc11-2158-4094-8a6e-1d60bd19a573</entity>
-            <name>馨儀</name>
-            <text>Born 謝馨儀</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c</entity>
-            <name>何欣穗</name>
-            <text>Born 何欣穗</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>d0e83513-2b28-42f9-a981-d940c35b23a1</entity>
-            <name>Anneke van Hooff</name>
-            <text>Born in: Turnhout, Belgium</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>d0a608f8-9f55-46ce-b8cf-2933856b1527</entity>
-            <name>Miķelis Šķēle</name>
-            <text>Born on August 20.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>2322c1b7-fc8b-4396-a7f7-15746b7600bb</entity>
-            <name>Gatis Krievāns</name>
-            <text>Born on August 6.</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>be09d8f3-1a39-4220-a8a8-66f3c13e830b</entity>
-            <name>William Gibson</name>
-            <text>'''Born:''' William Ford Gibson</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>8caff84c-ab05-466f-b607-c7d304b7360b</entity>
-            <name>L. Ron Hubbard</name>
-            <text>Born: Lafayette Ronald Hubbard</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>029f0bd9-4895-4872-b0cf-0f69df2b346c</entity>
-            <name>Guido Knopp</name>
-            <text>Born: Guido Friedrich Knopp</text>
-        </annotation>
-        <annotation type="artist" ns2:score="85">
-            <entity>dbeb65eb-a237-4b73-bee5-4f30ea887f15</entity>
-            <name>Greg Palast</name>
-            <text>Born: Gregory Allyn Palast</text>
+        <annotation type="release" ns2:score="63">
+            <entity>4f1307a2-1afb-40db-91ba-096866534f14</entity>
+            <name>Artist Enabler Club - July 2023</name>
+            <text>Digital component of 7/2023 entry in WHY?'s Artist Enabler Club subscription series</text>
         </annotation>
     </annotation-list>
 </metadata>

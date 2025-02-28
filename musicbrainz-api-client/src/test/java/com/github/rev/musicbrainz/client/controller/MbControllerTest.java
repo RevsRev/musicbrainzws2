@@ -90,7 +90,7 @@ public class MbControllerTest {
 
     private static MbQuery<MbEntity.MbAnnotation> annotationQuery() throws MbQuery.InvalidQueryFieldException {
         MbAnnotationQuery annotationQuery = new MbAnnotationQuery();
-        annotationQuery.add(MbAnnotationQuery.TEXT, "Born");
+        annotationQuery.add(MbAnnotationQuery.NAME, "artist");
         return annotationQuery;
     }
     private static MbQuery<MbEntity.MbArea> areaQuery() throws MbQuery.InvalidQueryFieldException {
