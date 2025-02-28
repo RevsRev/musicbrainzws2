@@ -79,7 +79,7 @@ public class MbControllerTest {
             params.add(new EndpointParams<>(new MbEntity.MbReleaseGroup(), releaseGroupQuery(), CONTROLLER.getReleaseGroup()));
             params.add(new EndpointParams<>(new MbEntity.MbSeries(), seriesQuery(), CONTROLLER.getSeries()));
             params.add(new EndpointParams<>(new MbEntity.MbTag(), tagQuery(), CONTROLLER.getTag()));
-            params.add(new EndpointParams<>(new MbEntity.MbWork(), workQuery(), CONTROLLER.getWork())); //TODO - Fix me
+            params.add(new EndpointParams<>(new MbEntity.MbWork(), workQuery(), CONTROLLER.getWork()));
             params.add(new EndpointParams<>(new MbEntity.MbUrl(), urlQuery(), CONTROLLER.getUrl()));
 
         } catch (MbQuery.InvalidQueryFieldException e) {
