@@ -51,7 +51,7 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbSeriesResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbTagResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.XML)); //TODO - Empty test data
+        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.XML));
 
         //TODO - Fix me
 //        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));

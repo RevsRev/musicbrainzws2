@@ -168,7 +168,7 @@ public class MbControllerTest {
     }
     private static MbQuery<MbEntity.MbUrl> urlQuery() throws MbQuery.InvalidQueryFieldException {
         MbUrlQuery urlQuery = new MbUrlQuery();
-        urlQuery.add(MbUrlQuery.URL, "http");
+        urlQuery.add(MbUrlQuery.RELATION_TYPE, "wikidata");
         return urlQuery;
     }
 

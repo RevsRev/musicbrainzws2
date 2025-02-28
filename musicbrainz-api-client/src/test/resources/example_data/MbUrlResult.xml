@@ -1,5 +1,1238 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<metadata created="2025-02-14T16:54:43.348Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
->
-    <url-list count="0" offset="0"/>
+<metadata created="2025-02-28T15:15:28.557Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <url-list count="252386" offset="0">
+        <url id="2511eb5c-6ae1-45bb-8933-76fcc81758d7" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4159732</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="5f159b62-a29b-4a22-987c-17c0e56b759c">
+                        <name>Alice Giles</name>
+                        <sort-name>Giles, Alice</sort-name>
+                        <disambiguation>harpist</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="ee55d094-e070-41fd-87a9-e36256f78aa8" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q5371497</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="14b45a84-abff-4d1f-a82a-cb7cc7d1aa13">
+                        <name>Emil Wolk</name>
+                        <sort-name>Wolk, Emil</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="8e7c2dee-19c3-4547-9753-f722a0ad1fa0" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7293970</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="7adf7354-ab1f-4ad9-9ebf-4be8e9eb6f5a">
+                        <name>Raphael Hillyer</name>
+                        <sort-name>Hillyer, Raphael</sort-name>
+                        <disambiguation>American violist</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="7e9acf25-b825-449f-9b14-0dab86de0cd1" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4258734</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="596deb88-36c7-4558-ab2a-4fdefe1ff2ba">
+                        <name>Ronald Leonard</name>
+                        <sort-name>Leonard, Ronald</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="61261137-b5d9-4cac-84ac-7a902dcaa376" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16186471</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="2a93bf60-9b58-4bbf-9217-e8e3d4535a8f">
+                        <name>Graham Gold</name>
+                        <sort-name>Gold, Graham</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="cba6ff59-c850-4b9e-bb69-34aaacaa1d84" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11196020</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="a426f239-d6ca-49b6-a844-dcc65eb06f10">
+                        <name>Uraken</name>
+                        <sort-name>Uraken</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="f51ee2d3-ee7d-46ea-893d-16ef95b2d19f" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6049467</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="22d27872-2196-4b4e-9633-761d8b83acd6">
+                        <name>Hasse Pihl</name>
+                        <sort-name>Pihl, Hasse</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="9a464bbd-e21f-4166-bd92-1f6897acf6ab" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q35986646</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="42f08597-2d6d-4ad0-ad36-1acd21685f26">
+                        <name>Moose Town Singers</name>
+                        <sort-name>Moose Town Singers</sort-name>
+                        <disambiguation>first-nation Canadian traditional ensemble</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="55134aab-f59e-4e1d-a045-5fcfc6514312" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4281455</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="41181506-03a9-4e34-b0e3-85d745616027">
+                        <name>Irén Marik</name>
+                        <sort-name>Marik, Irén</sort-name>
+                        <disambiguation>pianist</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="67872487-cc53-461d-99bb-6cba63429cd3" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q35314172</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="a1f08b2a-ea3f-4777-bca8-804d80876790">
+                        <name>Justin Freeman</name>
+                        <sort-name>Freeman, Justin</sort-name>
+                        <disambiguation>rapper</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="23bd2d7c-a24e-4812-a453-d67c424b3c80" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1892931</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0a68b482-9ae1-465e-bcf0-57e0e6f6e014">
+                        <name>Marcel Beekman</name>
+                        <sort-name>Beekman, Marcel</sort-name>
+                        <disambiguation>tenor</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="c9e9bc08-30c2-4ce0-a431-31827d2c8a69" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2120116</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="e8247fdf-e45e-4aea-a4e3-1f92ab16c5a3">
+                        <name>Carlos Magalhães de Azeredo</name>
+                        <sort-name>Magalhães de Azeredo, Carlos</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="66516f05-8a11-4a1b-b32b-e107af7a3cb2" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1681870</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="bc0decd7-8030-4572-9610-3f6298151892">
+                        <name>Jan Ignác František Vojta</name>
+                        <sort-name>Vojta, Jan Ignác František</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="a66c50a6-1b42-42a6-9fd7-cdbfb3eca6ec" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6395955</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="c36c7246-b364-486c-a42a-ed7538c17c70">
+                        <name>Kevin Cahoon</name>
+                        <sort-name>Cahoon, Kevin</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="af02eaa5-b8c7-480c-9938-f94933670e7c" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7600030</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="e905c0f3-09af-4de8-a4e2-cc0755595aff">
+                        <name>Stanley Wayne Mathis</name>
+                        <sort-name>Mathis, Stanley Wayne</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="a48b1d66-4ae4-4f13-a024-c9ef4c18bfd1" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q741080</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="63c4c2ba-2ce6-4c74-b822-cf1d54c9122d">
+                        <name>Jérémie Renier</name>
+                        <sort-name>Renier, Jérémie</sort-name>
+                        <disambiguation>Belgian actor</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="0d3b9e72-e54c-4880-93dd-655dfa222922" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7831811</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="2efc7656-2c91-403f-ad24-6b7f62e2f852">
+                        <name>Tracy Nicole Chapman</name>
+                        <sort-name>Chapman, Tracy Nicole</sort-name>
+                        <disambiguation>American actress</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="73ebf6a0-2acb-437d-81fa-3200fb856d94" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q3182652</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="d46f4620-4cd1-4ae7-bbef-95cbd43ad0c2">
+                        <name>John Vickery</name>
+                        <sort-name>Vickery, John</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="a5ac191b-e7bc-461d-a28b-7fec1766d903" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2080097</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="fd92d5d9-80e8-4309-ab98-f91351885b7a">
+                        <name>Jan Kleczyński</name>
+                        <sort-name>Kleczyński, Jan</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="323c39d2-ab70-4b71-b9ad-6689cb105cdc" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q8942703</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="3a67db22-fbad-4e26-97ba-283fed3c5516">
+                        <name>陳加玲</name>
+                        <sort-name>Chan, Charine</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="02105daf-eebc-42a9-9b14-9682f624c40a" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2213868</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="794806e7-380d-45d9-8f87-26e1865b78bf">
+                        <name>Billy the Kill</name>
+                        <sort-name>Billy the Kill</sort-name>
+                        <disambiguation>Belgian punkrock band</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="2c5d9826-d8ac-4236-ad21-6dd912428291" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16404317</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0b1f844f-a259-4534-99a4-b5acbcd89191">
+                        <name>Juhan Schütz</name>
+                        <sort-name>Schütz, Juhan</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="019204de-a2ae-4814-8e9c-d7ac2ba10800" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16404223</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="f2efbe80-45a8-4c23-abc5-9a1f89f94672">
+                        <name>Rein Mälksoo</name>
+                        <sort-name>Mälksoo, Rein</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="2dfc29c9-0555-449c-8ba8-4a164ba48ea6" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q45723</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="c2115ac4-fa35-43d8-9eca-a6a87f4a3e3a">
+                        <name>Jacques Maritain</name>
+                        <sort-name>Maritain, Jacques</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="70cc49a7-a186-46ff-a480-281728ca083b" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2664924</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="8ec9e3ed-16ee-4e78-8b8e-558bfcfbae3a">
+                        <name>Koen De Graeve</name>
+                        <sort-name>De Graeve, Koen</sort-name>
+                        <disambiguation>Belgian actor &amp; songwriter</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="daf8df56-608b-4a3f-8ca5-ed2e36a9f4b6" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1650024</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0a39488b-1c35-4dee-a3cf-4402c3e45587">
+                        <name>Steffen Kopetzky</name>
+                        <sort-name>Kopetzky, Steffen</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="9f8d1c32-d075-439a-bcfd-924a985b310b" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1723796</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="4a7329d0-1705-4da2-89e4-706699661e5d">
+                        <name>Ursula Haas</name>
+                        <sort-name>Haas, Ursula</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="b1fa0f83-7eb9-498e-92bc-287c9044b0cd" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q5919506</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="6e39225c-b335-40d3-8009-e53e5589bb52">
+                        <name>Howard Akers</name>
+                        <sort-name>Akers, Howard</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="fbd3d9a2-ac6f-4a1a-a818-d30cffadc6f3" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11721011</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="30739dec-346d-41f0-aa7a-700ef608c758">
+                        <name>Jaro.Slav</name>
+                        <sort-name>Jaro.Slav</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="4409da37-cec4-4e86-a32d-fed119e83135" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4353407</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="8cc3bd23-a37f-47d7-935c-720d9532adc3">
+                        <name>Adrian Kowanek</name>
+                        <sort-name>Kowanek, Adrian</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="68226d48-36ea-43e6-bcfd-ecdd1a7d29a8" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q12240786</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="c58791df-ebeb-4d9e-bfc4-1dc1fb2832db">
+                        <name>محمد عساف</name>
+                        <sort-name>Assaf, Mohammed</sort-name>
+                        <disambiguation>Palestinian singer</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="dce0bd41-76a8-42ab-bf28-270bf57ee382" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6981611</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="9304ac51-d01a-4b85-b2d9-e072ccadc8e5">
+                        <name>Navah Perlman</name>
+                        <sort-name>Perlman, Navah</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="924c83f4-247a-4905-8bf3-e69bbec0c8a3" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q679470</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="ec5de2ba-e672-440c-9c4d-dec11622fe1c">
+                        <name>Johann Nepomuk von Poißl</name>
+                        <sort-name>Poißl, Johann Nepomuk von</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="d7003bf8-bb16-465a-bb17-3be4902273e3" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1350509</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0bd2f6ef-68d6-48e6-9e84-6b2fd5f54510">
+                        <name>Johannes Haarklou</name>
+                        <sort-name>Haarklou, Johannes</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="63783319-3d9a-4193-b9c5-239049600117" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q428075</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="5466d187-1e3e-4b82-84ed-504761851050">
+                        <name>Johannes Jeep</name>
+                        <sort-name>Jeep, Johannes</sort-name>
+                        <disambiguation>German composer, choirmaster &amp; organist, c. 1582-1644</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="4489d683-d497-4dde-af46-67c802833c58" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11781820</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="b7003985-f524-40e6-a9c4-3a371c65f9ca">
+                        <name>Mirosław Jędras</name>
+                        <sort-name>Jędras, Mirosław</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="04924494-6980-40f5-a271-2bc51e081bb8" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11461237</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="625f86b2-af6b-4d5f-8ddc-d44584174665">
+                        <name>小松耕輔</name>
+                        <sort-name>Komatsu, Kōsuke</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="02e6168b-d666-4752-bd3a-9b6a512d5bd1" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q321344</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="a20cfad2-29e5-476a-8eb9-5c39254ca543">
+                        <name>Erland Josephson</name>
+                        <sort-name>Josephson, Erland</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="6f57fff9-6672-476f-abfa-22547f88c607" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2896810</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="485dafa0-7d29-403e-b5e4-49d8f63e65cb">
+                        <name>清瀬保二</name>
+                        <sort-name>Kiyose, Yasuji</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="5a912487-3b68-4724-9366-5cdc514daeb7" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q18645175</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="91079b9a-dc95-49ae-8a79-d8a9431b86d7">
+                        <name>Simon Krečič</name>
+                        <sort-name>Krečič, Simon</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="bfd38bdf-7144-481f-9bca-bb921ce7e07e" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6216896</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0f3995ce-0430-41d3-ba42-ba7753243267">
+                        <name>Johannes Pache</name>
+                        <sort-name>Pache, Johannes</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="224d91a0-038f-432f-ab08-77d155b17f14" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6216900</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="20ff64c2-794d-44ee-8550-46e859eee57f">
+                        <name>Johannes Palaschko</name>
+                        <sort-name>Palaschko, Johannes</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="4df29c06-f9bb-4dee-a9a4-40da931126df" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q3175897</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="f6dd8b77-9ddf-499c-8633-00dfda73c8bb">
+                        <name>Jeannine Collard</name>
+                        <sort-name>Collard, Jeannine</sort-name>
+                        <disambiguation>mezzo-soprano / contralto</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="8bd26b69-6c34-4f57-94a0-2971c80739ff" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16826787</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="58f32206-e7dc-4a06-baff-e98e6ce4138b">
+                        <name>Chrome Cranks</name>
+                        <sort-name>Chrome Cranks</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="cfa3662d-7635-421a-849c-2dcf8d9da2b0" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11648620</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="564ca851-9ce6-4762-8f66-b45f76b80d69">
+                        <name>鈴木凛</name>
+                        <sort-name>Suzuki, Rin</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="205b292e-95ab-4561-ad0e-bf3895039998" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16184245</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="58d278dc-ca47-41ca-812b-7a615d41ac92">
+                        <name>효은</name>
+                        <sort-name>Hyoeun</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="db5b4fb4-26c8-4125-a8d9-a896784f1ed8" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16173980</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="1d0a4845-40d0-45bb-b8c7-259d0b3b4932">
+                        <name>전율</name>
+                        <sort-name>Jeonyoul</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="daa095fb-f3b1-4ef9-a3db-de020d5fb3c0" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q31177864</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="219b8dab-ab50-439f-a929-977df967f36b">
+                        <name>소영</name>
+                        <sort-name>Soyoung</sort-name>
+                        <disambiguation>Stellar member</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="778ec9fb-a785-47e4-8c0f-70727ede5006" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6024323</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="936d80e5-506b-40d6-92d2-835872d0bb83">
+                        <name>Moro-Satragni</name>
+                        <sort-name>Moro-Satragni</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="b3cb4211-f659-42d8-adcc-a8cfb2831b63" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2625979</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="cb23f7e3-e355-42a7-8567-4c5f2dfd02b0">
+                        <name>Henry Lerolle</name>
+                        <sort-name>Lerolle, Henry</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="2441c8ac-f62e-475f-83de-bf4551f8455b" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1406864</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="f6d5c470-cf05-4ba9-9aba-34678a8bd7dd">
+                        <name>Johannes Schultz</name>
+                        <sort-name>Schultz, Johannes</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="f7772999-eca9-484a-a194-2164cdceff7c" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11636628</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="a6fc72ef-ea29-4855-989e-a411c2e41a5f">
+                        <name>越谷達之助</name>
+                        <sort-name>Koshigaya, Tatsunosuke</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="662137da-4d79-4057-b700-5076f95105c7" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11391274</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="c192d00c-d51d-4ea6-86b6-af7af6fef850">
+                        <name>八月真澄</name>
+                        <sort-name>Hadzuki, Masumi</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="39863a41-7d94-41d2-a553-69ce1dbfb214" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6218153</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="1b978753-40cd-42f1-9cbb-3a62b15e1852">
+                        <name>John Adam Hugo</name>
+                        <sort-name>Hugo, John Adam</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="376fcd5e-3127-4bc0-9236-aad9b503145c" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7906293</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="5f2c39e6-0aa6-4e98-8d5b-a489264108d5">
+                        <name>V. Vale</name>
+                        <sort-name>Vale, V.</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="ffe33094-e217-4152-b74e-423aaf3af3c5" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q3176460</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="41eaa09e-d477-43d6-b026-7cfddea9e6cb">
+                        <name>Jeff Coopwood</name>
+                        <sort-name>Coopwood, Jeff</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="5d7970a2-7e06-4c63-96c9-7c6638145c5c" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q16009</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="46bd277a-ec1d-4a77-a697-bb91ad37e2f1">
+                        <name>Sebastian Lybeck</name>
+                        <sort-name>Lybeck, Sebastian</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="145180f0-1b4b-4ac7-9906-dc50360c919e" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4994421</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0ff5e743-efa0-421a-9794-99bc6834c783">
+                        <name>Johan Bartholdy</name>
+                        <sort-name>Bartholdy, Johan</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="1f743c23-7b93-4e18-b23b-bef229d8f923" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6143421</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="5ee39edf-9aa1-484b-bc9b-3cb7dfb453de">
+                        <name>山内賢</name>
+                        <sort-name>Yamauchi, Ken</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="3d06b3a0-3054-4010-95df-f55ccb88fa3f" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q18719888</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0228d1c0-ed0d-4de4-b3cb-a3d0771c3019">
+                        <name>Alejandro del Prado</name>
+                        <sort-name>Del Prado, Alejandro</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="7a7fd202-ce11-4a9e-b28e-de4810ae9258" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q149571</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="54d59153-6eb9-4dff-8997-73720db08a21">
+                        <name>Carl Blechen</name>
+                        <sort-name>Blechen, Carl</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="717f1fad-2b80-4522-9ae0-90c155756d3d" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q20734745</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="b182074a-5825-4744-83e9-6b84c357ff03">
+                        <name>Thomas de Pourquery</name>
+                        <sort-name>Pourquery, Thomas de</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="1b3c1f17-a96a-48a7-9c4c-63b61b2eb017" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q18686025</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="92ddca64-258b-4642-9f20-1d9f33185715">
+                        <name>Johann Andreas Kauchlitz Colizzi</name>
+                        <sort-name>Kauchlitz Colizzi, Johann Andreas</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="addf7100-0f85-4fd7-91ff-2249b9376f69" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1691986</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="880f6253-7863-4a7c-a5bb-72b7b5101c0d">
+                        <name>Johan Henrich Berlin</name>
+                        <sort-name>Berlin, Johan Henrich</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="eb6bb0b7-6a3a-4c3e-905a-b88ce0927801" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11927596</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="a0345d0b-1a6a-432b-bf1f-3f0e8afa0541">
+                        <name>Joan Arús i Colomer</name>
+                        <sort-name>Arús i Colomer, Joan</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="495cdce4-fe3d-4c4d-96e7-61d28ba4bebf" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q15486435</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="4916198d-679e-49eb-97c5-4ea6cf8c0728">
+                        <name>Malcolm Nance</name>
+                        <sort-name>Nance, Malcolm</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="7723fdf9-08b1-4851-a0ad-03940fe23747" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6068843</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="aab3b045-85c3-4530-aeab-3b4e69452250">
+                        <name>Irina Petkova</name>
+                        <sort-name>Petkova, Irina</sort-name>
+                        <disambiguation>mezzo-soprano</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="da3e1144-cd5e-4d04-bbd5-6da71263391b" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q772698</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="e5e117b1-a8c7-4ca4-8af5-64f946ecbf53">
+                        <name>Willie Revillame</name>
+                        <sort-name>Revillame, Willie</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="35fb8f7b-afad-4d93-860f-b6af045fc384" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q10780540</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="9fe37722-fc9f-4dfa-aa60-3d7abfc289a1">
+                        <name>Alois Piňos</name>
+                        <sort-name>Piňos, Alois</sort-name>
+                        <disambiguation>Czech music educator, composer and university educator</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="ec4d98c3-f3f4-4a64-a2cb-0c7f89eec641" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q5819414</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0fa13bc2-1414-4998-bc78-9cb9971a3a4a">
+                        <name>Eduardo Magallanes</name>
+                        <sort-name>Magallanes, Eduardo</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="a166e031-4842-4762-82ae-06d7def029be" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2455962</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="65415c47-c3e9-446e-afba-25c12778c7be">
+                        <name>Troy Duffy</name>
+                        <sort-name>Duffy, Troy</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="c9b63522-ef6f-4ff6-a07b-80ea0b3f12b5" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4137532</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="436f724d-1e3b-4f17-832f-ee7b62eb8afa">
+                        <name>František Hertl</name>
+                        <sort-name>Hertl, František</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="b5ea0792-155f-40e1-a72c-1ba22e8f11e0" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7152056</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="85414881-325c-4b2e-826b-e24a912d0f1e">
+                        <name>Paul Livingstone</name>
+                        <sort-name>Livingstone, Paul</sort-name>
+                        <disambiguation>American sitarist</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="f2929d93-b08f-4786-89e4-9ea4eb989846" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q708909</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="55bfb303-5b1f-4fe1-971a-46e28ec405be">
+                        <name>Vladimír Sommer</name>
+                        <sort-name>Sommer, Vladimír</sort-name>
+                        <disambiguation>Czech composer</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="cb7694a3-4350-48e7-bdc2-b1d0239221c4" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q6160568</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="21876d64-e67d-4d49-a4af-bbe58b95d7f6">
+                        <name>Jaroslav Doubrava</name>
+                        <sort-name>Doubrava, Jaroslav</sort-name>
+                        <disambiguation>Czech composer</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="08338cfe-efea-4415-9d0b-6c8a0d6d4a88" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1632655</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="236e3c83-955c-456b-832d-ffdc9a8a4339">
+                        <name>Ibliss</name>
+                        <sort-name>Ibliss</sort-name>
+                        <disambiguation>German Experimental Electronic band from the 1970s</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="645b679f-8c72-4396-a8b3-7f9425b23b84" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2678095</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="77de337e-a458-4bd7-ac45-86f6a8067bf0">
+                        <name>The Boondocks</name>
+                        <sort-name>Boondocks, The</sort-name>
+                        <disambiguation>Belgian 1990s band</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="524b5622-b247-4653-8f43-495108a8c8ba" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1095235</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="753a306e-a93a-4bfa-8878-41954ffa3ac5">
+                        <name>Clara Rodriguez</name>
+                        <sort-name>Rodriguez, Clara</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="760d6429-fe65-4e3d-a275-40b382e4a790" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2050196</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="989e9f74-2bfb-42bb-bf60-be2685eea107">
+                        <name>Flowers for Breakfast</name>
+                        <sort-name>Flowers for Breakfast</sort-name>
+                        <disambiguation>Belgian 1990s indie band</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="1b7905e5-a8bc-43fa-8d94-bd12d6f41af6" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11531295</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="e817481a-3830-4136-ab5e-ff10d311a056">
+                        <name>松本あかね</name>
+                        <sort-name>Matsumoto, Akane</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="5f32b8e4-df4c-497d-b35e-42677eff161b" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1694144</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="0bdb6bbf-d296-4c0b-89a2-c4f68fd6f91e">
+                        <name>Johann Gottfried Schwanenberger</name>
+                        <sort-name>Schwanenberger, Johann Gottfried</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="e2971c7b-0056-48c5-b89f-840188f923ef" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q322558</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="c2780c81-2115-475d-a121-9d9ad97bf0e3">
+                        <name>Lubor Bárta</name>
+                        <sort-name>Bárta, Lubor</sort-name>
+                        <disambiguation>Czech composer and pianist</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="8a8a636b-0b5f-4430-802c-1541da7517f4" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4285950</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="4f8b68a1-fd09-4279-ba8d-9f82298ed5e8">
+                        <name>Stanislav Macura</name>
+                        <sort-name>Macura, Stanislav</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="ab468d52-b32d-47ca-97ac-910b74294885" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q1122136</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="d567f32d-5308-4ccf-987d-0465eb74cda7">
+                        <name>Илья Кормильцев</name>
+                        <sort-name>Kormiltsev, Ilia</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="4a01af38-ad17-4911-81a2-0aba0e25c9a3" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2410831</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="13668c82-1210-4d71-81f7-14b355f28e99">
+                        <name>Jiří Hudec</name>
+                        <sort-name>Hudec, Jiří</sort-name>
+                        <disambiguation>Czech composer, conductor and organist</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="2543450e-efc4-433d-aef5-25f144998ea6" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q20643924</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="2563aa48-3764-4a5f-b022-2b54c77dcf92">
+                        <name>Paolo Onesa</name>
+                        <sort-name>Onesa, Paolo</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="6952aab4-578e-47b4-8434-9482ab241955" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q5645343</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="478f07c9-2eec-4925-8146-117f8d818f05">
+                        <name>Hamish Blake</name>
+                        <sort-name>Blake, Hamish</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="236e23fd-8e01-478a-afcd-7f34c099524d" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4684131</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="b38be4d1-4a94-4283-81ca-fa25659ed1b6">
+                        <name>Adolf Krössing</name>
+                        <sort-name>Krössing, Adolf</sort-name>
+                        <disambiguation>tenor</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="aeab62e3-1c72-4a30-9f8a-2509abf557cd" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q4760931</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="61b65f88-5e34-4eed-a415-90ab71b889bc">
+                        <name>Andy Lee</name>
+                        <sort-name>Lee, Andy</sort-name>
+                        <disambiguation>Australian comedian</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="828ce615-8de3-47c7-be50-612b460b616b" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q27973956</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="f27c59fc-f3dc-4ba7-b223-f58382f802af">
+                        <name>Magín Díaz</name>
+                        <sort-name>Díaz, Magín</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="5758b0c1-ef4b-4621-bb17-ebb54d0dec28" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7350802</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="3ab8563f-0019-4393-8ec9-2dc7e104613f">
+                        <name>Robert ‘Bilbo’ Walker</name>
+                        <sort-name>Walker, Robert ‘Bilbo’</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="b74c4ff3-e744-4704-8bb5-f6af7dbf41a5" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q10395456</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="7795f222-6b67-40bf-a7ed-8c2f72e81e28">
+                        <name>Zé Pedro</name>
+                        <sort-name>Zé Pedro</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="2a2d84c5-88e9-4cdd-aaff-45dc7ca46dbf" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q11731118</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="b94c5c5e-07ab-425e-82ca-cbe97d9ec696">
+                        <name>Józef Patkowski</name>
+                        <sort-name>Patkowski, Józef</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="92831d1e-c291-4409-b345-8f5f689ab318" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q3387245</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="139adeb4-b8ec-457a-8d16-4a35d0859296">
+                        <name>Pierre Vellones</name>
+                        <sort-name>Vellones, Pierre</sort-name>
+                        <disambiguation>composer</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="b9e82ecc-5945-4b47-8722-f15943bc919f" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q3547129</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="9f43a767-3e23-4782-a5b4-3878bdb03253">
+                        <name>Michael V</name>
+                        <sort-name>V, Michael</sort-name>
+                        <disambiguation>Beethoven Del Valle Bunagan</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="a4ea0e59-decb-4df7-b7e8-1f62822ba9ad" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q258820</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="53b6e250-1fce-4950-be6d-e50e3245b483">
+                        <name>Rishi Kapoor</name>
+                        <sort-name>Kapoor, Rishi</sort-name>
+                        <disambiguation>Indian actor</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="9df62549-2e23-4e9a-be44-4db15a6750e8" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q25884174</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="742fa6f8-de0c-4f4d-8913-487e5ee6ec45">
+                        <name>Jef Coolen</name>
+                        <sort-name>Coolen, Jef</sort-name>
+                        <disambiguation>Belgian trumpeter</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="688f5356-90f9-48cc-8b4a-fe9d317da64c" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q2887562</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="c07379a5-c201-4140-abba-1d110c59d673">
+                        <name>My Velma</name>
+                        <sort-name>My Velma</sort-name>
+                        <disambiguation>Belgian 90ties band</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="90bc6748-3943-4776-ae40-6fcba2f73d33" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q13461815</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="1e74c79e-737d-4926-b7d7-efd41c0e4b8c">
+                        <name>Chas Remue and His New Stompers Orchestra</name>
+                        <sort-name>Remue, Chas and His New Stompers Orchestra</sort-name>
+                        <disambiguation>Belgian jazz group from the 1920s</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+        <url id="d71d2235-a199-4ee0-9ae8-46389551e0a7" ns2:score="100">
+            <resource>https://www.wikidata.org/wiki/Q7155679</resource>
+            <relation-list target-type="artist">
+                <relation type="wikidata" type-id="689870a4-a1e4-4912-b17f-7b2664215698">
+                    <direction>backward</direction>
+                    <artist id="e5cd33cb-27e8-45e6-9c70-14ec8e89b4e9">
+                        <name>Pavel Ludikar</name>
+                        <sort-name>Ludikar, Pavel</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+        </url>
+    </url-list>
 </metadata>
