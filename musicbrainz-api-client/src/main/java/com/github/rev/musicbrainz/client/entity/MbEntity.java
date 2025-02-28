@@ -46,7 +46,7 @@ public abstract class MbEntity {
     public static final class CdStub extends MbEntity {
         @Override
         public String getApiName() {
-            return "stub";
+            return "cdstub";
         }
     }
 

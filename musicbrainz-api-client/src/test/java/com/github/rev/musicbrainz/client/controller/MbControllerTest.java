@@ -103,7 +103,7 @@ public class MbControllerTest {
     }
     private static MbQuery<MbEntity.CdStub> stubQuery() throws MbQuery.InvalidQueryFieldException {
         MbCdStubQuery stubQuery = new MbCdStubQuery();
-        stubQuery.add(MbCdStubQuery.ARTIST, "Fleetwood Mac");
+        stubQuery.add(MbCdStubQuery.TITLE, "Doo");
         return stubQuery;
     }
     private static MbQuery<MbEntity.MbEvent> eventQuery() throws MbQuery.InvalidQueryFieldException {

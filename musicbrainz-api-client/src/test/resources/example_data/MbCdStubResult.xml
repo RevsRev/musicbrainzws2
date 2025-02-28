@@ -1,5 +1,345 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<error>
-    <text>Not Found</text>
-    <text>For usage, please see: https://musicbrainz.org/development/mmd</text>
-</error>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata created="2025-02-28T14:42:48.106Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <cdstub-list count="52" offset="0">
+        <cdstub id="zsXyqGWvw0zF024A_saTokxIMzo-" ns2:score="100">
+            <title>Doo-lang Doo-lang</title>
+            <artist>The Emergency</artist>
+            <barcode>700261200910</barcode>
+            <disambiguation>CD Baby id:emergency2</disambiguation>
+            <track-list count="16"/>
+        </cdstub>
+        <cdstub id="zMCuMe06jh9g2CJBYmCisQBQL3o-" ns2:score="100">
+            <title>Doo- Be - Doo</title>
+            <artist>Lauren Molina</artist>
+            <barcode>837101394918</barcode>
+            <disambiguation>CD Baby id:laurenmolina</disambiguation>
+            <track-list count="7"/>
+        </cdstub>
+        <cdstub id="flDSWKyB3ldU0HGjcW8NY9m4Vd8-" ns2:score="91">
+            <title>Doo-Bop</title>
+            <artist>Miles Davis</artist>
+            <barcode></barcode>
+            <track-list count="9"/>
+        </cdstub>
+        <cdstub id="N.BqSgPSx5fr9u23FZt8YoVDqYs-" ns2:score="91">
+            <title>Doo Process</title>
+            <artist>President's Breakfast</artist>
+            <barcode></barcode>
+            <disambiguation>CD Baby id:presidents3</disambiguation>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="jwRuJAG_xQ7fMv3bn6WKOajr.1o-" ns2:score="86">
+            <title>Shoo Be Doo Be Doo Wop</title>
+            <artist>Various Artists</artist>
+            <barcode></barcode>
+            <track-list count="18"/>
+        </cdstub>
+        <cdstub id="kGyRx6nvQdbO3s3byVZZLnBQWJE-" ns2:score="80">
+            <title>Voo-Doo Believe?</title>
+            <artist>Datura</artist>
+            <barcode></barcode>
+            <track-list count="6"/>
+        </cdstub>
+        <cdstub id="toaLKU994oAzNFrbLBDbI6_dDiA-" ns2:score="80">
+            <title>Doo Wop Favorites</title>
+            <artist></artist>
+            <barcode>62861239726</barcode>
+            <disambiguation>Disc 1 of 3</disambiguation>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="ArH.fL4BSzXYWqYuxZR7YWIe1mo-" ns2:score="80">
+            <title>Pronounced (Gra-Doo)</title>
+            <artist>Gradoux</artist>
+            <barcode>837101336987</barcode>
+            <disambiguation>CD Baby id:gradoux</disambiguation>
+            <track-list count="8"/>
+        </cdstub>
+        <cdstub id="b8VHftxXCjMHs2_jtLyxgtpF1oI-" ns2:score="80">
+            <title>Sacred Doo-Wop</title>
+            <artist>Jerome Alexander</artist>
+            <barcode>837101203517</barcode>
+            <disambiguation>CD Baby id:jeromealexander</disambiguation>
+            <track-list count="18"/>
+        </cdstub>
+        <cdstub id="4dTN9TdoLI2zAL2_yIJj2Y01L7w-" ns2:score="80">
+            <title>Bop Doo-Wopp</title>
+            <artist>The Manhattan Transfer</artist>
+            <barcode></barcode>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="3ZiB189LyBHKor7d6k0gcLDm1IA-" ns2:score="80">
+            <title>Doo Wop vol-04</title>
+            <artist></artist>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="U6SFr9ggJjQmPH0ygr99SRD2SWs-" ns2:score="71">
+            <title>Daddy-Doo-A-Rama</title>
+            <artist>The Daddy-Doo Band</artist>
+            <barcode>707541772129</barcode>
+            <disambiguation>CD Baby id:daddydoo</disambiguation>
+            <track-list count="13"/>
+        </cdstub>
+        <cdstub id="2RFR2hBHBCCz.Bd_7vaN3iQtuZY-" ns2:score="71">
+            <title>The Doo-Wah Riders</title>
+            <artist>Doo-Wah Riders</artist>
+            <barcode>613505256324</barcode>
+            <disambiguation>CD Baby id:doowahriders5</disambiguation>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="bD5_9gTn_E.eXRA.uyBK4oebDkY-" ns2:score="71">
+            <title>Doo-Wops &amp; Hooligans</title>
+            <artist>Bruno Mars</artist>
+            <barcode></barcode>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="V9R3m2B2PoNI7mQQFCFCfwwkxlU-" ns2:score="71">
+            <title>Doo-Wops Are Forever</title>
+            <artist>Sam Stray And The Unique Kings</artist>
+            <barcode>800051770323</barcode>
+            <disambiguation>CD Baby id:sammystray3</disambiguation>
+            <track-list count="19"/>
+        </cdstub>
+        <cdstub id="ALHIT9CWfQUoc6QeAhFbHgWPKHM-" ns2:score="71">
+            <title>Doo Wops &amp; Hooligans</title>
+            <artist>Bruno Mars</artist>
+            <barcode></barcode>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="KKJY2OtBmgxv_zihpnrnV6lAj1Y-" ns2:score="71">
+            <title>Best Of Doo Wop</title>
+            <artist></artist>
+            <barcode>803151007726</barcode>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="EdYyxsTJ_CJd87Siu0B4OiIzUCc-" ns2:score="71">
+            <title>Cunt-A-Doodle-Doo</title>
+            <artist>Shat</artist>
+            <barcode></barcode>
+            <track-list count="50"/>
+        </cdstub>
+        <cdstub id="96XtuuUjie9i1l5QKFcjg_2Phos-" ns2:score="71">
+            <title>Doo Wop volume 8</title>
+            <artist></artist>
+            <barcode>9043196672</barcode>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="oymj9AEhHcY_f4QcPXxXzA0VPN8-" ns2:score="71">
+            <title>Doo Wop volume 1</title>
+            <artist></artist>
+            <barcode>029667157926</barcode>
+            <disambiguation>ACE CDCHD579</disambiguation>
+            <track-list count="28"/>
+        </cdstub>
+        <cdstub id="k2XBSwNxPdx77yYldullgubZ0Pg-" ns2:score="63">
+            <title>20 Best of Doo Wop</title>
+            <artist></artist>
+            <barcode>056775398125</barcode>
+            <track-list count="20"/>
+        </cdstub>
+        <cdstub id="rEu56QFr7GdQhygEqz_bCwpkLoU-" ns2:score="63">
+            <title>Doo Wop Favorites (disc 2)</title>
+            <artist></artist>
+            <barcode></barcode>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="vNXR27NTZoB7IFgoJpGN2AdU4LE-" ns2:score="63">
+            <title>Doo Wop Til You Drop</title>
+            <artist>The Mighty Echoes</artist>
+            <barcode>823862100127</barcode>
+            <disambiguation>CD Baby id:mightyechoes</disambiguation>
+            <track-list count="14"/>
+        </cdstub>
+        <cdstub id="PJReN5ep2y.gkGWX0OfudOe8tiw-" ns2:score="63">
+            <title>Doo Wop 'til Ya Drop!</title>
+            <artist>The Tones</artist>
+            <barcode></barcode>
+            <disambiguation>CD Baby id:tones2</disambiguation>
+            <track-list count="19"/>
+        </cdstub>
+        <cdstub id=".qXrsJ6kQ5TH.Edb2Wwpqc3UtUI-" ns2:score="63">
+            <title>Scooby-Doo 2: Monsters Unleashed</title>
+            <artist></artist>
+            <barcode>093624868422</barcode>
+            <track-list count="13"/>
+        </cdstub>
+        <cdstub id="GsDl1n94qcKKTYhn68M14xf7EzE-" ns2:score="63">
+            <title>Doo-Wop (Karaoke Tracks Included)</title>
+            <artist>Aaron Usher</artist>
+            <barcode>634479219900</barcode>
+            <disambiguation>CD Baby id:aaronusher</disambiguation>
+            <track-list count="6"/>
+        </cdstub>
+        <cdstub id="HMuDvcKE8qsrbzgNvoHWR8YT8as-" ns2:score="63">
+            <title>The Doo-Wah Riders Live</title>
+            <artist>The Doo-Wah Riders</artist>
+            <barcode>613505111227</barcode>
+            <disambiguation>CD Baby id:doowahriders2</disambiguation>
+            <track-list count="13"/>
+        </cdstub>
+        <cdstub id="PpuO6Ezr5hLeAgPV8pc31w1LC3E-" ns2:score="63">
+            <title>Doo Wop Favorites (disc 3)</title>
+            <artist></artist>
+            <barcode></barcode>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="3DvtYBBsugjpw8Upzw8E1cCmuzM-" ns2:score="63">
+            <title>Rock, Pop &amp; Doo Wop</title>
+            <artist></artist>
+            <track-list count="20"/>
+        </cdstub>
+        <cdstub id="xcdRIDQM2eziVDpZAX7tAbCXdgY-" ns2:score="63">
+            <title>Doo-zees and Don't-zees</title>
+            <artist>Flosy &amp; the Music Man</artist>
+            <barcode>616892892823</barcode>
+            <disambiguation>CD Baby id:flosymusicman</disambiguation>
+            <track-list count="22"/>
+        </cdstub>
+        <cdstub id="kZs1s9BfbEKXLXS5rkJq7P7.K5g-" ns2:score="63">
+            <title>Cousin Brucie's Doo Wop Favorites</title>
+            <artist></artist>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="FpeMi_jmIgwKPLXEXrkfvO2Qm54-" ns2:score="57">
+            <title>Rock And Roll Doo Wop Songs</title>
+            <artist>Joey Welz</artist>
+            <barcode>634479264344</barcode>
+            <disambiguation>CD Baby id:capricerecords25</disambiguation>
+            <track-list count="22"/>
+        </cdstub>
+        <cdstub id="TVLxCqXJmCR23i7ahzpZHRoQzwg-" ns2:score="57">
+            <title>Doo Wop Around the Christmas Tree</title>
+            <artist>The Mighty Echoes</artist>
+            <barcode></barcode>
+            <disambiguation>CD Baby id:mightyechoes2</disambiguation>
+            <track-list count="11"/>
+        </cdstub>
+        <cdstub id="GesqvUI.IqalJXi8DFAVfOaynvs-" ns2:score="57">
+            <title>Doodle Loot Doot Doodle A Doo</title>
+            <artist>Bing Ji Ling</artist>
+            <barcode>827071004627</barcode>
+            <disambiguation>CD Baby id:bingjiling</disambiguation>
+            <track-list count="11"/>
+        </cdstub>
+        <cdstub id="8XquQvFipS0Lirt4hvKIB1CG66I-" ns2:score="57">
+            <title>Doo Henny Bird And 0ther Tales</title>
+            <artist>Ladoris Bias Davis</artist>
+            <barcode>634479342639</barcode>
+            <disambiguation>CD Baby id:ladoris</disambiguation>
+            <track-list count="5"/>
+        </cdstub>
+        <cdstub id="xo53kPqz2gE7V6uslIA9wRBHa3Y-" ns2:score="57">
+            <title>Scooby-Doo and the Witch's Ghost</title>
+            <artist>Various Artists</artist>
+            <barcode>081227570927</barcode>
+            <disambiguation>Songs from 2 videos: "... the Witch's Ghost" &amp; "... On Zombie Island"</disambiguation>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="UHBO3tlz8lUIBA047wKj4vd68Ng-" ns2:score="52">
+            <title>Diddle diddle doodle doo Traditional Nursery Rhymes</title>
+            <artist>Brian Melville &amp; Caroline Sweeney</artist>
+            <barcode>5030094119420</barcode>
+            <disambiguation>CD Baby id:bmcs</disambiguation>
+            <track-list count="22"/>
+        </cdstub>
+        <cdstub id="xKmwQiZ9xi1b_QsafmF1RIRCHLI-" ns2:score="52">
+            <title>Macaroni Boy Eats at Chez Shooby Doo</title>
+            <artist>Ginger Hendrix</artist>
+            <barcode>837101194129</barcode>
+            <disambiguation>CD Baby id:gingerhendrix</disambiguation>
+            <track-list count="14"/>
+        </cdstub>
+        <cdstub id="jgZk0ZAZGCarEf4Tb2Lj6.JpZHI-" ns2:score="52">
+            <title>Where Have All The Doo Wops Gone?</title>
+            <artist>Jackie T &amp; The Rhythm Jesters</artist>
+            <barcode>842614012327</barcode>
+            <disambiguation>CD Baby id:jackiet1</disambiguation>
+            <track-list count="17"/>
+        </cdstub>
+        <cdstub id="iiOTkpWwa5wt3qhIxHg8MZJxwT4-" ns2:score="52">
+            <title>Rock, Rhythm and Doo Wop (Bonus Disk)</title>
+            <artist></artist>
+            <disambiguation>Recorded May 16 &amp; 17 2001</disambiguation>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="_l2fDINuxCuJ01KNNzAZ2VMFI6I-" ns2:score="52">
+            <title>But Very Audibles...Doo Wops And More</title>
+            <artist>Gus &amp; The Invisibles</artist>
+            <barcode></barcode>
+            <disambiguation>CD Baby id:gusinvisibles</disambiguation>
+            <track-list count="17"/>
+        </cdstub>
+        <cdstub id="b17p48ii6tcsmczRnSgmXCegLKU-" ns2:score="52">
+            <title>Television Voo Doo and Other Space Junk</title>
+            <artist>Joe Olivier</artist>
+            <barcode>606041247727</barcode>
+            <disambiguation>CD Baby id:joeolivier</disambiguation>
+            <track-list count="13"/>
+        </cdstub>
+        <cdstub id="j85m6fwfmOJpi9Ri6_1Q.70GBbg-" ns2:score="52">
+            <title>Golden Tear Drops Best Of Doo Wop</title>
+            <artist></artist>
+            <track-list count="16"/>
+        </cdstub>
+        <cdstub id="3aiX27n9zuo1IH1VHkNYRMxnCAE-" ns2:score="48">
+            <title>Doo-Wopp.com - Live From Las Vegas</title>
+            <artist>Doo-Wopp.com</artist>
+            <barcode>806745185527</barcode>
+            <disambiguation>CD Baby id:doowoppcom</disambiguation>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="mAUwj0BWPHHiTFxMk7aqanXCGWI-" ns2:score="48">
+            <title>Finbarr Golden Treasury of Doo Wop, Volume One</title>
+            <artist>Various Artists</artist>
+            <barcode></barcode>
+            <track-list count="31"/>
+        </cdstub>
+        <cdstub id="PVRyvSbJal5pZh3gRgT9lebijBI-" ns2:score="48">
+            <title>Best Of Doo Wop, Disc 2 of 3</title>
+            <artist></artist>
+            <barcode>803151007726</barcode>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="ZMNFXt6ZSyH0tyFy7AYl3Hn_kk8-" ns2:score="48">
+            <title>Best Of Doo Wop, Disc 3 of 3</title>
+            <artist></artist>
+            <barcode>803151007726</barcode>
+            <track-list count="12"/>
+        </cdstub>
+        <cdstub id="yuVB_A9i7aOJrwRBZtEcyYPbk3Q-" ns2:score="48">
+            <title>U Call It [ The Hoo Doo] Single</title>
+            <artist>LJ feat. Yung Ro'</artist>
+            <barcode>701433002820</barcode>
+            <disambiguation>CD Baby id:ljtunes</disambiguation>
+            <track-list count="5"/>
+        </cdstub>
+        <cdstub id="No9MoA4WYEmL5X2i0kZfLEA6Vg8-" ns2:score="45">
+            <title>Sweet Shoppe Doo Wop - Yesterday, Today And Forever</title>
+            <artist>Billy Priff</artist>
+            <barcode></barcode>
+            <disambiguation>CD Baby id:priff</disambiguation>
+            <track-list count="16"/>
+        </cdstub>
+        <cdstub id="2u9BxSwH0Ufz_JhxQJMXINYqjAo-" ns2:score="42">
+            <title>Hubert's Dime Museum - 1963 (a Doo-wop Love Story)</title>
+            <artist>The Fascinators, featuring Tony Passa</artist>
+            <barcode></barcode>
+            <disambiguation>CD Baby id:fascinators</disambiguation>
+            <track-list count="16"/>
+        </cdstub>
+        <cdstub id="D.001xJWX238p0aYLOOWuoBVfDM-" ns2:score="39">
+            <title>Some Of The Best Of The Bonzo Dog Doo-Dah Band</title>
+            <artist>The Bonzo Dog Doo-Dah Band</artist>
+            <track-list count="10"/>
+        </cdstub>
+        <cdstub id="S6WcWYY94NCqrCGEP8xjq5wUu6g-" ns2:score="28">
+            <title>Variations on an American Theme for Piano and Orchestra ("Doo-Dah Variations") / Gershwin Concerto in
+                F
+            </title>
+            <artist>Des Moines Symphony Orchestra, cond. Joseph Giunta, Earl Wild, piano</artist>
+            <barcode>9036800982</barcode>
+            <disambiguation>Chesky CD98, 1993</disambiguation>
+            <track-list count="4"/>
+        </cdstub>
+    </cdstub-list>
+</metadata>
