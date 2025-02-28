@@ -22,7 +22,6 @@ import com.github.rev.musicbrainz.client.search.query.MbSeriesQuery;
 import com.github.rev.musicbrainz.client.search.query.MbTagQuery;
 import com.github.rev.musicbrainz.client.search.query.MbUrlQuery;
 import com.github.rev.musicbrainz.client.search.query.MbWorkQuery;
-import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -144,7 +143,7 @@ public class MbControllerTest {
     }
     private static MbQuery<MbEntity.MbRelease> releaseQuery() throws MbQuery.InvalidQueryFieldException {
         MbReleaseQuery releaseQuery = new MbReleaseQuery();
-        releaseQuery.add(MbReleaseQuery.ALIAS, "Tusk");
+        releaseQuery.add(MbReleaseQuery.ARTIST, "Fleetwood Mac");
         return releaseQuery;
     }
     private static MbQuery<MbEntity.MbReleaseGroup> releaseGroupQuery() throws MbQuery.InvalidQueryFieldException {

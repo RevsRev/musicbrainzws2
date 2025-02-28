@@ -14,6 +14,7 @@ import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.Format;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.LanguageList;
+import org.musicbrainz.ns.mmd_2.Packaging;
 import org.musicbrainz.ns.mmd_2.PrimaryType;
 import org.musicbrainz.ns.mmd_2.SecondaryType;
 import org.musicbrainz.ns.mmd_2.Status;
@@ -73,6 +74,12 @@ public final class MbSerdesModule extends Module {
         simpleDeserializers.addDeserializer(SecondaryType.class, BadKeyDeserializer.factory(
                 SecondaryType.class,
                 "secondary-type",
+                "setContent"
+        ));
+
+        simpleDeserializers.addDeserializer(Packaging.class, BadKeyDeserializer.factory(
+                Packaging.class,
+                "",
                 "setContent"
         ));
 
