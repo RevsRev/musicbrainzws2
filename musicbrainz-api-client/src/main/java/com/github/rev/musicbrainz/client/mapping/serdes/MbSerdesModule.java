@@ -10,8 +10,6 @@ import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.BadKeyDese
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.FormatDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.LanguageDeserializer;
 import com.github.rev.musicbrainz.client.mapping.serdes.deserializers.TargetDeserializer;
-import com.github.rev.musicbrainz.client.mapping.serdes.handler.MbValueInstantiators;
-import com.github.rev.musicbrainz.client.mapping.serdes.serializers.GenderSerializer;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.Format;
 import org.musicbrainz.ns.mmd_2.Gender;
@@ -41,7 +39,6 @@ public final class MbSerdesModule extends Module {
     public void setupModule(final SetupContext context) {
         context.addDeserializers(getDeserializers());
         context.addSerializers(getSerializers());
-        context.addValueInstantiators(new MbValueInstantiators());
     }
 
     private Deserializers getDeserializers() {
@@ -83,8 +80,6 @@ public final class MbSerdesModule extends Module {
     }
 
     private Serializers getSerializers() {
-        SimpleSerializers simpleSerializers = new SimpleSerializers();
-        simpleSerializers.addSerializer(Gender.class, new GenderSerializer());
-        return simpleSerializers;
+        return new SimpleSerializers();
     }
 }

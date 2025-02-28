@@ -60,7 +60,7 @@ public final class JacksonMappers {
         jacksonXmlModule.setDefaultUseWrapper(false);
         mapper.registerModule(jacksonXmlModule);
 
-        // I want to use this, but a bug mixing @Xml
+        // TODO - I want to use this, but a bug mixing @XmlValue with fields named "value"
 //        JakartaXmlBindAnnotationModule jakartaXmlModule = new JakartaXmlBindAnnotationModule();
 //        mapper.registerModule(jakartaXmlModule);
 
