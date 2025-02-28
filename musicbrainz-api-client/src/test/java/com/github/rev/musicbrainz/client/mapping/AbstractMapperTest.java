@@ -43,7 +43,7 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbEventResult.class, MbFormat.XML));
 //        testParams.add(MapperTestParams.factory(MbGenreResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbInstrumentResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbLabelResult.class, MbFormat.XML)); //TODO - Empty test data
+        testParams.add(MapperTestParams.factory(MbLabelResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbPlaceResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbRecordingResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbReleaseResult.class, MbFormat.XML)); //TODO - Empty test data

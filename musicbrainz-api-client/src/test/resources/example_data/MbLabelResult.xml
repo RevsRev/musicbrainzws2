@@ -1,5 +1,3682 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<metadata created="2025-02-14T16:52:08.734Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
->
-    <label-list count="0" offset="0"/>
+<metadata created="2025-02-28T14:56:26.980Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <label-list count="29350" offset="0">
+        <label id="011d1192-6f65-45bd-85c4-0400dd45693e" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="100">
+            <name>Columbia</name>
+            <sort-name>Columbia</sort-name>
+            <label-code>162</label-code>
+            <disambiguation>Sony Music, worldwide except JP; formerly owned by CBS between 1938–1990 within US/CA/MX
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1887</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Columbia">Columbia</alias>
+                <alias sort-name="Colombia">Colombia</alias>
+                <alias sort-name="Columbia US">Columbia US</alias>
+                <alias sort-name="Colombia Records">Colombia Records</alias>
+                <alias sort-name="columbia">columbia</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+                <tag count="0">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative rock</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>sony</name>
+                </tag>
+                <tag count="0">
+                    <name>live</name>
+                </tag>
+                <tag count="0">
+                    <name>heartland rock</name>
+                </tag>
+                <tag count="1">
+                    <name>psychedelic rock</name>
+                </tag>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="0">
+                    <name>folk rock</name>
+                </tag>
+                <tag count="1">
+                    <name>indie rock</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+                <tag count="1">
+                    <name>discogs dump</name>
+                </tag>
+                <tag count="1">
+                    <name>smec</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="1ca5ed29-e00b-4ea5-b817-0bcca0e04946" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="94">
+            <name>RCA</name>
+            <sort-name>RCA</sort-name>
+            <label-code>316</label-code>
+            <disambiguation>RCA Records: simple ‘RCA’ or ‘RCA’ with lightning bolt in circle</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1901-10-03</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="RCA France">RCA France</alias>
+                <alias sort-name="RCA Recordings">RCA Recordings</alias>
+                <alias sort-name="RCA Schallplatten GmbH">RCA Schallplatten GmbH</alias>
+                <alias sort-name="RCA Schallplatten">RCA Schallplatten</alias>
+                <alias sort-name="RCA">RCA</alias>
+                <alias sort-name="RCA Records Label Group">RCA Records Label Group</alias>
+                <alias sort-name="RCA Ltd. Australia and New Zealand">RCA Ltd. Australia and New Zealand</alias>
+                <alias sort-name="The RCA Record Label" type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">The RCA Record Label
+                </alias>
+                <alias sort-name="RCA Records Label">RCA Records Label</alias>
+                <alias sort-name="RCA UK">RCA UK</alias>
+                <alias sort-name="The RCA Records Label">The RCA Records Label</alias>
+                <alias sort-name="RCA BV Holland">RCA BV Holland</alias>
+                <alias sort-name="RCA Label Group">RCA Label Group</alias>
+                <alias sort-name="RCA (UK)">RCA (UK)</alias>
+                <alias sort-name="RCA Records">RCA Records</alias>
+                <alias locale="ja" sort-name="アールシーエー" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">RCA
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>rock</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative rock</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>indie rock</name>
+                </tag>
+                <tag count="1">
+                    <name>celtic</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative</name>
+                </tag>
+                <tag count="1">
+                    <name>soul</name>
+                </tag>
+                <tag count="1">
+                    <name>southern rock</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>garage rock</name>
+                </tag>
+                <tag count="1">
+                    <name>celtic rock</name>
+                </tag>
+                <tag count="1">
+                    <name>celtique</name>
+                </tag>
+                <tag count="1">
+                    <name>eros</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="50c384a2-0b44-401b-b893-8181173339c7" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="93">
+            <name>Atlantic</name>
+            <sort-name>Atlantic</sort-name>
+            <label-code>121</label-code>
+            <disambiguation>Warner Music imprint</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1947</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="ATLANTIC JAPAN">ATLANTIC JAPAN</alias>
+                <alias sort-name="アトランティック">アトランティック</alias>
+                <alias sort-name="アトランティックレコード">アトランティックレコード</alias>
+                <alias sort-name="Atlantic Recording Corporation">Atlantic Recording Corporation</alias>
+                <alias sort-name="Atlantic Records">Atlantic Records</alias>
+                <alias sort-name="Atlantic Recording Corp.">Atlantic Recording Corp.</alias>
+                <alias sort-name="アトランティック・レコード">アトランティック・レコード</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>rock</name>
+                </tag>
+                <tag count="2">
+                    <name>jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="2">
+                    <name>hard rock</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="2">
+                    <name>folk rock</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="2">
+                    <name>free jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>major label</name>
+                </tag>
+                <tag count="1">
+                    <name>the cherry blues project</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="8f638ddb-131a-4cc3-b3d4-7ebdac201b55" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="93">
+            <name>Epic</name>
+            <sort-name>Epic</sort-name>
+            <label-code>199</label-code>
+            <disambiguation>US label founded by CBS in 1953, now owned by Sony</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1953</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Epic Canada">Epic Canada</alias>
+                <alias sort-name="Epic - Label">Epic - Label</alias>
+                <alias sort-name="Epic Records">Epic Records</alias>
+                <alias locale="ja_JP" sort-name="Epic Records('06.09〜)">Epic Records('06.09〜)</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>contemporary rnb</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>contemporary r&amp;b</name>
+                </tag>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>discogs dump</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="abea2d3e-eabf-4480-ab24-9382dd642c73" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="93">
+            <name>Capitol Records</name>
+            <sort-name>Capitol Records</sort-name>
+            <label-code>148</label-code>
+            <disambiguation>imprint of Capitol Records, Inc.</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1942-04-09</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Capitol" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">
+                    Capitol
+                </alias>
+                <alias locale="en" sort-name="Captiol Records" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">Captiol Records
+                </alias>
+                <alias sort-name="CAPITOL CATALOG MKT (C92)">CAPITOL CATALOG MKT (C92)</alias>
+                <alias sort-name="Discos Capitol de México">Discos Capitol de México</alias>
+                <alias sort-name="Capital Recordings">Capital Recordings</alias>
+                <alias sort-name="Capitol Music">Capitol Music</alias>
+                <alias sort-name="Capital/EMI Records">Capital/EMI Records</alias>
+                <alias sort-name="Capitol Records (US1A)">Capitol Records (US1A)</alias>
+                <alias sort-name="Capitol Catalog Mkt (C92)">Capitol Catalog Mkt (C92)</alias>
+                <alias sort-name="Capitol USA">Capitol USA</alias>
+                <alias sort-name="Capitol Hollywood California">Capitol Hollywood California</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>electronic</name>
+                </tag>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="2">
+                    <name>alternative rock</name>
+                </tag>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="0">
+                    <name>usa</name>
+                </tag>
+                <tag count="2">
+                    <name>indie rock</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>art rock</name>
+                </tag>
+                <tag count="1">
+                    <name>dance-punk</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="9e6b4d7f-4958-4db7-8504-d89e315836af" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="92">
+            <name>Sony Music</name>
+            <sort-name>Sony Music</sort-name>
+            <label-code>10746</label-code>
+            <disambiguation>global brand, excluding JP, owned by Sony Music Entertainment</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1991</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Sony Music Entertainment India Pvt. Ltd." type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Sony Music Entertainment India Pvt. Ltd.
+                </alias>
+                <alias locale="en" sort-name="Sony Music" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Sony Music
+                </alias>
+                <alias sort-name="SM" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">SM</alias>
+                <alias sort-name="新力">新力</alias>
+                <alias sort-name="新力音樂">新力音樂</alias>
+                <alias sort-name="索尼音樂">索尼音樂</alias>
+                <alias sort-name="索尼">索尼</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+                <tag count="1">
+                    <name>soft rock</name>
+                </tag>
+                <tag count="1">
+                    <name>pop rock</name>
+                </tag>
+                <tag count="0">
+                    <name>veronica</name>
+                </tag>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+                <tag count="1">
+                    <name>record company logo</name>
+                </tag>
+                <tag count="0">
+                    <name>88985336172</name>
+                </tag>
+                <tag count="2">
+                    <name>big three</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="c595c289-47ce-4fba-b999-b87503e8cb71" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="92">
+            <name>Warner Bros. Records</name>
+            <sort-name>Warner Bros. Records</sort-name>
+            <label-code>392</label-code>
+            <disambiguation>1958–2019; “WB” logo, with or without “records” beneath or on banner across</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1958-03-19</begin>
+                <end>2019-05-28</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Warner Brothers">Warner Brothers</alias>
+                <alias sort-name="Warner Bros.">Warner Bros.</alias>
+                <alias locale="en" sort-name="Warner Bros.-Seven Arts" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" begin-date="1967" end-date="1970">Warner
+                    Bros.-Seven Arts
+                </alias>
+                <alias sort-name="WB Records" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">WB
+                    Records
+                </alias>
+                <alias sort-name="Warner Bros Records">Warner Bros Records</alias>
+                <alias sort-name="Warner Bros. (Japan)">Warner Bros. (Japan)</alias>
+                <alias sort-name="Warner Brothers Records">Warner Brothers Records</alias>
+                <alias sort-name="Warner Bros">Warner Bros</alias>
+                <alias sort-name="Warner Bros UK">Warner Bros UK</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>score</name>
+                </tag>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>new prog</name>
+                </tag>
+                <tag count="0">
+                    <name>alternative rock</name>
+                </tag>
+                <tag count="1">
+                    <name>electronic</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>funk</name>
+                </tag>
+                <tag count="1">
+                    <name>progressive rock</name>
+                </tag>
+                <tag count="1">
+                    <name>classical</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>soundtrack</name>
+                </tag>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="995428e7-81b6-41dd-bd38-5a7a0ece8ad6" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="91">
+            <name>Mercury Records</name>
+            <sort-name>Mercury Records</sort-name>
+            <label-code>268</label-code>
+            <disambiguation>or just “Mercury.” A UMG imprint, do not use it for ©/℗ credits</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1945</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Mercury Records (Finland)">Mercury Records (Finland)</alias>
+                <alias sort-name="Mercury Records (Germany)">Mercury Records (Germany)</alias>
+                <alias sort-name="Mercury Records (Japan)">Mercury Records (Japan)</alias>
+                <alias sort-name="Mercury Records Limited">Mercury Records Limited</alias>
+                <alias sort-name="Mercury">Mercury</alias>
+                <alias sort-name="Mercury NZ">Mercury NZ</alias>
+                <alias sort-name="Mercury Records (Canada)">Mercury Records (Canada)</alias>
+                <alias sort-name="Mercury Records (New Zealand)">Mercury Records (New Zealand)</alias>
+                <alias sort-name="Mercury Records (Belgium)">Mercury Records (Belgium)</alias>
+                <alias sort-name="Mercury Records Ltd.">Mercury Records Ltd.</alias>
+                <alias sort-name="Mercury (Universal)">Mercury (Universal)</alias>
+                <alias locale="fr" sort-name="Universal Music Division Mercury Records" primary="primary">Universal
+                    Music Division Mercury Records
+                </alias>
+                <alias sort-name="Mercury Records (Norway)">Mercury Records (Norway)</alias>
+                <alias sort-name="Mercury Records (Europe)">Mercury Records (Europe)</alias>
+                <alias sort-name="Mercury Records BV">Mercury Records BV</alias>
+                <alias sort-name="Mercury Records B.V.">Mercury Records B.V.</alias>
+                <alias sort-name="Mercury US">Mercury US</alias>
+                <alias sort-name="Mercury Records (Australia)">Mercury Records (Australia)</alias>
+                <alias sort-name="Mercury Records">Mercury Records</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>pop</name>
+                </tag>
+                <tag count="0">
+                    <name>indie pop</name>
+                </tag>
+                <tag count="0">
+                    <name>rap rock</name>
+                </tag>
+                <tag count="0">
+                    <name>folk</name>
+                </tag>
+                <tag count="0">
+                    <name>indie</name>
+                </tag>
+                <tag count="0">
+                    <name>chanson française</name>
+                </tag>
+                <tag count="0">
+                    <name>label by lytron</name>
+                </tag>
+                <tag count="0">
+                    <name>chanson</name>
+                </tag>
+                <tag count="1">
+                    <name>miracles</name>
+                </tag>
+                <tag count="0">
+                    <name>francophone</name>
+                </tag>
+                <tag count="0">
+                    <name>hip hop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="b8d33bec-92cc-40d9-bd92-4eb089b401a9" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="88">
+            <name>CBS</name>
+            <sort-name>CBS</sort-name>
+            <label-code>149</label-code>
+            <disambiguation>CBS Records’ international imprint from 1962–1990; renamed since 1991 as Columbia
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1962-05</begin>
+                <end>1990-12-31</end>
+                <ended>true</ended>
+            </life-span>
+            <tag-list>
+                <tag count="0">
+                    <name>greek</name>
+                </tag>
+                <tag count="0">
+                    <name>"cbs 42204"</name>
+                </tag>
+                <tag count="0">
+                    <name>cbs 6759</name>
+                </tag>
+                <tag count="1">
+                    <name>solomons</name>
+                </tag>
+                <tag count="1">
+                    <name>cbs 64246</name>
+                </tag>
+                <tag count="1">
+                    <name>463359</name>
+                </tag>
+                <tag count="1">
+                    <name>myk 38481</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="2182a316-c4bd-4605-936a-5e2fac52bdd2" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="87">
+            <name>Interscope Records</name>
+            <sort-name>Interscope Records</sort-name>
+            <label-code>6406</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1990</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Interscape Records" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">
+                    Interscape Records
+                </alias>
+                <alias sort-name="Nothing/Interscope" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">
+                    Nothing/Interscope
+                </alias>
+                <alias locale="en" sort-name="Interscope" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Interscope
+                </alias>
+                <alias sort-name="Flip/Interscope Records" type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Flip/Interscope Records
+                </alias>
+                <alias sort-name="IR" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">IR</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>clean up</name>
+                </tag>
+                <tag count="1">
+                    <name>pop rap</name>
+                </tag>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="2">
+                    <name>pop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="46a3941a-c810-47a1-974f-955effec4d09" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="86">
+            <name>MCA Records</name>
+            <sort-name>MCA Records</sort-name>
+            <label-code>1056</label-code>
+            <disambiguation>1967–2003; name as in imprint during 1972–1990</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1967</begin>
+                <end>2003</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="MCA Music Corporation of America" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" begin-date="1997" end-date="2003">MCA Music
+                    Corporation of America
+                </alias>
+                <alias sort-name="MCA" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675"
+                       begin-date="1967" end-date="1972">MCA
+                </alias>
+                <alias sort-name="MCA Records" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675"
+                       begin-date="1972" end-date="1990">MCA Records
+                </alias>
+                <alias sort-name="MCA" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675"
+                       begin-date="1991" end-date="1997">MCA
+                </alias>
+                <alias sort-name="MCA Music Corp. of America" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">MCA Music Corp. of America
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>scent of a women</name>
+                </tag>
+                <tag count="0">
+                    <name>fm</name>
+                </tag>
+                <tag count="0">
+                    <name>sense</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="b3f4e6a5-ece0-43be-a530-68ad0d49fee8" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="86">
+            <name>RCA Victor</name>
+            <sort-name>RCA Victor</sort-name>
+            <label-code>316</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1929</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="RCA Victor Canada International">RCA Victor Canada International</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>classical music</name>
+                </tag>
+                <tag count="0">
+                    <name>kes 103</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="c4f2cf49-b57c-4cc1-8061-f54400704ac4" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="86">
+            <name>Rhino</name>
+            <sort-name>Rhino</sort-name>
+            <label-code>2982</label-code>
+            <disambiguation>reissue label</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1973</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="ライノレコード">ライノレコード</alias>
+                <alias sort-name="Rhino Records">Rhino Records</alias>
+                <alias sort-name="Rhino/Warner Bros.">Rhino/Warner Bros.</alias>
+                <alias sort-name="Rhino Entertainment Company">Rhino Entertainment Company</alias>
+                <alias sort-name="Rhino/Warner Records" type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Rhino/Warner Records
+                </alias>
+                <alias sort-name="Rhino/Elektra" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">
+                    Rhino/Elektra
+                </alias>
+                <alias sort-name="Rhino UK">Rhino UK</alias>
+                <alias sort-name="Rhino Records (2)">Rhino Records (2)</alias>
+                <alias sort-name="Rhino / WEA">Rhino / WEA</alias>
+                <alias sort-name="Rhino Entertainment">Rhino Entertainment</alias>
+                <alias sort-name="ライノ・レコード">ライノ・レコード</alias>
+                <alias sort-name="Rhino France">Rhino France</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>free jazz</name>
+                </tag>
+                <tag count="0">
+                    <name>5054197229022</name>
+                </tag>
+                <tag count="0">
+                    <name>supernatural fairy tales 5 cd box set rhino 1996</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>opcd-8009</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>various artists</name>
+                </tag>
+                <tag count="1">
+                    <name>jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>billboard</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="873f9f75-af68-4872-98e2-431058e4c9a9" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="84">
+            <name>Elektra</name>
+            <sort-name>Elektra</sort-name>
+            <label-code>192</label-code>
+            <disambiguation>all releases with “Elektra” or “Elektra Entertainment” logo, 1950 to present
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1950</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Elektra (NEK)" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">
+                    Elektra (NEK)
+                </alias>
+                <alias sort-name="Elektra Entertainment Company">Elektra Entertainment Company</alias>
+                <alias sort-name="Elektra Entertainment" begin-date="1989">Elektra Entertainment</alias>
+                <alias sort-name="Elektra Records">Elektra Records</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="0">
+                    <name>usa</name>
+                </tag>
+                <tag count="0">
+                    <name>indie rock</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="c62e3985-6370-446a-bfb8-f1f6122e9c33" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="84">
+            <name>Arista</name>
+            <sort-name>Arista</sort-name>
+            <label-code>3484</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1974</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="LC03484" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">LC03484
+                </alias>
+                <alias sort-name="BV - アリスタ" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">BV -
+                    アリスタ
+                </alias>
+                <alias sort-name="Artista" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Artista
+                </alias>
+                <alias sort-name="アリスタ" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">アリスタ
+                </alias>
+                <alias sort-name="3484" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">3484</alias>
+                <alias sort-name="アリスタジャパン">アリスタジャパン</alias>
+                <alias sort-name="Arista Japan">Arista Japan</alias>
+            </alias-list>
+        </label>
+        <label id="af6d6f49-2b4d-40fe-86d4-241906772b59" ns2:score="84">
+            <name>Reprise Records</name>
+            <sort-name>Reprise Records</sort-name>
+            <label-code>322</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1960</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Reprise">Reprise</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>synth-pop</name>
+                </tag>
+                <tag count="1">
+                    <name>puremix</name>
+                </tag>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="0">
+                    <name>ska punk</name>
+                </tag>
+                <tag count="0">
+                    <name>punk rock</name>
+                </tag>
+                <tag count="1">
+                    <name>punk</name>
+                </tag>
+                <tag count="1">
+                    <name>ska</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="2">
+                    <name>rock</name>
+                </tag>
+                <tag count="2">
+                    <name>alternative rock</name>
+                </tag>
+                <tag count="0">
+                    <name>pop punk</name>
+                </tag>
+                <tag count="2">
+                    <name>electronic</name>
+                </tag>
+                <tag count="0">
+                    <name>synthpop</name>
+                </tag>
+                <tag count="0">
+                    <name>usa</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="0fadc2ce-f7de-4e27-bbe6-612b317e716b" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="83">
+            <name>Geffen Records</name>
+            <sort-name>Geffen Records</sort-name>
+            <label-code>7266</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="A Geffen Records Release; UMG Recordings, Inc.">A Geffen Records Release; UMG
+                    Recordings, Inc.
+                </alias>
+                <alias sort-name="Geffen">Geffen</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>santa monica</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>california</name>
+                </tag>
+                <tag count="1">
+                    <name>grunge</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative rock</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative</name>
+                </tag>
+                <tag count="1">
+                    <name>us</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="10920823-9ed8-45d9-adb3-69fc22475ab0" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="83">
+            <name>Sony Classical</name>
+            <sort-name>Sony Classical</sort-name>
+            <label-code>6868</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1990-04</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="St. Petersburg Classics">St. Petersburg Classics</alias>
+                <alias sort-name="Sony Classics">Sony Classics</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>soundtrack</name>
+                </tag>
+                <tag count="3">
+                    <name>classical</name>
+                </tag>
+                <tag count="1">
+                    <name>sicc</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="e0ecd909-0477-485f-80dc-3c27ea4837ca" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="83">
+            <name>Republic Records</name>
+            <sort-name>Republic Records</sort-name>
+            <label-code>7552</label-code>
+            <disambiguation>from 1994–2006 and since 2012, a division of UMG Recordings, Inc.</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1994-08-02</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="REPUBLIC">REPUBLIC</alias>
+                <alias sort-name="Republic">Republic</alias>
+                <alias sort-name="Republic Records - Stray Kids">Republic Records - Stray Kids</alias>
+                <alias sort-name="Universal Republic Records" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" begin-date="2012" end-date="2016">Universal
+                    Republic Records
+                </alias>
+            </alias-list>
+        </label>
+        <label id="13a464dc-b9fd-4d16-a4f4-d4316f6a46c7" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="81">
+            <name>Universal Music</name>
+            <sort-name>Universal Music</sort-name>
+            <label-code>1846</label-code>
+            <isni-list>
+                <isni>0000000115160267</isni>
+            </isni-list>
+            <disambiguation>plain logo: “Universal Music”</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1997-01-01</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Universal Music" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">Universal Music
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="0">
+                    <name>usa</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="0">
+                    <name>éditeur</name>
+                </tag>
+                <tag count="1">
+                    <name>publisher</name>
+                </tag>
+                <tag count="0">
+                    <name>dreamboats</name>
+                </tag>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="99a24d71-54c1-4d3f-88cc-00fbcc4fce83" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="81">
+            <name>Verve</name>
+            <sort-name>Verve</sort-name>
+            <label-code>383</label-code>
+            <disambiguation>jazz label, aka “Verve Records”, use this for release labels</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1953</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="VERVE">VERVE</alias>
+                <alias sort-name="ヴァーヴ">ヴァーヴ</alias>
+                <alias sort-name="Verve Records">Verve Records</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>historical</name>
+                </tag>
+                <tag count="1">
+                    <name>pop-jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>divas</name>
+                </tag>
+                <tag count="3">
+                    <name>jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>bossanova</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="5899271b-a77a-4081-93a9-0bd05b9b4180" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="81">
+            <name>Roadrunner Records</name>
+            <sort-name>Roadrunner Records</sort-name>
+            <label-code>9231</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1980</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Roadrunner Productions">Roadrunner Productions</alias>
+                <alias sort-name="Roadrunner">Roadrunner</alias>
+                <alias sort-name="Roadrunner Records Japan">Roadrunner Records Japan</alias>
+                <alias sort-name="Road Runner Records Japan">Road Runner Records Japan</alias>
+                <alias sort-name="ロードランナー・ジャパン">ロードランナー・ジャパン</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>metalcore</name>
+                </tag>
+                <tag count="0">
+                    <name>theory of a deadman</name>
+                </tag>
+                <tag count="0">
+                    <name>fake</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="8e479e57-ef44-490c-b75d-cd28df89bf1b" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="79">
+            <name>Motown</name>
+            <sort-name>Motown</sort-name>
+            <label-code>881</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1959-09</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="UNI/MOTOWN" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">
+                    UNI/MOTOWN
+                </alias>
+                <alias sort-name="Motown Records" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">
+                    Motown Records
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>soul</name>
+                </tag>
+                <tag count="1">
+                    <name>motown</name>
+                </tag>
+                <tag count="2">
+                    <name>r&amp;b</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="1e585753-b112-4bb5-a960-e3e2e52e55b7" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="79">
+            <name>Falcon Records</name>
+            <sort-name>Falcon Records</sort-name>
+            <disambiguation>South U.S. record company</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1948</begin>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Falcon">Falcon</alias>
+                <alias sort-name="Falcon Record Co.">Falcon Record Co.</alias>
+                <alias sort-name="Falcon Record Company">Falcon Record Company</alias>
+            </alias-list>
+        </label>
+        <label id="19d052fa-570a-4b17-9a3d-8f2f029b7b57" type="Holding" type-id="43f31a62-97e4-36f6-9752-453c131b71ed"
+               ns2:score="78">
+            <name>Universal Music Group</name>
+            <sort-name>Universal Music Group</sort-name>
+            <isni-list>
+                <isni>0000000101701990</isni>
+            </isni-list>
+            <disambiguation>has logo with just “Universal Music Group”</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1934-09</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Universal Music Group Company" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Universal Music Group Company
+                </alias>
+                <alias locale="lt" sort-name="„Universal Music“ grupė" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">„Universal Music“ grupė
+                </alias>
+                <alias sort-name="UMG" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">UMG</alias>
+                <alias locale="en" sort-name="Universal Music Group N.V." type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">Universal Music Group N.V.
+                </alias>
+                <alias locale="en" sort-name="UMG Recordings, Inc." type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">UMG Recordings, Inc.
+                </alias>
+                <alias locale="en" sort-name="Universal Music Company" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Universal Music Company
+                </alias>
+                <alias locale="ko" sort-name="유니버설 뮤직 그룹" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">유니버설 뮤직 그룹
+                </alias>
+                <alias sort-name="Universal Müzik Group" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Universal Müzik Group
+                </alias>
+                <alias locale="lt" sort-name="„Universal Music Group“" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">„Universal Music Group“
+                </alias>
+                <alias locale="ja" sort-name="ユニバーサル ミュージック グループ" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">ユニバーサル ミュージック グループ
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>big three</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="1c50034a-5c92-41a4-95ad-0acb7ea4686f" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="78">
+            <name>Walt Disney Records</name>
+            <sort-name>Walt Disney Records</sort-name>
+            <label-code>10025</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1989</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Walt Disney Music Company" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Walt Disney Music Company
+                </alias>
+                <alias locale="en_150" sort-name="Disney Records (Europe)" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Disney Records (Europe)
+                </alias>
+                <alias locale="en" sort-name="Disney Music" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Disney Music
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>soundtrack</name>
+                </tag>
+                <tag count="1">
+                    <name>classical</name>
+                </tag>
+                <tag count="2">
+                    <name>score</name>
+                </tag>
+                <tag count="1">
+                    <name>teen pop</name>
+                </tag>
+                <tag count="2">
+                    <name>soundtrack label</name>
+                </tag>
+                <tag count="0">
+                    <name>soundtrack frozen</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="79245298-c0ba-4eba-aecc-3dfe8eeb689f" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="78">
+            <name>Jive</name>
+            <sort-name>Jive</sort-name>
+            <label-code>7925</label-code>
+            <disambiguation>Jive Records imprint</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1981</begin>
+                <end>2011-10-07</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="JIVE">JIVE</alias>
+                <alias sort-name="Jive">Jive</alias>
+                <alias sort-name="Jive Records">Jive Records</alias>
+                <alias sort-name="Jive Records Ltd.">Jive Records Ltd.</alias>
+                <alias locale="ja" sort-name="ジャイブ" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">JIVE
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>west coast hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>dirty south</name>
+                </tag>
+                <tag count="2">
+                    <name>pop</name>
+                </tag>
+                <tag count="2">
+                    <name>electropop</name>
+                </tag>
+                <tag count="2">
+                    <name>dance-pop</name>
+                </tag>
+                <tag count="1">
+                    <name>southern hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>east coast hip hop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="88aa805c-6cbe-45d2-b43e-156e94090da9" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="78">
+            <name>Metal Blade Records</name>
+            <sort-name>Metal Blade Records</sort-name>
+            <label-code>6705</label-code>
+            <disambiguation>heavy/extreme metal</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1981</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Metal Blade" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Metal
+                    Blade
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>heavy metal</name>
+                </tag>
+                <tag count="1">
+                    <name>death metal</name>
+                </tag>
+                <tag count="1">
+                    <name>thrash metal</name>
+                </tag>
+                <tag count="1">
+                    <name>progressive metal</name>
+                </tag>
+                <tag count="1">
+                    <name>melodic death metal</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="a92d1684-4edb-48aa-b913-30e9da213004" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="77">
+            <name>Def Jam Recordings</name>
+            <sort-name>Def Jam Recordings</sort-name>
+            <label-code>8427</label-code>
+            <disambiguation>US</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1984</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Def Jam Recordings America" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Def Jam Recordings America
+                </alias>
+                <alias sort-name="Def Jam US">Def Jam US</alias>
+                <alias sort-name="Def Jam Records">Def Jam Records</alias>
+                <alias sort-name="Def Jam" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Def Jam
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>rap</name>
+                </tag>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+                <tag count="6">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="0">
+                    <name>usa</name>
+                </tag>
+                <tag count="0">
+                    <name>contemporary r b</name>
+                </tag>
+                <tag count="1">
+                    <name>soul</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="0">
+                    <name>dance-pop</name>
+                </tag>
+                <tag count="0">
+                    <name>rap rock</name>
+                </tag>
+                <tag count="1">
+                    <name>r&amp;b</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="be0fec81-5c18-4494-8bbf-0d81dec006bf" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="77">
+            <name>Sire Records</name>
+            <sort-name>Sire Records</sort-name>
+            <label-code>3228</label-code>
+            <isni-list>
+                <isni>0000000123425894</isni>
+            </isni-list>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1966</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Sire">Sire</alias>
+                <alias sort-name="Sire Records Company">Sire Records Company</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>anti-folk</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="0">
+                    <name>usa</name>
+                </tag>
+                <tag count="0">
+                    <name>american</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="38dc88de-7720-4100-9d5b-3cdc41b0c474" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="77">
+            <name>Sub Pop Records</name>
+            <sort-name>Sub Pop Records</sort-name>
+            <label-code>8323</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1979</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Sub Pop">Sub Pop</alias>
+                <alias sort-name="Subterranean Pop">Subterranean Pop</alias>
+                <alias sort-name="Sub Pop Germany">Sub Pop Germany</alias>
+                <alias locale="en" sort-name="Sub Pop Records">Sub Pop Records</alias>
+                <alias locale="en" sort-name="S&gt;U&gt;B P&lt;O&lt;P" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">S&gt;U&gt;B P&lt;O&lt;P
+                </alias>
+                <alias sort-name="Sub Pop Records (Germany)">Sub Pop Records (Germany)</alias>
+                <alias sort-name="SubPop">SubPop</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>folk</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>indie folk</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="44f4d815-bf54-4f56-b704-72a196c6bd58" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="76">
+            <name>Varèse Sarabande</name>
+            <sort-name>Varèse Sarabande</sort-name>
+            <label-code>6083</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1978</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Varèse Sarabande Records">Varèse Sarabande Records</alias>
+                <alias sort-name="Varese Sarabande">Varese Sarabande</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>soundtrack label</name>
+                </tag>
+                <tag count="1">
+                    <name>reissue</name>
+                </tag>
+                <tag count="1">
+                    <name>classical</name>
+                </tag>
+                <tag count="1">
+                    <name>us</name>
+                </tag>
+                <tag count="2">
+                    <name>soundtrack</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="9179547c-3f1a-4e53-a1de-68af1562a099" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="76">
+            <name>Edison Records</name>
+            <sort-name>Edison Records</sort-name>
+            <disambiguation>All US/Canadian Edison releases should use this label</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1878</begin>
+                <end>1929</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Edison Blue Amberol Records">Edison Blue Amberol Records</alias>
+            </alias-list>
+        </label>
+        <label id="d532d4dd-c853-4f44-a550-f050e25095de" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="75">
+            <name>Brunswick</name>
+            <sort-name>Brunswick</sort-name>
+            <label-code>136</label-code>
+            <disambiguation>Imprint of Brunswick Record Corporation</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1916</begin>
+                <end>1981</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Brunswick">Brunswick</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>schlager</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="6bb7c1b2-cb06-4381-9c59-02b1ae4aa96d" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="75">
+            <name>Hollywood Records</name>
+            <sort-name>Hollywood Records</sort-name>
+            <label-code>10024</label-code>
+            <disambiguation>a label of Disney Music Group</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1990-01-01</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Hollywood Basic" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Hollywood Basic
+                </alias>
+                <alias sort-name="Hollywood Records. Inc.">Hollywood Records. Inc.</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+                <tag count="2">
+                    <name>soundtrack</name>
+                </tag>
+                <tag count="2">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>dance</name>
+                </tag>
+                <tag count="0">
+                    <name>hip-hop</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>country</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative</name>
+                </tag>
+                <tag count="1">
+                    <name>electro pop</name>
+                </tag>
+                <tag count="2">
+                    <name>teen pop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="11847c89-4b2c-4866-84c3-f72e264c0f66" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="75">
+            <name>Prestige</name>
+            <sort-name>Prestige</sort-name>
+            <label-code>313</label-code>
+            <disambiguation>American jazz label</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1949</begin>
+                <ended>false</ended>
+            </life-span>
+            <tag-list>
+                <tag count="1">
+                    <name>jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>hard bop</name>
+                </tag>
+                <tag count="1">
+                    <name>bebop</name>
+                </tag>
+                <tag count="1">
+                    <name>cool jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>1957</name>
+                </tag>
+                <tag count="1">
+                    <name>hopkins</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="3a657e07-7f99-4baf-ab3b-53cdc941d73b" type="Reissue Production"
+               type-id="88ee6ae7-f413-3490-a1d2-54f6a9f0838c" ns2:score="74">
+            <name>Time–Life Music</name>
+            <sort-name>Time–Life Music</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1961</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Time-Life Books BV">Time-Life Books BV</alias>
+                <alias sort-name="Time Music International Ltd">Time Music International Ltd</alias>
+                <alias sort-name="Time Life Music">Time Life Music</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>country</name>
+                </tag>
+                <tag count="1">
+                    <name>soul</name>
+                </tag>
+                <tag count="1">
+                    <name>classic</name>
+                </tag>
+                <tag count="1">
+                    <name>revolution</name>
+                </tag>
+                <tag count="1">
+                    <name>flower power</name>
+                </tag>
+                <tag count="1">
+                    <name>annie</name>
+                </tag>
+                <tag count="1">
+                    <name>25 years</name>
+                </tag>
+                <tag count="1">
+                    <name>mzd-13b</name>
+                </tag>
+                <tag count="1">
+                    <name>great composers</name>
+                </tag>
+                <tag count="1">
+                    <name>80s music explosion</name>
+                </tag>
+                <tag count="1">
+                    <name>1959</name>
+                </tag>
+                <tag count="1">
+                    <name>r632</name>
+                </tag>
+                <tag count="1">
+                    <name>the rollingstone collection</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="12d2acd9-d5e3-44c1-b46f-96dfe4ffcd4a" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="74">
+            <name>Victor</name>
+            <sort-name>Victor</sort-name>
+            <disambiguation>defunct “His Master’s Voice” imprint, formerly “Victor Record”, succeeded by RCA Victor
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1901-10-03</begin>
+                <end>1929</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Victor Talking Machine Company">Victor Talking Machine Company</alias>
+                <alias locale="en" sort-name="Victor" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675"
+                       primary="primary">Victor
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+                <tag count="1">
+                    <name>discogs dump</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="d4cd174f-784d-48d7-91c6-7427bd5d57fe" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="74">
+            <name>Warner Records</name>
+            <sort-name>Warner Records</sort-name>
+            <disambiguation>2019–present; circle imprint with “Warner Records” next to it</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2019-05-28</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="9a7d39a4-a887-40f3-a645-a9a136d1f13f" type="Distributor"
+               type-id="53ab8dcc-9946-3b62-966e-7634d78e5034" ns2:score="74">
+            <name>BMG Direct Marketing, Inc.</name>
+            <sort-name>BMG Direct Marketing, Inc.</sort-name>
+            <disambiguation>BMG company that owned their direct marketing company/club editions</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1988</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="229bd4be-8cd7-442c-85b0-5007ea353abc" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="73">
+            <name>Matador</name>
+            <sort-name>Matador</sort-name>
+            <label-code>11552</label-code>
+            <disambiguation>US indie rock</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1989</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Matador Records" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">Matador Records
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>indie rock</name>
+                </tag>
+                <tag count="1">
+                    <name>instrumental rock</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>post-punk revival</name>
+                </tag>
+                <tag count="1">
+                    <name>post-rock</name>
+                </tag>
+                <tag count="0">
+                    <name>américain</name>
+                </tag>
+                <tag count="2">
+                    <name>indie</name>
+                </tag>
+                <tag count="2">
+                    <name>instrumental</name>
+                </tag>
+                <tag count="2">
+                    <name>american</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="c69cac59-f512-4edc-ab2c-d04c22dbce20" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="73">
+            <name>Nonesuch</name>
+            <sort-name>Nonesuch</sort-name>
+            <label-code>286</label-code>
+            <disambiguation>imprint of Nonesuch Records Inc.</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1964</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="n" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">n</alias>
+                <alias sort-name="Elektra Nonesuch">Elektra Nonesuch</alias>
+                <alias sort-name="Elektra Asylum Nonesuch Records">Elektra Asylum Nonesuch Records</alias>
+                <alias sort-name="Nonesuch Records">Nonesuch Records</alias>
+                <alias sort-name="nonosuch" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">nonosuch
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>african blues</name>
+                </tag>
+                <tag count="1">
+                    <name>experimental</name>
+                </tag>
+                <tag count="1">
+                    <name>instrumental</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>francophone</name>
+                </tag>
+                <tag count="1">
+                    <name>contemporary classical</name>
+                </tag>
+                <tag count="1">
+                    <name>soundtrack</name>
+                </tag>
+                <tag count="1">
+                    <name>electronic</name>
+                </tag>
+                <tag count="1">
+                    <name>américan</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="1bfd06be-a6ed-4ced-8159-7d4d2923a40c" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="73">
+            <name>Epitaph</name>
+            <sort-name>Epitaph</sort-name>
+            <label-code>2576</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1980</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Epitaph Records">Epitaph Records</alias>
+                <alias locale="ja" sort-name="エピタフ" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Epitaph
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>punk</name>
+                </tag>
+                <tag count="1">
+                    <name>hardcore punk</name>
+                </tag>
+                <tag count="1">
+                    <name>epitaph</name>
+                </tag>
+                <tag count="1">
+                    <name>california</name>
+                </tag>
+                <tag count="1">
+                    <name>los angeles</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="6c690937-c6c3-4c4e-9d3e-c62efa989333" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="72">
+            <name>Ultra Records</name>
+            <sort-name>Ultra Records</sort-name>
+            <ipi-list>
+                <ipi>00031290126</ipi>
+            </ipi-list>
+            <disambiguation>US electronic/dance label</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1995</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Ultra">Ultra</alias>
+                <alias sort-name="Ultra Records, LLC">Ultra Records, LLC</alias>
+                <alias locale="en" sort-name="Ultra Music" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Ultra Music
+                </alias>
+            </alias-list>
+        </label>
+        <label id="f1477534-482c-41bd-8219-870a199728ee" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="71">
+            <name>United Artists</name>
+            <sort-name>United Artists</sort-name>
+            <label-code>379</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="ja" sort-name="ユナイトレコード">ユナイトレコード</alias>
+                <alias sort-name="United Artists Records">United Artists Records</alias>
+            </alias-list>
+        </label>
+        <label id="93c3b044-2b4e-4239-a73b-8fb76f3e6ca9" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="71">
+            <name>impulse!</name>
+            <sort-name>impulse!</sort-name>
+            <label-code>236</label-code>
+            <disambiguation>jazz label active during the 60s–70s, now property of Universal Music Group, mainly used as
+                a reissue label
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1960</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="MCA impulse!">MCA impulse!</alias>
+                <alias sort-name="Impulse">impulse!</alias>
+                <alias locale="ja" sort-name="ｲﾝﾊﾟﾙｽ">ｲﾝﾊﾟﾙｽ</alias>
+            </alias-list>
+        </label>
+        <label id="590538e9-b183-4163-ab5a-171fb021ed12" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="71">
+            <name>Universal Records</name>
+            <sort-name>Universal Records</sort-name>
+            <label-code>1846</label-code>
+            <disambiguation>UMG subsidiary, “RECORDS” must be a part of the logo; read annotation</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1996</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Rising Tide Records" begin-date="1995" end-date="1996">Rising Tide Records</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="0">
+                    <name>imprint/holding combo</name>
+                </tag>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="0b7d31cb-b99a-4a79-b730-0d9155988006" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="71">
+            <name>Vocalion</name>
+            <sort-name>Vocalion</sort-name>
+            <label-code>22</label-code>
+            <disambiguation>US, active 1920s-1970s</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1920</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="757acd4a-dade-433d-b754-53468f243220" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="71">
+            <name>Fantasy</name>
+            <sort-name>Fantasy</sort-name>
+            <label-code>720</label-code>
+            <disambiguation>jazz label active since the 1950s</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1949</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Fantasy Records">Fantasy Records</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+                <tag count="1">
+                    <name>jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>r&amp;b</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="b997d9d6-b0c6-438d-8b7c-d11729d8ebda" type="Distributor"
+               type-id="53ab8dcc-9946-3b62-966e-7634d78e5034" ns2:score="71">
+            <name>EMPIRE</name>
+            <sort-name>EMPIRE</sort-name>
+            <disambiguation>US label/distributor/publisher of hip hop/R&amp;B</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2010</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Empire Distribution Corp.">Empire Distribution Corp.</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>hip hop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="93ba13c1-5d3f-4618-a8e7-17aeffff1da6" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="71">
+            <name>UMe</name>
+            <sort-name>UMe</sort-name>
+            <disambiguation>imprint of Universal Music Enterprises</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1999</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="UMe Direct" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">UMe
+                    Direct
+                </alias>
+                <alias sort-name="UME - Global Clearing House" type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">UME - Global Clearing House
+                </alias>
+                <alias sort-name="Universal Music Enterprises" type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Universal Music Enterprises
+                </alias>
+                <alias sort-name="UMe Direct 2" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">UMe
+                    Direct 2
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="41099e29-7301-4fa3-86a4-8d510157b275" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="71">
+            <name>Milan</name>
+            <sort-name>Milan</sort-name>
+            <label-code>8126</label-code>
+            <disambiguation>main imprint of Milan Entertainment, Inc. and Éditions Milan Music</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1978</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Milan Entertainment">Milan Entertainment</alias>
+                <alias sort-name="Milan Records">Milan Records</alias>
+                <alias sort-name="Éditions Milan Music">Éditions Milan Music</alias>
+                <alias sort-name="Milan France">Milan France</alias>
+                <alias sort-name="Milan Records US">Milan Records US</alias>
+                <alias sort-name="Milan Music">Milan Music</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>us</name>
+                </tag>
+                <tag count="1">
+                    <name>clean up</name>
+                </tag>
+                <tag count="0">
+                    <name>soundtrack</name>
+                </tag>
+                <tag count="1">
+                    <name>score</name>
+                </tag>
+                <tag count="1">
+                    <name>split me</name>
+                </tag>
+                <tag count="1">
+                    <name>california</name>
+                </tag>
+                <tag count="1">
+                    <name>soundtrack label</name>
+                </tag>
+                <tag count="1">
+                    <name>burbank</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="d67971aa-0ac7-4f75-8c9b-e9424ef6648f" ns2:score="71">
+            <name>MGM Records</name>
+            <sort-name>MGM Records</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1946</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="MGM">MGM</alias>
+                <alias sort-name="M‐G‐M Records">M‐G‐M Records</alias>
+            </alias-list>
+        </label>
+        <label id="28ad74dd-19f4-449c-bf9c-266918cefd6a" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="71">
+            <name>RCA Red Seal</name>
+            <sort-name>RCA Red Seal</sort-name>
+            <label-code>316</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1902</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="RCA Red Seal Records">RCA Red Seal Records</alias>
+                <alias locale="ja" sort-name="アールシーエー レッドシール" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">アールシーエー レッドシール
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>classical</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="a8bea33e-67af-424a-a734-898e2dc437ed" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="71">
+            <name>Asylum Records</name>
+            <sort-name>Asylum Records</sort-name>
+            <label-code>2648</label-code>
+            <disambiguation>Warner Music subsidiary</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1971</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="99962abe-c219-4031-9c6c-c61fc3885944" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="70">
+            <name>Sony Music | Latin</name>
+            <sort-name>Sony Music | Latin</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1980</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en_US" sort-name="Sony Music Latin" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Sony Music Latin
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>latin</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="a9de694a-2e5b-4a1d-8d7a-a7ca620e3f80" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="70">
+            <name>ATCO Records</name>
+            <sort-name>ATCO Records</sort-name>
+            <label-code>120</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1955</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="ATCO">ATCO</alias>
+                <alias sort-name="Atco">Atco</alias>
+                <alias sort-name="Atco Records">Atco Records</alias>
+            </alias-list>
+        </label>
+        <label id="1811d7d5-e3fa-41be-b457-666bd939f2a7" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="70">
+            <name>Curb Records</name>
+            <sort-name>Curb Records</sort-name>
+            <label-code>1109</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Curb">Curb</alias>
+            </alias-list>
+        </label>
+        <label id="21636b95-8e0e-4b80-9a46-e9987281b995" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="70">
+            <name>Philips Classics</name>
+            <sort-name>Philips Classics</sort-name>
+            <label-code>305</label-code>
+            <disambiguation>See annotation to check it's really this label.</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Philips Classics Records">Philips Classics Records</alias>
+                <alias sort-name="Phillips Classics">Phillips Classics</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>classical</name>
+                </tag>
+                <tag count="0">
+                    <name>series-mozart-complete works-philips</name>
+                </tag>
+                <tag count="0">
+                    <name>b00000416d</name>
+                </tag>
+                <tag count="1">
+                    <name>philips original jackets collection</name>
+                </tag>
+                <tag count="0">
+                    <name>brandenburg concertos</name>
+                </tag>
+                <tag count="1">
+                    <name>frühe symponien</name>
+                </tag>
+                <tag count="1">
+                    <name>mozar</name>
+                </tag>
+                <tag count="1">
+                    <name>mozart</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="40998461-7dfe-4fe1-8ece-8547438c4938" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="70">
+            <name>Vanguard</name>
+            <sort-name>Vanguard</sort-name>
+            <label-code>381</label-code>
+            <disambiguation>imprint of Vanguard Records</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1950</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Vanguard Recording Society">Vanguard Recording Society</alias>
+                <alias sort-name="Vanguard">Vanguard</alias>
+                <alias sort-name="Vanguard Record Society">Vanguard Record Society</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>blues</name>
+                </tag>
+                <tag count="1">
+                    <name>bluegrass</name>
+                </tag>
+                <tag count="1">
+                    <name>jazz</name>
+                </tag>
+                <tag count="1">
+                    <name>folk</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="f1452309-a828-4665-a70c-aacdf94d154b" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="70">
+            <name>Liberty</name>
+            <sort-name>Liberty</sort-name>
+            <label-code>249</label-code>
+            <disambiguation>a division of UMG Recordings, Inc.</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1955</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Liberty">Liberty</alias>
+            </alias-list>
+        </label>
+        <label id="f4e627e1-4242-4444-ba93-ec5388a43263" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="69">
+            <name>Universal Music Latino</name>
+            <sort-name>Universal Music Latino</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1997</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="UML">UML</alias>
+                <alias sort-name="UMLE – Latino">UMLE – Latino</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>latin</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="5f45ab05-4f5a-45a5-bbfa-3f74a924a0ef" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="69">
+            <name>Bluebird</name>
+            <sort-name>Bluebird</sort-name>
+            <disambiguation>US label, originally a budget subsidiary of RCA Victor</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1932</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Bluebird">Bluebird</alias>
+                <alias sort-name="RCA Bluebird">RCA Bluebird</alias>
+                <alias sort-name="Bluebird Jazz">Bluebird Jazz</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="2">
+                    <name>jazz</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="1a917e6f-54f5-4964-bebf-5d4e2442ceb4" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="69">
+            <name>Big Machine Records</name>
+            <sort-name>Big Machine Records</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2005-09-01</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Big Machine Records, LLC" type="Search hint"
+                       type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Big Machine Records, LLC
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>country</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="4876cd23-c4ab-4ac5-9b49-e8ed14bc22f8" type="Reissue Production"
+               type-id="88ee6ae7-f413-3490-a1d2-54f6a9f0838c" ns2:score="69">
+            <name>Original Jazz Classics</name>
+            <sort-name>Original Jazz Classics</sort-name>
+            <label-code>7638</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1983</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="OJC">OJC</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>george lewis</name>
+                </tag>
+                <tag count="1">
+                    <name>jazz</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="edd54e2f-2eef-46b1-a9b5-bedfe5ed33be" type="Reissue Production"
+               type-id="88ee6ae7-f413-3490-a1d2-54f6a9f0838c" ns2:score="69">
+            <name>Mobile Fidelity Sound Lab</name>
+            <sort-name>Mobile Fidelity Sound Lab</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1977</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="MoFi">MoFi</alias>
+                <alias sort-name="MFSL">MFSL</alias>
+                <alias sort-name="Mobile Fidelity Sound Labs">Mobile Fidelity Sound Labs</alias>
+            </alias-list>
+        </label>
+        <label id="b5d3c9c7-5f73-4ebc-b400-e5075c9101a4" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="69">
+            <name>Drag City</name>
+            <sort-name>Drag City</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1989</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Drag City Records" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">
+                    Drag City Records
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>indie rock</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="6dedcd20-3d02-4838-b583-5434eac199d9" ns2:score="68">
+            <name>Rykodisc</name>
+            <sort-name>Rykodisc</sort-name>
+            <label-code>2619</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1983</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Ryko">Ryko</alias>
+            </alias-list>
+        </label>
+        <label id="fc79d7ba-5f25-4e15-be09-03614faf210c" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="68">
+            <name>Fueled by Ramen</name>
+            <sort-name>Fueled by Ramen</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1996-08</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="FBR" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">FBR</alias>
+            </alias-list>
+        </label>
+        <label id="5b8cf470-f162-4ee3-9b9f-77ff4ee0c601" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="68">
+            <name>Anti‐</name>
+            <sort-name>Anti‐</sort-name>
+            <label-code>2576</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1999</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="ANTI Records" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">ANTI
+                    Records
+                </alias>
+                <alias sort-name="Anti - Epitaph">Anti - Epitaph</alias>
+                <alias sort-name="Anti, Inc.">Anti, Inc.</alias>
+                <alias sort-name="Anti/Epitaph">Anti/Epitaph</alias>
+            </alias-list>
+        </label>
+        <label id="0d4fa1f8-757b-400b-86ef-4b6ad316f4d2" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="68">
+            <name>Shanachie</name>
+            <sort-name>Shanachie</sort-name>
+            <label-code>5762</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1976</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Sanachie Records">Sanachie Records</alias>
+                <alias sort-name="Shanachie Records">Shanachie Records</alias>
+                <alias sort-name="Shanachie Entertainment">Shanachie Entertainment</alias>
+            </alias-list>
+        </label>
+        <label id="8ba9511e-d3ea-4d2f-9fe0-a74e273576a4" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="68">
+            <name>V Disc</name>
+            <sort-name>V Disc</sort-name>
+            <disambiguation>original</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1943</begin>
+                <end>1949</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="V-Disc">V-Disc</alias>
+            </alias-list>
+        </label>
+        <label id="b63922e9-da3c-4e41-9eda-ae1b11d33a1a" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="68">
+            <name>ATO Records</name>
+            <sort-name>ATO Records</sort-name>
+            <label-code>732</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2000</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="ATO (UK)" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">ATO (UK)
+                </alias>
+            </alias-list>
+        </label>
+        <label id="3f82f08e-8027-4995-aa64-8e338ff3805c" ns2:score="68">
+            <name>Sony Music Special Products</name>
+            <sort-name>Sony Music Special Products</sort-name>
+            <label-code>11542</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1991</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="79afd9ce-c6b2-4e9a-9b23-a13e25d70688" type="Production"
+               type-id="a2426aab-2dd4-339c-b47d-b4923a241678" ns2:score="68">
+            <name>Maverick</name>
+            <sort-name>Maverick</sort-name>
+            <label-code>1485</label-code>
+            <disambiguation>WMG subsidiary, founded by Madonna, Veronica “Ronnie” Dashev, and Frederick DeMann
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1992</begin>
+                <end>2009</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Maverick Recording Company">Maverick Recording Company</alias>
+                <alias sort-name="Maverick Records">Maverick Records</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>alternative metal</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="a16c5c7f-38ec-4cbf-aa4f-f354fcc88eb2" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Sparrow Records</name>
+            <sort-name>Sparrow Records</sort-name>
+            <label-code>4772</label-code>
+            <disambiguation>Christian artist label</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1976</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Sparrow (SPR)" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">
+                    Sparrow (SPR)
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>christian</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="8f23c520-d702-4621-88fa-ac66ae15e573" ns2:score="67">
+            <name>Universal Republic Records</name>
+            <sort-name>Universal Republic Records</sort-name>
+            <label-code>25289</label-code>
+            <disambiguation>2006–2012</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2006</begin>
+                <end>2012</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Republic Records" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Republic Records
+                </alias>
+                <alias locale="en" sort-name="Universal Republic Group" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">Universal Republic Group
+                </alias>
+                <alias locale="en" sort-name="Universal Republic" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Universal Republic
+                </alias>
+                <alias locale="en" sort-name="Universal Republic Records" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Universal Republic Records
+                </alias>
+                <alias locale="ja" sort-name="ユニバーサル・リパブリック・レコード" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">ユニバーサル・リパブリック・レコード
+                </alias>
+                <alias locale="ko" sort-name="유니버설 리퍼블릭 레코드" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">유니버설 리퍼블릭 레코드
+                </alias>
+                <alias sort-name="URR" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">URR</alias>
+            </alias-list>
+        </label>
+        <label id="8ec4f16d-a43f-4e80-b3b0-935dbdbb598a" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Concord Jazz</name>
+            <sort-name>Concord Jazz</sort-name>
+            <label-code>4643</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1972</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="1edc2ff4-e80d-4539-8c6a-749474f7db3a" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Yep Roc Records</name>
+            <sort-name>Yep Roc Records</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1996</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Yep Roc">Yep Roc</alias>
+                <alias sort-name="Yep Roc">YepRoc</alias>
+                <alias sort-name="Yep Rock">Yep Rock</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>indie rock</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="f4bfa0c3-6e7c-4d8c-b1b3-91624a6a9aed" ns2:score="67">
+            <name>Promo Only</name>
+            <sort-name>Promo Only</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1992-06</begin>
+                <ended>false</ended>
+            </life-span>
+            <tag-list>
+                <tag count="0">
+                    <name>modern rock</name>
+                </tag>
+                <tag count="1">
+                    <name>clutch</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="c5f3bc66-5e1e-47bf-8737-46612304aca6" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Concord Records</name>
+            <sort-name>Concord Records</sort-name>
+            <label-code>15025</label-code>
+            <disambiguation>imprint of Concord Records, Inc.</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1969</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="5aa5ddcd-b5d9-4bdf-b528-5083dfd98f03" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>I.R.S. Records</name>
+            <sort-name>I.R.S. Records</sort-name>
+            <label-code>7014</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1979</begin>
+                <end>1996</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="I.R.S. Records Netherlands">I.R.S. Records Netherlands</alias>
+                <alias sort-name="International Record Syndicate, Inc.">International Record Syndicate, Inc.</alias>
+                <alias sort-name="IRS Records Inc.">IRS Records Inc.</alias>
+                <alias sort-name="IRS Records">IRS Records</alias>
+                <alias sort-name="I.R.S. Records UK">I.R.S. Records UK</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>rock</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="fd9ac552-7dae-42e4-98bf-d3a634bded8a" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Riverside</name>
+            <sort-name>Riverside</sort-name>
+            <label-code>325</label-code>
+            <disambiguation>50s jazz label, now controlled by the Concord Music Group</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1953</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias locale="en" sort-name="Riverside Records" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">Riverside Records
+                </alias>
+                <alias locale="ja" sort-name="リヴァーサイド" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675" primary="primary">リヴァーサイド
+                </alias>
+            </alias-list>
+        </label>
+        <label id="925ff8a4-ce58-4893-884d-0f6f0e446bea" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Fearless Records</name>
+            <sort-name>Fearless Records</sort-name>
+            <disambiguation>a division of Concord</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1992</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="5194917c-215b-4094-b5ec-4005e408b2df" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="67">
+            <name>Thrill Jockey</name>
+            <sort-name>Thrill Jockey</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1992</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Thrill Jockey Records">Thrill Jockey Records</alias>
+                <alias locale="ja" sort-name="スリル・ジョッキー" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">スリル・ジョッキー
+                </alias>
+            </alias-list>
+        </label>
+        <label id="665061f4-ba1f-4a6f-86dd-707024220435" type="Distributor"
+               type-id="53ab8dcc-9946-3b62-966e-7634d78e5034" ns2:score="66">
+            <name>LivePhish.com</name>
+            <sort-name>LivePhish.com</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="968ea5bb-1662-4bcd-beea-9a97ba8b30ca" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="66">
+            <name>OKeh</name>
+            <sort-name>OKeh</sort-name>
+            <label-code>288</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1918</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="f1b83107-23e5-41a3-ab1b-2a36965cf77b" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="66">
+            <name>Stones Throw Records</name>
+            <sort-name>Stones Throw Records</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1996</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Stones Throw">Stones Throw</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>soul</name>
+                </tag>
+                <tag count="1">
+                    <name>usa</name>
+                </tag>
+                <tag count="1">
+                    <name>psychedelic rock</name>
+                </tag>
+                <tag count="1">
+                    <name>hip hop</name>
+                </tag>
+                <tag count="1">
+                    <name>american</name>
+                </tag>
+                <tag count="1">
+                    <name>américain</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="1ff104ed-0536-4dfd-b3f4-2b053ea66f32" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="66">
+            <name>Capitol Records Nashville</name>
+            <sort-name>Capitol Records Nashville</sort-name>
+            <label-code>249</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="CMCapNash (N91)" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">
+                    CMCapNash (N91)
+                </alias>
+                <alias sort-name="Capitol Nashville">Capitol Nashville</alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>country</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="6565bd36-cbae-47a7-aac5-888aeddc6c1e" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="66">
+            <name>VP Records</name>
+            <sort-name>VP Records</sort-name>
+            <label-code>5000</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1993</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="VP Music Group, Inc">VP Music Group, Inc</alias>
+            </alias-list>
+        </label>
+        <label id="ce7a2977-c7dd-4695-97e0-5e72572bf0d3" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="66">
+            <name>Priority Records</name>
+            <sort-name>Priority Records</sort-name>
+            <disambiguation>US hip hop</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1985</begin>
+                <ended>false</ended>
+            </life-span>
+            <tag-list>
+                <tag count="2">
+                    <name>disco</name>
+                </tag>
+                <tag count="3">
+                    <name>hip hop</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="4b54d76e-7bf0-4988-9a17-1d9e212bb5e4" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="66">
+            <name>Razor &amp; Tie</name>
+            <sort-name>Razor &amp; Tie</sort-name>
+            <label-code>1857</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1990</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Razor and Tie">Razor and Tie</alias>
+            </alias-list>
+        </label>
+        <label id="8e6ab8cc-b190-482e-9975-cce113fba59c" type="Distributor"
+               type-id="53ab8dcc-9946-3b62-966e-7634d78e5034" ns2:score="66">
+            <name>nugs.net</name>
+            <sort-name>nugs.net</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1993</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="livedownloads.com" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">
+                    livedownloads.com
+                </alias>
+            </alias-list>
+            <tag-list>
+                <tag count="1">
+                    <name>url</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="95336f80-eef4-41fa-a4ca-d4bc4ecebcde" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="66">
+            <name>Third Man Records</name>
+            <sort-name>Third Man Records</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2001</begin>
+                <ended>false</ended>
+            </life-span>
+            <tag-list>
+                <tag count="1">
+                    <name>karen elson</name>
+                </tag>
+            </tag-list>
+        </label>
+        <label id="9c3ec056-57dd-4987-bb53-cbea027ef81c" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="66">
+            <name>Loma Vista Recordings</name>
+            <sort-name>Loma Vista Recordings</sort-name>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2012</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Concord Loma Vista">Concord Loma Vista</alias>
+            </alias-list>
+        </label>
+        <label id="42e06800-76f8-4a5b-a9b6-0983a5d72f17" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="66">
+            <name>Jagjaguwar</name>
+            <sort-name>Jagjaguwar</sort-name>
+            <label-code>29277</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1996</begin>
+                <ended>false</ended>
+            </life-span>
+        </label>
+        <label id="1644d8bc-b558-447f-82eb-5d6829988156" ns2:score="66">
+            <name>Virgin Records America, Inc.</name>
+            <sort-name>Virgin Records America, Inc.</sort-name>
+            <disambiguation>for copyrights use only; for release labels, please refer to either “Virgin” or “Virgin
+                America”
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Virgin Records America, Inc.">Virgin Records America, Inc.</alias>
+                <alias sort-name="Virgin US">Virgin US</alias>
+                <alias sort-name="Virgin USA">Virgin USA</alias>
+                <alias sort-name="Virgin America">Virgin America</alias>
+            </alias-list>
+        </label>
+        <label id="0cf0efc2-9453-4513-a54e-c4d64e2a258c" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="66">
+            <name>eOne</name>
+            <sort-name>eOne</sort-name>
+            <disambiguation>primary label of eOne Music, the music division under Entertainment One from 2010-07 to
+                2021-09, was formerly E1 Entertainment
+            </disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>2010-07</begin>
+                <end>2021-09</end>
+                <ended>true</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Entertainment One Music" type="Label name"
+                       type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">Entertainment One Music
+                </alias>
+                <alias sort-name="entertainmentone">entertainmentone</alias>
+                <alias sort-name="Entertainment One" type="Label name" type-id="3a1a0c48-d885-3b89-87b2-9e8a483c5675">
+                    Entertainment One
+                </alias>
+            </alias-list>
+        </label>
+        <label id="98f93684-2a6f-4d40-ac6a-41fd0cc8ecc8" type="Original Production"
+               type-id="7aaa37fe-2def-3476-b359-80245850062d" ns2:score="66">
+            <name>Casablanca Records</name>
+            <sort-name>Casablanca Records</sort-name>
+            <label-code>3272</label-code>
+            <disambiguation>label founded by Neil Bogart</disambiguation>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1973-06-13</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Cassablanca Records">Cassablanca Records</alias>
+            </alias-list>
+        </label>
+        <label id="e023c53a-7e9b-4f7d-99ff-42366b3be8c9" type="Imprint" type-id="b6285b2a-3514-3d43-80df-fcf528824ded"
+               ns2:score="66">
+            <name>EmArcy</name>
+            <sort-name>EmArcy</sort-name>
+            <label-code>699</label-code>
+            <country>US</country>
+            <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country"
+                  type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+                <name>United States</name>
+                <sort-name>United States</sort-name>
+                <life-span>
+                    <ended>false</ended>
+                </life-span>
+            </area>
+            <life-span>
+                <begin>1954</begin>
+                <ended>false</ended>
+            </life-span>
+            <alias-list>
+                <alias sort-name="Em Arcy" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Em Arcy
+                </alias>
+                <alias sort-name="Emarcy France">Emarcy France</alias>
+                <alias sort-name="Em Chay" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Em Chay
+                </alias>
+                <alias sort-name="Em Chey" type="Search hint" type-id="829662f2-a781-3ec8-8b46-fbcea6196f81">Em Chey
+                </alias>
+                <alias sort-name="Emarcy Rechords">Emarcy Rechords</alias>
+                <alias sort-name="EmArcy Records">EmArcy Records</alias>
+            </alias-list>
+        </label>
+    </label-list>
 </metadata>

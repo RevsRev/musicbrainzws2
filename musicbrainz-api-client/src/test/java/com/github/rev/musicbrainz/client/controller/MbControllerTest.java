@@ -22,12 +22,15 @@ import com.github.rev.musicbrainz.client.search.query.MbSeriesQuery;
 import com.github.rev.musicbrainz.client.search.query.MbTagQuery;
 import com.github.rev.musicbrainz.client.search.query.MbUrlQuery;
 import com.github.rev.musicbrainz.client.search.query.MbWorkQuery;
+import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class MbControllerTest {
 
@@ -126,7 +129,7 @@ public class MbControllerTest {
     }
     private static MbQuery<MbEntity.MbLabel> labelQuery() throws MbQuery.InvalidQueryFieldException {
         MbLabelQuery labelQuery = new MbLabelQuery();
-        labelQuery.add(MbLabelQuery.COUNTRY, "USA");
+        labelQuery.add(MbLabelQuery.COUNTRY, "US");
         return labelQuery;
     }
     private static MbQuery<MbEntity.MbPlace> placeQuery() throws MbQuery.InvalidQueryFieldException {
@@ -180,7 +183,10 @@ public class MbControllerTest {
         String sourceLocation = System.getProperty("source-location");
         final HandlerFactory handlerFactory;
         if (sourceLocation != null) {
-            handlerFactory = new GenerateSourcesHandlerFactory(sourceLocation);
+            Set<Class<?>> classesToGenerateSourcesFor = new HashSet<>();
+            //TODO - Could extract to a property?
+            //classesToGenerateSourcesFor.add(MbLabelResult.class);
+            handlerFactory = new GenerateSourcesHandlerFactory(sourceLocation, classesToGenerateSourcesFor);
         } else {
             handlerFactory = new HandlerFactory.DefaultHandlerFactory();
         }
