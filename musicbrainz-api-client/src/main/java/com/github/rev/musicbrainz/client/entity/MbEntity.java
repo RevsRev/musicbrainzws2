@@ -126,7 +126,7 @@ public abstract class MbEntity {
     public static final class MbReleaseGroup extends MbEntity {
         @Override
         public String getApiName() {
-            return "releaseGroup";
+            return "release-group";
         }
     }
 
