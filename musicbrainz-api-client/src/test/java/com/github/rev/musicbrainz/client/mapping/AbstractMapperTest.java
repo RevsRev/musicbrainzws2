@@ -15,6 +15,7 @@ import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
 import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.search.result.MbTagResult;
 import com.github.rev.musicbrainz.client.search.result.MbUrlResult;
+import com.github.rev.musicbrainz.client.search.result.MbWorkResult;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -49,7 +50,7 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, MbFormat.XML)); //TODO - Empty test data
         testParams.add(MapperTestParams.factory(MbSeriesResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbTagResult.class, MbFormat.XML));
-//        testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.XML)); //TODO - Fix me
+        testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.XML)); //TODO - Empty test data
 
         //TODO - Fix me
