@@ -12,12 +12,14 @@ import com.fasterxml.jackson.databind.module.SimpleDeserializers;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.rev.musicbrainz.client.mapping.fmt.shared.DeserializerWithClass;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Collections;
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
 import java.util.function.Supplier;
 
 /**
@@ -30,13 +32,13 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
 
     private final Class<T> clazz;
     private final Supplier<T> constructor;
-    private final BadKeyGroupHandler<T>[] handlers;
+    private final Collection<BadKeyGroupHandler<T>> handlers;
     private final ObjectMapper mapper;
 
     private MbDeserializer(final Class<T> clazz,
                            final Supplier<T> constructor,
                            final ObjectMapper mapper,
-                           final BadKeyGroupHandler<T>[] handlers) {
+                           final Collection<BadKeyGroupHandler<T>> handlers) {
         this.clazz = clazz;
         this.constructor = constructor;
         this.mapper = mapper;
@@ -54,29 +56,9 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
         return mapper.updateValue(instance, update);
     }
 
-    /**
-     * Factory method.
-     * @param clazz
-     * @param handlers
-     * @return a new MbDeserializer instance.
-     * @param <T>
-     */
-    public static <T> MbDeserializer<T> factory(final Class<T> clazz,
-                                                final BadKeyGroupHandler<T>... handlers) {
-        return factory(clazz, Collections.emptyList(), handlers);
-    }
-
-    /**
-     * Factory method.
-     * @param clazz
-     * @param nestedSerializers Additional deserializers to be used on nested objects.
-     * @param handlers
-     * @return a new MbDeserializer instance.
-     * @param <T>
-     */
-    public static <T> MbDeserializer<T> factory(final Class<T> clazz,
-                                                final List<DeserializerWithClass> nestedSerializers,
-                                                final BadKeyGroupHandler<T>... handlers) {
+    private static <T> MbDeserializer<T> factory(final Class<T> clazz,
+                                                final Collection<DeserializerWithClass> nestedSerializers,
+                                                final Collection<BadKeyGroupHandler<T>> handlers) {
         try {
             Constructor<T> constructor = clazz.getConstructor();
              ObjectMapper om = new ObjectMapper()
@@ -114,5 +96,112 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
                 throw new RuntimeException(e);
             }
         };
+    }
+
+    /**
+     * Builder class.
+     * @param <T> The target type of deserialization.
+     */
+    public static class Builder<T> {
+        private final Class<T> clazz;
+
+        private final Collection<Builder<?>> nestedDeserializerBuilders = new ArrayList<>();
+        private final Collection<DeserializerWithClass> nestedDeserializers = new ArrayList<>();
+        private final Collection<BadKeyGroupHandler<T>> badKeyGroupHandlers = new ArrayList<>();
+
+        /**
+         * Constructor.
+         * @param clazz
+         */
+        public Builder(final Class<T> clazz) {
+            this.clazz = clazz;
+        }
+
+        /**
+         * Build the deserializer.
+         * @return A new deserializer instance.
+         */
+        public MbDeserializer<T> build() {
+            for (Builder<?> nestedDeserializerBuilder : nestedDeserializerBuilders) {
+                nestedDeserializers.add(nestedDeserializerBuilder.build());
+            }
+            return MbDeserializer.factory(clazz, nestedDeserializers, badKeyGroupHandlers);
+        }
+
+        /**
+         * Add a nested deserializer.
+         * @param nested
+         * @return this.
+         * @param <N>
+         */
+        public <N> Builder<T> withNestedDeserializer(final MbDeserializer.Builder<N> nested) {
+            nestedDeserializerBuilders.add(nested);
+            return this;
+        }
+
+        /**
+         * Add a nested deserializer.
+         * @param deser
+         * @return this.
+         */
+        public Builder<T> withNestedDeserializer(final DeserializerWithClass deser) {
+            nestedDeserializers.add(deser);
+            return this;
+        }
+
+        /**
+         * Map a key from the source being parsed to a set method on the POJO.
+         * @param source
+         * @param target
+         * @return this.
+         */
+        public Builder<T> withMappedKey(final String source, final String target) {
+            return withMappedKey(source, target, String.class);
+        }
+
+        /**
+         * Map a key from the source being parsed to a set method on the POJO.
+         * @param source
+         * @param target
+         * @param targetClazz the type to transform the source value to.
+         * @return this.
+         * @param <R> the type of the object being set on T.
+         */
+        public <R> Builder<T> withMappedKey(final String source, final String target, final Class<R> targetClazz) {
+            MismatchFieldNameHandler<T> handler =
+                    MismatchFieldNameHandler.factory(clazz, source, target, targetClazz);
+            return withHandler(handler);
+        }
+
+        /**
+         * Ignore a field during parsing.
+         * @param fieldName
+         * @return this.
+         */
+        public Builder<T> ignoringField(final String fieldName) {
+            MissingFieldNameHandler<T> handler = MissingFieldNameHandler.factory(clazz, fieldName);
+            return withHandler(handler);
+        }
+
+        /**
+         * Map a set of fields to a single field on the target.
+         * @param objectSetter The field on T to set.
+         * @param objectClazz The type R that the set method on T calls.
+         * @param fieldNameToSetters Methods to map from fields on the source being parsed to methods on R.
+         * @return this.
+         * @param <R> The type of object being invoked by the set method on T.
+         */
+        public <R> Builder<T> withFieldsToObjectHandler(final String objectSetter,
+                                                        final Class<R> objectClazz,
+                                                        final Map<String, Pair<String, Class<?>>> fieldNameToSetters) {
+            FieldsToObjectHandler<T, R> handler =
+                    FieldsToObjectHandler.factory(clazz, objectSetter, objectClazz, fieldNameToSetters);
+            return withHandler(handler);
+        }
+
+        private Builder<T> withHandler(final BadKeyGroupHandler<T> badKeyGroupHandler) {
+            badKeyGroupHandlers.add(badKeyGroupHandler);
+            return this;
+        }
     }
 }
