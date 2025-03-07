@@ -116,6 +116,7 @@
                         <primary-type id="f529b476-6e62-324f-b0aa-1f3e33d313fc">Album</primary-type>
                         <secondary-type-list>
                             <secondary-type id="dd2a21e1-0c00-3729-a7a0-de60b84eb5d1">Compilation</secondary-type>
+                            <secondary-type id="dd2a21e1-0c00-3729-a7a0-de60b84eb5d2">Blabla</secondary-type>
                         </secondary-type-list>
                     </release-group>
                     <date>1994</date>

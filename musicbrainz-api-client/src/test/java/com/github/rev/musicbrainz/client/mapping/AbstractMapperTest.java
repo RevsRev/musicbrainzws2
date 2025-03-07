@@ -53,8 +53,8 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.XML));
 
-        //TODO - Fix me
-//        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));
+        //TODO - Implement all JSON
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));
         return testParams;
     }
 

@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.serdes.deserializers;
+package com.github.rev.musicbrainz.client.mapping.fmt.shared.serdes.deserializers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonParser;
@@ -8,14 +8,14 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import org.musicbrainz.ns.mmd_2.Target;
+import org.musicbrainz.ns.mmd_2.LanguageList;
 
 import java.io.IOException;
 
 /**
- * JsonDeserializer implementation for Target.
+ * JsonDeserializer implementation for Language.
  */
-public final class TargetDeserializer extends JsonDeserializer<Target> {
+public final class LanguageDeserializer extends JsonDeserializer<LanguageList.Language> {
 
     private final ObjectMapper om = new ObjectMapper()
             .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
@@ -23,20 +23,20 @@ public final class TargetDeserializer extends JsonDeserializer<Target> {
             .setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
     @Override
-    public Target deserialize(final JsonParser p,
-                              final DeserializationContext ctxt) throws IOException {
+    public LanguageList.Language deserialize(final JsonParser p,
+                                             final DeserializationContext ctxt) throws IOException {
         JsonNode node = p.getCodec().readTree(p);
 
         try {
-            return om.convertValue(node, Target.class);
+            return om.convertValue(node, LanguageList.Language.class);
         } catch (Exception e) {
             if (!node.isTextual()) {
                 throw e;
             }
-            String id = node.textValue();
-            Target target = new Target();
-            target.setId(id);
-            return target;
+            String value = node.textValue();
+            LanguageList.Language language = new LanguageList.Language();
+            language.setValue(value);
+            return language;
         }
     }
 }

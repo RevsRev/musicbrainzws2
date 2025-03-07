@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.serdes.deserializers;
+package com.github.rev.musicbrainz.client.mapping.fmt.shared.serdes.deserializers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonParser;
@@ -8,14 +8,14 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import org.musicbrainz.ns.mmd_2.Format;
+import org.musicbrainz.ns.mmd_2.Target;
 
 import java.io.IOException;
 
 /**
- * JsonDeserializer implementation for Format.
+ * JsonDeserializer implementation for Target.
  */
-public final class FormatDeserializer extends JsonDeserializer<Format> {
+public final class TargetDeserializer extends JsonDeserializer<Target> {
 
     private final ObjectMapper om = new ObjectMapper()
             .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
@@ -23,20 +23,20 @@ public final class FormatDeserializer extends JsonDeserializer<Format> {
             .setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
     @Override
-    public Format deserialize(final JsonParser p,
+    public Target deserialize(final JsonParser p,
                               final DeserializationContext ctxt) throws IOException {
         JsonNode node = p.getCodec().readTree(p);
 
         try {
-            return om.convertValue(node, Format.class);
+            return om.convertValue(node, Target.class);
         } catch (Exception e) {
             if (!node.isTextual()) {
                 throw e;
             }
-            String content = node.textValue();
-            Format format = new Format();
-            format.setContent(content);
-            return format;
+            String id = node.textValue();
+            Target target = new Target();
+            target.setId(id);
+            return target;
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.github.rev.musicbrainz.client.mapping.serdes.handler;
+package com.github.rev.musicbrainz.client.mapping.fmt.shared.handler;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

@@ -1,0 +1,428 @@
+{
+  "created": "2025-02-28T15:18:58.399Z",
+  "count": 11,
+  "offset": 0,
+  "places": [
+    {
+      "id": "fecf9497-85bb-4389-b6af-4dfbc70940d2",
+      "type": "Pressing plant",
+      "type-id": "ab750f51-cc41-47bb-8ba2-9bc34d7de514",
+      "score": 100,
+      "name": "Arvato USA",
+      "address": "108 Monticello Road, Weaverville, NC 28787",
+      "coordinates": {
+        "latitude": "35.707704",
+        "longitude": "-82.577233"
+      },
+      "area": {
+        "id": "68f0b09d-1657-4e70-af03-9e9f10fdb359",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Weaverville",
+        "sort-name": "Weaverville",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "begin": "1984-10",
+        "end": "2016-04-30",
+        "ended": true
+      },
+      "aliases": [
+        {
+          "sort-name": "Sonopress Arvato",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Sonopress Arvato",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "2004-06-30",
+          "end-date": "2008-04"
+        },
+        {
+          "sort-name": "QTI",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "QTI",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1985",
+          "end-date": "1990-02"
+        },
+        {
+          "sort-name": "RCA Tape Duplication Plant",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "RCA Tape Duplication Plant",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1984-10",
+          "end-date": "1985"
+        },
+        {
+          "sort-name": "Arvato USA",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Arvato USA",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "2011",
+          "end-date": "2016-04-30"
+        },
+        {
+          "sort-name": "Sonopress USA",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Sonopress USA",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1990-02",
+          "end-date": "2004-06-30"
+        },
+        {
+          "sort-name": "Arvato Digital Services Bertelsmann USA",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Arvato Digital Services Bertelsmann USA",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "2008-04",
+          "end-date": "2011"
+        },
+        {
+          "sort-name": "Quality Tapes Incorporated",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Quality Tapes Incorporated",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1985",
+          "end-date": "1990-02"
+        }
+      ]
+    },
+    {
+      "id": "00de9ee9-b3f3-4b13-b94b-3bf4e2b2ea2e",
+      "type": "Other",
+      "type-id": "a0df5ead-0bd6-33d8-8444-855a9f3e9970",
+      "score": 100,
+      "name": "Opryland USA",
+      "coordinates": {
+        "latitude": "36.208333",
+        "longitude": "-86.695278"
+      },
+      "area": {
+        "id": "e68879f9-bd95-41ff-96ba-c082ff37cc74",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Nashville",
+        "sort-name": "Nashville",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "begin": "1972-05-27",
+        "end": "1997-12-31",
+        "ended": true
+      }
+    },
+    {
+      "id": "3787b84c-2539-40fe-83b9-ebdc81456a5c",
+      "type": "Studio",
+      "type-id": "05fa6a09-ff92-3d34-bdbb-5141d3c24f38",
+      "score": 100,
+      "name": "USA Studios",
+      "area": {
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "type": "Country",
+        "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+        "name": "United States",
+        "sort-name": "United States",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
+      "id": "becf4367-0125-4ffe-aab1-ffb84fa7c843",
+      "type": "Pressing plant",
+      "type-id": "ab750f51-cc41-47bb-8ba2-9bc34d7de514",
+      "score": 100,
+      "name": "EDC USA",
+      "address": "700 South Battleground Avenue, Grover, NC 28073",
+      "coordinates": {
+        "latitude": "35.173269",
+        "longitude": "-81.434551"
+      },
+      "area": {
+        "id": "d04e54e9-5df2-4508-a2ad-4f59d5373c8d",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Grover",
+        "sort-name": "Grover",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "begin": "1986-12",
+        "end": "2009-02-28",
+        "ended": true
+      },
+      "aliases": [
+        {
+          "sort-name": "EDC, USA",
+          "name": "EDC, USA",
+          "locale": null,
+          "type": null,
+          "primary": null,
+          "begin-date": null,
+          "end-date": null
+        },
+        {
+          "sort-name": "PDO, USA",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "PDO, USA",
+          "locale": "en",
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1986-12",
+          "end-date": "1992-06"
+        },
+        {
+          "sort-name": "PolyGram Manufacturing and Distribution Centers (PMDC), Inc.",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "PolyGram Manufacturing and Distribution Centers (PMDC), Inc.",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1992-06-18",
+          "end-date": "1999-09-30"
+        },
+        {
+          "sort-name": "Universal Music Group Manufacturing & Logistics Inc.",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Universal Music Group Manufacturing & Logistics Inc.",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1999-10-01",
+          "end-date": "2005-05-31"
+        },
+        {
+          "sort-name": "EDC USA",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "EDC USA",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "2005-06-01",
+          "end-date": "2009-02-28"
+        },
+        {
+          "sort-name": "Philips DuPont Optical US",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Philips DuPont Optical US",
+          "locale": null,
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "1986-12",
+          "end-date": "1992-06-17"
+        }
+      ]
+    },
+    {
+      "id": "15be57a9-df98-4210-905f-21b7aee60543",
+      "type": "Studio",
+      "type-id": "05fa6a09-ff92-3d34-bdbb-5141d3c24f38",
+      "score": 85,
+      "name": "Westwires Recording USA",
+      "address": "1042 Club Ave, Allentown, PA 18109, USA",
+      "coordinates": {
+        "latitude": "40.628275",
+        "longitude": "-75.421502"
+      },
+      "area": {
+        "id": "ec0c279e-382b-42f5-a75e-3767e33a5d7e",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Allentown",
+        "sort-name": "Allentown",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "begin": "1983",
+        "ended": null
+      },
+      "aliases": [
+        {
+          "sort-name": "Wayne Becker Studio",
+          "name": "Wayne Becker Studio",
+          "locale": null,
+          "type": null,
+          "primary": null,
+          "begin-date": null,
+          "end-date": null
+        },
+        {
+          "sort-name": "WestWires Digital",
+          "name": "WestWires Digital",
+          "locale": null,
+          "type": null,
+          "primary": null,
+          "begin-date": null,
+          "end-date": null
+        }
+      ]
+    },
+    {
+      "id": "491b588e-dae0-4a4e-9aa5-d836fef2b345",
+      "type": "Indoor arena",
+      "type-id": "a77c11f6-82fa-3cc0-9041-ac60e5f6e024",
+      "score": 85,
+      "name": "USA Hockey Arena",
+      "address": "14900 Beck Rd, Plymouth, MI 48170",
+      "coordinates": {
+        "latitude": "42.389273",
+        "longitude": "-83.506415"
+      },
+      "area": {
+        "id": "facc5bb6-db45-4288-99bb-d7bf63d09c3f",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Plymouth",
+        "sort-name": "Plymouth",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "begin": "1996",
+        "ended": null
+      },
+      "aliases": [
+        {
+          "sort-name": "Compuware Sports Arena",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Compuware Sports Arena",
+          "locale": "en",
+          "type": "Place name",
+          "primary": null,
+          "begin-date": null,
+          "end-date": "2007-09-11"
+        },
+        {
+          "sort-name": "Compuware Arena",
+          "type-id": "fb68f9a2-622c-319b-83b0-bbff4127cdc5",
+          "name": "Compuware Arena",
+          "locale": "en",
+          "type": "Place name",
+          "primary": null,
+          "begin-date": "2007-09-11",
+          "end-date": "2015"
+        }
+      ]
+    },
+    {
+      "id": "3382fd9e-bedb-4f82-86dd-87a39aeb0f54",
+      "type": "Studio",
+      "type-id": "05fa6a09-ff92-3d34-bdbb-5141d3c24f38",
+      "score": 74,
+      "name": "Joombas Music Factory USA",
+      "area": {
+        "id": "96bbe327-f9cd-42e0-a689-eb9febe1693f",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Hollywood",
+        "sort-name": "Hollywood",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
+      "id": "178b4d10-2150-48c1-bcc1-fa1f2d2ebc91",
+      "score": 66,
+      "name": "Ploger Hall, Manchester, Michigan, USA",
+      "life-span": {
+        "begin": "2008-08",
+        "ended": null
+      }
+    },
+    {
+      "id": "fa61b944-d895-4265-bffe-45cd15574ce8",
+      "type": "Venue",
+      "type-id": "cd92781a-a73f-30e8-a430-55d7521338db",
+      "score": 59,
+      "name": "Hard Rock Café Niagara Falls USA",
+      "address": "333 Prospect St, Niagara Falls, NY 14303",
+      "coordinates": {
+        "latitude": "43.086833",
+        "longitude": "-79.066744"
+      },
+      "area": {
+        "id": "2e522736-1ecd-41f3-b063-9455318ea7d9",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Niagara Falls",
+        "sort-name": "Niagara Falls",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
+      "id": "eab51673-b63f-42bb-9f4b-01c0643f69db",
+      "type": "Venue",
+      "type-id": "cd92781a-a73f-30e8-a430-55d7521338db",
+      "score": 59,
+      "name": "Joe Rico’s Milestones, Buffalo, NY, USA",
+      "area": {
+        "id": "7e5e7fd7-c1eb-4cb8-87e2-fb1c0eda9e48",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Buffalo",
+        "sort-name": "Buffalo",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
+      "id": "c10ea45a-6eaa-4040-867b-8f8d16f5da6d",
+      "type": "Venue",
+      "type-id": "cd92781a-a73f-30e8-a430-55d7521338db",
+      "score": 49,
+      "name": "Town & Country Club, Los Angeles, CA, USA",
+      "area": {
+        "id": "1f40c6e1-47ba-4e35-996f-fe6ee5840e62",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Los Angeles",
+        "sort-name": "Los Angeles",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "life-span": {
+        "ended": null
+      }
+    }
+  ]
+}

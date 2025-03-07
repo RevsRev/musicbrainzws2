@@ -1,0 +1,162 @@
+{
+  "created": "2025-02-28T15:18:58.007Z",
+  "count": 2,
+  "offset": 0,
+  "events": [
+    {
+      "id": "0fa2df83-1b51-4391-a705-a330d12788db",
+      "type": "Concert",
+      "score": 100,
+      "name": "Waylon Jennings at Opryland",
+      "life-span": {
+        "begin": "1978",
+        "end": "1978"
+      },
+      "relations": [
+        {
+          "type": "main performer",
+          "type-id": "936c7c95-3156-3889-a062-8a0cd57f8946",
+          "direction": "backward",
+          "artist": {
+            "id": "1a46826b-4d73-4e04-8590-f36c9d832f9e",
+            "name": "Waylon Jennings",
+            "sort-name": "Jennings, Waylon",
+            "disambiguation": "US country musician"
+          }
+        },
+        {
+          "type": "held at",
+          "type-id": "e2c6f697-07dc-38b1-be0b-83d740165532",
+          "direction": "backward",
+          "place": {
+            "id": "00de9ee9-b3f3-4b13-b94b-3bf4e2b2ea2e",
+            "name": "Opryland USA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ea4188ab-39e5-4b60-a0ae-dece198a1b98",
+      "type": "Festival",
+      "score": 85,
+      "name": "High Velocity Super Action Fun Time Mega Fest, Part 2",
+      "life-span": {
+        "begin": "2014-11-30",
+        "end": "2014-11-30"
+      },
+      "relations": [
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "e2cd69b3-ef80-4d53-aa86-a97d6f44573a",
+            "name": "The Word Alive",
+            "sort-name": "Word Alive, The"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "be76cc4b-0fe7-4936-b75f-f341769ef638",
+            "name": "This Wild Life",
+            "sort-name": "This Wild Life",
+            "disambiguation": "two man acoustic group from Long Beach, CA"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "5466b02a-4465-4e87-b372-584cd5f97bff",
+            "name": "Our Last Night",
+            "sort-name": "Our Last Night"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "cc2c186a-2986-4f83-acf0-21befb6872f5",
+            "name": "Myka, Relocate",
+            "sort-name": "Myka, Relocate"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "758d0165-53e3-44b3-ad25-6cc45d8d6c01",
+            "name": "Miss Fortune",
+            "sort-name": "Miss Fortune",
+            "disambiguation": "Post Hardcore"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "ebafff3d-0105-4e5d-a7a4-98972c48a57f",
+            "name": "The Dead Rabbitts",
+            "sort-name": "Dead Rabbitts, The"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "97916e3f-2152-43ba-8190-63a269c3030c",
+            "name": "The Color Morale",
+            "sort-name": "Color Morale, The"
+          }
+        },
+        {
+          "type": "support act",
+          "type-id": "492a850e-97eb-306a-a85e-4b6d98527796",
+          "direction": "backward",
+          "artist": {
+            "id": "98a1e0ab-35fa-40dd-b62c-9fda46fdb061",
+            "name": "Beartooth",
+            "sort-name": "Beartooth"
+          }
+        },
+        {
+          "type": "main performer",
+          "type-id": "936c7c95-3156-3889-a062-8a0cd57f8946",
+          "direction": "backward",
+          "artist": {
+            "id": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+            "name": "Sleeping With Sirens",
+            "sort-name": "Sleeping With Sirens"
+          }
+        },
+        {
+          "type": "main performer",
+          "type-id": "936c7c95-3156-3889-a062-8a0cd57f8946",
+          "direction": "backward",
+          "artist": {
+            "id": "8ed919fb-eaee-45a1-ba99-b3ede9ca5f1d",
+            "name": "Pierce the Veil",
+            "sort-name": "Pierce the Veil"
+          }
+        },
+        {
+          "type": "held at",
+          "type-id": "e2c6f697-07dc-38b1-be0b-83d740165532",
+          "direction": "backward",
+          "place": {
+            "id": "491b588e-dae0-4a4e-9aa5-d836fef2b345",
+            "name": "USA Hockey Arena"
+          }
+        }
+      ]
+    }
+  ]
+}
