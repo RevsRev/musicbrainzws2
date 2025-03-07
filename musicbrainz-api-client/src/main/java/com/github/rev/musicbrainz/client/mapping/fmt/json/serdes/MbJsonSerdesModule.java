@@ -37,8 +37,8 @@ public final class MbJsonSerdesModule extends Module {
 
     private Deserializers getDeserializers() {
         SimpleDeserializers deserializers = new SimpleDeserializers();
-        deserializers.addDeserializer(MbArtistResult.class, new JsonMbResultDeserializer<>(MbArtistResult.class));
 
+        deserializers.addDeserializer(MbArtistResult.class, new JsonMbResultDeserializer<>(MbArtistResult.class));
         MbDeserializer<Artist> artistDeserializer = new MbDeserializer.Builder<>(Artist.class)
                 .withNestedDeserializer(new JsonListDeserializer<>(AliasList.class))
                 .withNestedDeserializer(new JsonListDeserializer<>(TagList.class))
