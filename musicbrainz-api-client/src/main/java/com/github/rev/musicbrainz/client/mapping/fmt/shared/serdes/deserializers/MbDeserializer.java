@@ -7,10 +7,10 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.module.SimpleDeserializers;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.github.rev.musicbrainz.client.mapping.fmt.json.JsonNameStrategy;
 import com.github.rev.musicbrainz.client.mapping.fmt.shared.DeserializerWithClass;
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -19,6 +19,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
@@ -52,17 +53,17 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
         for (BadKeyGroupHandler<T> handler: handlers) {
             handler.accept(instance, treeNode, mapper);
         }
-        T update = mapper.convertValue(treeNode, clazz);
-        return mapper.updateValue(instance, update);
+        return mapper.updateValue(instance, treeNode);
     }
 
     private static <T> MbDeserializer<T> factory(final Class<T> clazz,
-                                                final Collection<DeserializerWithClass> nestedSerializers,
-                                                final Collection<BadKeyGroupHandler<T>> handlers) {
+                                                 final Collection<DeserializerWithClass> nestedSerializers,
+                                                 final Collection<BadKeyGroupHandler<T>> handlers,
+                                                 final Map<String, String> mappedKeys) {
         try {
             Constructor<T> constructor = clazz.getConstructor();
              ObjectMapper om = new ObjectMapper()
-                    .setPropertyNamingStrategy(PropertyNamingStrategies.KEBAB_CASE)
+                    .setPropertyNamingStrategy(new JsonNameStrategy(mappedKeys))
                     .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true)
                     .setSerializationInclusion(JsonInclude.Include.NON_NULL)
                     .configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
@@ -108,6 +109,7 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
         private final Collection<Builder<?>> nestedDeserializerBuilders = new ArrayList<>();
         private final Collection<DeserializerWithClass> nestedDeserializers = new ArrayList<>();
         private final Collection<BadKeyGroupHandler<T>> badKeyGroupHandlers = new ArrayList<>();
+        private final Map<String, String> mappedKeys = new HashMap<>();
 
         /**
          * Constructor.
@@ -125,7 +127,7 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
             for (Builder<?> nestedDeserializerBuilder : nestedDeserializerBuilders) {
                 nestedDeserializers.add(nestedDeserializerBuilder.build());
             }
-            return MbDeserializer.factory(clazz, nestedDeserializers, badKeyGroupHandlers);
+            return MbDeserializer.factory(clazz, nestedDeserializers, badKeyGroupHandlers, mappedKeys);
         }
 
         /**
@@ -156,21 +158,8 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
          * @return this.
          */
         public Builder<T> withMappedKey(final String source, final String target) {
-            return withMappedKey(source, target, String.class);
-        }
-
-        /**
-         * Map a key from the source being parsed to a set method on the POJO.
-         * @param source
-         * @param target
-         * @param targetClazz the type to transform the source value to.
-         * @return this.
-         * @param <R> the type of the object being set on T.
-         */
-        public <R> Builder<T> withMappedKey(final String source, final String target, final Class<R> targetClazz) {
-            MismatchFieldNameHandler<T> handler =
-                    MismatchFieldNameHandler.factory(clazz, source, target, targetClazz);
-            return withHandler(handler);
+            mappedKeys.put(target, source);
+            return this;
         }
 
         /**

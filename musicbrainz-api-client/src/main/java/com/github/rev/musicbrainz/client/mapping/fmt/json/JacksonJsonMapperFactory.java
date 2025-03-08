@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.github.rev.musicbrainz.client.mapping.fmt.json.serdes.MbJsonSerdesModule;
 import com.github.rev.musicbrainz.client.mapping.fmt.xml.serdes.MbXmlSerdesModule;
@@ -12,8 +11,6 @@ import com.github.rev.musicbrainz.client.mapping.fmt.shared.handler.IgnoringProb
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 import java.util.TimeZone;
 
@@ -42,7 +39,6 @@ public final class JacksonJsonMapperFactory {
         configureMapper(mapper);
 
         mapper.registerModule(new MbJsonSerdesModule());
-        mapper.setPropertyNamingStrategy(new JsonNameStrategy());
 
         return mapper;
     }
@@ -63,22 +59,4 @@ public final class JacksonJsonMapperFactory {
         return df;
     }
 
-    public static final class JsonNameStrategy extends PropertyNamingStrategies.KebabCaseStrategy {
-
-        private static final Map<String, String> PLURAL_NAMES_MAP = getPluralNamesMap();
-
-        @Override
-        public String translate(final String propertyName) {
-            return super.translate(PLURAL_NAMES_MAP.getOrDefault(propertyName, propertyName));
-        }
-
-        private static Map<String, String> getPluralNamesMap() {
-            Map<String, String> pluralNamesMap = new HashMap<>();
-            pluralNamesMap.put("artist", "artists");
-            pluralNamesMap.put("isniList", "isnis");
-            pluralNamesMap.put("aliasList", "aliases");
-            pluralNamesMap.put("tagList", "tags");
-            return pluralNamesMap;
-        }
-    }
 }
