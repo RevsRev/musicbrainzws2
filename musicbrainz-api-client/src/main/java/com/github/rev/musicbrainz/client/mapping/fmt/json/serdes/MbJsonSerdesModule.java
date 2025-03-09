@@ -16,6 +16,7 @@ import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
 import com.github.rev.musicbrainz.client.search.result.MbRecordingResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseGroupResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
+import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -52,6 +53,8 @@ import org.musicbrainz.ns.mmd_2.ReleaseEventList;
 import org.musicbrainz.ns.mmd_2.ReleaseGroup;
 import org.musicbrainz.ns.mmd_2.ReleaseGroupList;
 import org.musicbrainz.ns.mmd_2.ReleaseList;
+import org.musicbrainz.ns.mmd_2.Series;
+import org.musicbrainz.ns.mmd_2.SeriesList;
 import org.musicbrainz.ns.mmd_2.Status;
 import org.musicbrainz.ns.mmd_2.TagList;
 import org.musicbrainz.ns.mmd_2.Target;
@@ -362,6 +365,21 @@ public final class MbJsonSerdesModule extends Module {
                                 .withArrayHandler("tags", "tag", "setTagList", TagList.class)
                 )
                 .withMappedKey("release-groups", "releaseGroup")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbSeriesResult.class, new JsonMbResultDeserializer<>(MbSeriesResult.class));
+        new MbDeserializer.Builder<>(SeriesList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Series.class)
+                                .withNestedDeserializer(
+                                        new MbDeserializer.Builder<>(Alias.class)
+                                                .ignoringField("name")
+                                )
+                                .ignoringField("score")
+                                .withArrayHandler("tags", "tag", "setTagList", TagList.class)
+                                .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                )
                 .build()
                 .addToDeserializers(deserializers);
 
