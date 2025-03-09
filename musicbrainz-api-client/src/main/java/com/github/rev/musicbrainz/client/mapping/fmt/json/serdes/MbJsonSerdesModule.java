@@ -6,16 +6,22 @@ import com.fasterxml.jackson.databind.deser.Deserializers;
 import com.fasterxml.jackson.databind.module.SimpleDeserializers;
 import com.github.rev.musicbrainz.client.mapping.fmt.shared.serdes.deserializers.MbDeserializer;
 import com.github.rev.musicbrainz.client.search.result.MbAnnotationResult;
+import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
 import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
 import org.musicbrainz.ns.mmd_2.Annotation;
 import org.musicbrainz.ns.mmd_2.AnnotationList;
+import org.musicbrainz.ns.mmd_2.AreaList;
 import org.musicbrainz.ns.mmd_2.Artist;
 import org.musicbrainz.ns.mmd_2.ArtistList;
+import org.musicbrainz.ns.mmd_2.DefAreaElementInner;
 import org.musicbrainz.ns.mmd_2.Gender;
+import org.musicbrainz.ns.mmd_2.Relation;
+import org.musicbrainz.ns.mmd_2.RelationList;
 import org.musicbrainz.ns.mmd_2.TagList;
+import org.musicbrainz.ns.mmd_2.Target;
 
 import java.util.Map;
 
@@ -53,6 +59,22 @@ public final class MbJsonSerdesModule extends Module {
                 .build()
                 .addToDeserializers(deserializers);
 
+        deserializers.addDeserializer(MbAreaResult.class, new JsonMbResultDeserializer<>(MbAreaResult.class));
+        new MbDeserializer.Builder<>(AreaList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(DefAreaElementInner.class)
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(RelationList.class)
+                                        .withNestedDeserializer(new MbDeserializer.Builder<>(Relation.class)
+                                                .ignoringField("direction") //TODO - Fix me!
+                                                .withFieldsToObjectHandler("setTarget", Target.class,
+                                                        Map.of("target", Pair.of("setId", String.class))))
+                                        .withMappedKey("relations", "relation"))
+                                .ignoringField("score")
+                )
+                .withMappedKey("areas", "area")
+                .build()
+                .addToDeserializers(deserializers);
+
         deserializers.addDeserializer(MbArtistResult.class, new JsonMbResultDeserializer<>(MbArtistResult.class));
         new MbDeserializer.Builder<>(ArtistList.class)
                 .withMappedKey("artists", "artist")
@@ -76,6 +98,7 @@ public final class MbJsonSerdesModule extends Module {
                         .ignoringField("ipis"))
                 .build()
                 .addToDeserializers(deserializers);
+
 
         return deserializers;
     }

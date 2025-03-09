@@ -55,7 +55,7 @@ public class AbstractMapperTest {
 
         //TODO - Implement all JSON
         testParams.add(MapperTestParams.factory(MbAnnotationResult.class, MbFormat.JSON));
-//        testParams.add(MapperTestParams.factory(MbAreaResult.class, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbAreaResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));
 //        testParams.add(MapperTestParams.factory(MbCdStubResult.class, MbFormat.JSON));
 //        testParams.add(MapperTestParams.factory(MbEventResult.class, MbFormat.JSON));
