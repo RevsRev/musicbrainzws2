@@ -188,6 +188,24 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
             return withHandler(handler);
         }
 
+        /**
+         * Add specific handling for MusicBrainz "List" types.
+         * @param sourceKeyName
+         * @param setListMethodName
+         * @param musicBrainzListEntityClazz
+         * @return this.
+         * @param <R> The type of music brainz list entity, e.g. "ArtistList".
+         */
+        public <R> Builder<T> withArrayHandler(final String sourceKeyName,
+                                               final String setListMethodName,
+                                               final Class<R> musicBrainzListEntityClazz) {
+            ArrayHandler<T, R> handler = ArrayHandler.factory(clazz,
+                    sourceKeyName,
+                    setListMethodName,
+                    musicBrainzListEntityClazz);
+            return withHandler(handler);
+        }
+
         private Builder<T> withHandler(final BadKeyGroupHandler<T> badKeyGroupHandler) {
             badKeyGroupHandlers.add(badKeyGroupHandler);
             return this;

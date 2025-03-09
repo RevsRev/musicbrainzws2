@@ -9,6 +9,7 @@ import com.github.rev.musicbrainz.client.search.result.MbAnnotationResult;
 import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
 import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
+import com.github.rev.musicbrainz.client.search.result.MbEventResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -20,6 +21,8 @@ import org.musicbrainz.ns.mmd_2.ArtistList;
 import org.musicbrainz.ns.mmd_2.Cdstub;
 import org.musicbrainz.ns.mmd_2.CdstubList;
 import org.musicbrainz.ns.mmd_2.DefAreaElementInner;
+import org.musicbrainz.ns.mmd_2.Event;
+import org.musicbrainz.ns.mmd_2.EventList;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Relation;
 import org.musicbrainz.ns.mmd_2.RelationList;
@@ -110,6 +113,27 @@ public final class MbJsonSerdesModule extends Module {
                                 .ignoringField("count")
                 )
                 .withMappedKey("cdstubs", "cdstub")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbEventResult.class, new JsonMbResultDeserializer<>(MbEventResult.class));
+        new MbDeserializer.Builder<>(EventList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Event.class)
+//                                .withNestedDeserializer(new JsonListDeserializer<>(RelationList.class))
+                                .withNestedDeserializer(
+                                        new MbDeserializer.Builder<>(RelationList.class)
+                                                .withNestedDeserializer(
+                                                        new MbDeserializer.Builder<>(Relation.class)
+                                                                .ignoringField("direction")
+                                                )
+                                                .withMappedKey("relations", "relation")
+                                )
+                                .withArrayHandler("relations", "setRelationList", RelationList.class)
+                                .ignoringField("score")
+                                .withMappedKey("relations", "relationList")
+                )
+                .withMappedKey("events", "event")
                 .build()
                 .addToDeserializers(deserializers);
 

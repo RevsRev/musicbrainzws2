@@ -452,7 +452,7 @@
         <xs:element minOccurs="0" ref="mmd-2.0:setlist"/>
         <xs:element minOccurs="0" ref="mmd-2.0:annotation"/>
         <xs:element minOccurs="0" ref="mmd-2.0:alias-list"/>
-        <xs:element minOccurs="0" ref="mmd-2.0:relation-list"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="mmd-2.0:relation-list"/>
         <xs:element minOccurs="0" ref="mmd-2.0:tag-list"/>
         <xs:element minOccurs="0" ref="mmd-2.0:user-tag-list"/>
         <xs:element minOccurs="0" ref="mmd-2.0:genre-list"/>
