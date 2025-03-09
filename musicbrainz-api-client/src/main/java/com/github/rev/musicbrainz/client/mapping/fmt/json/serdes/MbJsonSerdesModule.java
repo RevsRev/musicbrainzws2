@@ -12,6 +12,7 @@ import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
 import com.github.rev.musicbrainz.client.search.result.MbEventResult;
 import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
+import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -30,6 +31,8 @@ import org.musicbrainz.ns.mmd_2.Instrument;
 import org.musicbrainz.ns.mmd_2.InstrumentList;
 import org.musicbrainz.ns.mmd_2.Label;
 import org.musicbrainz.ns.mmd_2.LabelList;
+import org.musicbrainz.ns.mmd_2.Place;
+import org.musicbrainz.ns.mmd_2.PlaceList;
 import org.musicbrainz.ns.mmd_2.Relation;
 import org.musicbrainz.ns.mmd_2.RelationList;
 import org.musicbrainz.ns.mmd_2.TagList;
@@ -179,6 +182,23 @@ public final class MbJsonSerdesModule extends Module {
                                 .withMappedKey("ipis", "ipiList")
                 )
                 .withMappedKey("labels", "label")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbPlaceResult.class, new JsonMbResultDeserializer<>(MbPlaceResult.class));
+        new MbDeserializer.Builder<>(PlaceList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Place.class)
+                                .withNestedDeserializer(
+                                        new MbDeserializer.Builder<>(Alias.class)
+                                                .ignoringField("name")
+                                )
+                                .ignoringField("score")
+                                .withArrayHandler("aliases", "setAliasList", AliasList.class)
+                                .withMappedKey("aliases", "alias")
+                                .ignoringField("score")
+                )
+                .withMappedKey("places", "place")
                 .build()
                 .addToDeserializers(deserializers);
 
