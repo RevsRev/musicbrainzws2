@@ -17,6 +17,7 @@ import com.github.rev.musicbrainz.client.search.result.MbRecordingResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseGroupResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
 import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
+import com.github.rev.musicbrainz.client.search.result.MbTagResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -56,6 +57,7 @@ import org.musicbrainz.ns.mmd_2.ReleaseList;
 import org.musicbrainz.ns.mmd_2.Series;
 import org.musicbrainz.ns.mmd_2.SeriesList;
 import org.musicbrainz.ns.mmd_2.Status;
+import org.musicbrainz.ns.mmd_2.Tag;
 import org.musicbrainz.ns.mmd_2.TagList;
 import org.musicbrainz.ns.mmd_2.Target;
 
@@ -380,6 +382,16 @@ public final class MbJsonSerdesModule extends Module {
                                 .withArrayHandler("tags", "tag", "setTagList", TagList.class)
                                 .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
                 )
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbTagResult.class, new JsonMbResultDeserializer<>(MbTagResult.class));
+        new MbDeserializer.Builder<>(TagList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Tag.class)
+                                .ignoringField("score")
+                )
+                .withMappedKey("tags", "tag")
                 .build()
                 .addToDeserializers(deserializers);
 
