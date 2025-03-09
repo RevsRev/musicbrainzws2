@@ -37,6 +37,7 @@ public class AbstractMapperTest {
     public static List<MapperTestParams<?>> getMapperTestParams() {
         List<MapperTestParams<?>> testParams = new ArrayList<>();
 
+        //XML TEST CASES
         testParams.add(MapperTestParams.factory(MbAnnotationResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbAreaResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.XML));
@@ -54,7 +55,7 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.XML));
         testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.XML));
 
-        //TODO - Implement all JSON
+        //JSON TEST CASES
         testParams.add(MapperTestParams.factory(MbAnnotationResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbAreaResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));
@@ -70,7 +71,7 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbSeriesResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbTagResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.JSON));
-//        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.JSON));
 
         return testParams;
     }

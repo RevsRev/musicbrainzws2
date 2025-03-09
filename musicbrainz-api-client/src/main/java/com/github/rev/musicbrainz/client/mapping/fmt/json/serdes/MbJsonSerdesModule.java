@@ -18,6 +18,7 @@ import com.github.rev.musicbrainz.client.search.result.MbReleaseGroupResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
 import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.search.result.MbTagResult;
+import com.github.rev.musicbrainz.client.search.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.search.result.MbWorkResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
@@ -62,6 +63,8 @@ import org.musicbrainz.ns.mmd_2.Status;
 import org.musicbrainz.ns.mmd_2.Tag;
 import org.musicbrainz.ns.mmd_2.TagList;
 import org.musicbrainz.ns.mmd_2.Target;
+import org.musicbrainz.ns.mmd_2.Url;
+import org.musicbrainz.ns.mmd_2.UrlList;
 import org.musicbrainz.ns.mmd_2.Work;
 import org.musicbrainz.ns.mmd_2.WorkList;
 
@@ -420,6 +423,24 @@ public final class MbJsonSerdesModule extends Module {
                 .withMappedKey("works", "work")
                 .build()
                 .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbUrlResult.class, new JsonMbResultDeserializer<>(MbUrlResult.class));
+        new MbDeserializer.Builder<>(UrlList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Url.class)
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(RelationList.class)
+                                        .withNestedDeserializer(new MbDeserializer.Builder<>(Relation.class)
+                                                .ignoringField("direction") //TODO - Fix me
+                                        )
+                                        .withMappedKey("relations", "relation")
+                                )
+                                .ignoringField("score")
+//                                .withArrayHandler("relations", "relation", "setRelationList", RelationList.class)
+                )
+                .withMappedKey("urls", "url")
+                .build()
+                .addToDeserializers(deserializers);
+
 
         return deserializers;
     }
