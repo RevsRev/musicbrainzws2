@@ -8,6 +8,7 @@ import com.github.rev.musicbrainz.client.mapping.fmt.shared.serdes.deserializers
 import com.github.rev.musicbrainz.client.search.result.MbAnnotationResult;
 import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
 import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
+import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -16,6 +17,8 @@ import org.musicbrainz.ns.mmd_2.AnnotationList;
 import org.musicbrainz.ns.mmd_2.AreaList;
 import org.musicbrainz.ns.mmd_2.Artist;
 import org.musicbrainz.ns.mmd_2.ArtistList;
+import org.musicbrainz.ns.mmd_2.Cdstub;
+import org.musicbrainz.ns.mmd_2.CdstubList;
 import org.musicbrainz.ns.mmd_2.DefAreaElementInner;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Relation;
@@ -99,6 +102,16 @@ public final class MbJsonSerdesModule extends Module {
                 .build()
                 .addToDeserializers(deserializers);
 
+        deserializers.addDeserializer(MbCdStubResult.class, new JsonMbResultDeserializer<>(MbCdStubResult.class));
+        new MbDeserializer.Builder<>(CdstubList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Cdstub.class)
+                                .ignoringField("score")
+                                .ignoringField("count")
+                )
+                .withMappedKey("cdstubs", "cdstub")
+                .build()
+                .addToDeserializers(deserializers);
 
         return deserializers;
     }
