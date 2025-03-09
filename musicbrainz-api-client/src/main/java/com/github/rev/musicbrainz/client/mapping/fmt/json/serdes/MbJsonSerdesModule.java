@@ -13,6 +13,7 @@ import com.github.rev.musicbrainz.client.search.result.MbEventResult;
 import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
+import com.github.rev.musicbrainz.client.search.result.MbRecordingResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -20,21 +21,33 @@ import org.musicbrainz.ns.mmd_2.Annotation;
 import org.musicbrainz.ns.mmd_2.AnnotationList;
 import org.musicbrainz.ns.mmd_2.AreaList;
 import org.musicbrainz.ns.mmd_2.Artist;
+import org.musicbrainz.ns.mmd_2.ArtistCredit;
 import org.musicbrainz.ns.mmd_2.ArtistList;
 import org.musicbrainz.ns.mmd_2.Cdstub;
 import org.musicbrainz.ns.mmd_2.CdstubList;
 import org.musicbrainz.ns.mmd_2.DefAreaElementInner;
 import org.musicbrainz.ns.mmd_2.Event;
 import org.musicbrainz.ns.mmd_2.EventList;
+import org.musicbrainz.ns.mmd_2.Format;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Instrument;
 import org.musicbrainz.ns.mmd_2.InstrumentList;
 import org.musicbrainz.ns.mmd_2.Label;
 import org.musicbrainz.ns.mmd_2.LabelList;
+import org.musicbrainz.ns.mmd_2.Medium;
+import org.musicbrainz.ns.mmd_2.MediumList;
 import org.musicbrainz.ns.mmd_2.Place;
 import org.musicbrainz.ns.mmd_2.PlaceList;
+import org.musicbrainz.ns.mmd_2.PrimaryType;
+import org.musicbrainz.ns.mmd_2.Recording;
+import org.musicbrainz.ns.mmd_2.RecordingList;
 import org.musicbrainz.ns.mmd_2.Relation;
 import org.musicbrainz.ns.mmd_2.RelationList;
+import org.musicbrainz.ns.mmd_2.Release;
+import org.musicbrainz.ns.mmd_2.ReleaseEventList;
+import org.musicbrainz.ns.mmd_2.ReleaseGroup;
+import org.musicbrainz.ns.mmd_2.ReleaseList;
+import org.musicbrainz.ns.mmd_2.Status;
 import org.musicbrainz.ns.mmd_2.TagList;
 import org.musicbrainz.ns.mmd_2.Target;
 
@@ -60,6 +73,7 @@ public final class MbJsonSerdesModule extends Module {
         context.addDeserializers(getDeserializers());
     }
 
+    @SuppressWarnings("checkstyle.MethodLength")
     private Deserializers getDeserializers() {
         SimpleDeserializers deserializers = new SimpleDeserializers();
 
@@ -98,10 +112,8 @@ public final class MbJsonSerdesModule extends Module {
                                 new MbDeserializer.Builder<>(Alias.class)
                                         .ignoringField("name")
                         )
-                        .withArrayHandler("aliases", "setAliasList", AliasList.class)
-                        .withMappedKey("aliases", "alias")
-                        .withArrayHandler("tags", "setTagList", TagList.class)
-                        .withMappedKey("tags", "tag")
+                        .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                        .withArrayHandler("tags", "tag", "setTagList", TagList.class)
                         .withFieldsToObjectHandler("setGender", Gender.class,
                                 Map.of(
                                         "gender-id", Pair.of("setId", String.class),
@@ -138,9 +150,8 @@ public final class MbJsonSerdesModule extends Module {
                                                 )
                                                 .withMappedKey("relations", "relation")
                                 )
-                                .withArrayHandler("relations", "setRelationList", RelationList.class)
+                                .withArrayHandler("relations", "relations", "setRelationList", RelationList.class)
                                 .ignoringField("score")
-                                .withMappedKey("relations", "relationList")
                 )
                 .withMappedKey("events", "event")
                 .build()
@@ -156,10 +167,8 @@ public final class MbJsonSerdesModule extends Module {
                                                 .ignoringField("name")
                                 )
                                 .ignoringField("score")
-                                .withArrayHandler("aliases", "setAliasList", AliasList.class)
-                                .withMappedKey("aliases", "alias")
-                                .withArrayHandler("tags", "setTagList", TagList.class)
-                                .withMappedKey("tags", "tag")
+                                .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                                .withArrayHandler("tags", "tag", "setTagList", TagList.class)
                 )
                 .withMappedKey("instruments", "instrument")
                 .build()
@@ -174,10 +183,8 @@ public final class MbJsonSerdesModule extends Module {
                                                 .ignoringField("name")
                                 )
                                 .ignoringField("score")
-                                .withArrayHandler("aliases", "setAliasList", AliasList.class)
-                                .withMappedKey("aliases", "alias")
-                                .withArrayHandler("tags", "setTagList", TagList.class)
-                                .withMappedKey("tags", "tag")
+                                .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                                .withArrayHandler("tags", "tag", "setTagList", TagList.class)
                                 .withMappedKey("isnis", "isniList")
                                 .withMappedKey("ipis", "ipiList")
                 )
@@ -194,11 +201,68 @@ public final class MbJsonSerdesModule extends Module {
                                                 .ignoringField("name")
                                 )
                                 .ignoringField("score")
-                                .withArrayHandler("aliases", "setAliasList", AliasList.class)
-                                .withMappedKey("aliases", "alias")
+                                .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
                                 .ignoringField("score")
                 )
                 .withMappedKey("places", "place")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbRecordingResult.class, new JsonMbResultDeserializer<>(MbRecordingResult.class));
+        new MbDeserializer.Builder<>(RecordingList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Recording.class)
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(Artist.class)
+                                        .withNestedDeserializer(new MbDeserializer.Builder<>(Alias.class)
+                                                .ignoringField("name")
+                                        )
+                                        .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                                )
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(Release.class)
+                                        .withNestedDeserializer(new MbDeserializer.Builder<>(ReleaseGroup.class)
+                                                .withFieldsToObjectHandler("setPrimaryType", PrimaryType.class, Map.of(
+                                                        "primary-type-id", Pair.of("setId", String.class),
+                                                        "primary-type", Pair.of("setContent", String.class))
+                                                )
+                                                .ignoringField("secondary-types") //TODO - Fix me
+                                                .ignoringField("secondary-type-ids") //TODO - Fix me
+                                        )
+                                        .withNestedDeserializer(new MbDeserializer.Builder<>(DefAreaElementInner.class)
+                                                .ignoringField("iso-3166-1-codes") //TODO - Fix me
+                                        )
+                                        .withNestedDeserializer(new MbDeserializer.Builder<>(Medium.class)
+                                                .withFieldsToObjectHandler("setFormat", Format.class, Map.of(
+                                                        "format", Pair.of("setContent", String.class)
+                                                ))
+                                                .withArrayHandler("track", "def-track", "setTrackList",
+                                                        Medium.TrackList.class)
+                                                .ignoringField("track-count") //TODO - Fix me
+                                                .ignoringField("track-offset") //TODO - Fix me
+                                        )
+                                        .withFieldsToObjectHandler("setStatus", Status.class,
+                                                Map.of(
+                                                        "status-id", Pair.of("setId", String.class),
+                                                        "status", Pair.of("setContent", String.class)
+                                                ))
+                                        .ignoringField("count")
+                                        .ignoringField("track-count")
+                                        .withArrayHandler("release-events",
+                                                "release-event",
+                                                "setReleaseEventList",
+                                                ReleaseEventList.class)
+                                        .withArrayHandler("artist-credit",
+                                                "name-credit",
+                                                "setArtistCredit",
+                                                ArtistCredit.class)
+                                        .withArrayHandler("media", "medium", "setMediumList", MediumList.class)
+                                )
+                                .ignoringField("isrcs") //TODO - Fix me
+                                .ignoringField("score")
+                                .withArrayHandler("releases", "release", "setReleaseList", ReleaseList.class)
+                                .withArrayHandler("artist-credit", "name-credit", "setArtistCredit", ArtistCredit.class)
+                                .withArrayHandler("tags", "tag", "setTagList", TagList.class)
+                )
+                .withMappedKey("recordings", "recording")
                 .build()
                 .addToDeserializers(deserializers);
 

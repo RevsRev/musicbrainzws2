@@ -20,15 +20,18 @@ import java.util.Map;
 public final class ArrayHandler<T, R> extends BadKeyGroupHandler<T> {
 
     private final String listKeyName;
+    private final String targetName;
     private final Method listSetter;
     private final Class<R> listClazz;
 
     private ArrayHandler(final Class<T> clazz,
                          final String listKeyName,
+                         final String targetName,
                          final Method listSetter,
                          final Class<R> listElementClazz) {
         super(clazz, listKeyName);
         this.listKeyName = listKeyName;
+        this.targetName = targetName;
         this.listSetter = listSetter;
         this.listClazz = listElementClazz;
     }
@@ -49,7 +52,7 @@ public final class ArrayHandler<T, R> extends BadKeyGroupHandler<T> {
                 return;
             }
 
-            convertObjectNode(t, new ObjectNode(JsonNodeFactory.instance, Map.of(listKeyName, node)), mapper);
+            convertObjectNode(t, new ObjectNode(JsonNodeFactory.instance, Map.of(targetName, node)), mapper);
         } catch (IllegalAccessException | InvocationTargetException e) {
             throw new MbSerdesException(e);
         }
@@ -67,6 +70,7 @@ public final class ArrayHandler<T, R> extends BadKeyGroupHandler<T> {
      * Factory method.
      * @param clazz The music brains "List" class
      * @param listKeyName The key of the sub-contained list of elements in the enclosing "List" class
+     * @param targetName The field name of the nested list elements in the enclosing "List" class
      * @param listGetter Corresponding getter on the POJO.
      * @param listElementClazz The type contained within the list.
      * @return A new ListHandler.
@@ -76,10 +80,11 @@ public final class ArrayHandler<T, R> extends BadKeyGroupHandler<T> {
     @SuppressWarnings("checkstyle.LineLength")
     public static <T, R> ArrayHandler<T, R> factory(final Class<T> clazz,
                                                     final String listKeyName,
+                                                    final String targetName,
                                                     final String listGetter,
                                                     final Class<R> listElementClazz) {
         Method setter = getSetter(clazz, listGetter, listElementClazz);
-        return new ArrayHandler<>(clazz, listKeyName, setter, listElementClazz);
+        return new ArrayHandler<>(clazz, listKeyName, targetName, setter, listElementClazz);
     }
 
     private static <T, R> Method getSetter(final Class<T> parentClazz,

@@ -193,14 +193,17 @@ public final class MbDeserializer<T> extends JsonDeserializer<T> implements Dese
          * @param sourceKeyName
          * @param setListMethodName
          * @param musicBrainzListEntityClazz
+         * @param targetKeyName
          * @return this.
          * @param <R> The type of music brainz list entity, e.g. "ArtistList".
          */
         public <R> Builder<T> withArrayHandler(final String sourceKeyName,
+                                               final String targetKeyName,
                                                final String setListMethodName,
                                                final Class<R> musicBrainzListEntityClazz) {
             ArrayHandler<T, R> handler = ArrayHandler.factory(clazz,
                     sourceKeyName,
+                    targetKeyName,
                     setListMethodName,
                     musicBrainzListEntityClazz);
             return withHandler(handler);
