@@ -10,6 +10,7 @@ import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
 import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
 import com.github.rev.musicbrainz.client.search.result.MbEventResult;
+import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -24,6 +25,8 @@ import org.musicbrainz.ns.mmd_2.DefAreaElementInner;
 import org.musicbrainz.ns.mmd_2.Event;
 import org.musicbrainz.ns.mmd_2.EventList;
 import org.musicbrainz.ns.mmd_2.Gender;
+import org.musicbrainz.ns.mmd_2.Instrument;
+import org.musicbrainz.ns.mmd_2.InstrumentList;
 import org.musicbrainz.ns.mmd_2.Relation;
 import org.musicbrainz.ns.mmd_2.RelationList;
 import org.musicbrainz.ns.mmd_2.TagList;
@@ -90,8 +93,8 @@ public final class MbJsonSerdesModule extends Module {
                                         .ignoringField("name")
                         )
                         .withArrayHandler("aliases", "setAliasList", AliasList.class)
-                        .withArrayHandler("tags", "setTagList", TagList.class)
                         .withMappedKey("aliases", "alias")
+                        .withArrayHandler("tags", "setTagList", TagList.class)
                         .withMappedKey("tags", "tag")
                         .withFieldsToObjectHandler("setGender", Gender.class,
                                 Map.of(
@@ -133,6 +136,25 @@ public final class MbJsonSerdesModule extends Module {
                                 .withMappedKey("relations", "relationList")
                 )
                 .withMappedKey("events", "event")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbInstrumentResult.class,
+                new JsonMbResultDeserializer<>(MbInstrumentResult.class));
+        new MbDeserializer.Builder<>(InstrumentList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Instrument.class)
+                                .withNestedDeserializer(
+                                        new MbDeserializer.Builder<>(Alias.class)
+                                                .ignoringField("name")
+                                )
+                                .ignoringField("score")
+                                .withArrayHandler("aliases", "setAliasList", AliasList.class)
+                                .withMappedKey("aliases", "alias")
+                                .withArrayHandler("tags", "setTagList", TagList.class)
+                                .withMappedKey("tags", "tag")
+                )
+                .withMappedKey("instruments", "instrument")
                 .build()
                 .addToDeserializers(deserializers);
 
