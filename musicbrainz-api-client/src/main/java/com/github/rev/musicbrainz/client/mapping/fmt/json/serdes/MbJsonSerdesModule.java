@@ -14,6 +14,7 @@ import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
 import com.github.rev.musicbrainz.client.search.result.MbRecordingResult;
+import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -33,9 +34,11 @@ import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Instrument;
 import org.musicbrainz.ns.mmd_2.InstrumentList;
 import org.musicbrainz.ns.mmd_2.Label;
+import org.musicbrainz.ns.mmd_2.LabelInfoList;
 import org.musicbrainz.ns.mmd_2.LabelList;
 import org.musicbrainz.ns.mmd_2.Medium;
 import org.musicbrainz.ns.mmd_2.MediumList;
+import org.musicbrainz.ns.mmd_2.Packaging;
 import org.musicbrainz.ns.mmd_2.Place;
 import org.musicbrainz.ns.mmd_2.PlaceList;
 import org.musicbrainz.ns.mmd_2.PrimaryType;
@@ -263,6 +266,54 @@ public final class MbJsonSerdesModule extends Module {
                                 .withArrayHandler("tags", "tag", "setTagList", TagList.class)
                 )
                 .withMappedKey("recordings", "recording")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbReleaseResult.class, new JsonMbResultDeserializer<>(MbReleaseResult.class));
+        new MbDeserializer.Builder<>(ReleaseList.class)
+                .withNestedDeserializer(new MbDeserializer.Builder<>(Release.class)
+                        .withNestedDeserializer(new MbDeserializer.Builder<>(ReleaseGroup.class)
+                                .withFieldsToObjectHandler("setPrimaryType", PrimaryType.class, Map.of(
+                                        "primary-type-id", Pair.of("setId", String.class),
+                                        "primary-type", Pair.of("setContent", String.class))
+                                )
+                                .ignoringField("secondary-types") //TODO - Fix me
+                                .ignoringField("secondary-type-ids") //TODO - Fix me
+                        )
+                        .withNestedDeserializer(new MbDeserializer.Builder<>(DefAreaElementInner.class)
+                                .ignoringField("iso-3166-1-codes") //TODO - Fix me
+                        )
+                        .withNestedDeserializer(new MbDeserializer.Builder<>(Medium.class)
+                                .withFieldsToObjectHandler("setFormat", Format.class, Map.of(
+                                        "format", Pair.of("setContent", String.class)
+                                ))
+                                .withArrayHandler("track", "def-track", "setTrackList",
+                                        Medium.TrackList.class)
+                                .ignoringField("disc-count") //TODO - Fix me
+                                .ignoringField("track-count") //TODO - Fix me
+                        )
+                        .withFieldsToObjectHandler("setStatus", Status.class,
+                                Map.of(
+                                        "status-id", Pair.of("setId", String.class),
+                                        "status", Pair.of("setContent", String.class)
+                                ))
+                        .ignoringField("count")
+                        .ignoringField("score")
+                        .ignoringField("track-count")
+                        .withArrayHandler("release-events",
+                                "release-event",
+                                "setReleaseEventList",
+                                ReleaseEventList.class)
+                        .withArrayHandler("artist-credit", "name-credit", "setArtistCredit", ArtistCredit.class)
+                        .withArrayHandler("tags", "tag", "setTagList", TagList.class)
+                        .withArrayHandler("media", "medium", "setMediumList", MediumList.class)
+                        .withArrayHandler("label-info", "label-info", "setLabelInfoList", LabelInfoList.class)
+                        .withFieldsToObjectHandler("setPackaging", Packaging.class, Map.of(
+                                "packaging-id", Pair.of("setId", String.class),
+                                "packaging", Pair.of("setContent", String.class)
+                        ))
+                )
+                .withMappedKey("releases", "release")
                 .build()
                 .addToDeserializers(deserializers);
 
