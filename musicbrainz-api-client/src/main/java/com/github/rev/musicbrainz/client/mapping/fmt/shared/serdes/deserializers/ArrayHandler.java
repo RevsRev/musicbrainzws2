@@ -39,6 +39,11 @@ public final class ArrayHandler<T, R> extends BadKeyGroupHandler<T> {
                               final ObjectMapper mapper) throws MbSerdesException {
         try {
             JsonNode node = jsonNode.get(listKeyName);
+
+            if (node == null) {
+                return;
+            }
+
             if (node instanceof ObjectNode) {
                 convertObjectNode(t, (ObjectNode) node, mapper);
                 return;

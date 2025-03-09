@@ -85,14 +85,14 @@ public final class MbJsonSerdesModule extends Module {
         new MbDeserializer.Builder<>(ArtistList.class)
                 .withMappedKey("artists", "artist")
                 .withNestedDeserializer(new MbDeserializer.Builder<>(Artist.class)
-                        .withNestedDeserializer(new JsonListDeserializer<>(AliasList.class))
-                        .withNestedDeserializer(new JsonListDeserializer<>(TagList.class))
                         .withNestedDeserializer(
                                 new MbDeserializer.Builder<>(Alias.class)
                                         .ignoringField("name")
                         )
-                        .withMappedKey("aliases", "aliasList")
-                        .withMappedKey("tags", "tagList")
+                        .withArrayHandler("aliases", "setAliasList", AliasList.class)
+                        .withArrayHandler("tags", "setTagList", TagList.class)
+                        .withMappedKey("aliases", "alias")
+                        .withMappedKey("tags", "tag")
                         .withFieldsToObjectHandler("setGender", Gender.class,
                                 Map.of(
                                         "gender-id", Pair.of("setId", String.class),
@@ -120,7 +120,6 @@ public final class MbJsonSerdesModule extends Module {
         new MbDeserializer.Builder<>(EventList.class)
                 .withNestedDeserializer(
                         new MbDeserializer.Builder<>(Event.class)
-//                                .withNestedDeserializer(new JsonListDeserializer<>(RelationList.class))
                                 .withNestedDeserializer(
                                         new MbDeserializer.Builder<>(RelationList.class)
                                                 .withNestedDeserializer(
