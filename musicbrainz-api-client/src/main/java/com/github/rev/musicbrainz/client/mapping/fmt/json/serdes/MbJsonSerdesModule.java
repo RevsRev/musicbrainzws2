@@ -11,6 +11,7 @@ import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
 import com.github.rev.musicbrainz.client.search.result.MbEventResult;
 import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
+import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -27,6 +28,8 @@ import org.musicbrainz.ns.mmd_2.EventList;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Instrument;
 import org.musicbrainz.ns.mmd_2.InstrumentList;
+import org.musicbrainz.ns.mmd_2.Label;
+import org.musicbrainz.ns.mmd_2.LabelList;
 import org.musicbrainz.ns.mmd_2.Relation;
 import org.musicbrainz.ns.mmd_2.RelationList;
 import org.musicbrainz.ns.mmd_2.TagList;
@@ -103,8 +106,9 @@ public final class MbJsonSerdesModule extends Module {
                                 )
                         )
                         .ignoringField("score")
-                        .ignoringField("isnis")
-                        .ignoringField("ipis"))
+                        .withMappedKey("isnis", "isniList")
+                        .withMappedKey("ipis", "ipiList")
+                )
                 .build()
                 .addToDeserializers(deserializers);
 
@@ -155,6 +159,26 @@ public final class MbJsonSerdesModule extends Module {
                                 .withMappedKey("tags", "tag")
                 )
                 .withMappedKey("instruments", "instrument")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbLabelResult.class, new JsonMbResultDeserializer<>(MbLabelResult.class));
+        new MbDeserializer.Builder<>(LabelList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Label.class)
+                                .withNestedDeserializer(
+                                        new MbDeserializer.Builder<>(Alias.class)
+                                                .ignoringField("name")
+                                )
+                                .ignoringField("score")
+                                .withArrayHandler("aliases", "setAliasList", AliasList.class)
+                                .withMappedKey("aliases", "alias")
+                                .withArrayHandler("tags", "setTagList", TagList.class)
+                                .withMappedKey("tags", "tag")
+                                .withMappedKey("isnis", "isniList")
+                                .withMappedKey("ipis", "ipiList")
+                )
+                .withMappedKey("labels", "label")
                 .build()
                 .addToDeserializers(deserializers);
 
