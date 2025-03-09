@@ -14,6 +14,7 @@ import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
 import com.github.rev.musicbrainz.client.search.result.MbRecordingResult;
+import com.github.rev.musicbrainz.client.search.result.MbReleaseGroupResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
@@ -49,6 +50,7 @@ import org.musicbrainz.ns.mmd_2.RelationList;
 import org.musicbrainz.ns.mmd_2.Release;
 import org.musicbrainz.ns.mmd_2.ReleaseEventList;
 import org.musicbrainz.ns.mmd_2.ReleaseGroup;
+import org.musicbrainz.ns.mmd_2.ReleaseGroupList;
 import org.musicbrainz.ns.mmd_2.ReleaseList;
 import org.musicbrainz.ns.mmd_2.Status;
 import org.musicbrainz.ns.mmd_2.TagList;
@@ -314,6 +316,52 @@ public final class MbJsonSerdesModule extends Module {
                         ))
                 )
                 .withMappedKey("releases", "release")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbReleaseGroupResult.class,
+                new JsonMbResultDeserializer<>(MbReleaseGroupResult.class));
+        new MbDeserializer.Builder<>(ReleaseGroupList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(ReleaseGroup.class)
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(Artist.class)
+                                        .withNestedDeserializer(
+                                                new MbDeserializer.Builder<>(Alias.class)
+                                                        .ignoringField("name")
+                                        )
+                                        .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                                        .withArrayHandler("tags", "tag", "setTagList", TagList.class)
+                                        .withFieldsToObjectHandler("setGender", Gender.class,
+                                                Map.of(
+                                                        "gender-id", Pair.of("setId", String.class),
+                                                        "gender", Pair.of("setContent", String.class)
+                                                )
+                                        )
+                                        .ignoringField("score")
+                                        .withMappedKey("isnis", "isniList")
+                                        .withMappedKey("ipis", "ipiList")
+                                )
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(Release.class)
+                                        .withFieldsToObjectHandler("setStatus", Status.class,
+                                                Map.of(
+                                                        "status-id", Pair.of("setId", String.class),
+                                                        "status", Pair.of("setContent", String.class)
+                                                ))
+                                )
+                                .withFieldsToObjectHandler("setPrimaryType", PrimaryType.class, Map.of(
+                                        "primary-type-id", Pair.of("setId", String.class),
+                                        "primary-type", Pair.of("setContent", String.class))
+                                )
+                                .ignoringField("score")
+                                .ignoringField("count")
+                                .ignoringField("secondary-types") //TODO - Fix me
+                                .ignoringField("secondary-type-ids") //TODO - Fix me
+                                .withArrayHandler("artist-credit", "name-credit", "setArtistCredit", ArtistCredit.class)
+                                .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                                .withArrayHandler("releases", "release", "setReleaseList", ReleaseList.class)
+                                .withArrayHandler("tags", "tag", "setTagList", TagList.class)
+                )
+                .withMappedKey("release-groups", "releaseGroup")
                 .build()
                 .addToDeserializers(deserializers);
 
