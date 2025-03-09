@@ -18,6 +18,7 @@ import com.github.rev.musicbrainz.client.search.result.MbReleaseGroupResult;
 import com.github.rev.musicbrainz.client.search.result.MbReleaseResult;
 import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.search.result.MbTagResult;
+import com.github.rev.musicbrainz.client.search.result.MbWorkResult;
 import org.apache.commons.lang3.tuple.Pair;
 import org.musicbrainz.ns.mmd_2.Alias;
 import org.musicbrainz.ns.mmd_2.AliasList;
@@ -36,6 +37,7 @@ import org.musicbrainz.ns.mmd_2.Format;
 import org.musicbrainz.ns.mmd_2.Gender;
 import org.musicbrainz.ns.mmd_2.Instrument;
 import org.musicbrainz.ns.mmd_2.InstrumentList;
+import org.musicbrainz.ns.mmd_2.IswcList;
 import org.musicbrainz.ns.mmd_2.Label;
 import org.musicbrainz.ns.mmd_2.LabelInfoList;
 import org.musicbrainz.ns.mmd_2.LabelList;
@@ -60,6 +62,8 @@ import org.musicbrainz.ns.mmd_2.Status;
 import org.musicbrainz.ns.mmd_2.Tag;
 import org.musicbrainz.ns.mmd_2.TagList;
 import org.musicbrainz.ns.mmd_2.Target;
+import org.musicbrainz.ns.mmd_2.Work;
+import org.musicbrainz.ns.mmd_2.WorkList;
 
 import java.util.Map;
 
@@ -392,6 +396,28 @@ public final class MbJsonSerdesModule extends Module {
                                 .ignoringField("score")
                 )
                 .withMappedKey("tags", "tag")
+                .build()
+                .addToDeserializers(deserializers);
+
+        deserializers.addDeserializer(MbWorkResult.class, new JsonMbResultDeserializer<>(MbWorkResult.class));
+        new MbDeserializer.Builder<>(WorkList.class)
+                .withNestedDeserializer(
+                        new MbDeserializer.Builder<>(Work.class)
+                                .withNestedDeserializer(
+                                        new MbDeserializer.Builder<>(Alias.class)
+                                                .ignoringField("name")
+                                )
+                                .withNestedDeserializer(new MbDeserializer.Builder<>(Relation.class)
+                                        .ignoringField("direction") //TODO - Fix me
+                                )
+                                .ignoringField("score")
+                                .withArrayHandler("aliases", "alias", "setAliasList", AliasList.class)
+                                .withArrayHandler("relations", "relation", "setRelationList", RelationList.class)
+                                .withArrayHandler("iswcs", "iswc", "setIswcList", IswcList.class)
+//                                .withArrayHandler("languages", "language", "setLanguageList", LanguageList.class)
+                                .ignoringField("languages") //TODO - Fix me!
+                )
+                .withMappedKey("works", "work")
                 .build()
                 .addToDeserializers(deserializers);
 

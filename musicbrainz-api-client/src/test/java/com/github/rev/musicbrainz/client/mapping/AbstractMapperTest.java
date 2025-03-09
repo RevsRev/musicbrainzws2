@@ -69,7 +69,7 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbSeriesResult.class, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbTagResult.class, MbFormat.JSON));
-//        testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.JSON));
 //        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.JSON));
 
         return testParams;
