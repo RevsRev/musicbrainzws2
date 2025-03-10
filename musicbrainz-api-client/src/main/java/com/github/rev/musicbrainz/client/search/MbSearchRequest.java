@@ -62,6 +62,11 @@ public final class MbSearchRequest<T extends MbEntity> extends MbRequest<T> {
         return params;
     }
 
+    @Override
+    public String getPath() {
+        return getEntity().getApiName();
+    }
+
     @Getter @Setter
     public static final class Builder<T extends MbEntity> implements MbBuilder<MbSearchRequest<T>> {
         private T entity = null;

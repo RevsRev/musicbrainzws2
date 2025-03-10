@@ -51,7 +51,7 @@ public final class MbEntityController<T extends MbEntity, R extends MbResult<T>>
 
     @Override
     public R doSearch(final MbSearchRequest<T> request) {
-        return client.doSearch(request, getHandler(request.getFormat()));
+        return client.doGet(request, getHandler(request.getFormat()));
     }
 
     /**

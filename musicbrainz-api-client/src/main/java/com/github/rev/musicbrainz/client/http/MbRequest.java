@@ -22,6 +22,12 @@ public abstract class MbRequest<T extends MbEntity> implements MbParams {
     }
 
     /**
+     * Get the path of the request relative to the music brainz host.
+     * @return the path of this request.
+     */
+    public abstract String getPath();
+
+    /**
      * @return the entity associated with this request.
      */
     public final T getEntity() {

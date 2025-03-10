@@ -10,7 +10,8 @@ import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.core5.http.ClassicHttpRequest;
 import org.apache.hc.core5.http.io.HttpClientResponseHandler;
 
-import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Collection;
 
 /**
@@ -21,29 +22,37 @@ public final class MbClient {
 
     private static final String DEFAULT_PROTOCOL = "http";
     private static final String DEFAULT_HOST = "musicbrainz.org";
+    private static final int DEFAULT_PORT = -1;
     private static final String DEFAULT_PATH_PREFIX = "ws";
     private static final String DEFAULT_VERSION = "2";
-    private static final String DEFAULT_ENDPOINT = DEFAULT_PROTOCOL + "://"
-            + DEFAULT_HOST + "/"
-            + DEFAULT_PATH_PREFIX + "/"
-            + DEFAULT_VERSION;
+    private static final String DEFAULT_PATH = "/" + DEFAULT_PATH_PREFIX + "/" + DEFAULT_VERSION;
 
-    private final String endpoint;
     private final HttpClient httpClient = buildHttpClient();
+    private final String protocol;
+    private final String host;
+    private final int port;
+    private final String path;
 
     /**
      * Construct a client for the default MusicBrainz endpoint.
      */
     public MbClient() {
-        this(DEFAULT_ENDPOINT);
+        this(DEFAULT_PROTOCOL, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_PATH);
     }
 
     /**
      * Construct a client for a specific endpoint hosting the MusicBrainz API.
-     * @param endpoint The endpoint hosting the MusicBrainz API.
+     *
+     * @param protocol        The endpoint hosting the MusicBrainz API.
+     * @param host
+     * @param port
+     * @param path
      */
-    public MbClient(final String endpoint) {
-        this.endpoint = endpoint;
+    public MbClient(final String protocol, final String host, final int port, final String path) {
+        this.protocol = protocol;
+        this.host = host;
+        this.port = port;
+        this.path = path;
     }
 
     private CloseableHttpClient buildHttpClient() {
@@ -58,38 +67,37 @@ public final class MbClient {
      * @param <T> The type of entity being searched.
      * @param <R> The type being returned.
      */
-    public <T extends MbEntity, R> R doSearch(final MbRequest<T> request,
-                                              final HttpClientResponseHandler<R> responseHandler) {
-        ClassicHttpRequest httpRequest = createHttpRequest(request);
+    public <T extends MbEntity, R> R doGet(final MbRequest<T> request,
+                                           final HttpClientResponseHandler<R> responseHandler) {
         try {
+            ClassicHttpRequest httpRequest = createHttpRequest(request);
             return httpClient.execute(httpRequest, responseHandler);
-        } catch (IOException e) {
+        } catch (Exception e) {
             //TODO - Error handling / retries etc...
             throw new RuntimeException(e);
         }
     }
 
-    private <T extends MbEntity> ClassicHttpRequest createHttpRequest(final MbRequest<T> request) {
-        String name = request.getEntity().getApiName();
+    private <T extends MbEntity> ClassicHttpRequest createHttpRequest(final MbRequest<T> request)
+            throws URISyntaxException {
+
+        StringBuilder paramSb = new StringBuilder();
         Collection<MbParam> params = request.getParams();
-
-        StringBuilder urlSb = new StringBuilder();
-        urlSb.append(endpoint)
-                .append("/")
-                .append(name)
-                .append("/");
-
         boolean first = true;
         for (MbParam param : params) {
             if (first) {
-                urlSb.append("?");
+                paramSb.append("?");
                 first = false;
             } else {
-                urlSb.append('&');
+                paramSb.append('&');
             }
-            urlSb.append(param.getName()).append('=').append(param.getValue());
+            paramSb.append(param.getName()).append('=').append(param.getValue());
         }
-        return new HttpGet(urlSb.toString());
+
+
+        String query = paramSb.toString();
+
+        return new HttpGet(new URI(protocol, host, path + "/" + request.getPath(), query));
     }
 
 }
