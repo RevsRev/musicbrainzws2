@@ -1,46 +1,37 @@
-package com.github.rev.musicbrainz.client.search.query;
+package com.github.rev.musicbrainz.client.lookup.param;
 
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.http.InvalidParameterException;
 import com.github.rev.musicbrainz.client.http.MbParam;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Base class for all queries submitted to the MusicBrainz API as part of a search request.
- *
- * @param <T> The entity type being browsed.
- */
-public abstract class MbQuery<T extends MbEntity> implements MbParam {
+public abstract class MbLookupParam<T extends MbEntity> implements MbParam {
 
     /**
-     * Map of Field to be queried to the value being queried.
+     * Set of includes for this lookup.
      */
-    private final HashMap<String, String> queryParams = new HashMap<>();
-    private final Set<String> queryFields = getQueryFields();
+    private final Set<String> includes = new HashSet<>();
+    private final Set<String> validIncludes = getValidIncludes();
 
     /**
      * Instances should return a non-null map containing the permissible fields.
      * @return Set of Field names that are permissible for this query.
      */
-    public abstract Set<String> getQueryFields();
+    public abstract Set<String> getValidIncludes();
 
     /**
      * Add a Field and Value to the query.
-     * @param field The Field name.
-     * @param value The Value.
+     * @param include The include name.
      * @throws InvalidParameterException If the Field name is not permissible for this query.
-     * @return this query.
      */
-    public final MbQuery<T> add(final String field, final String value) throws InvalidParameterException {
-        if (!queryFields.contains(field)) {
+    public final void add(final String include) throws InvalidParameterException {
+        if (!validIncludes.contains(include)) {
             //TODO - Move validation to the point of building a query?
-            throw new InvalidParameterException(field);
+            throw new InvalidParameterException(include);
         }
-        queryParams.put(field, value);
-        return this;
+        includes.add(include);
     }
 
     /**
@@ -49,24 +40,21 @@ public abstract class MbQuery<T extends MbEntity> implements MbParam {
     public final String asQueryString() {
         StringBuilder sb = new StringBuilder();
         boolean first = true;
-        for (Map.Entry<String, String> keyValue : queryParams.entrySet()) {
+        for (String include : includes) {
 
             if (!first) {
-                sb.append(" AND ");
+                sb.append("+");
             } else {
                 first = false;
             }
-
-            sb.append(keyValue.getKey());
-            sb.append(':');
-            sb.append(keyValue.getValue());
+            sb.append(include);
         }
         return sb.toString();
     }
 
     @Override
     public final String getName() {
-        return "query";
+        return "lookup";
     }
 
     @Override
@@ -74,5 +62,4 @@ public abstract class MbQuery<T extends MbEntity> implements MbParam {
         //TODO - Replace with some sort of "url formatter"...
         return asQueryString().replaceAll(" ", "%20");
     }
-
 }

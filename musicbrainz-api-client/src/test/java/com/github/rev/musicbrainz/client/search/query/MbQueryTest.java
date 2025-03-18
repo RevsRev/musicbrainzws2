@@ -1,5 +1,6 @@
 package com.github.rev.musicbrainz.client.search.query;
 
+import com.github.rev.musicbrainz.client.http.InvalidParameterException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,7 +16,7 @@ public class MbQueryTest {
     @ParameterizedTest
     @MethodSource("getMbQueries")
     public void testInvalidFieldName(MbQuery<?> query) {
-        Assertions.assertThrows(MbQuery.InvalidQueryFieldException.class, () -> query.add(INVALID_FIELD_NAME, ""));
+        Assertions.assertThrows(InvalidParameterException.class, () -> query.add(INVALID_FIELD_NAME, ""));
     }
 
     @ParameterizedTest
@@ -28,14 +29,14 @@ public class MbQueryTest {
     }
 
     @Test
-    public void testCorrectQueryStringSingleField() throws MbQuery.InvalidQueryFieldException {
+    public void testCorrectQueryStringSingleField() throws InvalidParameterException {
         MbArtistQuery artistQuery = new MbArtistQuery();
         artistQuery.add(MbArtistQuery.ARTIST, "Fleetwood Mac");
         Assertions.assertEquals("artist:Fleetwood Mac", artistQuery.asQueryString());
     }
 
     @Test
-    public void testCorrectQueryStringMultipleFields() throws MbQuery.InvalidQueryFieldException {
+    public void testCorrectQueryStringMultipleFields() throws InvalidParameterException {
         MbArtistQuery artistQuery = new MbArtistQuery();
         artistQuery.add(MbArtistQuery.ARTIST, "Fleetwood Mac");
         artistQuery.add(MbArtistQuery.TYPE, "group");

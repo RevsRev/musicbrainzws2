@@ -86,7 +86,6 @@ public final class MbClient {
         boolean first = true;
         for (MbParam param : params) {
             if (first) {
-                paramSb.append("?");
                 first = false;
             } else {
                 paramSb.append('&');
@@ -97,7 +96,7 @@ public final class MbClient {
 
         String query = paramSb.toString();
 
-        return new HttpGet(new URI(protocol, host, path + "/" + request.getPath(), query));
+        return new HttpGet(new URI(protocol, host, path + "/" + request.getPath(), query, null));
     }
 
 }

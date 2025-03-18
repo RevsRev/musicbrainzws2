@@ -1,175 +1,154 @@
 package com.github.rev.musicbrainz.client.controller;
 
-import com.github.rev.musicbrainz.client.MbBuilder;
 import com.github.rev.musicbrainz.client.MbClient;
-import com.github.rev.musicbrainz.client.MbFormat;
-import com.github.rev.musicbrainz.client.MbResult;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
-import com.github.rev.musicbrainz.client.search.query.MbAnnotationQuery;
-import com.github.rev.musicbrainz.client.search.query.MbAreaQuery;
-import com.github.rev.musicbrainz.client.search.query.MbArtistQuery;
-import com.github.rev.musicbrainz.client.search.query.MbCdStubQuery;
-import com.github.rev.musicbrainz.client.search.query.MbEventQuery;
-import com.github.rev.musicbrainz.client.search.query.MbInstrumentQuery;
-import com.github.rev.musicbrainz.client.search.query.MbLabelQuery;
-import com.github.rev.musicbrainz.client.search.query.MbPlaceQuery;
-import com.github.rev.musicbrainz.client.search.query.MbQuery;
-import com.github.rev.musicbrainz.client.search.query.MbRecordingQuery;
-import com.github.rev.musicbrainz.client.search.query.MbReleaseGroupQuery;
-import com.github.rev.musicbrainz.client.search.query.MbReleaseQuery;
-import com.github.rev.musicbrainz.client.search.query.MbSeriesQuery;
-import com.github.rev.musicbrainz.client.search.query.MbTagQuery;
-import com.github.rev.musicbrainz.client.search.query.MbUrlQuery;
-import com.github.rev.musicbrainz.client.search.query.MbWorkQuery;
-import org.junit.jupiter.api.Assertions;
+import com.github.rev.musicbrainz.client.util.ControllerTestData;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class MbControllerTest {
 
     private static final MbController CONTROLLER = getController();
+    private static final ControllerTestData TEST_DATA = ControllerTestData.constructAllTestData();
 
     @ParameterizedTest
-    @MethodSource("getEndpointParams")
-    public <T extends MbEntity, R extends MbResult<T>> void testXmlWithLiveEndpoint(final EndpointParams<T,R> params)
-            throws MbQuery.InvalidQueryFieldException, MbBuilder.MbBuildException {
-        testWithLiveEndpoint(params, MbFormat.XML);
+    @MethodSource("getAnnotationTestsParams")
+    public void testAnnotationTests(MbSearchRequest<MbEntity.MbAnnotation> testParam) {
+        CONTROLLER.getAnnotation().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbAnnotation>> getAnnotationTestsParams() {
+        return TEST_DATA.getAnnotationTests().getAllSearchRequests();
     }
 
     @ParameterizedTest
-    @MethodSource("getEndpointParams")
-    public <T extends MbEntity, R extends MbResult<T>> void testJsonWithLiveEndpoint(final EndpointParams<T,R> params)
-            throws MbQuery.InvalidQueryFieldException, MbBuilder.MbBuildException {
-        //TODO - Fix me
-//        testWithLiveEndpoint(params, MbFormat.JSON);
+    @MethodSource("getAreaTestsParams")
+    public void testAreaTests(MbSearchRequest<MbEntity.MbArea> testParam) {
+        CONTROLLER.getArea().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbArea>> getAreaTestsParams() {
+        return TEST_DATA.getAreaTests().getAllSearchRequests();
     }
 
-    private static <T extends MbEntity, R extends MbResult<T>> void testWithLiveEndpoint(final EndpointParams<T, R> params,
-                                                                                         final MbFormat format)
-            throws MbBuilder.MbBuildException {
-        MbSearchRequest.Builder<T> builder = new MbSearchRequest.Builder<>();
-        builder.setEntity(params.entity);
-        builder.setQuery(params.query);
-        builder.setFormat(format);
-        MbSearchRequest<T> searchRequest = builder.build();
-        R r = params.controller.doSearch(searchRequest);
+    @ParameterizedTest
+    @MethodSource("getArtistTestsParams")
+    public void testArtistTests(MbSearchRequest<MbEntity.MbArtist> testParam) {
+        CONTROLLER.getArtist().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbArtist>> getArtistTestsParams() {
+        return TEST_DATA.getArtistTests().getAllSearchRequests();
     }
 
-    public static List<EndpointParams<?,?>> getEndpointParams() {
-        List<EndpointParams<?,?>> params = new ArrayList<>();
-
-        try {
-            params.add(new EndpointParams<>(new MbEntity.MbAnnotation(), annotationQuery(), CONTROLLER.getAnnotation()));
-            params.add(new EndpointParams<>(new MbEntity.MbArea(), areaQuery(), CONTROLLER.getArea()));
-            params.add(new EndpointParams<>(new MbEntity.MbArtist(), artistQuery(), CONTROLLER.getArtist()));
-            params.add(new EndpointParams<>(new MbEntity.CdStub(), stubQuery(), CONTROLLER.getCdStub()));
-            params.add(new EndpointParams<>(new MbEntity.MbEvent(), eventQuery(), CONTROLLER.getEvent()));
-//            params.add(new EndpointParams<>(new MbEntity.MbGenre(), genreQuery(), CONTROLLER.getGenre()));
-            params.add(new EndpointParams<>(new MbEntity.MbInstrument(), instrumentQuery(), CONTROLLER.getInstrument()));
-            params.add(new EndpointParams<>(new MbEntity.MbLabel(), labelQuery(), CONTROLLER.getLabel()));
-            params.add(new EndpointParams<>(new MbEntity.MbPlace(), placeQuery(), CONTROLLER.getPlace()));
-            params.add(new EndpointParams<>(new MbEntity.MbRecording(), recordingQuery(), CONTROLLER.getRecording()));
-            params.add(new EndpointParams<>(new MbEntity.MbRelease(), releaseQuery(), CONTROLLER.getRelease()));
-            params.add(new EndpointParams<>(new MbEntity.MbReleaseGroup(), releaseGroupQuery(), CONTROLLER.getReleaseGroup()));
-            params.add(new EndpointParams<>(new MbEntity.MbSeries(), seriesQuery(), CONTROLLER.getSeries()));
-            params.add(new EndpointParams<>(new MbEntity.MbTag(), tagQuery(), CONTROLLER.getTag()));
-            params.add(new EndpointParams<>(new MbEntity.MbWork(), workQuery(), CONTROLLER.getWork()));
-            params.add(new EndpointParams<>(new MbEntity.MbUrl(), urlQuery(), CONTROLLER.getUrl()));
-
-        } catch (MbQuery.InvalidQueryFieldException e) {
-            Assertions.fail(e);
-        }
-        return params;
+    @ParameterizedTest
+    @MethodSource("getStubTestsParams")
+    public void testStubTests(MbSearchRequest<MbEntity.CdStub> testParam) {
+        CONTROLLER.getCdStub().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.CdStub>> getStubTestsParams() {
+        return TEST_DATA.getStubTests().getAllSearchRequests();
     }
 
-    private static MbQuery<MbEntity.MbAnnotation> annotationQuery() throws MbQuery.InvalidQueryFieldException {
-        MbAnnotationQuery annotationQuery = new MbAnnotationQuery();
-        annotationQuery.add(MbAnnotationQuery.NAME, "artist");
-        return annotationQuery;
+    @ParameterizedTest
+    @MethodSource("getEventTestsParams")
+    public void testEventTests(MbSearchRequest<MbEntity.MbEvent> testParam) {
+        CONTROLLER.getEvent().doSearch(testParam);
     }
-    private static MbQuery<MbEntity.MbArea> areaQuery() throws MbQuery.InvalidQueryFieldException {
-        MbAreaQuery areaQuery = new MbAreaQuery();
-        areaQuery.add(MbAreaQuery.AREA, "Rock");
-        return areaQuery;
-    }
-    private static MbQuery<MbEntity.MbArtist> artistQuery() throws MbQuery.InvalidQueryFieldException {
-        MbArtistQuery artistQuery = new MbArtistQuery();
-        artistQuery.add(MbArtistQuery.ARTIST, "Fleetwood");
-        return artistQuery;
-    }
-    private static MbQuery<MbEntity.CdStub> stubQuery() throws MbQuery.InvalidQueryFieldException {
-        MbCdStubQuery stubQuery = new MbCdStubQuery();
-        stubQuery.add(MbCdStubQuery.TITLE, "Doo");
-        return stubQuery;
-    }
-    private static MbQuery<MbEntity.MbEvent> eventQuery() throws MbQuery.InvalidQueryFieldException {
-        MbEventQuery eventQuery = new MbEventQuery();
-        eventQuery.add(MbEventQuery.PLACE, "USA");
-        return eventQuery;
+    public static Collection<MbSearchRequest<MbEntity.MbEvent>> getEventTestsParams() {
+        return TEST_DATA.getEventTests().getAllSearchRequests();
     }
 
-    //TODO - Check this one is unsupported?
-//    private static MbQuery<MbEntity.MbGenre> genreQuery() throws MbQuery.InvalidQueryFieldException {
-//        MbGenreQuery genreQuery = new MbGenreQuery();
-//        genreQuery.add(MbGenreQuery);
-//        return genreQuery;
-//    }
+    @ParameterizedTest
+    @MethodSource("getInstrumentTestsParams")
+    public void testInstrumentTests(MbSearchRequest<MbEntity.MbInstrument> testParam) {
+        CONTROLLER.getInstrument().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbInstrument>> getInstrumentTestsParams() {
+        return TEST_DATA.getInstrumentTests().getAllSearchRequests();
+    }
 
-    private static MbQuery<MbEntity.MbInstrument> instrumentQuery() throws MbQuery.InvalidQueryFieldException {
-        MbInstrumentQuery instrumentQuery = new MbInstrumentQuery();
-        instrumentQuery.add(MbInstrumentQuery.INSTRUMENT, "Guitar");
-        return instrumentQuery;
+    @ParameterizedTest
+    @MethodSource("getLabelTestsParams")
+    public void testLabelTests(MbSearchRequest<MbEntity.MbLabel> testParam) {
+        CONTROLLER.getLabel().doSearch(testParam);
     }
-    private static MbQuery<MbEntity.MbLabel> labelQuery() throws MbQuery.InvalidQueryFieldException {
-        MbLabelQuery labelQuery = new MbLabelQuery();
-        labelQuery.add(MbLabelQuery.COUNTRY, "US");
-        return labelQuery;
+    public static Collection<MbSearchRequest<MbEntity.MbLabel>> getLabelTestsParams() {
+        return TEST_DATA.getLabelTests().getAllSearchRequests();
     }
-    private static MbQuery<MbEntity.MbPlace> placeQuery() throws MbQuery.InvalidQueryFieldException {
-        MbPlaceQuery placeQuery = new MbPlaceQuery();
-        placeQuery.add(MbPlaceQuery.PLACE, "USA");
-        return placeQuery;
+
+    @ParameterizedTest
+    @MethodSource("getPlaceTestsParams")
+    public void testPlaceTests(MbSearchRequest<MbEntity.MbPlace> testParam) {
+        CONTROLLER.getPlace().doSearch(testParam);
     }
-    private static MbQuery<MbEntity.MbRecording> recordingQuery() throws MbQuery.InvalidQueryFieldException {
-        MbRecordingQuery recordingQuery = new MbRecordingQuery();
-        recordingQuery.add(MbRecordingQuery.ARTIST, "Fleetwood Mac");
-        return recordingQuery;
+    public static Collection<MbSearchRequest<MbEntity.MbPlace>> getPlaceTestsParams() {
+        return TEST_DATA.getPlaceTests().getAllSearchRequests();
     }
-    private static MbQuery<MbEntity.MbRelease> releaseQuery() throws MbQuery.InvalidQueryFieldException {
-        MbReleaseQuery releaseQuery = new MbReleaseQuery();
-        releaseQuery.add(MbReleaseQuery.ARTIST, "Fleetwood Mac");
-        return releaseQuery;
+
+    @ParameterizedTest
+    @MethodSource("getRecordingTestsParams")
+    public void testRecordingTests(MbSearchRequest<MbEntity.MbRecording> testParam) {
+        CONTROLLER.getRecording().doSearch(testParam);
     }
-    private static MbQuery<MbEntity.MbReleaseGroup> releaseGroupQuery() throws MbQuery.InvalidQueryFieldException {
-        MbReleaseGroupQuery releaseGroupQuery = new MbReleaseGroupQuery();
-        releaseGroupQuery.add(MbReleaseGroupQuery.RELEASE, "Rumours");
-        return releaseGroupQuery;
+    public static Collection<MbSearchRequest<MbEntity.MbRecording>> getRecordingTestsParams() {
+        return TEST_DATA.getRecordingTests().getAllSearchRequests();
     }
-    private static MbQuery<MbEntity.MbSeries> seriesQuery() throws MbQuery.InvalidQueryFieldException {
-        MbSeriesQuery seriesQuery = new MbSeriesQuery();
-        seriesQuery.add(MbSeriesQuery.SERIES, "roll");
-        return seriesQuery;
+
+    @ParameterizedTest
+    @MethodSource("getReleaseTestsParams")
+    public void testReleaseTests(MbSearchRequest<MbEntity.MbRelease> testParam) {
+        CONTROLLER.getRelease().doSearch(testParam);
     }
-    private static MbQuery<MbEntity.MbTag> tagQuery() throws MbQuery.InvalidQueryFieldException {
-        MbTagQuery tagQuery = new MbTagQuery();
-        tagQuery.add(MbTagQuery.TAG, "tag");
-        return tagQuery;
+    public static Collection<MbSearchRequest<MbEntity.MbRelease>> getReleaseTestsParams() {
+        return TEST_DATA.getReleaseTests().getAllSearchRequests();
     }
-    private static MbQuery<MbEntity.MbWork> workQuery() throws MbQuery.InvalidQueryFieldException {
-        MbWorkQuery workQuery = new MbWorkQuery();
-        workQuery.add(MbWorkQuery.ARTIST, "Fleetwood Mac");
-        return workQuery;
+
+    @ParameterizedTest
+    @MethodSource("getReleaseGroupTestsParams")
+    public void testReleaseGroupTests(MbSearchRequest<MbEntity.MbReleaseGroup> testParam) {
+        CONTROLLER.getReleaseGroup().doSearch(testParam);
     }
-    private static MbQuery<MbEntity.MbUrl> urlQuery() throws MbQuery.InvalidQueryFieldException {
-        MbUrlQuery urlQuery = new MbUrlQuery();
-        urlQuery.add(MbUrlQuery.RELATION_TYPE, "wikidata");
-        return urlQuery;
+    public static Collection<MbSearchRequest<MbEntity.MbReleaseGroup>> getReleaseGroupTestsParams() {
+        return TEST_DATA.getReleaseGroupTests().getAllSearchRequests();
+    }
+
+    @ParameterizedTest
+    @MethodSource("getSeriesTestsParams")
+    public void testSeriesTests(MbSearchRequest<MbEntity.MbSeries> testParam) {
+        CONTROLLER.getSeries().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbSeries>> getSeriesTestsParams() {
+        return TEST_DATA.getSeriesTests().getAllSearchRequests();
+    }
+
+    @ParameterizedTest
+    @MethodSource("getTagTestsParams")
+    public void testTagTests(MbSearchRequest<MbEntity.MbTag> testParam) {
+        CONTROLLER.getTag().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbTag>> getTagTestsParams() {
+        return TEST_DATA.getTagTests().getAllSearchRequests();
+    }
+
+    @ParameterizedTest
+    @MethodSource("getWorkTestsParams")
+    public void testWorkTests(MbSearchRequest<MbEntity.MbWork> testParam) {
+        CONTROLLER.getWork().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbWork>> getWorkTestsParams() {
+        return TEST_DATA.getWorkTests().getAllSearchRequests();
+    }
+
+    @ParameterizedTest
+    @MethodSource("getUrlTestsParams")
+    public void testUrlTests(MbSearchRequest<MbEntity.MbUrl> testParam) {
+        CONTROLLER.getUrl().doSearch(testParam);
+    }
+    public static Collection<MbSearchRequest<MbEntity.MbUrl>> getUrlTestsParams() {
+        return TEST_DATA.getUrlTests().getAllSearchRequests();
     }
 
 
@@ -191,18 +170,6 @@ public class MbControllerTest {
         }
 
         return MbController.factory(client, handlerFactory);
-    }
-
-    public static final class EndpointParams<T extends MbEntity, R extends MbResult<T>> {
-        private final T entity;
-        private final MbQuery<T> query;
-        private final MbEntityController<T,R> controller;
-
-        private EndpointParams(T entity, MbQuery<T> query, MbEntityController<T, R> controller) {
-            this.entity = entity;
-            this.query = query;
-            this.controller = controller;
-        }
     }
 
 }
