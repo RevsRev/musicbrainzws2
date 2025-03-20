@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <event id="44a654e3-c442-4f30-89df-1e49b261709f" type="Festival" type-id="b6ded574-b592-3f0e-b56e-5b5f06aa0678">
+        <name>Woodstock ’94</name>
+        <life-span>
+            <begin>1994-08-12</begin>
+            <end>1994-08-14</end>
+        </life-span>
+    </event>
+</metadata>

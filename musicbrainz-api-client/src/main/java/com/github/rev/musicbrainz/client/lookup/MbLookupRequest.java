@@ -1,9 +1,12 @@
 package com.github.rev.musicbrainz.client.lookup;
 
+import com.github.rev.musicbrainz.client.MbBuilder;
 import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.http.MbParam;
 import com.github.rev.musicbrainz.client.http.MbRequest;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Collection;
 import java.util.List;
@@ -37,6 +40,28 @@ public final class MbLookupRequest<T extends MbEntity> extends MbRequest<T> {
     @Override
     public String getPath() {
         return getEntity().getApiName() + "/" + mbid;
+    }
+
+    @Getter
+    @Setter
+    public static final class Builder<T extends MbEntity> implements MbBuilder<MbLookupRequest<T>> {
+        private T entity = null;
+        private MbFormat format = MbFormat.XML;
+        private String mbid = null;
+        private MbParam param;
+
+        @Override
+        public boolean isValid() {
+            return !(entity == null || format == null || mbid == null);
+        }
+
+        @Override
+        public MbLookupRequest<T> build() throws MbBuildException {
+            if (!isValid()) {
+                throw new MbBuildException("Could not build request");
+            }
+            return new MbLookupRequest<>(entity, format, mbid, Optional.ofNullable(param));
+        }
     }
 
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<error>
+    <text>Invalid mbid.</text>
+    <text>For usage, please see: https://musicbrainz.org/development/mmd</text>
+</error>

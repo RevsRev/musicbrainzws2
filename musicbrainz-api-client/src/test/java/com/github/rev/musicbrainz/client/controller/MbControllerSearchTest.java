@@ -1,8 +1,10 @@
 package com.github.rev.musicbrainz.client.controller;
 
-import com.github.rev.musicbrainz.client.MbClient;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
+import com.github.rev.musicbrainz.client.http.MbClient;
+import com.github.rev.musicbrainz.client.http.ThrottleStrategyImpl;
 import com.github.rev.musicbrainz.client.search.MbSearchRequest;
+import com.github.rev.musicbrainz.client.search.result.MbEventResult;
 import com.github.rev.musicbrainz.client.util.ControllerTestData;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -11,8 +13,9 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MbControllerTest {
+public class MbControllerSearchTest {
 
+    private static final int THROTTLE_MILLIS = 1000;
     private static final MbController CONTROLLER = getController();
     private static final ControllerTestData TEST_DATA = ControllerTestData.constructAllTestData();
 
@@ -153,17 +156,17 @@ public class MbControllerTest {
 
 
     private static MbController getController() {
-        MbClient client = new MbClient();
+        MbClient client = new MbClient(new ThrottleStrategyImpl(THROTTLE_MILLIS));
 
 //        Uncomment or set appropriate property to generate sources :)
-//        System.setProperty("source-location", "/home/eddie/Documents/Projects/musicbrainzws2-java-parent/musicbrainz-api-client/src/test/resources/example_data");
+//        System.setProperty("source-location", "/home/eddie/Documents/Projects/musicbrainzws2-java-parent/musicbrainz-api-client/src/test/resources/example_data/search");
 
         String sourceLocation = System.getProperty("source-location");
         final HandlerFactory handlerFactory;
         if (sourceLocation != null) {
             Set<Class<?>> classesToGenerateSourcesFor = new HashSet<>();
             //TODO - Could extract to a property?
-            //classesToGenerateSourcesFor.add(MbLabelResult.class);
+            classesToGenerateSourcesFor.add(MbEventResult.class);
             handlerFactory = new GenerateSourcesHandlerFactory(sourceLocation, classesToGenerateSourcesFor);
         } else {
             handlerFactory = new HandlerFactory.DefaultHandlerFactory();

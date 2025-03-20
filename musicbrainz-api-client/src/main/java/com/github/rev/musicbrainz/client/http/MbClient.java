@@ -1,8 +1,7 @@
-package com.github.rev.musicbrainz.client;
+package com.github.rev.musicbrainz.client.http;
 
+import com.github.rev.musicbrainz.client.ThrottleStrategy;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
-import com.github.rev.musicbrainz.client.http.MbParam;
-import com.github.rev.musicbrainz.client.http.MbRequest;
 import org.apache.hc.client5.http.classic.HttpClient;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
@@ -28,6 +27,8 @@ public final class MbClient {
     private static final String DEFAULT_PATH = "/" + DEFAULT_PATH_PREFIX + "/" + DEFAULT_VERSION;
 
     private final HttpClient httpClient = buildHttpClient();
+
+    private final ThrottleStrategy throttleStrategy;
     private final String protocol;
     private final String host;
     private final int port;
@@ -35,20 +36,27 @@ public final class MbClient {
 
     /**
      * Construct a client for the default MusicBrainz endpoint.
+     * @param throttleStrategy Strategy to throttle requests to the music brainz api.
      */
-    public MbClient() {
-        this(DEFAULT_PROTOCOL, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_PATH);
+    public MbClient(final ThrottleStrategy throttleStrategy) {
+        this(throttleStrategy, DEFAULT_PROTOCOL, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_PATH);
     }
 
     /**
      * Construct a client for a specific endpoint hosting the MusicBrainz API.
      *
-     * @param protocol        The endpoint hosting the MusicBrainz API.
+     * @param throttleStrategy Strategy to throttle requests to the music brainz api.
+     * @param protocol         The endpoint hosting the MusicBrainz API.
      * @param host
      * @param port
      * @param path
      */
-    public MbClient(final String protocol, final String host, final int port, final String path) {
+    public MbClient(final ThrottleStrategy throttleStrategy,
+                    final String protocol,
+                    final String host,
+                    final int port,
+                    final String path) {
+        this.throttleStrategy = throttleStrategy;
         this.protocol = protocol;
         this.host = host;
         this.port = port;
@@ -56,7 +64,7 @@ public final class MbClient {
     }
 
     private CloseableHttpClient buildHttpClient() {
-        return HttpClientBuilder.create().build();
+        return HttpClientBuilder.create().setUserAgent("https://github.com/RevsRev/musicbrainzws2").build();
     }
 
     /**
@@ -69,6 +77,7 @@ public final class MbClient {
      */
     public <T extends MbEntity, R> R doGet(final MbRequest<T> request,
                                            final HttpClientResponseHandler<R> responseHandler) {
+        throttleStrategy.throttle();
         try {
             ClassicHttpRequest httpRequest = createHttpRequest(request);
             return httpClient.execute(httpRequest, responseHandler);

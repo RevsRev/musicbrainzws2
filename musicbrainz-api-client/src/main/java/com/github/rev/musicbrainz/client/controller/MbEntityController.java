@@ -1,6 +1,6 @@
 package com.github.rev.musicbrainz.client.controller;
 
-import com.github.rev.musicbrainz.client.MbClient;
+import com.github.rev.musicbrainz.client.http.MbClient;
 import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.MbResult;
 import com.github.rev.musicbrainz.client.browse.MbBrowse;
@@ -46,7 +46,7 @@ public final class MbEntityController<T extends MbEntity, R extends MbResult<T>>
 
     @Override
     public R doLookup(final MbLookupRequest<T> request) {
-        return null;
+        return client.doGet(request, getHandler(request.getFormat()));
     }
 
     @Override
