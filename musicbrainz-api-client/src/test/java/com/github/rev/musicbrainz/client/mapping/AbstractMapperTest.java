@@ -28,6 +28,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 public class AbstractMapperTest {
 
     private static final String SEARCH_FOLDER_NAME = "search";
+    private static final String LOOKUP_FOLDER_NAME = "lookup";
 
     @ParameterizedTest
     @MethodSource("getMapperTestParams")
@@ -74,6 +75,42 @@ public class AbstractMapperTest {
         testParams.add(MapperTestParams.factory(MbTagResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbWorkResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
         testParams.add(MapperTestParams.factory(MbUrlResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+
+        //XML TEST CASES
+        testParams.add(MapperTestParams.factory(MbAnnotationResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbAreaResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbCdStubResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbEventResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+//        testParams.add(MapperTestParams.factory(MbGenreResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbInstrumentResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbLabelResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbPlaceResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbRecordingResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbReleaseResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbSeriesResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbTagResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbWorkResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbUrlResult.class, LOOKUP_FOLDER_NAME, MbFormat.XML));
+
+        //JSON TEST CASES
+        testParams.add(MapperTestParams.factory(MbAnnotationResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbAreaResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbCdStubResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbEventResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+//        testParams.add(MapperTestParams.factory(MbGenreResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbInstrumentResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbLabelResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbPlaceResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbRecordingResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbReleaseResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbSeriesResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbTagResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbWorkResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbUrlResult.class, LOOKUP_FOLDER_NAME, MbFormat.JSON));
 
         return testParams;
     }
