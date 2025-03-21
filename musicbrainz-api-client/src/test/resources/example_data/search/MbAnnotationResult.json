@@ -1,0 +1,699 @@
+{
+  "created": "2025-03-21T16:11:16.770Z",
+  "count": 156,
+  "offset": 0,
+  "annotations": [
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "c1882c1b-6027-4320-94d7-8dcd79a4a9ff",
+      "name": "Artist Collection",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "f41281dc-f033-41cc-a401-b4c92d1cd169",
+      "name": "Artist Workshop",
+      "text": "CLEAN"
+    },
+    {
+      "type": "artist",
+      "score": 100,
+      "entity": "eb9d8589-6659-4ccc-ae9c-36cd6f95d8a8",
+      "name": "Artist Unknown",
+      "text": "This is '''NOT''' the same artist as [http://musicbrainz.org/showartist.html?artistid=97546|[unknown]]."
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "36ecf4f7-eb41-4a28-aa88-208d630647ee",
+      "name": "Escape Artist",
+      "text": "== Countries excluded (iTunes + Deezer + Spotify) ==\n(As of 2020-09-25).\n\n    * '''South America''': \uD83C\uDDEB\uD83C\uDDF0 Falkland Islands (Malvinas) (fk)\n    * '''Northern Europe''': \uD83C\uDDF8\uD83C\uDDEF Svalbard and Jan Mayen (sj)\n    * '''Eastern Africa''': \uD83C\uDDEE\uD83C\uDDF4 British Indian Ocean Territory (io)\n    * '''South-Eastern Asia''': \uD83C\uDDF9\uD83C\uDDF1 Timor-Leste (tl)\n    * '''Oceania''': \uD83C\uDDE8\uD83C\uDDE8 Cocos (Keeling) Islands (cc) \uD83C\uDDE8\uD83C\uDDFD Christmas Island (cx) \uD83C\uDDF3\uD83C\uDDEB Norfolk Island (nf)\n    * '''Polynesia''': \uD83C\uDDE8\uD83C\uDDF0 Cook Islands (ck) \uD83C\uDDF3\uD83C\uDDFA Niue (nu) \uD83C\uDDF9\uD83C\uDDF0 Tokelau (tk)\n\n== Countries where available (iTunes + Deezer + Spotify) ==\n(As of 2020-09-25).\n\n    * '''Northern America''': \uD83C\uDDFA\uD83C\uDDF8 United States (us) \uD83C\uDDE7\uD83C\uDDF2 Bermuda (bm) \uD83C\uDDE8\uD83C\uDDE6 Canada (ca) \uD83C\uDDF2\uD83C\uDDFD Mexico (mx)\n    * '''Central America''': \uD83C\uDDE7\uD83C\uDDFF Belize (bz) \uD83C\uDDE8\uD83C\uDDF7 Costa Rica (cr) \uD83C\uDDEC\uD83C\uDDF9 Guatemala (gt) \uD83C\uDDED\uD83C\uDDF3 Honduras (hn) \uD83C\uDDF3\uD83C\uDDEE Nicaragua (ni) \uD83C\uDDF5\uD83C\uDDE6 Panama (pa) \uD83C\uDDF8\uD83C\uDDFB El Salvador (sv)\n    * '''Caribbean''': \uD83C\uDDE6\uD83C\uDDEC Antigua and Barbuda (ag) \uD83C\uDDE6\uD83C\uDDEE Anguilla (ai) \uD83C\uDDE7\uD83C\uDDE7 Barbados (bb) \uD83C\uDDE7\uD83C\uDDF8 Bahamas (bs) \uD83C\uDDE9\uD83C\uDDF2 Dominica (dm) \uD83C\uDDE9\uD83C\uDDF4 Dominican Republic (do) \uD83C\uDDEC\uD83C\uDDE9 Grenada (gd) \uD83C\uDDEF\uD83C\uDDF2 Jamaica (jm) \uD83C\uDDF0\uD83C\uDDF3 Saint Kitts and Nevis (kn) \uD83C\uDDF0\uD83C\uDDFE Cayman Islands (ky) \uD83C\uDDF1\uD83C\uDDE8 Saint Lucia (lc) \uD83C\uDDF2\uD83C\uDDF8 Montserrat (ms) \uD83C\uDDF9\uD83C\uDDE8 Turks and Caicos Islands (tc) \uD83C\uDDF9\uD83C\uDDF9 Trinidad and Tobago (tt) \uD83C\uDDFB\uD83C\uDDE8 Saint Vincent and Grenadines (vc) \uD83C\uDDFB\uD83C\uDDEC Virgin Islands, British (vg) \uD83C\uDDE7\uD83C\uDDF6 Bonaire (bq) \uD83C\uDDE8\uD83C\uDDFA Cuba (cu) \uD83C\uDDE8\uD83C\uDDFC Curaçao (cw) \uD83C\uDDF8\uD83C\uDDFD Sint Maarten (sx)\n    * '''South America''': \uD83C\uDDE6\uD83C\uDDF7 Argentina (ar) \uD83C\uDDE7\uD83C\uDDF4 Bolivia (bo) \uD83C\uDDE7\uD83C\uDDF7 Brazil (br) \uD83C\uDDE8\uD83C\uDDF1 Chile (cl) \uD83C\uDDE8\uD83C\uDDF4 Colombia (co) \uD83C\uDDEA\uD83C\uDDE8 Ecuador (ec) \uD83C\uDDF5\uD83C\uDDEA Peru (pe) \uD83C\uDDF5\uD83C\uDDFE Paraguay (py) \uD83C\uDDFA\uD83C\uDDFE Uruguay (uy) \uD83C\uDDFB\uD83C\uDDEA Venezuela (ve) \uD83C\uDDEC\uD83C\uDDFE Guyana (gy) \uD83C\uDDF8\uD83C\uDDF7 Suriname (sr)\n    * '''Western Europe''': \uD83C\uDDE6\uD83C\uDDF9 Austria (at) \uD83C\uDDE7\uD83C\uDDEA Belgium (be) \uD83C\uDDE8\uD83C\uDDED Switzerland (ch) \uD83C\uDDE9\uD83C\uDDEA Germany (de) \uD83C\uDDEB\uD83C\uDDF7 France (fr) \uD83C\uDDF1\uD83C\uDDFA Luxembourg (lu) \uD83C\uDDF3\uD83C\uDDF1 Netherlands (nl) \uD83C\uDDF1\uD83C\uDDEE Liechtenstein (li) \uD83C\uDDF2\uD83C\uDDE8 Monaco (mc)\n    * '''Northern Europe''': \uD83C\uDDE9\uD83C\uDDF0 Denmark (dk) \uD83C\uDDEA\uD83C\uDDEA Estonia (ee) \uD83C\uDDEB\uD83C\uDDEE Finland (fi) \uD83C\uDDEC\uD83C\uDDE7 United Kingdom (gb) \uD83C\uDDEE\uD83C\uDDEA Ireland (ie) \uD83C\uDDEE\uD83C\uDDF8 Iceland (is) \uD83C\uDDF1\uD83C\uDDF9 Lithuania (lt) \uD83C\uDDF1\uD83C\uDDFB Latvia (lv) \uD83C\uDDF3\uD83C\uDDF4 Norway (no) \uD83C\uDDF8\uD83C\uDDEA Sweden (se)\n    * '''Southern Europe''': \uD83C\uDDE8\uD83C\uDDFE Cyprus (cy) \uD83C\uDDEA\uD83C\uDDF8 Spain (es) \uD83C\uDDEC\uD83C\uDDF7 Greece (gr) \uD83C\uDDED\uD83C\uDDF7 Croatia (hr) \uD83C\uDDEE\uD83C\uDDF9 Italy (it) \uD83C\uDDF2\uD83C\uDDF0 Macedonia (mk) \uD83C\uDDF2\uD83C\uDDF9 Malta (mt) \uD83C\uDDF5\uD83C\uDDF9 Portugal (pt) \uD83C\uDDF8\uD83C\uDDEE Slovenia (si) \uD83C\uDDE7\uD83C\uDDE6 Bosnia and Herzegovina (ba) \uD83C\uDDF2\uD83C\uDDEA Montenegro (me) \uD83C\uDDE6\uD83C\uDDF1 Albania (al) \uD83C\uDDF7\uD83C\uDDF8 Serbia (rs) \uD83C\uDDE6\uD83C\uDDE9 Andorra (ad)\n    * '''Eastern Europe''': \uD83C\uDDE7\uD83C\uDDEC Bulgaria (bg) \uD83C\uDDE7\uD83C\uDDFE Belarus (by) \uD83C\uDDE8\uD83C\uDDFF Czech Republic (cz) \uD83C\uDDED\uD83C\uDDFA Hungary (hu) \uD83C\uDDF2\uD83C\uDDE9 Moldova (md) \uD83C\uDDF5\uD83C\uDDF1 Poland (pl) \uD83C\uDDF7\uD83C\uDDF4 Romania (ro) \uD83C\uDDF7\uD83C\uDDFA Russian Federation (ru) \uD83C\uDDF8\uD83C\uDDF0 Slovakia (sk) \uD83C\uDDFA\uD83C\uDDE6 Ukraine (ua) \uD83C\uDDFD\uD83C\uDDF0 Kosovo (xk)\n    * '''Northern Africa''': \uD83C\uDDE9\uD83C\uDDFF Algeria (dz) \uD83C\uDDEA\uD83C\uDDEC Egypt (eg) \uD83C\uDDF9\uD83C\uDDF3 Tunisia (tn) \uD83C\uDDF1\uD83C\uDDFE Libyan Arab Jamahiriya (ly) \uD83C\uDDF2\uD83C\uDDE6 Morocco (ma) \uD83C\uDDEA\uD83C\uDDED Western Sahara (eh) \uD83C\uDDF8\uD83C\uDDE9 Sudan (sd)\n    * '''Western Africa''': \uD83C\uDDE7\uD83C\uDDEB Burkina Faso (bf) \uD83C\uDDE7\uD83C\uDDEF Benin (bj) \uD83C\uDDE8\uD83C\uDDFB Cape Verde (cv) \uD83C\uDDEC\uD83C\uDDED Ghana (gh) \uD83C\uDDEC\uD83C\uDDF2 Gambia (gm) \uD83C\uDDEC\uD83C\uDDFC Guinea-Bissau (gw) \uD83C\uDDF1\uD83C\uDDF7 Liberia (lr) \uD83C\uDDF2\uD83C\uDDF1 Mali (ml) \uD83C\uDDF2\uD83C\uDDF7 Mauritania (mr) \uD83C\uDDF3\uD83C\uDDEA Niger (ne) \uD83C\uDDF3\uD83C\uDDEC Nigeria (ng) \uD83C\uDDF8\uD83C\uDDF1 Sierra Leone (sl) \uD83C\uDDF8\uD83C\uDDF3 Senegal (sn) \uD83C\uDDE8\uD83C\uDDEE Cote D’Ivoire (ci) \uD83C\uDDEC\uD83C\uDDF3 Guinea (gn) \uD83C\uDDF9\uD83C\uDDEC Togo (tg)\n    * '''Eastern Africa''': \uD83C\uDDF0\uD83C\uDDEA Kenya (ke) \uD83C\uDDF2\uD83C\uDDEC Madagascar (mg) \uD83C\uDDF2\uD83C\uDDFA Mauritius (mu) \uD83C\uDDF2\uD83C\uDDFC Malawi (mw) \uD83C\uDDF2\uD83C\uDDFF Mozambique (mz) \uD83C\uDDF8\uD83C\uDDE8 Seychelles (sc) \uD83C\uDDF9\uD83C\uDDFF Tanzania (tz) \uD83C\uDDFA\uD83C\uDDEC Uganda (ug) \uD83C\uDDFF\uD83C\uDDFC Zimbabwe (zw) \uD83C\uDDF7\uD83C\uDDFC Rwanda (rw) \uD83C\uDDFF\uD83C\uDDF2 Zambia (zm) \uD83C\uDDE7\uD83C\uDDEE Burundi (bi) \uD83C\uDDE9\uD83C\uDDEF Djibouti (dj) \uD83C\uDDEA\uD83C\uDDF7 Eritrea (er) \uD83C\uDDEA\uD83C\uDDF9 Ethiopia (et) \uD83C\uDDF0\uD83C\uDDF2 Comoros (km) \uD83C\uDDF8\uD83C\uDDF4 Somalia (so)\n    * '''Middle Africa''': \uD83C\uDDE6\uD83C\uDDF4 Angola (ao) \uD83C\uDDE8\uD83C\uDDEC Congo (cg) \uD83C\uDDF9\uD83C\uDDE9 Chad (td) \uD83C\uDDE8\uD83C\uDDE9 Congo, Democratic Republic (cd) \uD83C\uDDE8\uD83C\uDDF2 Cameroon (cm) \uD83C\uDDEC\uD83C\uDDE6 Gabon (ga) \uD83C\uDDE8\uD83C\uDDEB Central African Republic (cf) \uD83C\uDDEC\uD83C\uDDF6 Equatorial Guinea (gq) \uD83C\uDDF8\uD83C\uDDF8 South Sudan (ss) \uD83C\uDDF8\uD83C\uDDF9 Sao Tome and Principe (st)\n    * '''Southern Africa''': \uD83C\uDDE7\uD83C\uDDFC Botswana (bw) \uD83C\uDDF3\uD83C\uDDE6 Namibia (na) \uD83C\uDDF8\uD83C\uDDFF Swaziland (sz) \uD83C\uDDFF\uD83C\uDDE6 South Africa (za) \uD83C\uDDF1\uD83C\uDDF8 Lesotho (ls)\n    * '''Western Asia''': \uD83C\uDDE6\uD83C\uDDEA United Arab Emirates (ae) \uD83C\uDDE6\uD83C\uDDF2 Armenia (am) \uD83C\uDDE6\uD83C\uDDFF Azerbaijan (az) \uD83C\uDDE7\uD83C\uDDED Bahrain (bh) \uD83C\uDDEE\uD83C\uDDF1 Israel (il) \uD83C\uDDEF\uD83C\uDDF4 Jordan (jo) \uD83C\uDDF0\uD83C\uDDFC Kuwait (kw) \uD83C\uDDF1\uD83C\uDDE7 Lebanon (lb) \uD83C\uDDF4\uD83C\uDDF2 Oman (om) \uD83C\uDDF6\uD83C\uDDE6 Qatar (qa) \uD83C\uDDF8\uD83C\uDDE6 Saudi Arabia (sa) \uD83C\uDDF9\uD83C\uDDF7 Turkey (tr) \uD83C\uDDFE\uD83C\uDDEA Yemen (ye) \uD83C\uDDEC\uD83C\uDDEA Georgia (ge) \uD83C\uDDEE\uD83C\uDDF6 Iraq (iq) \uD83C\uDDF5\uD83C\uDDF8 Palestinian Territory, Occupied (ps)\n    * '''Central Asia''': \uD83C\uDDF0\uD83C\uDDEC Kyrgyzstan (kg) \uD83C\uDDF0\uD83C\uDDFF Kazakhstan (kz) \uD83C\uDDF9\uD83C\uDDEF Tajikistan (tj) \uD83C\uDDF9\uD83C\uDDF2 Turkmenistan (tm) \uD83C\uDDFA\uD83C\uDDFF Uzbekistan (uz)\n    * '''Southern Asia''': \uD83C\uDDE7\uD83C\uDDF9 Bhutan (bt) \uD83C\uDDEE\uD83C\uDDF3 India (in) \uD83C\uDDF1\uD83C\uDDF0 Sri Lanka (lk) \uD83C\uDDF3\uD83C\uDDF5 Nepal (np) \uD83C\uDDF2\uD83C\uDDFB Maldives (mv) \uD83C\uDDE6\uD83C\uDDEB Afghanistan (af) \uD83C\uDDE7\uD83C\uDDE9 Bangladesh (bd) \uD83C\uDDEE\uD83C\uDDF7 Iran, Islamic Republic of (ir) \uD83C\uDDF5\uD83C\uDDF0 Pakistan (pk)\n    * '''Eastern Asia''': \uD83C\uDDE8\uD83C\uDDF3 China (cn) \uD83C\uDDED\uD83C\uDDF0 Hong Kong (hk) \uD83C\uDDEF\uD83C\uDDF5 Japan (jp) \uD83C\uDDF0\uD83C\uDDF7 Korea (kr) \uD83C\uDDF2\uD83C\uDDF3 Mongolia (mn) \uD83C\uDDF2\uD83C\uDDF4 Macao (mo) \uD83C\uDDF9\uD83C\uDDFC Taiwan (tw)\n    * '''South-Eastern Asia''': \uD83C\uDDE7\uD83C\uDDF3 Brunei Darussalam (bn) \uD83C\uDDEE\uD83C\uDDE9 Indonesia (id) \uD83C\uDDF0\uD83C\uDDED Cambodia (kh) \uD83C\uDDF1\uD83C\uDDE6 Lao People’s Democratic Republic (la) \uD83C\uDDF2\uD83C\uDDFE Malaysia (my) \uD83C\uDDF5\uD83C\uDDED Philippines (ph) \uD83C\uDDF8\uD83C\uDDEC Singapore (sg) \uD83C\uDDF9\uD83C\uDDED Thailand (th) \uD83C\uDDFB\uD83C\uDDF3 Viet‐Nam (vn) \uD83C\uDDF2\uD83C\uDDF2 Myanmar (mm)\n    * '''Oceania''': \uD83C\uDDE6\uD83C\uDDFA Australia (au) \uD83C\uDDF3\uD83C\uDDFF New Zealand (nz)\n    * '''Polynesia''': \uD83C\uDDF9\uD83C\uDDF4 Tonga (to) \uD83C\uDDF5\uD83C\uDDF3 Pitcairn (pn) \uD83C\uDDF9\uD83C\uDDFB Tuvalu (tv) \uD83C\uDDFC\uD83C\uDDF8 Samoa (ws)\n    * '''Melanesia''': \uD83C\uDDEB\uD83C\uDDEF Fiji (fj) \uD83C\uDDF5\uD83C\uDDEC Papua New Guinea (pg) \uD83C\uDDF8\uD83C\uDDE7 Solomon Islands (sb) \uD83C\uDDFB\uD83C\uDDFA Vanuatu (vu)\n    * '''Micronesia''': \uD83C\uDDEB\uD83C\uDDF2 Micronesia, Federated States of (fm) \uD83C\uDDF0\uD83C\uDDEE Kiribati (ki) \uD83C\uDDF2\uD83C\uDDED Marshall Islands (mh) \uD83C\uDDF3\uD83C\uDDF7 Nauru (nr) \uD83C\uDDF5\uD83C\uDDFC Palau (pw)"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "082debff-6800-4565-8da2-8fb270123a9f",
+      "name": "The Artist",
+      "text": "== Countries excluded (Spotify + Deezer) ==\n(As of 2023-05-29).\n\n    * '''Eastern Asia''': \uD83C\uDDED\uD83C\uDDF0 Hong Kong (hk) \uD83C\uDDF9\uD83C\uDDFC Taiwan (tw)"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "dbe6e80a-2380-4303-b812-9211ac683b90",
+      "name": "Escape Artist",
+      "text": "Distribution Sony Music\nprice code: CB 741\nlabel code: LC 0199\nother: CDM\nother: cat.# 14-471352-10\nmatrix / runout (mirrored): 14-471352-10 12 A2  DADC Austria\n'Made in Austria' on the cd"
+    },
+    {
+      "type": "release-group",
+      "score": 100,
+      "entity": "10f4dd69-4065-362f-aaa3-78a2556fa27c",
+      "name": "Escape Artist"
+    },
+    {
+      "type": "artist",
+      "score": 100,
+      "entity": "eec63d3c-3b81-4ad4-b1e4-7c147d4d2b61",
+      "name": "[no artist]",
+      "text": "This [https://musicbrainz.org/doc/Style/Unknown_and_untitled/Special_purpose_artist|Special Purpose Artist] should only be used if no artist of discographic relevance has been attributed to a piece of work.\n\n-------\n\nThis is a [https://musicbrainz.org/doc/Style/Unknown_and_untitled/Special_purpose_artist|Special Purpose Artist].\n\nFor some reason, a lot of releases are also listed under [http://musicbrainz.org/artist/8b91414e-6f3f-416e-8f2b-138c74b92635|Dan Gibson]."
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "819d7b4b-0ac6-4ac3-a869-c134ef5d3c3b",
+      "name": "Escape Artist",
+      "text": "Credits\n\n    Artwork, Design – Costin Chioreanu\n    Bass – Șerban Ionuț Georgescu (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n    Cameraman [DVD Features Filmed By], Film Editor [DVD Features Edited By], Film Producer [DVD Features Produced By] – Șerban Ionuț Georgescu (tracks: DVD-1, DVD-2, DVD-3 to DVD-6)\n    Drums – Marian Mihăilă (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n    Engineer [Recording Engineer], Mixed By [Mixing] – Marius Costache (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n    Engineer [Vocal Recording Engineer] – Oliver Végh* (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n    Guitar – Eduard Alexandru Dascălu (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n    Management – Mihnea Ioan Grecu\n    Management [Booking] – Ștefan Zaharescu\n    Mastered By – Alan Douches\n    Songwriter [Songs Written By], Performer [Performed By], Producer [Produced By] – White Walls (4) (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n    Vocals, Lyrics By – Eugen Brudaru (tracks: CD-1 to CD-13, DVD-3 to DVD-6)\n\nNotes\nDrums and guitars recorded at Next Dog Studio, bass guitar recorded at NoCity Studio, vocals recorded at Luna Recording Studio.\nMastered at West West Side Music\nManagement @ X-Lab Solutions\nBooking @ Mighty Owl Productions\n© & ℗ 2013 White Walls\n\nPacakging: 3 panel cardboard sleeve with clear plastic tray, including a foldout booklet"
+    },
+    {
+      "type": "artist",
+      "score": 100,
+      "entity": "387dd5fc-264d-4a26-8f11-bb7af5794049",
+      "name": "Akhil Artist"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "4aab5705-e764-4afb-8b50-b2bf693e745a",
+      "name": "Artist 2.0"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "accc2b02-0fda-4938-9ae3-4130b7a56349",
+      "name": "Artist 2.0"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "117b70d5-8237-4eb3-9da4-e00bcdd979cc",
+      "name": "Favourite Artist",
+      "text": "℗ & © «2021 Stay High under exclusive license to Groove Attack»"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "b0f963d3-0423-48f2-8b58-0148bd110875",
+      "name": "Artist 2.0"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "9137385c-f27c-4de4-b305-ef577501fee6",
+      "name": "Artist 2.0"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "3af4d569-8174-4663-9064-7cf36f54812a",
+      "name": "Artist 2.0"
+    },
+    {
+      "type": "label",
+      "score": 100,
+      "entity": "38814d39-32a1-4ac6-9280-9f0d62ffe9a9",
+      "name": "Artist Partner",
+      "text": "'''APG''' ('''''Artist Partner Group''''' & '''''Artist Publishing Group''''') is a modern, independent record label and music publishing group for forward thinking and entrepreneurial artists and songwriters. We are powered by partnership and creativity. Our three arms - Partner, Publishing, and Parametric encompass APG's roster of artists, singles and producers/songwriters."
+    },
+    {
+      "type": "label",
+      "score": 100,
+      "entity": "38814d39-32a1-4ac6-9280-9f0d62ffe9a9",
+      "name": "Artist Partner",
+      "text": "'''APG''' ('''''Artist Partner Group''''' & '''''Artist Publishing Group''''') is a modern, independent record label and music publishing group for forward thinking and entrepreneurial artists and songwriters."
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "e3fabaef-6250-49dd-8821-9b59dbed5300",
+      "name": "Artist. Artists.",
+      "text": "First released on Bandcamp 2020-04-27, followed by other platforms 2020-05-01."
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "2d2594ce-22c2-48c1-8ab3-7b2fe26dbe45",
+      "name": "Ron Artist",
+      "text": "Copyright: ℗ 2024 Krekpek Records"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "2d2594ce-22c2-48c1-8ab3-7b2fe26dbe45",
+      "name": "Ron Artist",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "fbac3714-8201-4992-819b-3e0959869a00",
+      "name": "Escape Artist",
+      "text": "℗ «2023 Danielle Durack»"
+    },
+    {
+      "type": "release",
+      "score": 100,
+      "entity": "78df158e-c80e-41a5-93c5-58f81a97ec1f",
+      "name": "False Artist",
+      "text": "℗ & © «2022 ALLB»"
+    },
+    {
+      "type": "label",
+      "score": 100,
+      "entity": "38814d39-32a1-4ac6-9280-9f0d62ffe9a9",
+      "name": "Artist Partner",
+      "text": "imprint history:\nAs a joint venture with Atlantic Records and Warner Music Group\n2012 —— 2020: Artist Partner\n\nIn Nov. 2020, APG ended their eight-year joint venture with Atlantic Records to go fully independent.\n2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]"
+    },
+    {
+      "type": "label",
+      "score": 100,
+      "entity": "38814d39-32a1-4ac6-9280-9f0d62ffe9a9",
+      "name": "Artist Partner",
+      "text": "imprint history:\nAs a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]\n2012 —— 2020: Artist Partner\n\nIn Nov. 2020, APG ended their eight-year joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] to go fully independent.\n2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]"
+    },
+    {
+      "type": "label",
+      "score": 100,
+      "entity": "38814d39-32a1-4ac6-9280-9f0d62ffe9a9",
+      "name": "Artist Partner",
+      "text": "imprint history:\nAs a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]\n2012 —— 2020: Artist Partner\n\nIn Nov. 2020, APG ended their eight-year joint venture with Atlantic Records to go fully independent.\n2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]"
+    },
+    {
+      "type": "label",
+      "score": 100,
+      "entity": "38814d39-32a1-4ac6-9280-9f0d62ffe9a9",
+      "name": "Artist Partner"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "be19759d-5cf9-4b4b-866b-ac4fe57f8486",
+      "name": "Amazon Artist Lounge",
+      "text": "Live in Gothenburg, Sweden"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "558e88d4-5fd9-485e-8439-65a1f27caf19",
+      "name": "The Artist LP",
+      "text": "“L2B releases his debut album, ‘The Artist LP,’ featuring songs and stories about classic Hollywood, aliens from outer-space, demon possession, falling out of love, traveling the world, and more.”"
+    },
+    {
+      "type": "artist",
+      "score": 87,
+      "entity": "37735138-fc86-4d40-b943-5359410f0c14",
+      "name": "Владислав \"Artist\" Соколов",
+      "text": "Usually credited as \"Влад\", so it's kind of unclear whether he is \"Владислав\" or \"Владимир\".\n\n[http://www.paiste.com/e/endorser_det.php?page=image&endorserid=5558|Endorser of Paiste 2002 Cymbals], as \"Vladislav Sokolov\"."
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "8b410f02-9b35-4129-bcb8-91ca707793c1",
+      "name": "The Cursed Artist",
+      "text": "'''Label:''' Memento Mori - '''Cat#:''' MORI 08"
+    },
+    {
+      "type": "artist",
+      "score": 87,
+      "entity": "7e84f845-ac16-41fe-9ff8-df12eb32af55",
+      "name": "MusicBrainz Test Artist",
+      "text": "This is a [Special Purpose Artist]."
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "eb3cde53-ad3d-4124-b255-3c0f63a8ae23",
+      "name": "Essential Artist Collection",
+      "text": "2 x Vinyle, LP, Compilation, Green\nGatefold sleeve"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "59bfd6d2-09e8-4a12-a53f-8a71514d8ae0",
+      "name": "Essential Artist Collection",
+      "text": "Trojan Essential Artist Collection\n28 Classic Tracks By Jamaica’s Most Popular\nBalladeer - Including His UK Top Ten Chartbuster\n“Help Me Make It Through The Night”\nDouble Orange Transparent Vinyl"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "06b3d1da-0afe-44b2-ab60-8357cda81c2e",
+      "name": "The Artist's Choice",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "a645a31b-55b4-46f6-ac0b-f4a06a77ae4f",
+      "name": "The Artist Selects",
+      "text": "℗ & © «2005 Blue Note Records»\n\n== Countries excluded (Spotify + Deezer) ==\n(As of 2024-04-17).\n\n    * Eastern Africa: \uD83C\uDDEE\uD83C\uDDF4 British Indian Ocean Territory (io)"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "af5f7833-6768-4c77-b2ab-75b85ecfee2f",
+      "name": "Best New Artist",
+      "text": "℗ & © «2016 mARS label»\n℗ «2014 mARS label»"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "fa5bf027-7655-43fa-a7d6-bfad540ddfe1",
+      "name": "Best New Artist",
+      "text": "℗ & © «2019 Irma Alieva's label»\n℗ «2016 Irma Alieva's label»"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "211073db-2407-4a62-981f-d61b64a75988",
+      "name": "Backdoor Con Artist",
+      "text": "== Countries excluded (Deezer + Spotify) ==\n(As of 2024-08-01).\n\n    * Eastern Europe: \uD83C\uDDE7\uD83C\uDDFE Belarus (by)"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "ddcebd9b-54d5-4b50-86b0-9a551d2e29f7",
+      "name": "Artist Focus 66",
+      "text": "© «Alter Ego Music 2016»\n℗ «2017 Alter Ego Music»\n℗ «Alter Ego Music Publishing»"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "45c3f74f-15b0-43eb-80a6-577815914e20",
+      "name": "Bump Artist EP",
+      "text": "Copyright: © 2024 COCO\n℗ 2024 COCO"
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "870b717a-24bd-4d02-84a3-b00beb633967",
+      "name": "Essential Artist Collection",
+      "text": "All tracks incorrectly credited as just Desmond Dekker on the case."
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "d0125de0-3ea3-4243-aa38-bdd3f47bad5c",
+      "name": "Amazon Artist Lounge",
+      "text": "Special three track live EP of recordings from Lewis Watson's Koko, London performance available exclusively via Amazon MP3 UK."
+    },
+    {
+      "type": "release",
+      "score": 87,
+      "entity": "12dff6be-7a2a-4d1d-aa6d-bc7dceea0a70",
+      "name": "Bump Artist EP",
+      "text": "Extended versions of the tracks"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "3506f119-ea3a-42f0-856d-bb4169e121d5",
+      "name": "Artist's Choice: Diana Krall",
+      "text": "Part of Hear Music's Artist's Choice series"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "8cdcfbff-c967-413a-b207-e7873dd68e42",
+      "name": "Honey, I'm an Artist",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "11d7ad73-9bc5-49a5-86b2-205978efc9e5",
+      "name": "Mobineko Artist Sampler 2013",
+      "text": "Digipak type of holder in 3 part gatefold"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "62ad4d77-8715-415f-8550-2d2f12569f74",
+      "name": "Artist's Choice: Norah Jones",
+      "text": "'''Label:''' Hear Music - '''Catalog #:''' 74813"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "bfc8f177-cdaf-415d-b575-6283a3eb8f99",
+      "name": "Stories: Narada Artist Collection",
+      "text": "''Extraordinary performers reveal their artistic inspirations in deeply personal instrumental memoirs''."
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "0e4771a7-cbb6-4735-9f32-ad7e7f8227a7",
+      "name": "Jeremy Pelt The Artist",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "5729dd62-1ea9-47be-9cd2-0d535392f717",
+      "name": "The Hunger Artist Show",
+      "text": "Engineered, recorded and mixed by Kostas Fragkopoulos at Shellac Recording studios, in Thessaloniki, Greece\nAssistant engineers: Sokratis Sokratous, Andronikos Troukis\n\nMastered by Role Wiegner at Die Tonmeisterei studios, in Oldenburg, Germany\n\nCover art, graphic design, layout by Fanouria Arvaniti\n\nAll music written and performed by Gynoid\n\nGynoid is\nGuitars/vocals: Spyros Tsalouchidis\nBass: Panos Dedis\nDrums/vocals: Nikos Dimitriou"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "72f958f1-ae7e-41dc-8f15-f2052096ca8d",
+      "name": "Original Artist, Original Songs",
+      "text": "Compilation"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "72ec81e7-ca94-4af9-aaff-f9b69587cdd6",
+      "name": "Artist of My Soul",
+      "text": "℗ & © «1997 Word Records, a division of Word Entertainment, Inc.»\n\n== Countries excluded (Spotify + Deezer + iTunes) ==\n(As of 2023-06-19).\n\n    * '''Eastern Asia''': \uD83C\uDDE8\uD83C\uDDF3 China (cn)\n\n== Countries where available (Spotify + Deezer + iTunes) ==\n(As of 2023-06-19).\n\n    * '''Northern America''': \uD83C\uDDE8\uD83C\uDDE6 Canada (ca) \uD83C\uDDF2\uD83C\uDDFD Mexico (mx) \uD83C\uDDFA\uD83C\uDDF8 United States (us) \uD83C\uDDE7\uD83C\uDDF2 Bermuda (bm)\n    * '''Central America''': \uD83C\uDDE7\uD83C\uDDFF Belize (bz) \uD83C\uDDE8\uD83C\uDDF7 Costa Rica (cr) \uD83C\uDDEC\uD83C\uDDF9 Guatemala (gt) \uD83C\uDDED\uD83C\uDDF3 Honduras (hn) \uD83C\uDDF3\uD83C\uDDEE Nicaragua (ni) \uD83C\uDDF5\uD83C\uDDE6 Panama (pa) \uD83C\uDDF8\uD83C\uDDFB El Salvador (sv)\n    * '''Caribbean''': \uD83C\uDDE6\uD83C\uDDEC Antigua and Barbuda (ag) \uD83C\uDDE7\uD83C\uDDE7 Barbados (bb) \uD83C\uDDE7\uD83C\uDDF8 Bahamas (bs) \uD83C\uDDE8\uD83C\uDDFC Curaçao (cw) \uD83C\uDDE9\uD83C\uDDF2 Dominica (dm) \uD83C\uDDE9\uD83C\uDDF4 Dominican Republic (do) \uD83C\uDDEC\uD83C\uDDE9 Grenada (gd) \uD83C\uDDED\uD83C\uDDF9 Haiti (ht) \uD83C\uDDEF\uD83C\uDDF2 Jamaica (jm) \uD83C\uDDF0\uD83C\uDDF3 Saint Kitts and Nevis (kn) \uD83C\uDDF1\uD83C\uDDE8 Saint Lucia (lc) \uD83C\uDDF9\uD83C\uDDF9 Trinidad and Tobago (tt) \uD83C\uDDFB\uD83C\uDDE8 Saint Vincent and Grenadines (vc) \uD83C\uDDE6\uD83C\uDDEE Anguilla (ai) \uD83C\uDDF0\uD83C\uDDFE Cayman Islands (ky) \uD83C\uDDF2\uD83C\uDDF8 Montserrat (ms) \uD83C\uDDF9\uD83C\uDDE8 Turks and Caicos Islands (tc) \uD83C\uDDFB\uD83C\uDDEC British Virgin Islands (vg)\n    * '''South America''': \uD83C\uDDE6\uD83C\uDDF7 Argentina (ar) \uD83C\uDDE7\uD83C\uDDF4 Bolivia (bo) \uD83C\uDDE7\uD83C\uDDF7 Brazil (br) \uD83C\uDDE8\uD83C\uDDF1 Chile (cl) \uD83C\uDDE8\uD83C\uDDF4 Colombia (co) \uD83C\uDDEA\uD83C\uDDE8 Ecuador (ec) \uD83C\uDDEC\uD83C\uDDFE Guyana (gy) \uD83C\uDDF5\uD83C\uDDEA Peru (pe) \uD83C\uDDF5\uD83C\uDDFE Paraguay (py) \uD83C\uDDF8\uD83C\uDDF7 Suriname (sr) \uD83C\uDDFA\uD83C\uDDFE Uruguay (uy) \uD83C\uDDFB\uD83C\uDDEA Venezuela (ve) \uD83C\uDDEB\uD83C\uDDF0 Falkland Islands (fk)\n    * '''Western Europe''': \uD83C\uDDE6\uD83C\uDDF9 Austria (at) \uD83C\uDDE7\uD83C\uDDEA Belgium (be) \uD83C\uDDE8\uD83C\uDDED Switzerland (ch) \uD83C\uDDE9\uD83C\uDDEA Germany (de) \uD83C\uDDEB\uD83C\uDDF7 France (fr) \uD83C\uDDF1\uD83C\uDDEE Liechtenstein (li) \uD83C\uDDF1\uD83C\uDDFA Luxembourg (lu) \uD83C\uDDF2\uD83C\uDDE8 Monaco (mc) \uD83C\uDDF3\uD83C\uDDF1 Netherlands (nl)\n    * '''Northern Europe''': \uD83C\uDDE9\uD83C\uDDF0 Denmark (dk) \uD83C\uDDEA\uD83C\uDDEA Estonia (ee) \uD83C\uDDEB\uD83C\uDDEE Finland (fi) \uD83C\uDDEC\uD83C\uDDE7 United Kingdom (gb) \uD83C\uDDEE\uD83C\uDDEA Ireland (ie) \uD83C\uDDEE\uD83C\uDDF8 Iceland (is) \uD83C\uDDF1\uD83C\uDDF9 Lithuania (lt) \uD83C\uDDF1\uD83C\uDDFB Latvia (lv) \uD83C\uDDF3\uD83C\uDDF4 Norway (no) \uD83C\uDDF8\uD83C\uDDEA Sweden (se) \uD83C\uDDF8\uD83C\uDDEF Svalbard and Jan Mayen (sj)\n    * '''Southern Europe''': \uD83C\uDDE6\uD83C\uDDE9 Andorra (ad) \uD83C\uDDE6\uD83C\uDDF1 Albania (al) \uD83C\uDDE7\uD83C\uDDE6 Bosnia and Herzegovina (ba) \uD83C\uDDE8\uD83C\uDDFE Cyprus (cy) \uD83C\uDDEA\uD83C\uDDF8 Spain (es) \uD83C\uDDEC\uD83C\uDDF7 Greece (gr) \uD83C\uDDED\uD83C\uDDF7 Croatia (hr) \uD83C\uDDEE\uD83C\uDDF9 Italy (it) \uD83C\uDDF2\uD83C\uDDEA Montenegro (me) \uD83C\uDDF2\uD83C\uDDF0 North Macedonia (mk) \uD83C\uDDF2\uD83C\uDDF9 Malta (mt) \uD83C\uDDF5\uD83C\uDDF9 Portugal (pt) \uD83C\uDDF7\uD83C\uDDF8 Serbia (rs) \uD83C\uDDF8\uD83C\uDDEE Slovenia (si) \uD83C\uDDF8\uD83C\uDDF2 San Marino (sm)\n    * '''Eastern Europe''': \uD83C\uDDE7\uD83C\uDDEC Bulgaria (bg) \uD83C\uDDE7\uD83C\uDDFE Belarus (by) \uD83C\uDDE8\uD83C\uDDFF Czech Republic (cz) \uD83C\uDDED\uD83C\uDDFA Hungary (hu) \uD83C\uDDF2\uD83C\uDDE9 Moldova (md) \uD83C\uDDF5\uD83C\uDDF1 Poland (pl) \uD83C\uDDF7\uD83C\uDDF4 Romania (ro) \uD83C\uDDF8\uD83C\uDDF0 Slovakia (sk) \uD83C\uDDFA\uD83C\uDDE6 Ukraine (ua) \uD83C\uDDFD\uD83C\uDDF0 Kosovo (xk) \uD83C\uDDF7\uD83C\uDDFA Russia (ru)\n    * '''Northern Africa''': \uD83C\uDDE9\uD83C\uDDFF Algeria (dz) \uD83C\uDDEA\uD83C\uDDEC Egypt (eg) \uD83C\uDDF1\uD83C\uDDFE Libya (ly) \uD83C\uDDF2\uD83C\uDDE6 Morocco (ma) \uD83C\uDDF9\uD83C\uDDF3 Tunisia (tn)\n    * '''Western Africa''': \uD83C\uDDE7\uD83C\uDDEB Burkina Faso (bf) \uD83C\uDDE7\uD83C\uDDEF Benin (bj) \uD83C\uDDE8\uD83C\uDDEE Cote D’Ivoire (ci) \uD83C\uDDE8\uD83C\uDDFB Cape Verde (cv) \uD83C\uDDEC\uD83C\uDDED Ghana (gh) \uD83C\uDDEC\uD83C\uDDF2 Gambia (gm) \uD83C\uDDEC\uD83C\uDDF3 Guinea (gn) \uD83C\uDDEC\uD83C\uDDFC Guinea-Bissau (gw) \uD83C\uDDF1\uD83C\uDDF7 Liberia (lr) \uD83C\uDDF2\uD83C\uDDF1 Mali (ml) \uD83C\uDDF2\uD83C\uDDF7 Mauritania (mr) \uD83C\uDDF3\uD83C\uDDEA Niger (ne) \uD83C\uDDF3\uD83C\uDDEC Nigeria (ng) \uD83C\uDDF8\uD83C\uDDF1 Sierra Leone (sl) \uD83C\uDDF8\uD83C\uDDF3 Senegal (sn) \uD83C\uDDF9\uD83C\uDDEC Togo (tg)\n    * '''Eastern Africa''': \uD83C\uDDE7\uD83C\uDDEE Burundi (bi) \uD83C\uDDE9\uD83C\uDDEF Djibouti (dj) \uD83C\uDDEA\uD83C\uDDF9 Ethiopia (et) \uD83C\uDDF0\uD83C\uDDEA Kenya (ke) \uD83C\uDDF0\uD83C\uDDF2 Comoros (km) \uD83C\uDDF2\uD83C\uDDEC Madagascar (mg) \uD83C\uDDF2\uD83C\uDDFA Mauritius (mu) \uD83C\uDDF2\uD83C\uDDFC Malawi (mw) \uD83C\uDDF2\uD83C\uDDFF Mozambique (mz) \uD83C\uDDF7\uD83C\uDDFC Rwanda (rw) \uD83C\uDDF8\uD83C\uDDE8 Seychelles (sc) \uD83C\uDDF9\uD83C\uDDFF Tanzania (tz) \uD83C\uDDFA\uD83C\uDDEC Uganda (ug) \uD83C\uDDFF\uD83C\uDDF2 Zambia (zm) \uD83C\uDDFF\uD83C\uDDFC Zimbabwe (zw) \uD83C\uDDEA\uD83C\uDDF7 Eritrea (er) \uD83C\uDDEE\uD83C\uDDF4 British Indian Ocean Territory (io) \uD83C\uDDF8\uD83C\uDDF4 Somalia (so)\n    * '''Middle Africa''': \uD83C\uDDE6\uD83C\uDDF4 Angola (ao) \uD83C\uDDE8\uD83C\uDDE9 Democratic Republic of Congo (cd) \uD83C\uDDE8\uD83C\uDDEC Congo (cg) \uD83C\uDDE8\uD83C\uDDF2 Cameroon (cm) \uD83C\uDDEC\uD83C\uDDE6 Gabon (ga) \uD83C\uDDEC\uD83C\uDDF6 Equatorial Guinea (gq) \uD83C\uDDF8\uD83C\uDDF9 Sao Tome and Principe (st) \uD83C\uDDF9\uD83C\uDDE9 Chad (td) \uD83C\uDDE8\uD83C\uDDEB Central African Republic (cf)\n    * '''Southern Africa''': \uD83C\uDDE7\uD83C\uDDFC Botswana (bw) \uD83C\uDDF1\uD83C\uDDF8 Lesotho (ls) \uD83C\uDDF3\uD83C\uDDE6 Namibia (na) \uD83C\uDDF8\uD83C\uDDFF Swaziland (sz) \uD83C\uDDFF\uD83C\uDDE6 South Africa (za)\n    * '''Western Asia''': \uD83C\uDDE6\uD83C\uDDEA United Arab Emirates (ae) \uD83C\uDDE6\uD83C\uDDF2 Armenia (am) \uD83C\uDDE6\uD83C\uDDFF Azerbaijan (az) \uD83C\uDDE7\uD83C\uDDED Bahrain (bh) \uD83C\uDDEC\uD83C\uDDEA Georgia (ge) \uD83C\uDDEE\uD83C\uDDF1 Israel (il) \uD83C\uDDEE\uD83C\uDDF6 Iraq (iq) \uD83C\uDDEF\uD83C\uDDF4 Jordan (jo) \uD83C\uDDF0\uD83C\uDDFC Kuwait (kw) \uD83C\uDDF1\uD83C\uDDE7 Lebanon (lb) \uD83C\uDDF4\uD83C\uDDF2 Oman (om) \uD83C\uDDF5\uD83C\uDDF8 Palestine (ps) \uD83C\uDDF6\uD83C\uDDE6 Qatar (qa) \uD83C\uDDF8\uD83C\uDDE6 Saudi Arabia (sa) \uD83C\uDDF9\uD83C\uDDF7 Turkey (tr) \uD83C\uDDFE\uD83C\uDDEA Yemen (ye)\n    * '''Central Asia''': \uD83C\uDDF0\uD83C\uDDEC Kyrgyzstan (kg) \uD83C\uDDF0\uD83C\uDDFF Kazakhstan (kz) \uD83C\uDDF9\uD83C\uDDEF Tajikistan (tj) \uD83C\uDDFA\uD83C\uDDFF Uzbekistan (uz) \uD83C\uDDF9\uD83C\uDDF2 Turkmenistan (tm)\n    * '''Southern Asia''': \uD83C\uDDE7\uD83C\uDDE9 Bangladesh (bd) \uD83C\uDDE7\uD83C\uDDF9 Bhutan (bt) \uD83C\uDDEE\uD83C\uDDF3 India (in) \uD83C\uDDF1\uD83C\uDDF0 Sri Lanka (lk) \uD83C\uDDF2\uD83C\uDDFB Maldives (mv) \uD83C\uDDF3\uD83C\uDDF5 Nepal (np) \uD83C\uDDF5\uD83C\uDDF0 Pakistan (pk) \uD83C\uDDE6\uD83C\uDDEB Afghanistan (af)\n    * '''Eastern Asia''': \uD83C\uDDED\uD83C\uDDF0 Hong Kong (hk) \uD83C\uDDEF\uD83C\uDDF5 Japan (jp) \uD83C\uDDF0\uD83C\uDDF7 South Korea (kr) \uD83C\uDDF2\uD83C\uDDF3 Mongolia (mn) \uD83C\uDDF2\uD83C\uDDF4 Macao (mo) \uD83C\uDDF9\uD83C\uDDFC Taiwan (tw)\n    * '''South-Eastern Asia''': \uD83C\uDDE7\uD83C\uDDF3 Brunei (bn) \uD83C\uDDEE\uD83C\uDDE9 Indonesia (id) \uD83C\uDDF0\uD83C\uDDED Cambodia (kh) \uD83C\uDDF1\uD83C\uDDE6 Laos (la) \uD83C\uDDF2\uD83C\uDDFE Malaysia (my) \uD83C\uDDF5\uD83C\uDDED Philippines (ph) \uD83C\uDDF8\uD83C\uDDEC Singapore (sg) \uD83C\uDDF9\uD83C\uDDED Thailand (th) \uD83C\uDDF9\uD83C\uDDF1 Timor-Leste (tl) \uD83C\uDDFB\uD83C\uDDF3 Vietnam (vn) \uD83C\uDDF2\uD83C\uDDF2 Myanmar (mm)\n    * '''Oceania''': \uD83C\uDDE6\uD83C\uDDFA Australia (au) \uD83C\uDDF3\uD83C\uDDFF New Zealand (nz) \uD83C\uDDE8\uD83C\uDDE8 Cocos (Keeling) Islands (cc) \uD83C\uDDE8\uD83C\uDDFD Christmas Island (cx) \uD83C\uDDF3\uD83C\uDDEB Norfolk Island (nf)\n    * '''Polynesia''': \uD83C\uDDF9\uD83C\uDDF4 Tonga (to) \uD83C\uDDF9\uD83C\uDDFB Tuvalu (tv) \uD83C\uDDFC\uD83C\uDDF8 Samoa (ws) \uD83C\uDDE8\uD83C\uDDF0 Cook Islands (ck) \uD83C\uDDF3\uD83C\uDDFA Niue (nu) \uD83C\uDDF5\uD83C\uDDF3 Pitcairn (pn) \uD83C\uDDF9\uD83C\uDDF0 Tokelau (tk)\n    * '''Melanesia''': \uD83C\uDDEB\uD83C\uDDEF Fiji (fj) \uD83C\uDDF5\uD83C\uDDEC Papua New Guinea (pg) \uD83C\uDDF8\uD83C\uDDE7 Solomon Islands (sb) \uD83C\uDDFB\uD83C\uDDFA Vanuatu (vu)\n    * '''Micronesia''': \uD83C\uDDEB\uD83C\uDDF2 Federated States of Micronesia (fm) \uD83C\uDDF0\uD83C\uDDEE Kiribati (ki) \uD83C\uDDF2\uD83C\uDDED Marshall Islands (mh) \uD83C\uDDF3\uD83C\uDDF7 Nauru (nr) \uD83C\uDDF5\uD83C\uDDFC Palau (pw)"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "c0309401-1638-4cdb-a73c-e288aaf3a6ca",
+      "name": "An Artist Thinketh EP",
+      "text": "== Countries excluded (Deezer + Spotify) ==\n(As of 2021-11-27).\n\n    * '''Caribbean''': \uD83C\uDDE8\uD83C\uDDFC Curaçao (cw)"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "960afba5-94a5-468f-ae24-bae4bce039be",
+      "name": "Amazon Artist Lounge EP",
+      "text": "Amazon exclusive."
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "51f95f46-487d-4f1b-b5b4-f78a5e0470fb",
+      "name": "BIG ARTIST best COLLECTION",
+      "text": "Registered from the owned package."
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "a37ae252-3fda-47bf-af85-398d33ec7e6d",
+      "name": "The Great Escape Artist",
+      "text": "== Countries excluded (Deezer + Spotify) ==\n(As of 2023-06-10).\n\n    * '''Eastern Africa''': \uD83C\uDDEE\uD83C\uDDF4 British Indian Ocean Territory (io)"
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "c1614c74-aa4c-457b-a93a-304bb3b01fc7",
+      "name": "House of the Artist",
+      "text": "Copyright: ℗ 2024 Felix Hatfield\n\n=== Credits from Bandcamp ===\n\nMusicians:\n\nFelix Hatfield- Guitar, Piano, Keyboards, Vocals, Harmonica\n\nHuck Notari- Vocal Harmonies\n\nJoel Ricci - Trumpet, Harmonies\n\nNate Lumbard- Bass"
+    },
+    {
+      "type": "label",
+      "score": 77,
+      "entity": "0fa26552-9ef1-4299-8952-6ef5ffb31934",
+      "name": "Artist Partner Group, Inc.",
+      "text": "imprint history:\nAs a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]\n2012 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]\n\nIn Nov. 2020, APG ended their eight-year joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] to go fully independent.\n2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|apg]"
+    },
+    {
+      "type": "label",
+      "score": 77,
+      "entity": "0fa26552-9ef1-4299-8952-6ef5ffb31934",
+      "name": "Artist Partner Group, Inc.",
+      "text": "imprint history:\n\n2012 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]\n Artist Partner Group (APG) was initially established as a joint venture between [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]. During this period, it used the lowercase \"'''apg'''\" as its imprint. Throughout this phase, APG leveraged the resources and support of both major music companies to focus on artist development and promotion.\n\n2020.11 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group]\n In November 2020, APG ended its eight-year joint venture with Atlantic Records to operate fully independently. It continues to use the lowercase \"'''apg'''\" as its imprint. This transition marked APG's path toward greater autonomy while retaining and strengthening its brand identity."
+    },
+    {
+      "type": "label",
+      "score": 77,
+      "entity": "0fa26552-9ef1-4299-8952-6ef5ffb31934",
+      "name": "Artist Partner Group, Inc.",
+      "text": "imprint history:\n\n2013 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]\n Artist Partner Group (APG) was initially established as a joint venture between [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]. During this period, it used the lowercase \"'''apg'''\" as its imprint. Throughout this phase, APG leveraged the resources and support of both major music companies to focus on artist development and promotion.\n\n2020.11 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group]\n In November 2020, APG ended its eight-year joint venture with Atlantic Records to operate fully independently. It continues to use the lowercase \"'''apg'''\" as its imprint. This transition marked APG's path toward greater autonomy while retaining and strengthening its brand identity."
+    },
+    {
+      "type": "label",
+      "score": 77,
+      "entity": "0fa26552-9ef1-4299-8952-6ef5ffb31934",
+      "name": "Artist Partner Group, Inc.",
+      "text": "imprint history:\nAs a joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]\n2012 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]\n\nIn Nov. 2020, APG ended their eight-year joint venture with [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] to go fully independent.\n2020 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group]"
+    },
+    {
+      "type": "label",
+      "score": 77,
+      "entity": "0fa26552-9ef1-4299-8952-6ef5ffb31934",
+      "name": "Artist Partner Group, Inc.",
+      "text": "imprint history:\n\n2013 —— 2020: [label:38814d39-32a1-4ac6-9280-9f0d62ffe9a9|Artist Partner]\n Artist Partner Group (APG) was initially established as a joint venture between [label:66df7a2b-6476-4fcf-97a9-f213f832af80|Atlantic Records] and [label:85010168-8987-4540-a058-296d426c3981|Warner Music Group]. During this period, it used the lowercase \"'''apg'''\" as its imprint. Throughout this phase, APG leveraged the resources and support of both major music companies to focus on artist development and promotion.\n\n2020.11 —— present: [label:71a9bef2-4e17-4a3f-a9a2-3d70a907c30b|Artist Partner Group (apg)]\n In November 2020, APG ended its eight-year joint venture with Atlantic Records to operate fully independently. It continues to use the lowercase \"'''apg'''\" as its imprint. This transition marked APG's path toward greater autonomy while retaining and strengthening its brand identity."
+    },
+    {
+      "type": "release",
+      "score": 77,
+      "entity": "62ad4d77-8715-415f-8550-2d2f12569f74",
+      "name": "Artist's Choice: Norah Jones",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "4a48e3ba-3258-4ded-9d82-26c5d215a669",
+      "name": "The Great Artist Best Hits",
+      "text": "Notes\nWith insert and obi-strip.\n\nIncludes 8 tracks by Van Halen and 8 tracks by Bruce Springsteen.\nBarcode and Other Identifiers\nBarcode (Scanned): T4958983003241"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "ecfd29ae-2024-49f4-bedf-1778ed404d69",
+      "name": "The Artist in the Ambulance",
+      "text": "reissue, limited editions\n1. Green marbled vinyl, 1103 copies\n2. Red vinyl, 1000 copies"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "fafad1e7-d01e-4479-ba3c-e7752da1445f",
+      "name": "Hot New Artist E-CD",
+      "text": "Liquid Audio cd with tracks encoded in the Liquid Audio format.\nCD says Windows 98 & Adobe Flash required along with a Liquid Player."
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "a34b4d4c-a727-4631-a946-720976a2d53c",
+      "name": "The Great Artist Best Hit’s",
+      "text": "Limited Edition\nMatrix / Runout: 2305 ERF-053\nLabel Code: R-020014"
+    },
+    {
+      "type": "recording",
+      "score": 70,
+      "entity": "bf562b48-df27-48a8-ba1d-bd1c55c03913",
+      "name": "You Will Become an Artist",
+      "text": "Recording Location: Air Lyndhurst Studios, London, United Kingdom"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "993971bb-c342-4aac-be07-3215dbd1f768",
+      "name": "Confessions of a Crap Artist",
+      "text": "This is the [release:2a9d9cb6-114d-4c2e-9e14-6b23fd20c613|2012 Audible release] split into tracks at the chapter points encoded in the AAX file."
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "92be7850-2ca0-4de6-8b83-676c39dd15c5",
+      "name": "Hymn of the Isolated Artist",
+      "text": "© «2017 Rhyme & Reason Records»"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "087139a9-7018-4b92-8c96-ef08e5cd5c93",
+      "name": "The Artist in the Ambulance",
+      "text": "Tracks 13 and 14 are bonus tracks for Japan.\n\nRecorded at Salad Days Studios, Beltsville, MD\nDrums recorded at Bearsville Studios, Bearsville, NY\nMixed at Soundtrack Studios, NYC\nMastered at Masterdisk, NYC\nStrings on tracks 1 & 8 recorded at Phase Studios, College Park, MD\n\nUS/Japan Booking at Ellis Industries\nEuropean Booking at Helter Skelter\nLegal at Davis, Shapiro, Lewitt, Montone & Hayes\n\nWe will be donating a portion of the sales of \"The Artist in the Ambulance\" to the Syrentha J. Savio Endowment.\n\nAll songs © 2003 Sceptor of Malice Music\nRecording ℗© 2003 The Island Def Jam Music Group\nDistributed by Victor Entertainment, Inc. Made in Japan STEREO JASRAC IP\n\n'''Other Identifiers'''\nMatrix / Runout: UICL-1038-2 X1A V\nMastering SID Code: IFPI L245\nMould SID Code: IFPI 4011"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "a6adb9c5-ecc1-40a5-be4c-34e2856f3824",
+      "name": "IA SUPER BEST -THE ARTIST-",
+      "text": "Copyright: ℗ 2022 IA PROJECT"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "9db509a1-b739-4cad-a8b3-1007305714f5",
+      "name": "BOYS PLANET - ARTIST BATTLE",
+      "text": "℗ & © «2023 Stone Music Entertainment»"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "4a48e3ba-3258-4ded-9d82-26c5d215a669",
+      "name": "The Great Artist Best Hits",
+      "text": "With insert and obi‐strip.\n\nIncludes 8 tracks by Van Halen and 8 tracks by Bruce Springsteen.\n\n== Barcode and Other Identifiers ==\nBarcode (Scanned): T4958983003241"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "4a48e3ba-3258-4ded-9d82-26c5d215a669",
+      "name": "The Great Artist Best Hits",
+      "text": "With insert and OBI‐strip.\n\nIncludes 8 tracks by Van Halen and 8 tracks by Bruce Springsteen.\n\n== Barcode and Other Identifiers ==\nBarcode (Scanned): T4958983003241"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "a34b4d4c-a727-4631-a946-720976a2d53c",
+      "name": "The Great Artist Best Hit’s",
+      "text": "Limited edition.\n\nTrack 9 is misspelled as “Last in the Flood”.\n\n== Barcode and Other Identifiers ==\nBarcode: T496159003535\nMatrix / Runout: 2305 ERF-053\nOther (JASRAC Licensing Code): R-020014"
+    },
+    {
+      "type": "release",
+      "score": 70,
+      "entity": "7d4df262-768f-440c-b573-69987fdaf14d",
+      "name": "The Great Artist Best Hit’s",
+      "text": "Limited edition.\n\nTrack 9 is misspelled as “Last in the Flood”.\n\n== Barcode and Other Identifiers ==\nBarcode: T496159003535\nMatrix / Runout: 2305 ERF-053\nOther (JASRAC Licensing Code): R-020014"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "1f3a0b96-3ecb-49b3-a275-d4b7dc729399",
+      "name": "A.R.C.: Artist Remix Collection",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "7c2f1c1c-f13e-4162-8f6d-0ee5d10d00dd",
+      "name": "pop'n music Artist Collection * PARQUETS",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "a54348ba-9e9f-4415-81e0-7db03b0fd2bf",
+      "name": "The Ever Popular Tortured Artist Effect",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "7cca0496-55f2-4906-9f13-a34da9fe76ab",
+      "name": "pop'n music Artist Collection Sanae Shintani",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "a7b7bec6-e79f-43e7-844a-215c658755d7",
+      "name": "Artist’s Choice: The Best Tracks (1970-1980)",
+      "text": "Note: All tracks \"Earl Scruggs Revue\" except Track 15 \"I Still Miss Someone\" caused by a record label error in selection."
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "1ac939bf-741d-447f-b19d-4451ccc96c36",
+      "name": "Original Artist Original Hits: Glenn Miller",
+      "text": ""
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "88a416f6-b7b3-4672-a11f-6b7232371ef7",
+      "name": "Artist Enabler Club - December 2023",
+      "text": "Digital component of 12/2023 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "8e28b501-fcee-4651-add3-7acf5cd13e5d",
+      "name": "Artist Enabler Club - June 2022",
+      "text": "Digital component of 6/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "1dc0ff79-2ce5-4bb0-aaa3-e9ba72fdbb1e",
+      "name": "Artist Enabler Club - February 2022",
+      "text": "Digital component of 2/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "f19bfa3a-8474-4f7e-b6c0-1a4da30a3a30",
+      "name": "Artist Enabler Club - November 2022",
+      "text": "Digital component of 11/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "1ee71664-79c4-4c05-ae4e-175e86e99d52",
+      "name": "Artist Enabler Club - July 2022",
+      "text": "Digital component of 7/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "73966986-f373-41e8-a2a2-e1fadb441968",
+      "name": "Artist Enabler Club - November 2021",
+      "text": "Digital component of 11/2021 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "888f5cf9-41d9-4820-9b4a-bf522340e61a",
+      "name": "Artist Enabler Club - June 2023",
+      "text": "Digital component of 6/2023 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "series",
+      "score": 63,
+      "entity": "fe393cb5-e6fd-4efa-b498-1f8fd0e2dd3a",
+      "name": "Juno Awards: Artist of the Year",
+      "text": "1\tOutstanding Performance (1972–1973)\n2\tMale and Female Vocalists of the Year (1970–1998)\n3\tBest Male Vocalist and Best Female Vocalist (1999)\n4\tBest Male and Female Artists (2000–2001)\n5\tBest Artist (2002)\n6\tArtist of the Year (2003–present)"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "9504f141-1558-48bb-8059-c25aaf31e6aa",
+      "name": "BAD BOY CELEBRATES DIDDY: The Artist",
+      "text": "== Countries excluded (Deezer + Spotify) ==\n(As of 2024-05-19).\n\n    * Eastern Europe: \uD83C\uDDE7\uD83C\uDDFE Belarus (by)"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "e54e3c5c-a866-4f27-bc73-a5156bae2f7d",
+      "name": "Artist Enabler Club - January 2022",
+      "text": "Digital component of 1/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "398e67a2-4e88-4214-82dc-c526240dbbfb",
+      "name": "Artist Enabler Club - September 2022",
+      "text": "Digital component of 9/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "7ddfba08-5a3f-4a01-931e-8b4302682b6f",
+      "name": "Artist Enabler Club - May 2022",
+      "text": "Digital component of 5/2022 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "48e2a086-8e0b-4089-b45e-162e52a817d1",
+      "name": "Artist Enabler Club - December 2021",
+      "text": "Digital component of 12/2021 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "55cb1422-57eb-480a-8161-dda79ed66b59",
+      "name": "Artist Enabler Club - May 2023",
+      "text": "Digital component of 5/2023 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "0999c89d-9fe4-4a72-90a8-da2a43e8c85f",
+      "name": "Artist Enabler Club - January 2023",
+      "text": "Digital component of 1/2023 entry in WHY?'s Artist Enabler Club subscription series"
+    },
+    {
+      "type": "release",
+      "score": 63,
+      "entity": "4f1307a2-1afb-40db-91ba-096866534f14",
+      "name": "Artist Enabler Club - July 2023",
+      "text": "Digital component of 7/2023 entry in WHY?'s Artist Enabler Club subscription series"
+    }
+  ]
+}

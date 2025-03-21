@@ -166,7 +166,7 @@ public class MbControllerSearchTest {
         if (sourceLocation != null) {
             Set<Class<?>> classesToGenerateSourcesFor = new HashSet<>();
             //TODO - Could extract to a property?
-            classesToGenerateSourcesFor.add(MbEventResult.class);
+//            classesToGenerateSourcesFor.add(MbEventResult.class);
             handlerFactory = new GenerateSourcesHandlerFactory(sourceLocation, classesToGenerateSourcesFor);
         } else {
             handlerFactory = new HandlerFactory.DefaultHandlerFactory();

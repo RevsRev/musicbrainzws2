@@ -1,5 +1,5 @@
 {
-  "created": "2025-02-28T15:18:57.588Z",
+  "created": "2025-03-21T16:14:25.809Z",
   "count": 63,
   "offset": 0,
   "areas": [
@@ -169,39 +169,6 @@
       ]
     },
     {
-      "id": "0e54f72e-47e6-4b14-84ad-571b774aae97",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 56,
-      "name": "White Rock",
-      "sort-name": "White Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "2f30c136-bb70-4ace-bf2e-28774fba5592",
-              "direction": "backward",
-              "area": {
-                "id": "2f30c136-bb70-4ace-bf2e-28774fba5592",
-                "type": "Municipality",
-                "type-id": "17246454-5ac4-36a1-b81a-4753eb2dab20",
-                "name": "Metro Vancouver",
-                "sort-name": "Metro Vancouver",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "55cb203f-39e8-49b5-9a1a-f52b7e7be497",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
@@ -225,6 +192,39 @@
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
                 "name": "York County",
                 "sort-name": "York County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0e54f72e-47e6-4b14-84ad-571b774aae97",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 56,
+      "name": "White Rock",
+      "sort-name": "White Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "2f30c136-bb70-4ace-bf2e-28774fba5592",
+              "direction": "backward",
+              "area": {
+                "id": "2f30c136-bb70-4ace-bf2e-28774fba5592",
+                "type": "Municipality",
+                "type-id": "17246454-5ac4-36a1-b81a-4753eb2dab20",
+                "name": "Metro Vancouver",
+                "sort-name": "Metro Vancouver",
                 "life-span": {
                   "ended": null
                 }
@@ -367,39 +367,6 @@
       ]
     },
     {
-      "id": "f43d375c-e71d-401d-8041-7267b90785e9",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 38,
-      "name": "Round Rock",
-      "sort-name": "Round Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "79e4cfe9-5e9b-46df-b58b-778f03dd66d2",
-              "direction": "backward",
-              "area": {
-                "id": "79e4cfe9-5e9b-46df-b58b-778f03dd66d2",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Williamson County",
-                "sort-name": "Williamson County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "a57a9e85-ca97-44e3-b2d1-62c467f5063d",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
@@ -433,12 +400,12 @@
       ]
     },
     {
-      "id": "5a18d564-6f8d-4833-8dc7-00efee4f7345",
+      "id": "f43d375c-e71d-401d-8041-7267b90785e9",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Salt Rock",
-      "sort-name": "Salt Rock",
+      "score": 38,
+      "name": "Round Rock",
+      "sort-name": "Round Rock",
       "life-span": {
         "ended": null
       },
@@ -448,80 +415,14 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "5821559c-41a7-433d-b6af-3c96c8ed4a7a",
+              "target": "79e4cfe9-5e9b-46df-b58b-778f03dd66d2",
               "direction": "backward",
               "area": {
-                "id": "5821559c-41a7-433d-b6af-3c96c8ed4a7a",
-                "type": "Subdivision",
-                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
-                "name": "KwaZulu-Natal",
-                "sort-name": "KwaZulu-Natal",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "59abdcdd-3ecf-45e3-a809-0679600fb325",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Creek",
-      "sort-name": "Rock Creek",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
-              "direction": "backward",
-              "area": {
-                "id": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
-                "type": "Subdivision",
-                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
-                "name": "Minnesota",
-                "sort-name": "Minnesota",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "845eab1f-3b4f-4ca3-9b34-126f9001af2b",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Sand Rock",
-      "sort-name": "Sand Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "d78500c0-d819-4903-8bf4-39761ad552cf",
-              "direction": "backward",
-              "area": {
-                "id": "d78500c0-d819-4903-8bf4-39761ad552cf",
+                "id": "79e4cfe9-5e9b-46df-b58b-778f03dd66d2",
                 "type": "County",
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Cherokee County",
-                "sort-name": "Cherokee County",
+                "name": "Williamson County",
+                "sort-name": "Williamson County",
                 "life-span": {
                   "ended": null
                 }
@@ -532,12 +433,12 @@
       ]
     },
     {
-      "id": "ac1179e4-2512-45b0-946e-b1600bb62adb",
+      "id": "0107a735-b819-4837-a1cf-3efe1bdb4fd7",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
       "score": 27,
-      "name": "Rock Rapids",
-      "sort-name": "Rock Rapids",
+      "name": "Marble Rock",
+      "sort-name": "Marble Rock",
       "life-span": {
         "ended": null
       },
@@ -547,344 +448,14 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "719ec1dd-5bd9-4c62-83aa-2cbfefa86f2b",
+              "target": "64ca690e-9beb-4640-a90d-9842f64ea227",
               "direction": "backward",
               "area": {
-                "id": "719ec1dd-5bd9-4c62-83aa-2cbfefa86f2b",
+                "id": "64ca690e-9beb-4640-a90d-9842f64ea227",
                 "type": "County",
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Lyon County",
-                "sort-name": "Lyon County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "6f5b40b5-2858-4729-b780-1a53cb737c0c",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "White Rock",
-      "sort-name": "White Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "5b2e31d7-7b91-4c2d-b217-a86a947600fa",
-              "direction": "backward",
-              "area": {
-                "id": "5b2e31d7-7b91-4c2d-b217-a86a947600fa",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Roberts County",
-                "sort-name": "Roberts County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "51694942-bd18-448e-bb93-226db96da5d3",
-      "type": "County",
-      "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-      "score": 27,
-      "name": "Rock County",
-      "sort-name": "Rock County",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
-              "direction": "backward",
-              "area": {
-                "id": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
-                "type": "Subdivision",
-                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
-                "name": "Minnesota",
-                "sort-name": "Minnesota",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "c622a9ff-21c3-4b06-be2d-0be82481b6f8",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Talking Rock",
-      "sort-name": "Talking Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "731ff8f3-a5c1-4ab2-9c1f-4b9ec2816786",
-              "direction": "backward",
-              "area": {
-                "id": "731ff8f3-a5c1-4ab2-9c1f-4b9ec2816786",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Pickens County",
-                "sort-name": "Pickens County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2028eb85-57fd-48f2-81da-b99fb3d9eaa9",
-      "type": "Municipality",
-      "type-id": "17246454-5ac4-36a1-b81a-4753eb2dab20",
-      "score": 27,
-      "name": "Rock Creek",
-      "sort-name": "Rock Creek",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "d48cb634-cd60-4879-bff7-ad1eed757773",
-              "direction": "backward",
-              "area": {
-                "id": "d48cb634-cd60-4879-bff7-ad1eed757773",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Dunn County",
-                "sort-name": "Dunn County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "168acb5e-8dac-4d3a-9379-e683c239760c",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "White Rock",
-      "sort-name": "White Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "0ce28b9c-3bec-482b-a822-ec3a119c3474",
-              "direction": "backward",
-              "area": {
-                "id": "0ce28b9c-3bec-482b-a822-ec3a119c3474",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "San Juan County",
-                "sort-name": "San Juan County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8f9f3676-e2d6-4196-9f16-3fcf2035b95b",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Point",
-      "sort-name": "Rock Point",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
-              "direction": "backward",
-              "area": {
-                "id": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Apache County",
-                "sort-name": "Apache County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "228e485f-b082-4647-a85d-b217914d995e",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Hill",
-      "sort-name": "Rock Hill",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "b89cb9b6-c9c5-45e5-af53-6d4cae8f10c0",
-              "direction": "backward",
-              "area": {
-                "id": "b89cb9b6-c9c5-45e5-af53-6d4cae8f10c0",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Sullivan County",
-                "sort-name": "Sullivan County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "506fb007-653b-4778-9b19-3ec5e678c241",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rough Rock",
-      "sort-name": "Rough Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
-              "direction": "backward",
-              "area": {
-                "id": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Apache County",
-                "sort-name": "Apache County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9f40f624-a4be-49b5-8434-6939466e516a",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Hollow Rock",
-      "sort-name": "Hollow Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "54cad059-555e-4df8-b4d4-74f5bd8e9ae2",
-              "direction": "backward",
-              "area": {
-                "id": "54cad059-555e-4df8-b4d4-74f5bd8e9ae2",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Carroll County",
-                "sort-name": "Carroll County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "eff358bf-e657-4199-aba3-4cf72e7c94cc",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Calico Rock",
-      "sort-name": "Calico Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "617f0aec-8fe3-4737-970b-9d5a6a9a04d9",
-              "direction": "backward",
-              "area": {
-                "id": "617f0aec-8fe3-4737-970b-9d5a6a9a04d9",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Izard County",
-                "sort-name": "Izard County",
+                "name": "Floyd County",
+                "sort-name": "Floyd County",
                 "life-span": {
                   "ended": null
                 }
@@ -928,12 +499,12 @@
       ]
     },
     {
-      "id": "63b75063-54d3-4fd1-a548-f49844350ecc",
+      "id": "ac1179e4-2512-45b0-946e-b1600bb62adb",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
       "score": 27,
-      "name": "Sulphur Rock",
-      "sort-name": "Sulphur Rock",
+      "name": "Rock Rapids",
+      "sort-name": "Rock Rapids",
       "life-span": {
         "ended": null
       },
@@ -943,14 +514,14 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "c41346fb-70f2-4e0c-a1ad-9d3670f26f74",
+              "target": "719ec1dd-5bd9-4c62-83aa-2cbfefa86f2b",
               "direction": "backward",
               "area": {
-                "id": "c41346fb-70f2-4e0c-a1ad-9d3670f26f74",
+                "id": "719ec1dd-5bd9-4c62-83aa-2cbfefa86f2b",
                 "type": "County",
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Independence County",
-                "sort-name": "Independence County",
+                "name": "Lyon County",
+                "sort-name": "Lyon County",
                 "life-span": {
                   "ended": null
                 }
@@ -961,12 +532,12 @@
       ]
     },
     {
-      "id": "d9281ea5-bb09-45ee-adba-e4e4d233ca73",
+      "id": "913ab230-b3f6-49b5-8d16-02e168910b80",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
       "score": 27,
-      "name": "Red Rock",
-      "sort-name": "Red Rock",
+      "name": "Khyber Rock",
+      "sort-name": "Khyber Rock",
       "life-span": {
         "ended": null
       },
@@ -976,14 +547,14 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+              "target": "291777c2-c48d-4002-9a0d-c7f87fea5c2b",
               "direction": "backward",
               "area": {
-                "id": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Apache County",
-                "sort-name": "Apache County",
+                "id": "291777c2-c48d-4002-9a0d-c7f87fea5c2b",
+                "type": "City",
+                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+                "name": "Johannesburg",
+                "sort-name": "Johannesburg",
                 "life-span": {
                   "ended": null
                 }
@@ -994,12 +565,12 @@
       ]
     },
     {
-      "id": "f94fb9e8-6573-45bf-9e1b-16d790584f1d",
+      "id": "75a8fcf7-b8a4-4b41-ad04-74a4bea250ad",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
       "score": 27,
-      "name": "Red Rock",
-      "sort-name": "Red Rock",
+      "name": "Lone Rock",
+      "sort-name": "Lone Rock",
       "life-span": {
         "ended": null
       },
@@ -1009,212 +580,14 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "db5c99e6-57f5-498c-bb3b-e47bd1a8e435",
+              "target": "f5681527-ec13-423d-973b-9f6520380166",
               "direction": "backward",
               "area": {
-                "id": "db5c99e6-57f5-498c-bb3b-e47bd1a8e435",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Bastrop County",
-                "sort-name": "Bastrop County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3cbc5934-b3d3-4588-ab99-8c327c1198ec",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "White Rock",
-      "sort-name": "White Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "5b290a00-23f1-45f2-8424-9d5b12ac3431",
-              "direction": "backward",
-              "area": {
-                "id": "5b290a00-23f1-45f2-8424-9d5b12ac3431",
+                "id": "f5681527-ec13-423d-973b-9f6520380166",
                 "type": "County",
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
                 "name": "Richland County",
                 "sort-name": "Richland County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "41eece61-3913-456b-a9b1-a721aace3deb",
-      "type": "District",
-      "type-id": "84039871-5e47-38ca-a66a-45e512c8290f",
-      "score": 27,
-      "name": "Alum Rock",
-      "sort-name": "Alum Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "226c4dca-ef2a-4d4b-ba25-4118d116557a",
-              "direction": "backward",
-              "area": {
-                "id": "226c4dca-ef2a-4d4b-ba25-4118d116557a",
-                "type": "City",
-                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-                "name": "Birmingham",
-                "sort-name": "Birmingham",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "68f717ac-eaaf-446b-a6ad-ae23025eabfc",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Flat Rock",
-      "sort-name": "Flat Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "8a056332-8dc0-489f-a0d6-5e0c8352af99",
-              "direction": "backward",
-              "area": {
-                "id": "8a056332-8dc0-489f-a0d6-5e0c8352af99",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Wayne County",
-                "sort-name": "Wayne County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "d36036b2-7f77-4581-98ce-86fe8db437ef",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Springs",
-      "sort-name": "Rock Springs",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "56adc6e9-f95d-453f-a060-0f2a38e84064",
-              "direction": "backward",
-              "area": {
-                "id": "56adc6e9-f95d-453f-a060-0f2a38e84064",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Sauk County",
-                "sort-name": "Sauk County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1ea107ff-29b0-454a-8250-d9183e4658a3",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Slick Rock",
-      "sort-name": "Slick Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "e06a4887-72d6-4a7b-874a-91444a5fc293",
-              "direction": "backward",
-              "area": {
-                "id": "e06a4887-72d6-4a7b-874a-91444a5fc293",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Barren County",
-                "sort-name": "Barren County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ac7ba21b-1b61-42ed-ba31-6a1b5634d3e5",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Black Rock",
-      "sort-name": "Black Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "8788d6c2-c779-4be5-ad47-cf0a95e0f2a0",
-              "direction": "backward",
-              "area": {
-                "id": "8788d6c2-c779-4be5-ad47-cf0a95e0f2a0",
-                "type": "Subdivision",
-                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
-                "name": "Arkansas",
-                "sort-name": "Arkansas",
                 "life-span": {
                   "ended": null
                 }
@@ -1324,6 +697,105 @@
       ]
     },
     {
+      "id": "9bbcae99-6c78-4caf-ab10-0d66a391c06b",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Valley",
+      "sort-name": "Rock Valley",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "b5c7b5a0-d487-4e6c-968f-99d735bc2dd9",
+              "direction": "backward",
+              "area": {
+                "id": "b5c7b5a0-d487-4e6c-968f-99d735bc2dd9",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Sioux County",
+                "sort-name": "Sioux County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b210f42c-cfe0-42f9-aeb5-d4ddf611f873",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Island",
+      "sort-name": "Rock Island",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "c637f316-30d7-47f6-ab29-cb7f6e71e20d",
+              "direction": "backward",
+              "area": {
+                "id": "c637f316-30d7-47f6-ab29-cb7f6e71e20d",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Douglas County",
+                "sort-name": "Douglas County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07749833-5692-43a4-a8c8-e19e2c11c5fb",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Port",
+      "sort-name": "Rock Port",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "8da1f42b-cf6e-49c8-834c-9a2913eb410c",
+              "direction": "backward",
+              "area": {
+                "id": "8da1f42b-cf6e-49c8-834c-9a2913eb410c",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Atchison County",
+                "sort-name": "Atchison County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "9b8dc401-4215-46aa-96aa-54fe797f4cc1",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
@@ -1357,12 +829,12 @@
       ]
     },
     {
-      "id": "eaab091f-e35e-43e0-ad85-3c72c566d31a",
+      "id": "fd86d3ba-edaa-4b53-a4b7-ff6fc1b15649",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
       "score": 27,
-      "name": "Steamboat Rock",
-      "sort-name": "Steamboat Rock",
+      "name": "Paint Rock",
+      "sort-name": "Paint Rock",
       "life-span": {
         "ended": null
       },
@@ -1372,14 +844,245 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "cdcccc15-8cf8-4fbc-84c9-ad920900eb7f",
+              "target": "2a6aa7dc-cfbf-45b5-995e-a83c3cda2c49",
               "direction": "backward",
               "area": {
-                "id": "cdcccc15-8cf8-4fbc-84c9-ad920900eb7f",
+                "id": "2a6aa7dc-cfbf-45b5-995e-a83c3cda2c49",
                 "type": "County",
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Hardin County",
-                "sort-name": "Hardin County",
+                "name": "Jackson County",
+                "sort-name": "Jackson County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5a18d564-6f8d-4833-8dc7-00efee4f7345",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Salt Rock",
+      "sort-name": "Salt Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "5821559c-41a7-433d-b6af-3c96c8ed4a7a",
+              "direction": "backward",
+              "area": {
+                "id": "5821559c-41a7-433d-b6af-3c96c8ed4a7a",
+                "type": "Subdivision",
+                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
+                "name": "KwaZulu-Natal",
+                "sort-name": "KwaZulu-Natal",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63b75063-54d3-4fd1-a548-f49844350ecc",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Sulphur Rock",
+      "sort-name": "Sulphur Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "c41346fb-70f2-4e0c-a1ad-9d3670f26f74",
+              "direction": "backward",
+              "area": {
+                "id": "c41346fb-70f2-4e0c-a1ad-9d3670f26f74",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Independence County",
+                "sort-name": "Independence County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "845eab1f-3b4f-4ca3-9b34-126f9001af2b",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Sand Rock",
+      "sort-name": "Sand Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "d78500c0-d819-4903-8bf4-39761ad552cf",
+              "direction": "backward",
+              "area": {
+                "id": "d78500c0-d819-4903-8bf4-39761ad552cf",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Cherokee County",
+                "sort-name": "Cherokee County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59abdcdd-3ecf-45e3-a809-0679600fb325",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Creek",
+      "sort-name": "Rock Creek",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
+              "direction": "backward",
+              "area": {
+                "id": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
+                "type": "Subdivision",
+                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
+                "name": "Minnesota",
+                "sort-name": "Minnesota",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06ad2cf1-1c93-4c3d-acb7-bb75be2de5e4",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Plaster Rock",
+      "sort-name": "Plaster Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "7057276b-c355-4ac9-b8d2-c1aaa18a3193",
+              "direction": "backward",
+              "area": {
+                "id": "7057276b-c355-4ac9-b8d2-c1aaa18a3193",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Victoria County",
+                "sort-name": "Victoria County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3cbc5934-b3d3-4588-ab99-8c327c1198ec",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "White Rock",
+      "sort-name": "White Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "5b290a00-23f1-45f2-8424-9d5b12ac3431",
+              "direction": "backward",
+              "area": {
+                "id": "5b290a00-23f1-45f2-8424-9d5b12ac3431",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Richland County",
+                "sort-name": "Richland County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "51694942-bd18-448e-bb93-226db96da5d3",
+      "type": "County",
+      "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+      "score": 27,
+      "name": "Rock County",
+      "sort-name": "Rock County",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
+              "direction": "backward",
+              "area": {
+                "id": "f5ffcc03-ebf2-466a-bb11-b38c6c0c84f5",
+                "type": "Subdivision",
+                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
+                "name": "Minnesota",
+                "sort-name": "Minnesota",
                 "life-span": {
                   "ended": null
                 }
@@ -1456,204 +1159,6 @@
       ]
     },
     {
-      "id": "07749833-5692-43a4-a8c8-e19e2c11c5fb",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Port",
-      "sort-name": "Rock Port",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "8da1f42b-cf6e-49c8-834c-9a2913eb410c",
-              "direction": "backward",
-              "area": {
-                "id": "8da1f42b-cf6e-49c8-834c-9a2913eb410c",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Atchison County",
-                "sort-name": "Atchison County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "de1083d3-a911-4cd3-a672-3b033bd2d7f3",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Lone Rock",
-      "sort-name": "Lone Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "7fba33ac-9aac-48aa-8cae-136e6d814534",
-              "direction": "backward",
-              "area": {
-                "id": "7fba33ac-9aac-48aa-8cae-136e6d814534",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Kossuth County",
-                "sort-name": "Kossuth County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9bbcae99-6c78-4caf-ab10-0d66a391c06b",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Valley",
-      "sort-name": "Rock Valley",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "b5c7b5a0-d487-4e6c-968f-99d735bc2dd9",
-              "direction": "backward",
-              "area": {
-                "id": "b5c7b5a0-d487-4e6c-968f-99d735bc2dd9",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Sioux County",
-                "sort-name": "Sioux County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "0107a735-b819-4837-a1cf-3efe1bdb4fd7",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Marble Rock",
-      "sort-name": "Marble Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "64ca690e-9beb-4640-a90d-9842f64ea227",
-              "direction": "backward",
-              "area": {
-                "id": "64ca690e-9beb-4640-a90d-9842f64ea227",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Floyd County",
-                "sort-name": "Floyd County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "b210f42c-cfe0-42f9-aeb5-d4ddf611f873",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Island",
-      "sort-name": "Rock Island",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "c637f316-30d7-47f6-ab29-cb7f6e71e20d",
-              "direction": "backward",
-              "area": {
-                "id": "c637f316-30d7-47f6-ab29-cb7f6e71e20d",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Douglas County",
-                "sort-name": "Douglas County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "362a7475-5d36-47b5-b434-e0b418aa9b3c",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Rock Falls",
-      "sort-name": "Rock Falls",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "7e75655d-881b-4799-bf23-dcc14bb4f5aa",
-              "direction": "backward",
-              "area": {
-                "id": "7e75655d-881b-4799-bf23-dcc14bb4f5aa",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Whiteside County",
-                "sort-name": "Whiteside County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "465d2ee9-2e6f-48bb-b4b0-a6b6a4376105",
       "type": "Municipality",
       "type-id": "17246454-5ac4-36a1-b81a-4753eb2dab20",
@@ -1687,12 +1192,12 @@
       ]
     },
     {
-      "id": "28c39f4a-d4ab-4af9-8e37-4e7e795a7f87",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "id": "2028eb85-57fd-48f2-81da-b99fb3d9eaa9",
+      "type": "Municipality",
+      "type-id": "17246454-5ac4-36a1-b81a-4753eb2dab20",
       "score": 27,
-      "name": "Rock Hall",
-      "sort-name": "Rock Hall",
+      "name": "Rock Creek",
+      "sort-name": "Rock Creek",
       "life-span": {
         "ended": null
       },
@@ -1702,179 +1207,14 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "a6e03054-1301-4204-bc03-e2e38e9286ea",
+              "target": "d48cb634-cd60-4879-bff7-ad1eed757773",
               "direction": "backward",
               "area": {
-                "id": "a6e03054-1301-4204-bc03-e2e38e9286ea",
+                "id": "d48cb634-cd60-4879-bff7-ad1eed757773",
                 "type": "County",
                 "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Kent County",
-                "sort-name": "Kent County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fd86d3ba-edaa-4b53-a4b7-ff6fc1b15649",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Paint Rock",
-      "sort-name": "Paint Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "2a6aa7dc-cfbf-45b5-995e-a83c3cda2c49",
-              "direction": "backward",
-              "area": {
-                "id": "2a6aa7dc-cfbf-45b5-995e-a83c3cda2c49",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Jackson County",
-                "sort-name": "Jackson County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "913ab230-b3f6-49b5-8d16-02e168910b80",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Khyber Rock",
-      "sort-name": "Khyber Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "291777c2-c48d-4002-9a0d-c7f87fea5c2b",
-              "direction": "backward",
-              "area": {
-                "id": "291777c2-c48d-4002-9a0d-c7f87fea5c2b",
-                "type": "City",
-                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-                "name": "Johannesburg",
-                "sort-name": "Johannesburg",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "75a8fcf7-b8a4-4b41-ad04-74a4bea250ad",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Lone Rock",
-      "sort-name": "Lone Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "f5681527-ec13-423d-973b-9f6520380166",
-              "direction": "backward",
-              "area": {
-                "id": "f5681527-ec13-423d-973b-9f6520380166",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Richland County",
-                "sort-name": "Richland County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "06ad2cf1-1c93-4c3d-acb7-bb75be2de5e4",
-      "type": "City",
-      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-      "score": 27,
-      "name": "Plaster Rock",
-      "sort-name": "Plaster Rock",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "7057276b-c355-4ac9-b8d2-c1aaa18a3193",
-              "direction": "backward",
-              "area": {
-                "id": "7057276b-c355-4ac9-b8d2-c1aaa18a3193",
-                "type": "County",
-                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-                "name": "Victoria County",
-                "sort-name": "Victoria County",
-                "life-span": {
-                  "ended": null
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "bdf10c71-bb5a-4116-b028-e210f65f2bc9",
-      "type": "County",
-      "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-      "score": 27,
-      "name": "Rock County",
-      "sort-name": "Rock County",
-      "life-span": {
-        "ended": null
-      },
-      "relation-list": [
-        {
-          "relations": [
-            {
-              "type": "part of",
-              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "10cb2ebd-1bc7-4c11-b10d-54f60c421d20",
-              "direction": "backward",
-              "area": {
-                "id": "10cb2ebd-1bc7-4c11-b10d-54f60c421d20",
-                "type": "Subdivision",
-                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
-                "name": "Wisconsin",
-                "sort-name": "Wisconsin",
+                "name": "Dunn County",
+                "sort-name": "Dunn County",
                 "life-span": {
                   "ended": null
                 }
@@ -1918,12 +1258,210 @@
       ]
     },
     {
-      "id": "cd519e00-67ba-43b5-863c-8efdc4a5ef0b",
+      "id": "68f717ac-eaaf-446b-a6ad-ae23025eabfc",
       "type": "City",
       "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
       "score": 27,
-      "name": "Round Rock",
-      "sort-name": "Round Rock",
+      "name": "Flat Rock",
+      "sort-name": "Flat Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "8a056332-8dc0-489f-a0d6-5e0c8352af99",
+              "direction": "backward",
+              "area": {
+                "id": "8a056332-8dc0-489f-a0d6-5e0c8352af99",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Wayne County",
+                "sort-name": "Wayne County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "362a7475-5d36-47b5-b434-e0b418aa9b3c",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Falls",
+      "sort-name": "Rock Falls",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "7e75655d-881b-4799-bf23-dcc14bb4f5aa",
+              "direction": "backward",
+              "area": {
+                "id": "7e75655d-881b-4799-bf23-dcc14bb4f5aa",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Whiteside County",
+                "sort-name": "Whiteside County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de1083d3-a911-4cd3-a672-3b033bd2d7f3",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Lone Rock",
+      "sort-name": "Lone Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "7fba33ac-9aac-48aa-8cae-136e6d814534",
+              "direction": "backward",
+              "area": {
+                "id": "7fba33ac-9aac-48aa-8cae-136e6d814534",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Kossuth County",
+                "sort-name": "Kossuth County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eaab091f-e35e-43e0-ad85-3c72c566d31a",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Steamboat Rock",
+      "sort-name": "Steamboat Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "cdcccc15-8cf8-4fbc-84c9-ad920900eb7f",
+              "direction": "backward",
+              "area": {
+                "id": "cdcccc15-8cf8-4fbc-84c9-ad920900eb7f",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Hardin County",
+                "sort-name": "Hardin County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c622a9ff-21c3-4b06-be2d-0be82481b6f8",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Talking Rock",
+      "sort-name": "Talking Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "731ff8f3-a5c1-4ab2-9c1f-4b9ec2816786",
+              "direction": "backward",
+              "area": {
+                "id": "731ff8f3-a5c1-4ab2-9c1f-4b9ec2816786",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Pickens County",
+                "sort-name": "Pickens County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6f5b40b5-2858-4729-b780-1a53cb737c0c",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "White Rock",
+      "sort-name": "White Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "5b2e31d7-7b91-4c2d-b217-a86a947600fa",
+              "direction": "backward",
+              "area": {
+                "id": "5b2e31d7-7b91-4c2d-b217-a86a947600fa",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Roberts County",
+                "sort-name": "Roberts County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d9281ea5-bb09-45ee-adba-e4e4d233ca73",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Red Rock",
+      "sort-name": "Red Rock",
       "life-span": {
         "ended": null
       },
@@ -1984,6 +1522,39 @@
       ]
     },
     {
+      "id": "506fb007-653b-4778-9b19-3ec5e678c241",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rough Rock",
+      "sort-name": "Rough Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+              "direction": "backward",
+              "area": {
+                "id": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Apache County",
+                "sort-name": "Apache County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "cd20d397-0dd6-4f91-87ae-73afb8efd90b",
       "type": "District",
       "type-id": "84039871-5e47-38ca-a66a-45e512c8290f",
@@ -2017,12 +1588,12 @@
       ]
     },
     {
-      "id": "7b187194-1edb-43c6-8e1b-bbf114079969",
-      "type": "County",
-      "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
-      "score": 22,
-      "name": "Rock Island County",
-      "sort-name": "Rock Island County",
+      "id": "28c39f4a-d4ab-4af9-8e37-4e7e795a7f87",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Hall",
+      "sort-name": "Rock Hall",
       "life-span": {
         "ended": null
       },
@@ -2032,14 +1603,410 @@
             {
               "type": "part of",
               "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
-              "target": "8c2196d9-b7be-4051-90d1-ac81895355f1",
+              "target": "a6e03054-1301-4204-bc03-e2e38e9286ea",
               "direction": "backward",
               "area": {
-                "id": "8c2196d9-b7be-4051-90d1-ac81895355f1",
+                "id": "a6e03054-1301-4204-bc03-e2e38e9286ea",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Kent County",
+                "sort-name": "Kent County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9f40f624-a4be-49b5-8434-6939466e516a",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Hollow Rock",
+      "sort-name": "Hollow Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "54cad059-555e-4df8-b4d4-74f5bd8e9ae2",
+              "direction": "backward",
+              "area": {
+                "id": "54cad059-555e-4df8-b4d4-74f5bd8e9ae2",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Carroll County",
+                "sort-name": "Carroll County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eff358bf-e657-4199-aba3-4cf72e7c94cc",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Calico Rock",
+      "sort-name": "Calico Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "617f0aec-8fe3-4737-970b-9d5a6a9a04d9",
+              "direction": "backward",
+              "area": {
+                "id": "617f0aec-8fe3-4737-970b-9d5a6a9a04d9",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Izard County",
+                "sort-name": "Izard County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d36036b2-7f77-4581-98ce-86fe8db437ef",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Springs",
+      "sort-name": "Rock Springs",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "56adc6e9-f95d-453f-a060-0f2a38e84064",
+              "direction": "backward",
+              "area": {
+                "id": "56adc6e9-f95d-453f-a060-0f2a38e84064",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Sauk County",
+                "sort-name": "Sauk County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f94fb9e8-6573-45bf-9e1b-16d790584f1d",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Red Rock",
+      "sort-name": "Red Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "db5c99e6-57f5-498c-bb3b-e47bd1a8e435",
+              "direction": "backward",
+              "area": {
+                "id": "db5c99e6-57f5-498c-bb3b-e47bd1a8e435",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Bastrop County",
+                "sort-name": "Bastrop County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "41eece61-3913-456b-a9b1-a721aace3deb",
+      "type": "District",
+      "type-id": "84039871-5e47-38ca-a66a-45e512c8290f",
+      "score": 27,
+      "name": "Alum Rock",
+      "sort-name": "Alum Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "226c4dca-ef2a-4d4b-ba25-4118d116557a",
+              "direction": "backward",
+              "area": {
+                "id": "226c4dca-ef2a-4d4b-ba25-4118d116557a",
+                "type": "City",
+                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+                "name": "Birmingham",
+                "sort-name": "Birmingham",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1ea107ff-29b0-454a-8250-d9183e4658a3",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Slick Rock",
+      "sort-name": "Slick Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "e06a4887-72d6-4a7b-874a-91444a5fc293",
+              "direction": "backward",
+              "area": {
+                "id": "e06a4887-72d6-4a7b-874a-91444a5fc293",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Barren County",
+                "sort-name": "Barren County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bdf10c71-bb5a-4116-b028-e210f65f2bc9",
+      "type": "County",
+      "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+      "score": 27,
+      "name": "Rock County",
+      "sort-name": "Rock County",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "10cb2ebd-1bc7-4c11-b10d-54f60c421d20",
+              "direction": "backward",
+              "area": {
+                "id": "10cb2ebd-1bc7-4c11-b10d-54f60c421d20",
                 "type": "Subdivision",
                 "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
-                "name": "Illinois",
-                "sort-name": "Illinois",
+                "name": "Wisconsin",
+                "sort-name": "Wisconsin",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cd519e00-67ba-43b5-863c-8efdc4a5ef0b",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Round Rock",
+      "sort-name": "Round Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+              "direction": "backward",
+              "area": {
+                "id": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Apache County",
+                "sort-name": "Apache County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "168acb5e-8dac-4d3a-9379-e683c239760c",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "White Rock",
+      "sort-name": "White Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "0ce28b9c-3bec-482b-a822-ec3a119c3474",
+              "direction": "backward",
+              "area": {
+                "id": "0ce28b9c-3bec-482b-a822-ec3a119c3474",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "San Juan County",
+                "sort-name": "San Juan County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8f9f3676-e2d6-4196-9f16-3fcf2035b95b",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Point",
+      "sort-name": "Rock Point",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+              "direction": "backward",
+              "area": {
+                "id": "d42529ea-deed-4704-aa46-1ce3aeb9184e",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Apache County",
+                "sort-name": "Apache County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "228e485f-b082-4647-a85d-b217914d995e",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Rock Hill",
+      "sort-name": "Rock Hill",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "b89cb9b6-c9c5-45e5-af53-6d4cae8f10c0",
+              "direction": "backward",
+              "area": {
+                "id": "b89cb9b6-c9c5-45e5-af53-6d4cae8f10c0",
+                "type": "County",
+                "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+                "name": "Sullivan County",
+                "sort-name": "Sullivan County",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac7ba21b-1b61-42ed-ba31-6a1b5634d3e5",
+      "type": "City",
+      "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+      "score": 27,
+      "name": "Black Rock",
+      "sort-name": "Black Rock",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "8788d6c2-c779-4be5-ad47-cf0a95e0f2a0",
+              "direction": "backward",
+              "area": {
+                "id": "8788d6c2-c779-4be5-ad47-cf0a95e0f2a0",
+                "type": "Subdivision",
+                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
+                "name": "Arkansas",
+                "sort-name": "Arkansas",
                 "life-span": {
                   "ended": null
                 }
@@ -2073,6 +2040,39 @@
                 "type-id": "17246454-5ac4-36a1-b81a-4753eb2dab20",
                 "name": "Cochrane District",
                 "sort-name": "Cochrane District",
+                "life-span": {
+                  "ended": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7b187194-1edb-43c6-8e1b-bbf114079969",
+      "type": "County",
+      "type-id": "bcecec27-8bdb-3e00-8254-d948dda502fa",
+      "score": 22,
+      "name": "Rock Island County",
+      "sort-name": "Rock Island County",
+      "life-span": {
+        "ended": null
+      },
+      "relation-list": [
+        {
+          "relations": [
+            {
+              "type": "part of",
+              "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+              "target": "8c2196d9-b7be-4051-90d1-ac81895355f1",
+              "direction": "backward",
+              "area": {
+                "id": "8c2196d9-b7be-4051-90d1-ac81895355f1",
+                "type": "Subdivision",
+                "type-id": "fd3d44c5-80a1-3842-9745-2c4972d35afa",
+                "name": "Illinois",
+                "sort-name": "Illinois",
                 "life-span": {
                   "ended": null
                 }

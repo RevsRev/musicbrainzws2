@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<metadata created="2025-02-14T16:54:42.174Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
-          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+<metadata created="2025-03-21T16:14:21.470Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#" xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
     <event-list count="2" offset="0">
-        <event id="0fa2df83-1b51-4391-a705-a330d12788db" type="Concert" type-id="ef55e8d7-3d00-394a-8012-f5506a29ff0b"
-               ns2:score="100">
+        <event id="0fa2df83-1b51-4391-a705-a330d12788db" type="Concert" type-id="ef55e8d7-3d00-394a-8012-f5506a29ff0b" ns2:score="100">
             <name>Waylon Jennings at Opryland</name>
             <life-span>
                 <begin>1978</begin>
@@ -28,8 +26,7 @@
                 </relation>
             </relation-list>
         </event>
-        <event id="ea4188ab-39e5-4b60-a0ae-dece198a1b98" type="Festival" type-id="b6ded574-b592-3f0e-b56e-5b5f06aa0678"
-               ns2:score="85">
+        <event id="ea4188ab-39e5-4b60-a0ae-dece198a1b98" type="Festival" type-id="b6ded574-b592-3f0e-b56e-5b5f06aa0678" ns2:score="85">
             <name>High Velocity Super Action Fun Time Mega Fest, Part 2</name>
             <life-span>
                 <begin>2014-11-30</begin>
@@ -76,8 +73,8 @@
                 <relation type="support act" type-id="492a850e-97eb-306a-a85e-4b6d98527796">
                     <direction>backward</direction>
                     <artist id="ebafff3d-0105-4e5d-a7a4-98972c48a57f">
-                        <name>The Dead Rabbitts</name>
-                        <sort-name>Dead Rabbitts, The</sort-name>
+                        <name>Dead Rabbitts</name>
+                        <sort-name>Dead Rabbitts</sort-name>
                     </artist>
                 </relation>
                 <relation type="support act" type-id="492a850e-97eb-306a-a85e-4b6d98527796">

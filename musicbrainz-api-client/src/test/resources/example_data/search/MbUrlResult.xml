@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<metadata created="2025-02-28T15:15:28.557Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#"
-          xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
-    <url-list count="252386" offset="0">
+<metadata created="2025-03-21T16:14:17.125Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#" xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <url-list count="253165" offset="0">
         <url id="2511eb5c-6ae1-45bb-8933-76fcc81758d7" ns2:score="100">
             <resource>https://www.wikidata.org/wiki/Q4159732</resource>
             <relation-list target-type="artist">

@@ -1,12 +1,16 @@
 package com.github.rev.musicbrainz.client.mapping;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
 import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.search.result.MbAnnotationResult;
 import com.github.rev.musicbrainz.client.search.result.MbAreaResult;
 import com.github.rev.musicbrainz.client.search.result.MbArtistResult;
 import com.github.rev.musicbrainz.client.search.result.MbCdStubResult;
 import com.github.rev.musicbrainz.client.search.result.MbEventResult;
-import com.github.rev.musicbrainz.client.search.result.MbGenreResult;
 import com.github.rev.musicbrainz.client.search.result.MbInstrumentResult;
 import com.github.rev.musicbrainz.client.search.result.MbLabelResult;
 import com.github.rev.musicbrainz.client.search.result.MbPlaceResult;
@@ -17,15 +21,13 @@ import com.github.rev.musicbrainz.client.search.result.MbSeriesResult;
 import com.github.rev.musicbrainz.client.search.result.MbTagResult;
 import com.github.rev.musicbrainz.client.search.result.MbUrlResult;
 import com.github.rev.musicbrainz.client.search.result.MbWorkResult;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
 public class AbstractMapperTest {
+
+    private static final String SEARCH_FOLDER_NAME = "search";
 
     @ParameterizedTest
     @MethodSource("getMapperTestParams")
@@ -38,40 +40,40 @@ public class AbstractMapperTest {
         List<MapperTestParams<?>> testParams = new ArrayList<>();
 
         //XML TEST CASES
-        testParams.add(MapperTestParams.factory(MbAnnotationResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbAreaResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbCdStubResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbEventResult.class, MbFormat.XML));
-//        testParams.add(MapperTestParams.factory(MbGenreResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbInstrumentResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbLabelResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbPlaceResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbRecordingResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbReleaseResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbSeriesResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbTagResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.XML));
-        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbAnnotationResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbAreaResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbCdStubResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbEventResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+//        testParams.add(MapperTestParams.factory(MbGenreResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbInstrumentResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbLabelResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbPlaceResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbRecordingResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbReleaseResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbSeriesResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbTagResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbWorkResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
+        testParams.add(MapperTestParams.factory(MbUrlResult.class, SEARCH_FOLDER_NAME, MbFormat.XML));
 
         //JSON TEST CASES
-        testParams.add(MapperTestParams.factory(MbAnnotationResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbAreaResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbArtistResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbCdStubResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbEventResult.class, MbFormat.JSON));
-//        testParams.add(MapperTestParams.factory(MbGenreResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbInstrumentResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbLabelResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbPlaceResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbRecordingResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbReleaseResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbSeriesResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbTagResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbWorkResult.class, MbFormat.JSON));
-        testParams.add(MapperTestParams.factory(MbUrlResult.class, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbAnnotationResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbAreaResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbArtistResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbCdStubResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbEventResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+//        testParams.add(MapperTestParams.factory(MbGenreResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbInstrumentResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbLabelResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbPlaceResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbRecordingResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbReleaseResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbReleaseGroupResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbSeriesResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbTagResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbWorkResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
+        testParams.add(MapperTestParams.factory(MbUrlResult.class, SEARCH_FOLDER_NAME, MbFormat.JSON));
 
         return testParams;
     }
@@ -90,10 +92,11 @@ public class AbstractMapperTest {
         }
 
         private static <T> MapperTestParams<T> factory(final Class<T> clazz,
+                                                       final String searchFolderName,
                                                        final MbFormat format) {
             InputStreamMapper<T> mapper = InputStreamMapper.factory(clazz, format);
             String extension = format == MbFormat.XML ? "xml" : "json";
-            String resourceLocation = String.format("example_data/%s.%s", clazz.getSimpleName(), extension);
+            String resourceLocation = String.format("example_data/%s/%s.%s", searchFolderName, clazz.getSimpleName(), extension);
             return new MapperTestParams<>(mapper, resourceLocation, format);
         }
 

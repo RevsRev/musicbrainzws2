@@ -1,17 +1,8 @@
 {
-  "created": "2025-02-28T15:18:57.929Z",
+  "created": "2025-03-21T16:09:08.019Z",
   "count": 52,
   "offset": 0,
   "cdstubs": [
-    {
-      "id": "zMCuMe06jh9g2CJBYmCisQBQL3o-",
-      "score": 100,
-      "count": 7,
-      "title": "Doo- Be - Doo",
-      "artist": "Lauren Molina",
-      "barcode": "837101394918",
-      "disambiguation": "CD Baby id:laurenmolina"
-    },
     {
       "id": "zsXyqGWvw0zF024A_saTokxIMzo-",
       "score": 100,
@@ -22,13 +13,13 @@
       "disambiguation": "CD Baby id:emergency2"
     },
     {
-      "id": "N.BqSgPSx5fr9u23FZt8YoVDqYs-",
-      "score": 91,
-      "count": 10,
-      "title": "Doo Process",
-      "artist": "President's Breakfast",
-      "barcode": "",
-      "disambiguation": "CD Baby id:presidents3"
+      "id": "zMCuMe06jh9g2CJBYmCisQBQL3o-",
+      "score": 100,
+      "count": 7,
+      "title": "Doo- Be - Doo",
+      "artist": "Lauren Molina",
+      "barcode": "837101394918",
+      "disambiguation": "CD Baby id:laurenmolina"
     },
     {
       "id": "flDSWKyB3ldU0HGjcW8NY9m4Vd8-",
@@ -37,6 +28,15 @@
       "title": "Doo-Bop",
       "artist": "Miles Davis",
       "barcode": ""
+    },
+    {
+      "id": "N.BqSgPSx5fr9u23FZt8YoVDqYs-",
+      "score": 91,
+      "count": 10,
+      "title": "Doo Process",
+      "artist": "President's Breakfast",
+      "barcode": "",
+      "disambiguation": "CD Baby id:presidents3"
     },
     {
       "id": "jwRuJAG_xQ7fMv3bn6WKOajr.1o-",
@@ -52,14 +52,6 @@
       "count": 6,
       "title": "Voo-Doo Believe?",
       "artist": "Datura",
-      "barcode": ""
-    },
-    {
-      "id": "4dTN9TdoLI2zAL2_yIJj2Y01L7w-",
-      "score": 80,
-      "count": 10,
-      "title": "Bop Doo-Wopp",
-      "artist": "The Manhattan Transfer",
       "barcode": ""
     },
     {
@@ -90,11 +82,45 @@
       "disambiguation": "CD Baby id:jeromealexander"
     },
     {
+      "id": "4dTN9TdoLI2zAL2_yIJj2Y01L7w-",
+      "score": 80,
+      "count": 10,
+      "title": "Bop Doo-Wopp",
+      "artist": "The Manhattan Transfer",
+      "barcode": ""
+    },
+    {
       "id": "3ZiB189LyBHKor7d6k0gcLDm1IA-",
       "score": 80,
       "count": 10,
       "title": "Doo Wop vol-04",
       "artist": ""
+    },
+    {
+      "id": "U6SFr9ggJjQmPH0ygr99SRD2SWs-",
+      "score": 71,
+      "count": 13,
+      "title": "Daddy-Doo-A-Rama",
+      "artist": "The Daddy-Doo Band",
+      "barcode": "707541772129",
+      "disambiguation": "CD Baby id:daddydoo"
+    },
+    {
+      "id": "2RFR2hBHBCCz.Bd_7vaN3iQtuZY-",
+      "score": 71,
+      "count": 10,
+      "title": "The Doo-Wah Riders",
+      "artist": "Doo-Wah Riders",
+      "barcode": "613505256324",
+      "disambiguation": "CD Baby id:doowahriders5"
+    },
+    {
+      "id": "bD5_9gTn_E.eXRA.uyBK4oebDkY-",
+      "score": 71,
+      "count": 12,
+      "title": "Doo-Wops & Hooligans",
+      "artist": "Bruno Mars",
+      "barcode": ""
     },
     {
       "id": "V9R3m2B2PoNI7mQQFCFCfwwkxlU-",
@@ -106,18 +132,10 @@
       "disambiguation": "CD Baby id:sammystray3"
     },
     {
-      "id": "EdYyxsTJ_CJd87Siu0B4OiIzUCc-",
+      "id": "ALHIT9CWfQUoc6QeAhFbHgWPKHM-",
       "score": 71,
-      "count": 50,
-      "title": "Cunt-A-Doodle-Doo",
-      "artist": "Shat",
-      "barcode": ""
-    },
-    {
-      "id": "bD5_9gTn_E.eXRA.uyBK4oebDkY-",
-      "score": 71,
-      "count": 12,
-      "title": "Doo-Wops & Hooligans",
+      "count": 10,
+      "title": "Doo Wops & Hooligans",
       "artist": "Bruno Mars",
       "barcode": ""
     },
@@ -130,29 +148,11 @@
       "barcode": "803151007726"
     },
     {
-      "id": "U6SFr9ggJjQmPH0ygr99SRD2SWs-",
+      "id": "EdYyxsTJ_CJd87Siu0B4OiIzUCc-",
       "score": 71,
-      "count": 13,
-      "title": "Daddy-Doo-A-Rama",
-      "artist": "The Daddy-Doo Band",
-      "barcode": "707541772129",
-      "disambiguation": "CD Baby id:daddydoo"
-    },
-    {
-      "id": "oymj9AEhHcY_f4QcPXxXzA0VPN8-",
-      "score": 71,
-      "count": 28,
-      "title": "Doo Wop volume 1",
-      "artist": "",
-      "barcode": "029667157926",
-      "disambiguation": "ACE CDCHD579"
-    },
-    {
-      "id": "ALHIT9CWfQUoc6QeAhFbHgWPKHM-",
-      "score": 71,
-      "count": 10,
-      "title": "Doo Wops & Hooligans",
-      "artist": "Bruno Mars",
+      "count": 50,
+      "title": "Cunt-A-Doodle-Doo",
+      "artist": "Shat",
       "barcode": ""
     },
     {
@@ -164,29 +164,21 @@
       "barcode": "9043196672"
     },
     {
-      "id": "2RFR2hBHBCCz.Bd_7vaN3iQtuZY-",
+      "id": "oymj9AEhHcY_f4QcPXxXzA0VPN8-",
       "score": 71,
-      "count": 10,
-      "title": "The Doo-Wah Riders",
-      "artist": "Doo-Wah Riders",
-      "barcode": "613505256324",
-      "disambiguation": "CD Baby id:doowahriders5"
+      "count": 28,
+      "title": "Doo Wop volume 1",
+      "artist": "",
+      "barcode": "029667157926",
+      "disambiguation": "ACE CDCHD579"
     },
     {
-      "id": "GsDl1n94qcKKTYhn68M14xf7EzE-",
+      "id": "k2XBSwNxPdx77yYldullgubZ0Pg-",
       "score": 63,
-      "count": 6,
-      "title": "Doo-Wop (Karaoke Tracks Included)",
-      "artist": "Aaron Usher",
-      "barcode": "634479219900",
-      "disambiguation": "CD Baby id:aaronusher"
-    },
-    {
-      "id": "kZs1s9BfbEKXLXS5rkJq7P7.K5g-",
-      "score": 63,
-      "count": 10,
-      "title": "Cousin Brucie's Doo Wop Favorites",
-      "artist": ""
+      "count": 20,
+      "title": "20 Best of Doo Wop",
+      "artist": "",
+      "barcode": "056775398125"
     },
     {
       "id": "rEu56QFr7GdQhygEqz_bCwpkLoU-",
@@ -195,14 +187,6 @@
       "title": "Doo Wop Favorites (disc 2)",
       "artist": "",
       "barcode": ""
-    },
-    {
-      "id": ".qXrsJ6kQ5TH.Edb2Wwpqc3UtUI-",
-      "score": 63,
-      "count": 13,
-      "title": "Scooby-Doo 2: Monsters Unleashed",
-      "artist": "",
-      "barcode": "093624868422"
     },
     {
       "id": "vNXR27NTZoB7IFgoJpGN2AdU4LE-",
@@ -214,32 +198,6 @@
       "disambiguation": "CD Baby id:mightyechoes"
     },
     {
-      "id": "HMuDvcKE8qsrbzgNvoHWR8YT8as-",
-      "score": 63,
-      "count": 13,
-      "title": "The Doo-Wah Riders Live",
-      "artist": "The Doo-Wah Riders",
-      "barcode": "613505111227",
-      "disambiguation": "CD Baby id:doowahriders2"
-    },
-    {
-      "id": "xcdRIDQM2eziVDpZAX7tAbCXdgY-",
-      "score": 63,
-      "count": 22,
-      "title": "Doo-zees and Don't-zees",
-      "artist": "Flosy & the Music Man",
-      "barcode": "616892892823",
-      "disambiguation": "CD Baby id:flosymusicman"
-    },
-    {
-      "id": "k2XBSwNxPdx77yYldullgubZ0Pg-",
-      "score": 63,
-      "count": 20,
-      "title": "20 Best of Doo Wop",
-      "artist": "",
-      "barcode": "056775398125"
-    },
-    {
       "id": "PJReN5ep2y.gkGWX0OfudOe8tiw-",
       "score": 63,
       "count": 19,
@@ -247,6 +205,32 @@
       "artist": "The Tones",
       "barcode": "",
       "disambiguation": "CD Baby id:tones2"
+    },
+    {
+      "id": ".qXrsJ6kQ5TH.Edb2Wwpqc3UtUI-",
+      "score": 63,
+      "count": 13,
+      "title": "Scooby-Doo 2: Monsters Unleashed",
+      "artist": "",
+      "barcode": "093624868422"
+    },
+    {
+      "id": "GsDl1n94qcKKTYhn68M14xf7EzE-",
+      "score": 63,
+      "count": 6,
+      "title": "Doo-Wop (Karaoke Tracks Included)",
+      "artist": "Aaron Usher",
+      "barcode": "634479219900",
+      "disambiguation": "CD Baby id:aaronusher"
+    },
+    {
+      "id": "HMuDvcKE8qsrbzgNvoHWR8YT8as-",
+      "score": 63,
+      "count": 13,
+      "title": "The Doo-Wah Riders Live",
+      "artist": "The Doo-Wah Riders",
+      "barcode": "613505111227",
+      "disambiguation": "CD Baby id:doowahriders2"
     },
     {
       "id": "PpuO6Ezr5hLeAgPV8pc31w1LC3E-",
@@ -264,13 +248,20 @@
       "artist": ""
     },
     {
-      "id": "GesqvUI.IqalJXi8DFAVfOaynvs-",
-      "score": 57,
-      "count": 11,
-      "title": "Doodle Loot Doot Doodle A Doo",
-      "artist": "Bing Ji Ling",
-      "barcode": "827071004627",
-      "disambiguation": "CD Baby id:bingjiling"
+      "id": "xcdRIDQM2eziVDpZAX7tAbCXdgY-",
+      "score": 63,
+      "count": 22,
+      "title": "Doo-zees and Don't-zees",
+      "artist": "Flosy & the Music Man",
+      "barcode": "616892892823",
+      "disambiguation": "CD Baby id:flosymusicman"
+    },
+    {
+      "id": "kZs1s9BfbEKXLXS5rkJq7P7.K5g-",
+      "score": 63,
+      "count": 10,
+      "title": "Cousin Brucie's Doo Wop Favorites",
+      "artist": ""
     },
     {
       "id": "FpeMi_jmIgwKPLXEXrkfvO2Qm54-",
@@ -282,15 +273,6 @@
       "disambiguation": "CD Baby id:capricerecords25"
     },
     {
-      "id": "8XquQvFipS0Lirt4hvKIB1CG66I-",
-      "score": 57,
-      "count": 5,
-      "title": "Doo Henny Bird And 0ther Tales",
-      "artist": "Ladoris Bias Davis",
-      "barcode": "634479342639",
-      "disambiguation": "CD Baby id:ladoris"
-    },
-    {
       "id": "TVLxCqXJmCR23i7ahzpZHRoQzwg-",
       "score": 57,
       "count": 11,
@@ -300,6 +282,24 @@
       "disambiguation": "CD Baby id:mightyechoes2"
     },
     {
+      "id": "GesqvUI.IqalJXi8DFAVfOaynvs-",
+      "score": 57,
+      "count": 11,
+      "title": "Doodle Loot Doot Doodle A Doo",
+      "artist": "Bing Ji Ling",
+      "barcode": "827071004627",
+      "disambiguation": "CD Baby id:bingjiling"
+    },
+    {
+      "id": "8XquQvFipS0Lirt4hvKIB1CG66I-",
+      "score": 57,
+      "count": 5,
+      "title": "Doo Henny Bird And 0ther Tales",
+      "artist": "Ladoris Bias Davis",
+      "barcode": "634479342639",
+      "disambiguation": "CD Baby id:ladoris"
+    },
+    {
       "id": "xo53kPqz2gE7V6uslIA9wRBHa3Y-",
       "score": 57,
       "count": 12,
@@ -307,6 +307,15 @@
       "artist": "Various Artists",
       "barcode": "081227570927",
       "disambiguation": "Songs from 2 videos: \"... the Witch's Ghost\" & \"... On Zombie Island\""
+    },
+    {
+      "id": "UHBO3tlz8lUIBA047wKj4vd68Ng-",
+      "score": 52,
+      "count": 22,
+      "title": "Diddle diddle doodle doo Traditional Nursery Rhymes",
+      "artist": "Brian Melville & Caroline Sweeney",
+      "barcode": "5030094119420",
+      "disambiguation": "CD Baby id:bmcs"
     },
     {
       "id": "xKmwQiZ9xi1b_QsafmF1RIRCHLI-",
@@ -327,6 +336,14 @@
       "disambiguation": "CD Baby id:jackiet1"
     },
     {
+      "id": "iiOTkpWwa5wt3qhIxHg8MZJxwT4-",
+      "score": 52,
+      "count": 12,
+      "title": "Rock, Rhythm and Doo Wop (Bonus Disk)",
+      "artist": "",
+      "disambiguation": "Recorded May 16 & 17 2001"
+    },
+    {
       "id": "_l2fDINuxCuJ01KNNzAZ2VMFI6I-",
       "score": 52,
       "count": 17,
@@ -345,15 +362,6 @@
       "disambiguation": "CD Baby id:joeolivier"
     },
     {
-      "id": "UHBO3tlz8lUIBA047wKj4vd68Ng-",
-      "score": 52,
-      "count": 22,
-      "title": "Diddle diddle doodle doo Traditional Nursery Rhymes",
-      "artist": "Brian Melville & Caroline Sweeney",
-      "barcode": "5030094119420",
-      "disambiguation": "CD Baby id:bmcs"
-    },
-    {
       "id": "j85m6fwfmOJpi9Ri6_1Q.70GBbg-",
       "score": 52,
       "count": 16,
@@ -361,12 +369,21 @@
       "artist": ""
     },
     {
-      "id": "iiOTkpWwa5wt3qhIxHg8MZJxwT4-",
-      "score": 52,
+      "id": "3aiX27n9zuo1IH1VHkNYRMxnCAE-",
+      "score": 48,
       "count": 12,
-      "title": "Rock, Rhythm and Doo Wop (Bonus Disk)",
-      "artist": "",
-      "disambiguation": "Recorded May 16 & 17 2001"
+      "title": "Doo-Wopp.com - Live From Las Vegas",
+      "artist": "Doo-Wopp.com",
+      "barcode": "806745185527",
+      "disambiguation": "CD Baby id:doowoppcom"
+    },
+    {
+      "id": "mAUwj0BWPHHiTFxMk7aqanXCGWI-",
+      "score": 48,
+      "count": 31,
+      "title": "Finbarr Golden Treasury of Doo Wop, Volume One",
+      "artist": "Various Artists",
+      "barcode": ""
     },
     {
       "id": "PVRyvSbJal5pZh3gRgT9lebijBI-",
@@ -385,15 +402,6 @@
       "barcode": "803151007726"
     },
     {
-      "id": "3aiX27n9zuo1IH1VHkNYRMxnCAE-",
-      "score": 48,
-      "count": 12,
-      "title": "Doo-Wopp.com - Live From Las Vegas",
-      "artist": "Doo-Wopp.com",
-      "barcode": "806745185527",
-      "disambiguation": "CD Baby id:doowoppcom"
-    },
-    {
       "id": "yuVB_A9i7aOJrwRBZtEcyYPbk3Q-",
       "score": 48,
       "count": 5,
@@ -401,14 +409,6 @@
       "artist": "LJ feat. Yung Ro'",
       "barcode": "701433002820",
       "disambiguation": "CD Baby id:ljtunes"
-    },
-    {
-      "id": "mAUwj0BWPHHiTFxMk7aqanXCGWI-",
-      "score": 48,
-      "count": 31,
-      "title": "Finbarr Golden Treasury of Doo Wop, Volume One",
-      "artist": "Various Artists",
-      "barcode": ""
     },
     {
       "id": "No9MoA4WYEmL5X2i0kZfLEA6Vg8-",

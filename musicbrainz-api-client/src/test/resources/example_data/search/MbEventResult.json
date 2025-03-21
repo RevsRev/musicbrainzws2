@@ -1,5 +1,5 @@
 {
-  "created": "2025-02-28T15:18:58.007Z",
+  "created": "2025-03-21T16:14:22.537Z",
   "count": 2,
   "offset": 0,
   "events": [
@@ -103,8 +103,8 @@
           "direction": "backward",
           "artist": {
             "id": "ebafff3d-0105-4e5d-a7a4-98972c48a57f",
-            "name": "The Dead Rabbitts",
-            "sort-name": "Dead Rabbitts, The"
+            "name": "Dead Rabbitts",
+            "sort-name": "Dead Rabbitts"
           }
         },
         {

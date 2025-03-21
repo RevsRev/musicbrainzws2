@@ -1,6 +1,6 @@
 {
-  "created": "2025-02-28T15:18:57.750Z",
-  "count": 40,
+  "created": "2025-03-21T16:14:31.317Z",
+  "count": 41,
   "offset": 0,
   "artists": [
     {
@@ -383,23 +383,10 @@
       }
     },
     {
-      "id": "aa8412c8-c709-4c55-824c-850f8214de36",
-      "type": "Person",
-      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+      "id": "3562af69-0ec9-40c3-aceb-1e7c566069fe",
       "score": 61,
-      "gender-id": "93452b5a-a947-30c8-934f-6a4056b151c2",
-      "name": "Amy Fleetwood",
-      "sort-name": "Fleetwood, Amy",
-      "gender": "female",
-      "life-span": {
-        "ended": null
-      }
-    },
-    {
-      "id": "8be7fc8a-baf8-46bb-9fce-ad5449cacfcc",
-      "score": 61,
-      "name": "Fleetwood Smack",
-      "sort-name": "Fleetwood Smack",
+      "name": "Fleetwood Fred",
+      "sort-name": "Fleetwood Fred",
       "life-span": {
         "ended": null
       }
@@ -414,10 +401,10 @@
       }
     },
     {
-      "id": "3562af69-0ec9-40c3-aceb-1e7c566069fe",
+      "id": "8be7fc8a-baf8-46bb-9fce-ad5449cacfcc",
       "score": 61,
-      "name": "Fleetwood Fred",
-      "sort-name": "Fleetwood Fred",
+      "name": "Fleetwood Smack",
+      "sort-name": "Fleetwood Smack",
       "life-span": {
         "ended": null
       }
@@ -427,6 +414,19 @@
       "score": 61,
       "name": "Fleetwood Slim",
       "sort-name": "Fleetwood Slim",
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
+      "id": "aa8412c8-c709-4c55-824c-850f8214de36",
+      "type": "Person",
+      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+      "score": 61,
+      "gender-id": "93452b5a-a947-30c8-934f-6a4056b151c2",
+      "name": "Amy Fleetwood",
+      "sort-name": "Fleetwood, Amy",
+      "gender": "female",
       "life-span": {
         "ended": null
       }
@@ -465,6 +465,29 @@
       }
     },
     {
+      "id": "ae6a4e76-eafa-4999-81be-1c866b74fdc6",
+      "type": "Group",
+      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+      "score": 61,
+      "name": "Fleetwood Bac",
+      "sort-name": "Fleetwood Bac",
+      "country": "GB",
+      "area": {
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "type": "Country",
+        "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "disambiguation": "Fleetwood Mac tribute",
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
       "id": "4b1bb635-48dd-4527-a5ae-2eef12038150",
       "type": "Person",
       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
@@ -484,29 +507,6 @@
         }
       },
       "disambiguation": "US DJ, producer, and label founder based in Pittsburgh",
-      "life-span": {
-        "ended": null
-      }
-    },
-    {
-      "id": "ae6a4e76-eafa-4999-81be-1c866b74fdc6",
-      "type": "Group",
-      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
-      "score": 61,
-      "name": "Fleetwood Bac",
-      "sort-name": "Fleetwood Bac",
-      "country": "GB",
-      "area": {
-        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
-        "type": "Country",
-        "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
-        "name": "United Kingdom",
-        "sort-name": "United Kingdom",
-        "life-span": {
-          "ended": null
-        }
-      },
-      "disambiguation": "Fleetwood Mac tribute",
       "life-span": {
         "ended": null
       }
@@ -534,6 +534,28 @@
       }
     },
     {
+      "id": "be843086-afb2-4896-a4a4-17cd0dbc841a",
+      "type": "Group",
+      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+      "score": 61,
+      "name": "Fleetwood Gold",
+      "sort-name": "Fleetwood Gold",
+      "area": {
+        "id": "18187bcb-18e6-4075-903e-fb976db17a55",
+        "type": "City",
+        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+        "name": "Columbus",
+        "sort-name": "Columbus",
+        "life-span": {
+          "ended": null
+        }
+      },
+      "disambiguation": "Fleetwood Mac tribute band",
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
       "id": "e5318ce7-71f3-4d01-af8b-4182286e924f",
       "type": "Person",
       "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
@@ -554,28 +576,6 @@
         }
       },
       "disambiguation": "English folk musician",
-      "life-span": {
-        "ended": null
-      }
-    },
-    {
-      "id": "be843086-afb2-4896-a4a4-17cd0dbc841a",
-      "type": "Group",
-      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
-      "score": 61,
-      "name": "Fleetwood Gold",
-      "sort-name": "Fleetwood Gold",
-      "area": {
-        "id": "18187bcb-18e6-4075-903e-fb976db17a55",
-        "type": "City",
-        "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
-        "name": "Columbus",
-        "sort-name": "Columbus",
-        "life-span": {
-          "ended": null
-        }
-      },
-      "disambiguation": "Fleetwood Mac tribute band",
       "life-span": {
         "ended": null
       }
@@ -937,6 +937,28 @@
       "score": 51,
       "name": "Jimmie Bee & The Fleetwood Combo",
       "sort-name": "Bee, Jimmie & Fleetwood Combo, The",
+      "life-span": {
+        "ended": null
+      }
+    },
+    {
+      "id": "04330229-9741-4946-a93a-e22426cf6508",
+      "type": "Group",
+      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+      "score": 51,
+      "name": "Paper Flowers - Remembering Fleetwood Mac",
+      "sort-name": "Paper Flowers - Remembering Fleetwood Mac",
+      "country": "US",
+      "area": {
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "type": "Country",
+        "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+        "name": "United States",
+        "sort-name": "United States",
+        "life-span": {
+          "ended": null
+        }
+      },
       "life-span": {
         "ended": null
       }

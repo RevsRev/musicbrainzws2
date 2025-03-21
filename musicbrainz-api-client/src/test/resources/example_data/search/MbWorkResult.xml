@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata created="2025-03-21T16:14:35.661Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#" xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <work-list count="11" offset="0">
+        <work id="abada5b8-89f8-43c0-89f2-683a475568ac" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="100">
+            <title>Love Shines</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="58f24e65-24a0-4a92-a34e-9be7c5b214bb">
+                        <title>Love Shines</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="b2dfe5e8-0399-4d35-bc30-68cb1ab2cc43">
+                        <title>Love Shines</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="8b2a1029-ccc1-4a51-a70d-7507eed7d0ca">
+                        <title>Love Shines</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="9010fafe-28c8-46aa-859e-fadce2f9608b">
+                        <title>Love Shines</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="59cbd4c8-72bf-4795-8db9-83bea389c4c6">
+                        <title>Love Shines</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="d2d15668-1d0c-46fa-b9c5-43f695c8135a" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="100">
+            <title>Skies the Limit</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="1013f52f-7859-45f7-bfea-0323b33447eb">
+                        <title>Skies the Limit</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="5ef2ed3e-4652-4a32-bb9f-206bf439d756">
+                        <title>Skies the Limit</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="f3d7ed1e-5101-4db4-a8e0-d956b75ebf8d">
+                        <title>Skies the Limit</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="b3c18a17-e288-45ca-8ece-f72e41f856d1">
+                        <title>Skies the Limit</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="d3b20fae-ccd1-49db-8022-5757d776fa46">
+                        <title>Skies the Limit</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="88fd920a-f372-469c-aded-1aec1c050e61" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="100">
+            <title>Paper Doll</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="8874c694-3519-4a26-bd76-d696de38986e">
+                        <title>Paper Doll</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="ee78e4fb-70b3-4cdb-9f7a-63e598e0ac47">
+                        <title>Paper Doll</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="24b49b8d-66db-4fd7-99ec-eb7ecacc58a5">
+                        <title>Paper Doll</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="9e3c37a0-dc71-420a-814a-31163b0d524a">
+                        <title>Paper Doll</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="81a44131-bf14-463d-94d9-91756757fb4a">
+                        <title>Paper Doll</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="8ac2c699-8e74-45de-bc6c-80123f72dd2a" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="98">
+            <title>Heroes Are Hard to Find</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="81fd74cd-041c-456d-a904-e24c0cf3c873">
+                        <title>Heroes Are Hard to Find (single version)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="4c5453af-777f-46ac-bc85-ff18b8d6e1f9">
+                        <title>Heroes Are Hard to Find</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="38ea4196-1d9d-4152-858c-b60052360723">
+                        <title>Heroes Are to Find</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="6701a3e4-10be-495f-829a-ddaf1bd03e62">
+                        <title>Heroes Are Hard to Find</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="b9d1a505-173b-4d21-b4cc-8868dd1d3ce6" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="98">
+            <title>Love Is Dangerous</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="c9112169-870c-4ec3-af63-b5c09a44a9e8">
+                        <title>Love Is Dangerous</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="f0c7c68d-13a8-43af-8902-e6106128dc78">
+                        <title>Love Is Dangerous</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="0e09919d-ea7f-4ef0-9dc4-9295374c9457">
+                        <title>Love Is Dangerous</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="c616306b-bc54-47c9-ab93-ad530f1fb307">
+                        <title>Love Is Dangerous</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="4985c2a2-e323-4a4c-8eea-e441de3695b1" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="97">
+            <title>I Do</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="3a8f7e85-4810-4c52-8a49-b039513daa86">
+                        <title>I Do</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="b31bdcbe-e285-4fd0-9412-3f27da755144">
+                        <title>I Do (edit)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="47b525b1-3c4a-41af-86ec-8700474f5d2a">
+                        <title>I Do</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="bd3f5d15-8394-49a0-8680-03a5a2270f69" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="95">
+            <title>Sands of Time</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">
+                        <name>Fleetwood Mac</name>
+                        <sort-name>Fleetwood Mac</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="43a05b54-b44c-40f7-b9a9-5db4758273c6">
+                        <title>Sands of Time (single version)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="2c4c6c6b-8c30-42be-9487-a7ee5be23cc5">
+                        <title>Sands of Time</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="03e15cfb-23e3-4cb7-bbcf-1d1a2568028c" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="93">
+            <title>Fighting for Madge</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="composer" type-id="d59d99ea-23d4-4a80-b066-edca32ee158f">
+                    <direction>backward</direction>
+                    <artist id="5191f332-8c44-4775-a070-d517cf7e5ecb">
+                        <name>Mick Fleetwood</name>
+                        <sort-name>Fleetwood, Mick</sort-name>
+                    </artist>
+                </relation>
+                <relation type="lyricist" type-id="3e48faba-ec01-47fd-8e89-30e81161661c">
+                    <direction>backward</direction>
+                    <artist id="5191f332-8c44-4775-a070-d517cf7e5ecb">
+                        <name>Mick Fleetwood</name>
+                        <sort-name>Fleetwood, Mick</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="efe9c43d-1847-4221-bc25-0dd8aa1151d2">
+                        <title>Fighting for Madge</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="c7a3693c-382c-31a2-8b91-e3c78ff36c1e" type="Song" type-id="f061270a-2fd6-32f1-a641-f0f8676d14e6" ns2:score="69">
+            <title>The Chain</title>
+            <language>eng</language>
+            <language-list>
+                <language>eng</language>
+            </language-list>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="b7f2cca2-72c6-41fb-ae33-53370fc62fe7">
+                        <name>Stevie Nicks</name>
+                        <sort-name>Nicks, Stevie</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="21551f7d-93f2-4cb7-ba71-7f260058e923">
+                        <name>Christine McVie</name>
+                        <sort-name>McVie, Christine</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="5d12875c-a197-43b2-8f29-41dc0ad895c3">
+                        <name>Lindsey Buckingham</name>
+                        <sort-name>Buckingham, Lindsey</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="5191f332-8c44-4775-a070-d517cf7e5ecb">
+                        <name>Mick Fleetwood</name>
+                        <sort-name>Fleetwood, Mick</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="c78f0746-ea5d-44c0-92ee-f32745951345">
+                        <name>John McVie</name>
+                        <sort-name>McVie, John</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="5da158af-2499-4e88-a4e0-ca72cdb1830e">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="603b2754-0f6a-4fe8-841b-03504dfa4e71">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="25680f2a-d760-4899-9950-8b61e6874fac">
+                        <title>TH CHN</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="28fcd4a3-b581-4852-b1b4-424ebf7d4d62">
+                        <title>The Chain (US Festival San Bernardino 5/11/82, live)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="17cb25e4-b301-4345-937a-9ca37fc4247d">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ff589daf-33d6-43d6-873f-e1252659a03e">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="515ef008-ab45-4179-a093-ef3d9210d9ed">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="4356b7be-cb88-406c-9126-e06bc1967d34">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="86fa98a6-73d5-4b8f-a0a0-bda924e714f6">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="91f13c86-8b1d-4f3f-be7d-f053f525b6db">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="5c6351be-588e-4c5d-82f1-5dc7d3f4194c">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="2362f9d0-c6a0-4c43-a2c7-16ff0aecc4f4">
+                        <title>The Chain (5.1 mix)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="8b29fc59-76ea-4df8-acb6-b75939695bea">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="6db36ffb-c3f0-4cd9-be07-e3d6ca352e90">
+                        <title>The Chain</title>
+                        <video>true</video>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="6a112077-6683-4eb6-8613-593366223228">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ddc25df3-fb3d-47cb-ac8f-23f52bb525d5">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ddf5712a-606b-4617-a8f3-b257be58c2b2">
+                        <title>The Chain (live at the Fabulous Forum, Inglewood, CA, 08/29/77)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="83e3734a-fa13-4e3c-8a11-c8edad0f7936">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ae8bf451-3aa3-4747-829d-f4c2f512db34">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="3c1042a4-b8d4-4fa0-9ed9-f1056dff49bc">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="cd06c484-9319-4376-a104-504871e19756">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="b2ee496b-9118-47f0-9d08-e9c9e196e86f">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="c1710412-62bc-437d-bbdb-750798b7a25c">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="f74ceb3c-52e4-47ee-bee1-3f48c43940c1">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="4bec6ad1-46bd-4100-95c3-aa225ec2f62b">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="fdd2522d-7d63-4551-8d9c-9a725f7d23c7">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="b2a2508c-f930-4799-a7c3-581a7e98e30c">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="615c05da-c03f-47aa-8e0f-a3e4b52211af">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="c83e1208-62fb-483b-a9eb-299d523cef24">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="bcfa36b2-c0d7-4178-b4d4-6768358279f7">
+                        <title>The Chain</title>
+                        <video>true</video>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="2081a790-e888-4a1e-a8f1-8fee79032a46">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="5c19af61-ec98-4bbd-bcdd-3c466b6c1ce9">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="4fb21c27-8b5c-4178-a286-47a3d9f98aa3">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="a6a1092d-0e03-4b8a-a9e1-298484720600">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="ecbbbf4c-83b5-4c14-bb64-5e6f2bd5333f">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="f0040446-d688-4df4-9601-a9ebeb4de972">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="bc6d2457-0e7d-47b5-a2e3-637c984cd4ef">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="193b2d1f-1099-4b87-9601-21c2828a6680">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="45106bf7-f5ba-452e-9eae-debec0ba5955">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="fe4fd6a8-90a0-4ee5-99a5-58b2280e85da">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="0d36294a-39d3-480b-a837-9a4967102c3b">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="2f333aff-96af-4e05-9595-c6b51eb6e924">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="7895476d-6030-4c3c-bee3-1ee3dce1b6e2">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="2171d997-40dd-4de2-8004-c07b3be3e7ba">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="e9d687f9-3b22-4318-b4ec-c70fb9995ba1">
+                        <title>The Chain (demo)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="fa007a56-d648-4428-a532-c2a4e985d9fa">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="d0ff0b17-086b-4fe5-a852-2614f826f75e">
+                        <title>The Chain (from the motion picture soundtrack “The Kitchen”)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="791a96b5-a304-4234-a366-abf85f0bb411">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="375fd571-7add-4b29-81de-25f74f81817f">
+                        <title>The Chain (from “Gears 5”)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="b6e9edcf-7e21-49e4-a309-15ebd506f8f7">
+                        <title>The Race/The Chain (Medley)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="2ae1be4b-de1e-4474-a67d-f96cbe17ab2d">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="415d6ada-5e4e-43dc-a27b-49d5c766522f">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="1f691da8-5ba9-4fe0-b5e4-a2004b153186">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="adf97f35-29cd-49ca-949d-e14e59dc2868">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="10123a2a-4a43-4624-8c51-ef1147007b77">
+                        <title>The Chain (The Voice Performance)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="46562367-6044-465e-9227-075a2f983461">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="5c06c646-d88d-454a-a044-06c9613ff440">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ba333c1a-b0f8-4086-8af2-eb4bef21d84b">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="748f347c-d86b-496d-8cc8-bf06a1cdf88c">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="50f79495-d4ce-4c0f-b5b8-6064dc62a416">
+                        <title>The Chain (UNKLEsounds edit)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="6c9e3d91-6e81-4760-ab86-37ff0d2c86fb">
+                        <title>The Chain (live!)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="b4aa1540-9e45-4387-9b21-98cfad6ea546">
+                        <title>The Chain (live)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="128d15bc-d2ff-4b43-b063-c32091d043ca">
+                        <title>The Chain (live, 1977 Rumours World Tour)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="6912417e-68e1-4ec9-96ff-b916a9f645bb">
+                        <title>The Chain (live at Wembley, 6/20/80)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="538c0e57-dbb5-44ee-9f1a-34c19369f022">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="06af57d0-7583-4af4-b528-64ff755c092e">
+                        <title>The Chain (instrumental)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="73041bc2-0fc7-42b8-9969-40d62fb4b971">
+                        <title>The Chain (instrumental)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="a24937ba-1f16-4aaa-b815-f3fc76591010">
+                        <title>The Chain (demo)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="4952a66d-b5ed-43b8-87a0-0e4dd2f81b1d">
+                        <title>The Chain (alternate mix)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="299f505d-c1fd-4d21-a223-f7346a04ec8a">
+                        <title>The Chain</title>
+                        <video>true</video>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="55efd4f4-e2c8-4762-b6bd-28680a35e7d0">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="6041c767-0502-482b-9e66-1b4c497c42c3">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="6af52301-c0d8-4fd6-a20d-2764b5d80738">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="fed171ff-84f4-4b0e-a6d8-25fb5959983a">
+                        <title>The Chain</title>
+                        <video>true</video>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="f3008045-c5c5-41c3-b115-c27366e1b52a">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="8af486d5-048c-47fb-856a-cf2a437bc2ae">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="0d96ea03-e5df-4ec0-a7f5-9ca937dd8570">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="98cecd83-1afb-4770-9877-c2a72fb9ecd8">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="468b1652-d0b5-4952-8aa6-cc8f5c554030">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="d4751aa8-3fd9-4e64-993c-c530ba6e20dd">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="9d25284f-7c1b-4d4f-8b62-31acb57fb076">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="9eba5280-dc0f-408e-915d-14779265aee6">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="1c0852f2-0e51-435d-addf-8a19e1552a7c">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="79d8b1e3-c65f-4943-8529-cc469deb79d7">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="a3832260-75f0-45f6-989b-a8e9fff5be43">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="a8252809-e75b-4cf2-8113-8653349e0b35">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="067f6110-01de-465b-8ee4-1261b5662c64">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ddd69df4-d781-4b97-b3ee-831329e77bbd">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="cbf4620a-c51f-41e1-9d48-d8c671baf101">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="90cc27b9-ea6e-453d-887c-d8b0ba8ab222">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="d7b43000-6330-4c69-b41d-6b12fc5d7c9d">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="e8edcb18-d6b4-4c5d-8a1c-39c5dc10144a">
+                        <title>The Chain</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="fee6eeef-b113-4bef-a5e1-99bf40d6beba">
+                        <title>The Race / The Chain (medley)</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="344ce3c9-dde8-461f-977a-cbf10cfb81d4">
+                        <title>The Chain</title>
+                        <video>true</video>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="a7a8970b-92ed-44e9-9953-31fc7098b22c" ns2:score="69">
+            <title>Jewel Eyed Judy</title>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="c78f0746-ea5d-44c0-92ee-f32745951345">
+                        <name>John McVie</name>
+                        <sort-name>McVie, John</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="5191f332-8c44-4775-a070-d517cf7e5ecb">
+                        <name>Mick Fleetwood</name>
+                        <sort-name>Fleetwood, Mick</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="2dd16885-93df-4893-85ad-18dca165be6b">
+                        <name>Danny Kirwan</name>
+                        <sort-name>Kirwan, Danny</sort-name>
+                        <disambiguation>Fleetwood Mac</disambiguation>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="75a38755-bea8-49b3-9755-1bb953e951d6">
+                        <title>Jewel Eyed Judy</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="2e0f1073-08df-465b-8965-219a9007c910">
+                        <title>Jewel Eyed Judy</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="7e312c3a-699b-4009-9ac1-bb2450961e0e">
+                        <title>Jewel Eyed Judy</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="a8365cc8-9b48-41e1-8e17-1d5e15d240a7">
+                        <title>Jewel Eyed Judy</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="e313600a-3583-41a2-a600-5b4449cfdba8">
+                        <title>Jewel‐Eyed Judy</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="9668647f-5479-4679-a5ec-11d379736135">
+                        <title>Jewel-Eyed Judy</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="ae6c2674-3725-402b-9b3e-56d5469ba6b9">
+                        <title>Jewel Eye Judy</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+        <work id="4550638b-9488-4b14-b6d3-a969d7539a63" ns2:score="65">
+            <title>The Purple Dancer</title>
+            <relation-list target-type="artist">
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="c78f0746-ea5d-44c0-92ee-f32745951345">
+                        <name>John McVie</name>
+                        <sort-name>McVie, John</sort-name>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="2dd16885-93df-4893-85ad-18dca165be6b">
+                        <name>Danny Kirwan</name>
+                        <sort-name>Kirwan, Danny</sort-name>
+                        <disambiguation>Fleetwood Mac</disambiguation>
+                    </artist>
+                </relation>
+                <relation type="writer" type-id="a255bca1-b157-4518-9108-7b147dc3fc68">
+                    <direction>backward</direction>
+                    <artist id="5191f332-8c44-4775-a070-d517cf7e5ecb">
+                        <name>Mick Fleetwood</name>
+                        <sort-name>Fleetwood, Mick</sort-name>
+                    </artist>
+                </relation>
+            </relation-list>
+            <relation-list target-type="recording">
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="2e73b098-85f5-47bf-a53e-d8408efba17f">
+                        <title>Purple Dancer</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <attribute-list/>
+                    <recording id="a5257c5a-e431-4a8c-905e-71ba5588ae4f">
+                        <title>The Purple Dancer</title>
+                    </recording>
+                </relation>
+                <relation type="performance" type-id="a3005666-a872-32c3-ad06-98af558e99b0">
+                    <direction>backward</direction>
+                    <recording id="d5a35c2c-1be7-4fca-b848-122d5b40d497">
+                        <title>The Purple Dancer</title>
+                    </recording>
+                </relation>
+            </relation-list>
+        </work>
+    </work-list>
+</metadata>

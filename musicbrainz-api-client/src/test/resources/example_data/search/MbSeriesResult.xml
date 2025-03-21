@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata created="2025-03-21T16:14:33.488Z" xmlns="http://musicbrainz.org/ns/mmd-2.0#" xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+    <series-list count="63" offset="0">
+        <series id="aa697e1a-e0fe-4f27-94c1-b3b92d8f6754" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="100">
+            <name>Rock n' Roll</name>
+        </series>
+        <series id="83f07c52-dc28-42ad-83cf-8a956b30901a" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="100">
+            <name>Rock &amp; Roll</name>
+            <disambiguation>Atlantic 8003 - 8008</disambiguation>
+        </series>
+        <series id="5de7e396-1225-4e37-a203-9d2825700d55" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Kangaroo Rock 'n Roll</name>
+        </series>
+        <series id="9f65a44a-8677-4885-a50b-f1db1378cdd9" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Sun Rock ’n’ Roll</name>
+        </series>
+        <series id="54eb0673-5251-4033-8a76-82071bd3aafd" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Rock 'n' Roll Masters</name>
+        </series>
+        <series id="ac020fca-c60d-4897-a763-99de34740a26" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="89">
+            <name>Rock'n Roll Graffiti 12</name>
+            <tag-list>
+                <tag count="1">
+                    <name>pop</name>
+                </tag>
+                <tag count="1">
+                    <name>cover songs</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="d00cb90e-18d7-4f56-99fe-86ad7dcb7d54" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Rock and Roll Club</name>
+        </series>
+        <series id="720670d7-485a-49ff-8002-ee654867c380" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Rock 'n' Roll Reunion</name>
+            <tag-list>
+                <tag count="1">
+                    <name>ivan-fixit-covers-mess</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="eb8d7d86-3e9b-474c-87f7-6d42c55d983d" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Desperate Rock 'n' Roll</name>
+        </series>
+        <series id="f1edf81c-8dab-4869-91f6-76cce5be8fff" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Rock 'n' Roll Party</name>
+        </series>
+        <series id="28ce838a-3f44-47b8-87f9-32fea1d7e428" type="Tour" type-id="8ff6df0e-3dce-3bdf-bd57-d386c51b0060" ns2:score="89">
+            <name>Roll with the Punches</name>
+        </series>
+        <series id="5f93b957-ae56-4456-a24d-e988d7fb8416" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="89">
+            <name>Rock &amp; Roll Kitten</name>
+            <tag-list>
+                <tag count="1">
+                    <name>compilation</name>
+                </tag>
+                <tag count="1">
+                    <name>rock and roll</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="0623733e-f5d5-4a39-a49e-a32151225793" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="89">
+            <name>Rock and Roll Vixens</name>
+            <tag-list>
+                <tag count="1">
+                    <name>compilation</name>
+                </tag>
+                <tag count="1">
+                    <name>rock and roll</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="e1b7272a-000e-427b-9781-fcced172a5fb" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="81">
+            <name>The Rock 'n' Roll Era</name>
+            <disambiguation>Time-Life Music</disambiguation>
+            <tag-list>
+                <tag count="1">
+                    <name>rock and roll</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="34561452-ea13-47cf-a9c8-02b10e94723f" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="81">
+            <name>Roots of Rock n' Roll</name>
+        </series>
+        <series id="9f3262e1-7506-4efd-9f4d-e4de5ed35923" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="81">
+            <name>Rock &amp; Roll With Piano</name>
+            <tag-list>
+                <tag count="1">
+                    <name>rock and roll</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="36323023-2b2b-4792-a7d4-8204940e9891" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="81">
+            <name>Giants of Rock ’n’ Roll</name>
+        </series>
+        <series id="e1696c53-b183-4414-9af9-f1efc878f4c3" type="Tour" type-id="8ff6df0e-3dce-3bdf-bd57-d386c51b0060" ns2:score="81">
+            <name>Rock and Roll Over Tour</name>
+        </series>
+        <series id="271983b1-8d26-4a19-8993-6d0ce01da9c0" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="81">
+            <name>The Rock and Roll Decades</name>
+            <disambiguation>UK series</disambiguation>
+        </series>
+        <series id="c0d792f0-329d-49b5-8b96-a71f3fde1cc8" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="81">
+            <name>American Rock 'n' Roll Instrumentals</name>
+            <tag-list>
+                <tag count="1">
+                    <name>compilation</name>
+                </tag>
+                <tag count="1">
+                    <name>rock and roll</name>
+                </tag>
+                <tag count="1">
+                    <name>genre in name</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="ed150e29-3cc2-4229-9b09-036707cd537c" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>Glory Days of Rock 'n' Roll</name>
+            <disambiguation>Time-Life Music</disambiguation>
+        </series>
+        <series id="64243a15-012b-4e4b-80c0-68075b7c0a71" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>20 Milestones of Rock 'n Roll</name>
+        </series>
+        <series id="e533ebf8-bdbf-4b63-86e1-5f44b0b0612a" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>25 Greatest Rock 'N Roll Hits</name>
+            <disambiguation>Rock 'N Roll Hits Compilation Series</disambiguation>
+        </series>
+        <series id="f5b36c20-e9fa-40c7-9fc9-5826a5922b49" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>The Heart of Rock 'n' Roll</name>
+            <disambiguation>Time-Life Music</disambiguation>
+        </series>
+        <series id="967fc432-ae9a-412d-a7b4-4afd7ad5e592" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>NME Presents: Rock ’n’ Roll Riot</name>
+        </series>
+        <series id="e2a19a3f-ea99-4a5a-993d-b0fe89c8c155" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>Rock 'n' Roll Hall of Fame</name>
+        </series>
+        <series id="35917db4-a288-4818-9c31-10f33a3bca27" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>A Fistful of Rock 'n Roll</name>
+        </series>
+        <series id="100db8c5-b5da-4f7e-8ff9-f651e074d70c" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="74">
+            <name>Rock 'N' Roll 50th Anniversary Edition</name>
+        </series>
+        <series id="4354314e-f64e-4073-a69a-cdb371fa1859" type="Tour" type-id="8ff6df0e-3dce-3bdf-bd57-d386c51b0060" ns2:score="74">
+            <name>Long Live Rock ’n’ Roll Tour</name>
+        </series>
+        <series id="5245bd35-966e-417a-a9e2-fd730fb45e8e" type="Artist award" type-id="dca73eca-a855-3408-9094-f7d5d073cef0" ns2:score="74">
+            <name>Rock ’n’ Roll Hall of Fame</name>
+            <disambiguation>artist series aggregator</disambiguation>
+        </series>
+        <series id="2dda1666-8ed4-461f-80e3-b4420fc9365f" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="74">
+            <name>Legends of Rock 'n' Roll Series</name>
+        </series>
+        <series id="01bae442-d52d-44d6-92b3-cbbb8981221c" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="74">
+            <name>Only Classic Rock 'N' Roll Edition</name>
+            <disambiguation>superserie of Aziя Records related releases</disambiguation>
+        </series>
+        <series id="a8e8a79c-9269-4174-baba-43c3724082e3" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="74">
+            <name>Calling All Rock 'n' Roll Collectors</name>
+        </series>
+        <series id="774983df-d852-43cd-a07c-739384d41ba5" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="68">
+            <name>Classic Love Songs of Rock ’n’ Roll</name>
+            <disambiguation>Time-Life Music Series</disambiguation>
+        </series>
+        <series id="7b01e37e-daf4-4a65-a7b2-03429f4bfafc" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="68">
+            <name>The Ultimate Collection of Rock &amp; Roll</name>
+        </series>
+        <series id="a1cbfa9a-6319-4261-a4ba-eebcd4cb9d5c" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="68">
+            <name>Best of Blend Rock' n' Roll Collection</name>
+        </series>
+        <series id="239f7023-2fa2-486c-8808-2829d0c609ca" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="68">
+            <name>EMI Legends of Rock n’ Roll Series</name>
+        </series>
+        <series id="1f49c45f-aa53-445b-9cc3-be483dd93e22" type="Artist award" type-id="dca73eca-a855-3408-9094-f7d5d073cef0" ns2:score="68">
+            <name>Rock ’n’ Roll Hall of Fame: Performers</name>
+        </series>
+        <series id="8f773901-a7dd-4028-8382-ba9e9c688029" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="68">
+            <name>30th Anniversary of Rock 'N' Roll Series</name>
+            <disambiguation>Japanese reissue series</disambiguation>
+            <alias-list>
+                <alias sort-name="30th Anniversary of Rock &amp; Roll Series" type="Series name" type-id="0c615dbc-c7d6-39b3-b8da-bef465ce3046">30th Anniversary of Rock &amp; Roll Series</alias>
+                <alias sort-name="30th Anniversary of Rock 'N Roll" type="Series name" type-id="0c615dbc-c7d6-39b3-b8da-bef465ce3046">30th Anniversary of Rock 'N Roll</alias>
+            </alias-list>
+        </series>
+        <series id="c0ecc14e-2aea-4a9f-94f7-f3c135c62037" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="68">
+            <name>The Golden Age of Rock ’n’ Roll</name>
+            <disambiguation>The Golden Age of Rock ’n’ Roll</disambiguation>
+        </series>
+        <series id="7002a4d5-ba65-4e2f-942d-97d0092b243b" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="68">
+            <name>The Greatest Years of Rock 'n' Roll</name>
+        </series>
+        <series id="8f0e20ad-7724-4e2c-9b48-7ea9bc716a6e" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="68">
+            <name>Rock 'n' Roll - The Early Years</name>
+            <disambiguation>series made by UK label Signature</disambiguation>
+        </series>
+        <series id="6d535aa0-74a1-488c-8219-b43145fb34e2" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="68">
+            <name>Motown, Soul &amp; Great Rock n’ Roll</name>
+            <tag-list>
+                <tag count="1">
+                    <name>compilation</name>
+                </tag>
+                <tag count="1">
+                    <name>soul</name>
+                </tag>
+                <tag count="1">
+                    <name>rock and roll</name>
+                </tag>
+                <tag count="1">
+                    <name>motown</name>
+                </tag>
+                <tag count="1">
+                    <name>genre in name</name>
+                </tag>
+            </tag-list>
+        </series>
+        <series id="67155578-ffb5-4164-8444-4a2e2e6bb365" type="Release series" type-id="52b90f1e-ff62-3bd0-b254-5d91ced5d757" ns2:score="63">
+            <name>The Ultimate History of Rock ’n’ Roll Collection</name>
+            <disambiguation>K‐tel</disambiguation>
+        </series>
+        <series id="385693bb-71b2-46e5-9f18-10a42f4e57a7" type="Tour" type-id="8ff6df0e-3dce-3bdf-bd57-d386c51b0060" ns2:score="63">
+            <name>YUI ASAKA SUMMER TOUR ’89 ROCK’N ROLL CIRCUS</name>
+        </series>
+        <series id="b6ead5a3-5503-4df2-a645-c018c41fdec3" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>The Time-Life History Of Rock 'N' Roll</name>
+        </series>
+        <series id="7341f71e-2220-485c-9776-1be3bc32f4a9" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>Rock ’n’ Roll Hall of Fame: The Singles</name>
+        </series>
+        <series id="d95b4248-6ff3-4186-8a9f-f90cf5b71bd5" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>The Best of the Rock ’n’ Roll Years</name>
+        </series>
+        <series id="69e1be88-e624-4e39-ab77-0f04c9b08561" type="Artist award" type-id="dca73eca-a855-3408-9094-f7d5d073cef0" ns2:score="63">
+            <name>Rock ’n’ Roll Hall of Fame: Early Influences</name>
+        </series>
+        <series id="e87e0045-2238-4df6-a4ea-41017058bfc4" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>The Ultimate History of Rock ’n’ Roll Collection</name>
+            <disambiguation>RedX Entertainment</disambiguation>
+        </series>
+        <series id="efa87ce1-00f6-4cdd-aa8d-25fa7900800d" type="Artist award" type-id="dca73eca-a855-3408-9094-f7d5d073cef0" ns2:score="63">
+            <name>Rock ’n’ Roll Hall of Fame: Musical Excellence</name>
+        </series>
+        <series id="e4334a82-31d7-4899-928f-67887816002a" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>25 Years of Rock 'n' Roll, Volume 2</name>
+            <disambiguation>Connoisseur, 1992 &amp; reissue 1994</disambiguation>
+        </series>
+        <series id="a7938aab-20c6-4de0-ba33-76e92a2ef74e" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>A Series: 25 Years of Rock ’n’ Roll</name>
+            <disambiguation>Connoisseur, 1988</disambiguation>
+        </series>
+        <series id="f4f636c0-3215-430f-9941-8dc8cdaecaa9" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="63">
+            <name>The Golden Age of American Rock 'n' Roll</name>
+        </series>
+        <series id="baf9f17f-d2b8-46a1-93cf-76383d7fa8d4" type="Event series" type-id="64640a2a-1c31-394d-b7b0-683a32ff9aff" ns2:score="63">
+            <name>Rock &amp; Roll Hall of Fame Induction Ceremonies</name>
+        </series>
+        <series id="869c0d55-09e1-4170-9ed6-c566489df212" type="Event series" type-id="64640a2a-1c31-394d-b7b0-683a32ff9aff" ns2:score="59">
+            <name>Rock and Roll Hall of Fame 25th Anniversary Concerts</name>
+        </series>
+        <series id="5b97f2df-fde0-482f-b1de-a53675b6c3bc" type="Artist award" type-id="dca73eca-a855-3408-9094-f7d5d073cef0" ns2:score="59">
+            <name>Rock ’n’ Roll Hall of Fame: Ahmet Ertegun Award</name>
+        </series>
+        <series id="1148b816-d456-49e9-8daf-d98731507648" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="49">
+            <name>When the Sun Goes Down: The Secret History of Rock &amp; Roll</name>
+        </series>
+        <series id="948a260a-880c-4907-ac43-22a6bf051aa6" type="Recording series" type-id="dd968243-7128-30a2-81f0-79843430a8e2" ns2:score="49">
+            <name>Rock and Roll Hall of Fame – 500 Songs That Shaped Rock</name>
+        </series>
+        <series id="0abdcf4c-f8d8-4bdc-b1eb-616625078277" type="Tour" type-id="8ff6df0e-3dce-3bdf-bd57-d386c51b0060" ns2:score="42">
+            <name>A Tribute to the History of Rock 2016 - Dr. Woo's Rock 'n' Roll Circus</name>
+        </series>
+        <series id="1f308049-ec93-4b3c-84c8-79a3535801e5" type="Run" type-id="975e9447-dfa8-3e29-82d6-07908fe36f3e" ns2:score="42">
+            <name>ラブライブ！サンシャイン!! Aqours 6th LoveLive! 〜KU-RU-KU-RU Rock 'n' Roll TOUR〜 ＜WINDY STAGE＞</name>
+        </series>
+        <series id="f2ce75ac-e330-479d-b5e4-c96258a77be6" type="Tour" type-id="8ff6df0e-3dce-3bdf-bd57-d386c51b0060" ns2:score="38">
+            <name>ラブライブ！サンシャイン!! Aqours 6th LoveLive! 〜KU-RU-KU-RU Rock 'n' Roll TOUR〜 ＜OCEAN STAGE＞＆＜SUNNY STAGE＞</name>
+        </series>
+        <series id="5616c07a-d818-49ba-ae99-59c641d81cf7" type="Release group series" type-id="4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77" ns2:score="28">
+            <name>Masters of the Roll: Rare Original Recordings From the Reproducing Piano by the Great masters of Classical Piano 1904 - 1935: A 32 CD Catalogue</name>
+        </series>
+    </series-list>
+</metadata>

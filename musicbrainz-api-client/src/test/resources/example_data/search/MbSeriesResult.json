@@ -1,5 +1,5 @@
 {
-  "created": "2025-02-28T15:18:59.085Z",
+  "created": "2025-03-21T16:14:32.404Z",
   "count": 63,
   "offset": 0,
   "series": [
@@ -19,31 +19,11 @@
       "disambiguation": "Atlantic 8003 - 8008"
     },
     {
-      "id": "720670d7-485a-49ff-8002-ee654867c380",
+      "id": "9f65a44a-8677-4885-a50b-f1db1378cdd9",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 89,
-      "name": "Rock 'n' Roll Reunion",
-      "tags": [
-        {
-          "count": 1,
-          "name": "ivan-fixit-covers-mess"
-        }
-      ]
-    },
-    {
-      "id": "54eb0673-5251-4033-8a76-82071bd3aafd",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 89,
-      "name": "Rock 'n' Roll Masters"
-    },
-    {
-      "id": "eb8d7d86-3e9b-474c-87f7-6d42c55d983d",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 89,
-      "name": "Desperate Rock 'n' Roll"
+      "name": "Sun Rock ’n’ Roll"
     },
     {
       "id": "ac020fca-c60d-4897-a763-99de34740a26",
@@ -63,6 +43,26 @@
       ]
     },
     {
+      "id": "720670d7-485a-49ff-8002-ee654867c380",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 89,
+      "name": "Rock 'n' Roll Reunion",
+      "tags": [
+        {
+          "count": 1,
+          "name": "ivan-fixit-covers-mess"
+        }
+      ]
+    },
+    {
+      "id": "eb8d7d86-3e9b-474c-87f7-6d42c55d983d",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 89,
+      "name": "Desperate Rock 'n' Roll"
+    },
+    {
       "id": "d00cb90e-18d7-4f56-99fe-86ad7dcb7d54",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
@@ -77,11 +77,11 @@
       "name": "Kangaroo Rock 'n Roll"
     },
     {
-      "id": "9f65a44a-8677-4885-a50b-f1db1378cdd9",
+      "id": "54eb0673-5251-4033-8a76-82071bd3aafd",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 89,
-      "name": "Sun Rock ’n’ Roll"
+      "name": "Rock 'n' Roll Masters"
     },
     {
       "id": "f1edf81c-8dab-4869-91f6-76cce5be8fff",
@@ -132,6 +132,27 @@
       ]
     },
     {
+      "id": "36323023-2b2b-4792-a7d4-8204940e9891",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 81,
+      "name": "Giants of Rock ’n’ Roll"
+    },
+    {
+      "id": "34561452-ea13-47cf-a9c8-02b10e94723f",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 81,
+      "name": "Roots of Rock n' Roll"
+    },
+    {
+      "id": "e1696c53-b183-4414-9af9-f1efc878f4c3",
+      "type": "Tour",
+      "type-id": "8ff6df0e-3dce-3bdf-bd57-d386c51b0060",
+      "score": 81,
+      "name": "Rock and Roll Over Tour"
+    },
+    {
       "id": "9f3262e1-7506-4efd-9f4d-e4de5ed35923",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
@@ -143,13 +164,6 @@
           "name": "rock and roll"
         }
       ]
-    },
-    {
-      "id": "34561452-ea13-47cf-a9c8-02b10e94723f",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 81,
-      "name": "Roots of Rock n' Roll"
     },
     {
       "id": "e1b7272a-000e-427b-9781-fcced172a5fb",
@@ -166,26 +180,12 @@
       ]
     },
     {
-      "id": "e1696c53-b183-4414-9af9-f1efc878f4c3",
-      "type": "Tour",
-      "type-id": "8ff6df0e-3dce-3bdf-bd57-d386c51b0060",
-      "score": 81,
-      "name": "Rock and Roll Over Tour"
-    },
-    {
       "id": "271983b1-8d26-4a19-8993-6d0ce01da9c0",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 81,
       "name": "The Rock and Roll Decades",
       "disambiguation": "UK series"
-    },
-    {
-      "id": "36323023-2b2b-4792-a7d4-8204940e9891",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 81,
-      "name": "Giants of Rock ’n’ Roll"
     },
     {
       "id": "c0d792f0-329d-49b5-8b96-a71f3fde1cc8",
@@ -209,43 +209,6 @@
       ]
     },
     {
-      "id": "e533ebf8-bdbf-4b63-86e1-5f44b0b0612a",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 74,
-      "name": "25 Greatest Rock 'N Roll Hits",
-      "disambiguation": "Rock 'N Roll Hits Compilation Series"
-    },
-    {
-      "id": "ed150e29-3cc2-4229-9b09-036707cd537c",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 74,
-      "name": "Glory Days of Rock 'n' Roll",
-      "disambiguation": "Time-Life Music"
-    },
-    {
-      "id": "64243a15-012b-4e4b-80c0-68075b7c0a71",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 74,
-      "name": "20 Milestones of Rock 'n Roll"
-    },
-    {
-      "id": "35917db4-a288-4818-9c31-10f33a3bca27",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 74,
-      "name": "A Fistful of Rock 'n Roll"
-    },
-    {
-      "id": "4354314e-f64e-4073-a69a-cdb371fa1859",
-      "type": "Tour",
-      "type-id": "8ff6df0e-3dce-3bdf-bd57-d386c51b0060",
-      "score": 74,
-      "name": "Long Live Rock ’n’ Roll Tour"
-    },
-    {
       "id": "e2a19a3f-ea99-4a5a-993d-b0fe89c8c155",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
@@ -253,11 +216,11 @@
       "name": "Rock 'n' Roll Hall of Fame"
     },
     {
-      "id": "f5b36c20-e9fa-40c7-9fc9-5826a5922b49",
+      "id": "ed150e29-3cc2-4229-9b09-036707cd537c",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 74,
-      "name": "The Heart of Rock 'n' Roll",
+      "name": "Glory Days of Rock 'n' Roll",
       "disambiguation": "Time-Life Music"
     },
     {
@@ -269,11 +232,12 @@
       "disambiguation": "artist series aggregator"
     },
     {
-      "id": "100db8c5-b5da-4f7e-8ff9-f651e074d70c",
-      "type": "Release series",
-      "type-id": "52b90f1e-ff62-3bd0-b254-5d91ced5d757",
+      "id": "f5b36c20-e9fa-40c7-9fc9-5826a5922b49",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 74,
-      "name": "Rock 'N' Roll 50th Anniversary Edition"
+      "name": "The Heart of Rock 'n' Roll",
+      "disambiguation": "Time-Life Music"
     },
     {
       "id": "967fc432-ae9a-412d-a7b4-4afd7ad5e592",
@@ -281,6 +245,42 @@
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 74,
       "name": "NME Presents: Rock ’n’ Roll Riot"
+    },
+    {
+      "id": "4354314e-f64e-4073-a69a-cdb371fa1859",
+      "type": "Tour",
+      "type-id": "8ff6df0e-3dce-3bdf-bd57-d386c51b0060",
+      "score": 74,
+      "name": "Long Live Rock ’n’ Roll Tour"
+    },
+    {
+      "id": "100db8c5-b5da-4f7e-8ff9-f651e074d70c",
+      "type": "Release series",
+      "type-id": "52b90f1e-ff62-3bd0-b254-5d91ced5d757",
+      "score": 74,
+      "name": "Rock 'N' Roll 50th Anniversary Edition"
+    },
+    {
+      "id": "e533ebf8-bdbf-4b63-86e1-5f44b0b0612a",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 74,
+      "name": "25 Greatest Rock 'N Roll Hits",
+      "disambiguation": "Rock 'N Roll Hits Compilation Series"
+    },
+    {
+      "id": "35917db4-a288-4818-9c31-10f33a3bca27",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 74,
+      "name": "A Fistful of Rock 'n Roll"
+    },
+    {
+      "id": "64243a15-012b-4e4b-80c0-68075b7c0a71",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 74,
+      "name": "20 Milestones of Rock 'n Roll"
     },
     {
       "id": "2dda1666-8ed4-461f-80e3-b4420fc9365f",
@@ -305,18 +305,20 @@
       "name": "Calling All Rock 'n' Roll Collectors"
     },
     {
-      "id": "239f7023-2fa2-486c-8808-2829d0c609ca",
-      "type": "Release series",
-      "type-id": "52b90f1e-ff62-3bd0-b254-5d91ced5d757",
-      "score": 68,
-      "name": "EMI Legends of Rock n’ Roll Series"
-    },
-    {
-      "id": "7b01e37e-daf4-4a65-a7b2-03429f4bfafc",
+      "id": "c0ecc14e-2aea-4a9f-94f7-f3c135c62037",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 68,
-      "name": "The Ultimate Collection of Rock & Roll"
+      "name": "The Golden Age of Rock ’n’ Roll",
+      "disambiguation": "The Golden Age of Rock ’n’ Roll"
+    },
+    {
+      "id": "774983df-d852-43cd-a07c-739384d41ba5",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 68,
+      "name": "Classic Love Songs of Rock ’n’ Roll",
+      "disambiguation": "Time-Life Music Series"
     },
     {
       "id": "8f773901-a7dd-4028-8382-ba9e9c688029",
@@ -349,29 +351,6 @@
       ]
     },
     {
-      "id": "c0ecc14e-2aea-4a9f-94f7-f3c135c62037",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 68,
-      "name": "The Golden Age of Rock ’n’ Roll",
-      "disambiguation": "The Golden Age of Rock ’n’ Roll"
-    },
-    {
-      "id": "a1cbfa9a-6319-4261-a4ba-eebcd4cb9d5c",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 68,
-      "name": "Best of Blend Rock' n' Roll Collection"
-    },
-    {
-      "id": "774983df-d852-43cd-a07c-739384d41ba5",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 68,
-      "name": "Classic Love Songs of Rock ’n’ Roll",
-      "disambiguation": "Time-Life Music Series"
-    },
-    {
       "id": "1f49c45f-aa53-445b-9cc3-be483dd93e22",
       "type": "Artist award",
       "type-id": "dca73eca-a855-3408-9094-f7d5d073cef0",
@@ -379,11 +358,32 @@
       "name": "Rock ’n’ Roll Hall of Fame: Performers"
     },
     {
+      "id": "239f7023-2fa2-486c-8808-2829d0c609ca",
+      "type": "Release series",
+      "type-id": "52b90f1e-ff62-3bd0-b254-5d91ced5d757",
+      "score": 68,
+      "name": "EMI Legends of Rock n’ Roll Series"
+    },
+    {
+      "id": "7b01e37e-daf4-4a65-a7b2-03429f4bfafc",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 68,
+      "name": "The Ultimate Collection of Rock & Roll"
+    },
+    {
       "id": "7002a4d5-ba65-4e2f-942d-97d0092b243b",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 68,
       "name": "The Greatest Years of Rock 'n' Roll"
+    },
+    {
+      "id": "a1cbfa9a-6319-4261-a4ba-eebcd4cb9d5c",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 68,
+      "name": "Best of Blend Rock' n' Roll Collection"
     },
     {
       "id": "8f0e20ad-7724-4e2c-9b48-7ea9bc716a6e",
@@ -431,27 +431,6 @@
       "disambiguation": "Connoisseur, 1992 & reissue 1994"
     },
     {
-      "id": "b6ead5a3-5503-4df2-a645-c018c41fdec3",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 63,
-      "name": "The Time-Life History Of Rock 'N' Roll"
-    },
-    {
-      "id": "7341f71e-2220-485c-9776-1be3bc32f4a9",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 63,
-      "name": "Rock ’n’ Roll Hall of Fame: The Singles"
-    },
-    {
-      "id": "f4f636c0-3215-430f-9941-8dc8cdaecaa9",
-      "type": "Release group series",
-      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
-      "score": 63,
-      "name": "The Golden Age of American Rock 'n' Roll"
-    },
-    {
       "id": "a7938aab-20c6-4de0-ba33-76e92a2ef74e",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
@@ -460,19 +439,11 @@
       "disambiguation": "Connoisseur, 1988"
     },
     {
-      "id": "e87e0045-2238-4df6-a4ea-41017058bfc4",
+      "id": "f4f636c0-3215-430f-9941-8dc8cdaecaa9",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 63,
-      "name": "The Ultimate History of Rock ’n’ Roll Collection",
-      "disambiguation": "RedX Entertainment"
-    },
-    {
-      "id": "baf9f17f-d2b8-46a1-93cf-76383d7fa8d4",
-      "type": "Event series",
-      "type-id": "64640a2a-1c31-394d-b7b0-683a32ff9aff",
-      "score": 63,
-      "name": "Rock & Roll Hall of Fame Induction Ceremonies"
+      "name": "The Golden Age of American Rock 'n' Roll"
     },
     {
       "id": "67155578-ffb5-4164-8444-4a2e2e6bb365",
@@ -483,13 +454,6 @@
       "disambiguation": "K‐tel"
     },
     {
-      "id": "385693bb-71b2-46e5-9f18-10a42f4e57a7",
-      "type": "Tour",
-      "type-id": "8ff6df0e-3dce-3bdf-bd57-d386c51b0060",
-      "score": 63,
-      "name": "YUI ASAKA SUMMER TOUR ’89 ROCK’N ROLL CIRCUS"
-    },
-    {
       "id": "d95b4248-6ff3-4186-8a9f-f90cf5b71bd5",
       "type": "Release group series",
       "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
@@ -497,11 +461,12 @@
       "name": "The Best of the Rock ’n’ Roll Years"
     },
     {
-      "id": "efa87ce1-00f6-4cdd-aa8d-25fa7900800d",
-      "type": "Artist award",
-      "type-id": "dca73eca-a855-3408-9094-f7d5d073cef0",
+      "id": "e87e0045-2238-4df6-a4ea-41017058bfc4",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
       "score": 63,
-      "name": "Rock ’n’ Roll Hall of Fame: Musical Excellence"
+      "name": "The Ultimate History of Rock ’n’ Roll Collection",
+      "disambiguation": "RedX Entertainment"
     },
     {
       "id": "69e1be88-e624-4e39-ab77-0f04c9b08561",
@@ -509,6 +474,41 @@
       "type-id": "dca73eca-a855-3408-9094-f7d5d073cef0",
       "score": 63,
       "name": "Rock ’n’ Roll Hall of Fame: Early Influences"
+    },
+    {
+      "id": "baf9f17f-d2b8-46a1-93cf-76383d7fa8d4",
+      "type": "Event series",
+      "type-id": "64640a2a-1c31-394d-b7b0-683a32ff9aff",
+      "score": 63,
+      "name": "Rock & Roll Hall of Fame Induction Ceremonies"
+    },
+    {
+      "id": "b6ead5a3-5503-4df2-a645-c018c41fdec3",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 63,
+      "name": "The Time-Life History Of Rock 'N' Roll"
+    },
+    {
+      "id": "385693bb-71b2-46e5-9f18-10a42f4e57a7",
+      "type": "Tour",
+      "type-id": "8ff6df0e-3dce-3bdf-bd57-d386c51b0060",
+      "score": 63,
+      "name": "YUI ASAKA SUMMER TOUR ’89 ROCK’N ROLL CIRCUS"
+    },
+    {
+      "id": "7341f71e-2220-485c-9776-1be3bc32f4a9",
+      "type": "Release group series",
+      "type-id": "4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77",
+      "score": 63,
+      "name": "Rock ’n’ Roll Hall of Fame: The Singles"
+    },
+    {
+      "id": "efa87ce1-00f6-4cdd-aa8d-25fa7900800d",
+      "type": "Artist award",
+      "type-id": "dca73eca-a855-3408-9094-f7d5d073cef0",
+      "score": 63,
+      "name": "Rock ’n’ Roll Hall of Fame: Musical Excellence"
     },
     {
       "id": "5b97f2df-fde0-482f-b1de-a53675b6c3bc",
@@ -536,7 +536,7 @@
       "type": "Recording series",
       "type-id": "dd968243-7128-30a2-81f0-79843430a8e2",
       "score": 49,
-      "name": "Rock and Roll Hall of Fame - 500 Songs That Shaped Rock"
+      "name": "Rock and Roll Hall of Fame – 500 Songs That Shaped Rock"
     },
     {
       "id": "0abdcf4c-f8d8-4bdc-b1eb-616625078277",
