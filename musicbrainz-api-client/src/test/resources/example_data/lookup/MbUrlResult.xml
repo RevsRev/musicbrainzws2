@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<error>
-    <text>Invalid mbid.</text>
-    <text>For usage, please see: https://musicbrainz.org/development/mmd</text>
-</error>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <url id="46d8f693-52e4-4d03-936f-7ca8459019a7">
+        <resource>https://www.arvopart.ee/</resource>
+    </url>
+</metadata>

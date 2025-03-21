@@ -433,7 +433,7 @@ public abstract class EntityControllerTestParam<T extends MbEntity> {
         @Override
         public Collection<Pair<String, MbParam>> getLookupParams() throws InvalidParameterException {
             return List.of(
-                    Pair.of("hmmmmm", new MbUrlLookupParam().add(MbUrlLookupParam.RELATIONSHIPS))
+                    Pair.of("46d8f693-52e4-4d03-936f-7ca8459019a7", new MbUrlLookupParam().add(MbUrlLookupParam.RELATIONSHIPS))
             );
         }
     }
