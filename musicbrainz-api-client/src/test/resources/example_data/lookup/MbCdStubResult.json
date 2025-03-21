@@ -1,2 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<error><text>Not Found</text><text>For usage, please see: https: //musicbrainz.org/development/mmd</text></error>
+{
+  "error": "Not Found",
+  "help": "For usage, please see: https://musicbrainz.org/development/mmd"
+}

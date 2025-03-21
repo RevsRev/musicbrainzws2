@@ -1,2 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#"><series id="2917112d-13d1-4a86-9ea3-2e7e629741e4" type="Work series" type-id="b689f694-6305-3d78-954d-df6759a1877b"><name>The Matrix</name><disambiguation>film franchise</disambiguation></series></metadata>
+{
+  "name": "The Matrix",
+  "type-id": "b689f694-6305-3d78-954d-df6759a1877b",
+  "id": "2917112d-13d1-4a86-9ea3-2e7e629741e4",
+  "disambiguation": "film franchise",
+  "type": "Work series"
+}

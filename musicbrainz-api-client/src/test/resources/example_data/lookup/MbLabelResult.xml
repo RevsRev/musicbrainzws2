@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
-    <label id="30235128-d661-4233-879e-7129edcee178" type="Original Production"
-           type-id="7aaa37fe-2def-3476-b359-80245850062d">
+    <label id="30235128-d661-4233-879e-7129edcee178" type="Original Production" type-id="7aaa37fe-2def-3476-b359-80245850062d">
         <name>Roxy Recordings</name>
         <sort-name>Roxy Recordings</sort-name>
         <disambiguation>King Island Roxystars</disambiguation>

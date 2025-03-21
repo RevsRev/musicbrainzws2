@@ -1,2 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#"><release id="1aec03bf-ee85-4ad9-a54b-8b286f2d5577"><title>The Battle of Los Angeles</title><status id="4e304316-386d-3409-af2e-78857eec5cfe">Official</status><quality>normal</quality><packaging id="f7101ce3-0384-39ce-9fde-fbbd0044d35f">Cardboard/Paper Sleeve</packaging><text-representation><language>eng</language><script>Latn</script></text-representation><date>1999-11-02</date><country>US</country><release-event-list count="1"><release-event><date>1999-11-02</date><area id="489ce91b-6658-3307-9877-795b68554c98"><name>United States</name><sort-name>United States</sort-name><iso-3166-1-code-list><iso-3166-1-code>US</iso-3166-1-code></iso-3166-1-code-list></area></release-event></release-event-list><barcode>074646963012</barcode><asin>B00002MZ2E</asin><cover-art-archive><artwork>true</artwork><count>7</count><front>true</front><back>true</back></cover-art-archive></release></metadata>
+{
+  "packaging": "Cardboard/Paper Sleeve",
+  "disambiguation": "",
+  "id": "1aec03bf-ee85-4ad9-a54b-8b286f2d5577",
+  "status": "Official",
+  "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+  "barcode": "074646963012",
+  "asin": "B00002MZ2E",
+  "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+  },
+  "title": "The Battle of Los Angeles",
+  "cover-art-archive": {
+    "front": true,
+    "back": true,
+    "darkened": false,
+    "artwork": true,
+    "count": 7
+  },
+  "country": "US",
+  "date": "1999-11-02",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "release-events": [
+    {
+      "date": "1999-11-02",
+      "area": {
+        "sort-name": "United States",
+        "id": "489ce91b-6658-3307-9877-795b68554c98",
+        "iso-3166-1-codes": [
+          "US"
+        ],
+        "name": "United States",
+        "disambiguation": "",
+        "type-id": null,
+        "type": null
+      }
+    }
+  ],
+  "quality": "normal"
+}

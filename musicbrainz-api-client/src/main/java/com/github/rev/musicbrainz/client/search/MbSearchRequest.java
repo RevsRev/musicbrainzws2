@@ -18,7 +18,6 @@ import java.util.Optional;
 public final class MbSearchRequest<T extends MbEntity> extends MbRequest<T> {
 
     private static final String TYPE = "type";
-    private static final String FMT = "fmt";
     private static final String QUERY = "query";
     private static final String LIMIT = "limit";
     private static final String OFFSET = "offset";

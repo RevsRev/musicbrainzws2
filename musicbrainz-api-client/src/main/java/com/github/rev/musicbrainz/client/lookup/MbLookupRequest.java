@@ -3,11 +3,14 @@ package com.github.rev.musicbrainz.client.lookup;
 import com.github.rev.musicbrainz.client.MbBuilder;
 import com.github.rev.musicbrainz.client.MbFormat;
 import com.github.rev.musicbrainz.client.entity.MbEntity;
+import com.github.rev.musicbrainz.client.http.MbDefaultParam;
 import com.github.rev.musicbrainz.client.http.MbParam;
 import com.github.rev.musicbrainz.client.http.MbRequest;
 import lombok.Getter;
 import lombok.Setter;
 
+
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
@@ -34,7 +37,10 @@ public final class MbLookupRequest<T extends MbEntity> extends MbRequest<T> {
 
     @Override
     public Collection<MbParam> getParams() {
-        return param.isPresent() ? List.of(param.get()) : List.of();
+        List<MbParam> params = new ArrayList<>();
+        param.ifPresent(params::add);
+        params.add(new MbDefaultParam(FMT, getFormat().getValue()));
+        return params;
     }
 
     @Override

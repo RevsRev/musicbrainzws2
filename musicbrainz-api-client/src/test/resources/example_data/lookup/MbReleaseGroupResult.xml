@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
-    <release-group id="10219fc7-1810-4609-bcb7-b539f033ea40" type="Compilation"
-                   type-id="dd2a21e1-0c00-3729-a7a0-de60b84eb5d1">
+    <release-group id="10219fc7-1810-4609-bcb7-b539f033ea40" type="Compilation" type-id="dd2a21e1-0c00-3729-a7a0-de60b84eb5d1">
         <title>Elvis at Sun Records</title>
         <first-release-date>2007</first-release-date>
         <primary-type id="f529b476-6e62-324f-b0aa-1f3e33d313fc">Album</primary-type>

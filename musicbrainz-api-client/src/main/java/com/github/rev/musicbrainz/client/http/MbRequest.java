@@ -9,6 +9,10 @@ import com.github.rev.musicbrainz.client.entity.MbEntity;
  */
 public abstract class MbRequest<T extends MbEntity> implements MbParams {
 
+    /**
+     * The key for the format parameter when submitting requests to the music brainz API.
+     */
+    protected static final String FMT = "fmt";
     private final T entity;
     private final MbFormat resultFormat;
 

@@ -1,2 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#"><instrument id="96c9c681-ee2f-42a7-894b-c50d983b9e7f" type="Electronic instrument" type-id="98df6cec-95e5-3cbc-9a2d-7ea6c8be6f3c"><name>theremin</name></instrument></metadata>
+{
+  "type-id": "98df6cec-95e5-3cbc-9a2d-7ea6c8be6f3c",
+  "name": "theremin",
+  "type": "Electronic instrument",
+  "id": "96c9c681-ee2f-42a7-894b-c50d983b9e7f",
+  "description": "",
+  "disambiguation": ""
+}
