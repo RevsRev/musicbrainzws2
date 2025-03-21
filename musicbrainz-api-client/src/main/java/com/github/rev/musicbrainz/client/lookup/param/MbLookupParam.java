@@ -25,6 +25,7 @@ public abstract class MbLookupParam<T extends MbEntity> implements MbParam {
      * Add a Field and Value to the query.
      * @param include The include name.
      * @throws InvalidParameterException If the Field name is not permissible for this query.
+     * @return This param instance.
      */
     public final MbLookupParam<T> add(final String include) throws InvalidParameterException {
         if (!validIncludes.contains(include)) {
