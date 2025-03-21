@@ -180,7 +180,7 @@ public abstract class EntityControllerTestParam<T extends MbEntity> {
         @Override
         public Collection<Pair<String, MbParam>> getLookupParams() throws InvalidParameterException {
             return List.of(
-                    Pair.of("bla94a7155-c79d-4409-9fcf-220cb0e4dc3aa", new MbArtistLookupParam().add(MbArtistLookupParam.RELEASES))
+                    Pair.of("5b11f4ce-a62d-471e-81fc-a69a8278c7da", new MbArtistLookupParam().add(MbArtistLookupParam.RELEASES))
             );
         }
     }

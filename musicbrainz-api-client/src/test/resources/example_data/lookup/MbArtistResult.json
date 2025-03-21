@@ -1,4 +1,41 @@
 {
-  "help": "For usage, please see: https://musicbrainz.org/development/mmd",
-  "error": "Invalid mbid."
+  "name": "Nirvana",
+  "isnis": [
+    "0000000123486830",
+    "0000000123487390"
+  ],
+  "ipis": [],
+  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+  "life-span": {
+    "ended": true,
+    "begin": "1987",
+    "end": "1994-04-05"
+  },
+  "disambiguation": "1980s–1990s US grunge band",
+  "id": "5b11f4ce-a62d-471e-81fc-a69a8278c7da",
+  "area": {
+    "type": null,
+    "iso-3166-1-codes": [
+      "US"
+    ],
+    "name": "United States",
+    "sort-name": "United States",
+    "disambiguation": "",
+    "id": "489ce91b-6658-3307-9877-795b68554c98",
+    "type-id": null
+  },
+  "country": "US",
+  "end-area": null,
+  "sort-name": "Nirvana",
+  "type": "Group",
+  "begin-area": {
+    "name": "Aberdeen",
+    "type": null,
+    "id": "a640b45c-c173-49b1-8030-973603e895b5",
+    "disambiguation": "",
+    "sort-name": "Aberdeen",
+    "type-id": null
+  },
+  "gender-id": null,
+  "gender": null
 }

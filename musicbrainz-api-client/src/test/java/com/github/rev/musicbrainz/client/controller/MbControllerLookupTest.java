@@ -1,17 +1,17 @@
 package com.github.rev.musicbrainz.client.controller;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 import com.github.rev.musicbrainz.client.entity.MbEntity;
 import com.github.rev.musicbrainz.client.http.MbClient;
 import com.github.rev.musicbrainz.client.http.ThrottleStrategyImpl;
 import com.github.rev.musicbrainz.client.lookup.MbLookupRequest;
-import com.github.rev.musicbrainz.client.search.result.MbEventResult;
 import com.github.rev.musicbrainz.client.util.ControllerTestData;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
 
 public class MbControllerLookupTest {
 
